@@ -1,0 +1,11 @@
+titleSeparator = "-"
+titleAddition = "Hugo starter with a modern development workflow"
+description = "Hugo starter that lets you build better themes faster with improved development tools."
+
+twitterCard = "summary_large_image"
+twitterSite = "@Ventizo"
+twitterCreator = "@Ventizo"
+
+ogLocale = "en_US"
+ogType = "website"
+ogImage = "android-chrome-512x512.png"

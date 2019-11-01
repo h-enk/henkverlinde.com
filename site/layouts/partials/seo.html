@@ -1,0 +1,45 @@
+{{- with .Params.robots -}}
+  <meta name="robots" content="{{ . }}">
+{{- end -}}
+
+{{- if .IsHome -}}
+  <title>{{ .Site.Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Data.seo.titleAddition }}</title>
+{{- else -}}
+  <title>{{ .Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Title }}</title>
+{{- end -}}
+
+{{- with .Description -}}
+  <meta name="description" content="{{ . }}">
+{{- else -}}
+  <meta name="description" content="{{ .Site.Data.seo.description }}">
+{{- end -}}
+
+{{- with .Params.canonical -}}
+  <link rel="canonical" href="{{ . }}">
+{{- else -}}
+  <link rel="canonical" href="{{ .Permalink }}">
+{{- end -}}
+
+<meta name="twitter:card" content="{{ .Site.Data.seo.twitterCard }}">
+<meta name="twitter:site" content="{{ .Site.Data.seo.twitterSite }}">
+<meta name="twitter:creator" content="{{ .Site.Data.seo.twitterCreator }}">
+
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ .Site.Data.seo.ogType }}">
+{{- if .IsHome -}}
+  <meta property="og:title" content="{{ .Site.Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Data.seo.titleAddition }}">
+{{- else -}}
+  <meta property="og:title" content="{{ .Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Title }}">
+{{- end -}}
+{{- with .Description -}}
+  <meta property="og:description" content="{{ . }}">
+{{- else -}}
+  <meta property="og:description" content="{{ .Site.Data.seo.description }}">
+{{- end -}}
+{{- with .Params.image -}}
+  <meta property="og:image" content="{{ . | absLangURL }}">
+{{- else -}}
+  <meta property="og:image" content="{{ .Site.Data.seo.ogImage | absLangURL }}">
+{{- end -}}
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:locale" content="{{ .Site.Data.seo.ogLocale }}">

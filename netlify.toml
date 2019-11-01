@@ -1,0 +1,14 @@
+[build.environment]
+  YARN_VERSION = "1.17.3"
+  NPM_VERSION = "6.9.0"
+  HUGO_VERSION = "0.58.1"
+
+[build]
+  publish = "dist"
+  command = "yarn build"
+
+[context.deploy-preview]
+  command = "yarn build:preview"
+
+[context.branch-deploy]
+  command = "yarn build"

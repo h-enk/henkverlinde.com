@@ -1,0 +1,10 @@
+footer {
+  margin-top: 3rem;
+  font-size: $font-size-sm;
+}
+
+@include media-breakpoint-up(md) {
+  footer {
+    margin-top: 5rem;
+  }
+}
