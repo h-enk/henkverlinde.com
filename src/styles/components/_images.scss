@@ -9,6 +9,7 @@
   margin-right: 0.9375rem;
 }
 
+/*
 @include media-breakpoint-up(sm) {
   .figure {
     margin-left: -2rem;
@@ -20,16 +21,29 @@
     margin-right: 2rem;
   }
 }
+*/
 
 @include media-breakpoint-up(lg) {
   .figure {
-    margin-left: -4rem;
-    margin-right: -4rem;
+    margin: 3rem -15rem 3rem -3rem;
   }
 
   .figure-caption {
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .figure {
+    margin: 3rem -18rem 3rem -3rem;
+  }
+
+  .figure-caption {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 

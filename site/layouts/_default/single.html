@@ -1,5 +1,13 @@
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
-<article>
-  {{- .Content -}}
-</article>
+<div class="row">
+  <div class="col-lg-7 offset-lg-1">
+    {{ partial "page-header" . }}
+    <p class="excerpt">{{ .Params.description }}</p>
+    <p class="entry-meta">{{- .Date.Format "January 2, 2006" -}}</p>
+    {{- .Content -}}
+    <nav class="section-navigation nav flex-column">
+      {{ partial "section-navigation" . }}
+    </nav>
+  </div>
+</div>
 {{ end }}

@@ -1,0 +1,80 @@
+.entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  font-size: $font-size-base * 1 !important;
+  font-weight: $font-weight-bold;
+  font-feature-settings: "onum";
+  font-variant-numeric: oldstyle-nums;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+}
+
+.posts {
+  margin-top: 3rem;
+  border-bottom: 0.05rem solid rgba(45, 55, 65, 0.2);
+}
+
+.posts .meta {
+  color: rgba(45, 55, 65, 0.5);
+  display: block;
+  font-feature-settings: "onum";
+  font-variant-numeric: oldstyle-nums;
+  font-variant-caps: small-caps;
+  margin-top: 0.4rem;
+  text-transform: lowercase;
+}
+
+.posts li {
+  border-top: 0.05rem solid rgba(45, 55, 65, 0.2);
+  position: relative;
+}
+
+.posts li a {
+  border: none;
+  display: block;
+  line-height: 1.25;
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.posts h3 {
+  font-size: 1.25rem;
+}
+
+.posts li h3 span {
+  border-bottom: 0.0625em solid transparent;
+  transition: border-color 0.1s linear;
+}
+
+.posts li a:hover h3 span {
+  border-bottom-color: rgba(45, 55, 65, 0.85);
+}
+
+@include media-breakpoint-up(lg) {
+  .posts li {
+    font-size: 1.25rem;
+  }
+
+  .posts li a {
+    align-items: baseline;
+    display: flex;
+    padding: 1.25rem 0 1rem;
+  }
+
+  .posts li h3 {
+    flex-grow: 1;
+    order: 2;
+  }
+
+  .posts .meta {
+    flex-shrink: 0;
+    margin: 0;
+    order: 1;
+    width: 7rem;
+  }
+}
+
+.content .list-navigation {
+  margin-top: 3rem;
+}

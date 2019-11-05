@@ -1,0 +1,6 @@
+{{ with .NextInSection }}
+  <a class="nav-link" href="{{ .Permalink }}"><span class="arrow">→</span><span class="title">{{ .Title }}</span></a>
+{{ end }}
+{{ with .PrevInSection }}
+  <a class="nav-link" href="{{ .Permalink }}"><span class="arrow">←</span><span class="title">{{ .Title }}</span></a>
+{{ end }}

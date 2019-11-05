@@ -1,16 +1,38 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
 {{ partial "head" . }}
-<body {{ with .Layout }}class="{{ . }}"{{ end }}>
-  {{ block "header" . }}{{ partial "header" . }}{{ end }}
-  <div class="wrap container" role="document">
-    <div class="content">
-      <main class="main">
-        {{ block "main" . }}{{ end }}
-      </main>
+<body{{ with .Layout }} class="{{ . }}"{{ end }}>
+  <!-- {{ block "header" . }}{{ partial "header" . }}{{ end }} -->
+  <div class="wrap container-fluid" role="document">
+    <div class="row">
+
+      <div class="sidebar col-lg-3">
+        <div class="d-flex align-items-start flex-column h-100">
+
+          {{ partial "header" . }}
+
+          <nav class="main-menu nav flex-lg-column">
+            {{ partial "main-menu" . }}
+          </nav>
+
+          <nav class="social-menu nav flex-lg-column mt-lg-auto">
+            {{ partial "social-menu" . }}
+          </nav>
+
+        </div>
+      </div>
+      
+      <div class="content col offset-lg-3">
+        <main class="main">
+          <article>
+            {{ block "main" . }}{{ end }}
+          </article>
+        </main>
+      </div>
     </div>
-  </div>        
-  {{ block "footer" . }}{{ partial "footer" . }}{{ end }}
+
+  </div>      
+  <!-- {{ block "footer" . }}{{ partial "footer" . }}{{ end }} -->
   {{ partial "script-footer" . }}
 </body>
 </html>
