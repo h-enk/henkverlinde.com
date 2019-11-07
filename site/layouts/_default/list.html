@@ -3,7 +3,6 @@
   <div class="col-lg-10 offset-lg-1">  
     {{ partial "page-header" . }}
     {{.Content}}
-    
     <ul class="posts list-unstyled">
       {{ range .Paginator.Pages }}
       <article>
@@ -13,11 +12,9 @@
       </article>
       {{ end }}
     </ul>
-
     <nav class="list-navigation nav flex-column">
       {{ partial "list-navigation" . }}
     </nav>
-
   </div>
 </div>
 {{ end }}

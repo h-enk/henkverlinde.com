@@ -3,7 +3,6 @@ title: Sullivan has Been Released
 description: Sullivan, the first of my themes to feature extensive WooCommerce support, is now available as a free download on WordPress.org.
 date: 2018-04-09T09:50:16+01:00
 draft: false
-layout: single
 ---
 
 {{< img src="sullivan-montage-1440x810.jpg" alt="Notre Dame - photo by Pedro Lastra" caption="Notre Dame - photo by Pedro Lastra">}}

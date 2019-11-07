@@ -1,8 +1,8 @@
-.entry-meta {
+.main p.entry-meta {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1.5rem;
-  font-size: $font-size-base * 1 !important;
+  margin-top: -0.5rem;
+  font-size: $font-size-base * 0.9;
   font-weight: $font-weight-bold;
   font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
@@ -21,7 +21,7 @@
   font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
   font-variant-caps: small-caps;
-  margin-top: 0.4rem;
+  margin-top: -0.25rem;
   text-transform: lowercase;
 }
 
@@ -31,15 +31,16 @@
 }
 
 .posts li a {
+  font-size: 1.125rem;
   border: none;
   display: block;
-  line-height: 1.25;
-  padding: 1rem 0;
+  line-height: 1.5;
+  padding: 1.25rem 0 1rem;
   text-decoration: none;
 }
 
 .posts h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .posts li h3 span {
@@ -52,6 +53,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .main p.entry-meta {
+    font-size: $font-size-base;
+  }
+
   .posts li {
     font-size: 1.25rem;
   }
@@ -71,7 +76,7 @@
     flex-shrink: 0;
     margin: 0;
     order: 1;
-    width: 7rem;
+    width: 6rem;
   }
 }
 

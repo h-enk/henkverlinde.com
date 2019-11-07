@@ -4,12 +4,17 @@ body.page .main {
 
 .main p {
   margin-bottom: 1.5rem;
-  font-size: $font-size-base * 1.25;
+  font-size: $font-size-base * 1.125;
 }
 
 .main p.lead {
-  font-size: $font-size-base * 2;
-  line-height: 1.4;
+  font-size: $font-size-base * 1.25;
+  line-height: 1.5;
+}
+
+.main .social-menu li {
+  font-size: $font-size-base * 1.125;
+  line-height: 1.5;
 }
 
 .main a {
@@ -24,9 +29,26 @@ body.page .main {
 }
 
 .page-header h1 {
-  font-size: $font-size-base * 2.25;
+  font-size: $font-size-base * 1.75;
 }
 
 .excerpt {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .main p {
+    margin-bottom: 1.5rem;
+    font-size: $font-size-base * 1.25;
+  }
+
+  .main p.lead {
+    font-size: $font-size-base * 2;
+    line-height: 1.4;
+  }
+
+  .page-header h1 {
+    font-size: $font-size-base * 2.25;
+  }
 }

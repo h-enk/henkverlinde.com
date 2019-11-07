@@ -10,6 +10,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
+enableEmoji = true
 
 paginate = 2
 
@@ -26,14 +27,10 @@ paginate = 2
     url = "/blog/"
     weight = 2
   [[menu.social]]
-    name = "Email"
-    url = "mailto:henk@ventizo.com"
-    weight = 1
-  [[menu.social]]
     name = "LinkedIn"
     url = "https://www.linkedin.com/in/henkverlinde/"
-    weight = 2
+    weight = 1
   [[menu.social]]
     name = "Twitter"
     url = "https://twitter.com/henkverlinde"
-    weight = 3
+    weight = 2

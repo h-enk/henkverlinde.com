@@ -2,7 +2,7 @@
 <div class="row">
   <div class="col-lg-7 offset-lg-1">
     {{ partial "page-header" . }}
-    <p class="excerpt">{{ .Params.description }}</p>
+    <p class="excerpt">{{ .Description }}</p>
     <p class="entry-meta">{{- .Date.Format "January 2, 2006" -}}</p>
     {{- .Content -}}
     <nav class="section-navigation nav flex-column">

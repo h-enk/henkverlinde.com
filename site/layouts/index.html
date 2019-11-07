@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col-lg-9 offset-lg-1">
+    <h1 class="sr-only">{{ .Site.Title }}</h1>
+    {{ .Params.Lead | safeHTML }}
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-7 offset-lg-1">
+    {{- .Content -}}
+    {{ partial "social-menu-content" . }}
+    {{ partial "footer" . }}
+  </div>
+</div>
+{{ end }}

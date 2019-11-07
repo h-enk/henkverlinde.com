@@ -39,7 +39,7 @@ a {
 
 .sidebar a.site-title {
   color: rgba(45, 55, 65, 0.85);
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -52,7 +52,7 @@ a {
   color: rgba(45, 55, 65, 0.5);
   line-height: 1.1;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding: 1rem 1.25rem 0.25rem 0;
 }
 
@@ -61,8 +61,17 @@ a {
   color: rgba(45, 55, 65, 0.85);
   line-height: 1.1;
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   padding: 0.5rem 0;
+}
+
+.content .social-menu a.nav-link {
+  font-size: 1.125rem;
+  border-bottom: 0.0625em solid rgba(45, 55, 65, 0.25);
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 .sidebar a.nav-link:hover,
@@ -70,13 +79,22 @@ a {
   color: rgba(45, 55, 65, 0.85);
 }
 
+@include media-breakpoint-up(lg) {
+  .sidebar a.site-title {
+    font-size: 1.25rem;
+  }
+
+  .sidebar a.nav-link {
+    font-size: 1.25rem;
+  }
+}
+
 .content {
   padding-bottom: 5rem;
 }
 
 .content .section-navigation {
-  background: #fff;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .content a.nav-link .arrow {
@@ -106,5 +124,13 @@ a {
 
   .content {
     padding-top: 11rem;
+  }
+
+  .content .section-navigation {
+    margin-top: 5rem;
+  }
+
+  .content a.nav-link {
+    font-size: 1.25rem;
   }
 }

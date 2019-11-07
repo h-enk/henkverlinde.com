@@ -1,6 +1,15 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+$_f1f1f1: #f1f1f1;
+$_f0f0f0: #f0f0f0;
+$_e0e4e7: #e0e4e7;
+$_ddd:    #ddd;
+$_999:    #999;
+$_333:    #333;
+$_152025: #152025;
+$_111:    #111;
+
 $white:    #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
@@ -14,7 +23,7 @@ $gray-900: rgba(45, 55, 65, 0.85);
 $black:    #000;
 
 $theme-colors: (
-  primary: rgba(45, 55, 65, 0.85)
+  primary: $gray-900
 );
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */

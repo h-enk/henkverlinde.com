@@ -2,26 +2,15 @@
 <html lang="{{ $.Site.Language.Lang }}">
 {{ partial "head" . }}
 <body{{ with .Layout }} class="{{ . }}"{{ end }}>
-  <!-- {{ block "header" . }}{{ partial "header" . }}{{ end }} -->
   <div class="wrap container-fluid" role="document">
     <div class="row">
-
       <div class="sidebar col-lg-3">
         <div class="d-flex align-items-start flex-column h-100">
-
           {{ partial "header" . }}
-
-          <nav class="main-menu nav flex-lg-column">
-            {{ partial "main-menu" . }}
-          </nav>
-
-          <nav class="social-menu nav flex-lg-column mt-lg-auto">
-            {{ partial "social-menu" . }}
-          </nav>
-
+          {{ partial "main-menu" . }}
+          {{ partial "social-menu-sidebar" . }}
         </div>
       </div>
-      
       <div class="content col offset-lg-3">
         <main class="main">
           <article>
@@ -30,9 +19,7 @@
         </main>
       </div>
     </div>
-
-  </div>      
-  <!-- {{ block "footer" . }}{{ partial "footer" . }}{{ end }} -->
+  </div>
   {{ partial "script-footer" . }}
 </body>
 </html>

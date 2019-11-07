@@ -3,7 +3,6 @@ title: Introducing Divide & Conquer
 description: I’m excited to share the news that today is my very first day at the digital agency Divide & Conquer, based in Stockholm.
 date: 2018-08-01T09:30:16+01:00
 draft: false
-layout: single
 ---
 
 {{< img src="divide-conquer-logo-white-gradient-bg-wallpaper_2880x1800-1440x900" alt="Notre Dame - photo by Pedro Lastra" caption="Notre Dame - photo by Pedro Lastra">}}
