@@ -2,6 +2,7 @@ const merge = require("webpack-merge");
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const whitelister = require("purgecss-whitelister");
 
 const common = require("./webpack.common.js");
 
@@ -33,7 +34,10 @@ module.exports = merge(common, {
         paths: glob.sync(`${PATHS.site}/**/*`, { 
           nodir: true 
         }),
-        whitelist: ['lazyloaded']
+        whitelist: [
+          'lazyloaded',
+          whitelister('./src/styles/common/_syntax.scss'),
+        ],
       }),
 
       new MiniCssExtractPlugin({
