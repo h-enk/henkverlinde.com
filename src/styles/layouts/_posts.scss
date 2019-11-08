@@ -21,7 +21,7 @@
   font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
   font-variant-caps: small-caps;
-  margin-top: -0.25rem;
+  margin-top: 0;
   text-transform: lowercase;
 }
 
@@ -35,20 +35,17 @@
   border: none;
   display: block;
   line-height: 1.5;
-  padding: 1.25rem 0 1rem;
+  padding: 1.125rem 0 0.625rem;
   text-decoration: none;
 }
 
-.posts h3 {
+.posts .title span {
   font-size: 1.125rem;
-}
-
-.posts li h3 span {
   border-bottom: 0.0625em solid transparent;
   transition: border-color 0.1s linear;
 }
 
-.posts li a:hover h3 span {
+.posts a:hover .title span {
   border-bottom-color: rgba(45, 55, 65, 0.85);
 }
 
@@ -64,10 +61,10 @@
   .posts li a {
     align-items: baseline;
     display: flex;
-    padding: 1.25rem 0 1rem;
+    padding: 1.375rem 0 0.875rem;
   }
 
-  .posts li h3 {
+  .posts li .title {
     flex-grow: 1;
     order: 2;
   }

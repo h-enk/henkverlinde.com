@@ -12,6 +12,9 @@ disableHugoGeneratorInject = true
 enableRobotsTXT = true
 enableEmoji = true
 
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+
 paginate = 2
 
 [permalinks]

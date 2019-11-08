@@ -3,7 +3,7 @@
 }
 
 .figure-caption {
-  margin: 1rem 0.9375rem 0;
+  margin: 0 0.9375rem -0.5rem;
 }
 
 @include media-breakpoint-up(lg) {
@@ -12,7 +12,7 @@
   }
 
   .figure-caption {
-    margin: 1rem 3rem 0;
+    margin: 0.75rem 3rem -1rem;
   }
 }
 
