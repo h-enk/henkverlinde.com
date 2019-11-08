@@ -1,4 +1,5 @@
 /* stylelint-disable */
+/* purgecss start ignore */
 /* Background */ .chroma { color: #f8f8f2; background-color: #282a36; }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
 /* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
@@ -59,4 +60,5 @@
 /* GenericOutput */ .chroma .go { color: #44475a; }
 /* GenericSubheading */ .chroma .gu { font-weight: bold; }
 /* GenericUnderline */ .chroma .gl { text-decoration: underline; }
+/* purgecss end ignore */
 /* stylelint-enable */
