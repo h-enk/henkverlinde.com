@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: -0.5rem;
-  font-size: $font-size-base * 0.9;
+  font-size: $font-size-sm;
   font-weight: $font-weight-bold;
   font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
@@ -12,11 +12,11 @@
 
 .posts {
   margin-top: 3rem;
-  border-bottom: 0.05rem solid rgba(45, 55, 65, 0.2);
+  border-bottom: 0.05rem solid $gray-700;
 }
 
 .posts .meta {
-  color: rgba(45, 55, 65, 0.5);
+  color: $gray-800;
   display: block;
   font-feature-settings: "onum";
   font-variant-numeric: oldstyle-nums;
@@ -26,27 +26,27 @@
 }
 
 .posts li {
-  border-top: 0.05rem solid rgba(45, 55, 65, 0.2);
+  border-top: 0.05rem solid $gray-700;
   position: relative;
 }
 
 .posts li a {
-  font-size: 1.125rem;
+  font-size: $font-size-md;
   border: none;
   display: block;
-  line-height: 1.5;
+  line-height: $line-height-base;
   padding: 1.125rem 0 0.625rem;
   text-decoration: none;
 }
 
 .posts .title span {
-  font-size: 1.125rem;
+  font-size: $font-size-md;
   border-bottom: 0.0625em solid transparent;
   transition: border-color 0.1s linear;
 }
 
 .posts a:hover .title span {
-  border-bottom-color: rgba(45, 55, 65, 0.85);
+  border-bottom-color: $gray-900;
 }
 
 @include media-breakpoint-up(lg) {
@@ -55,7 +55,7 @@
   }
 
   .posts li {
-    font-size: 1.25rem;
+    font-size: $font-size-lg;
   }
 
   .posts li a {

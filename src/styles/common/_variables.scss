@@ -1,26 +1,19 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
-$_f1f1f1: #f1f1f1;
-$_f0f0f0: #f0f0f0;
-$_e0e4e7: #e0e4e7;
-$_ddd:    #ddd;
-$_999:    #999;
-$_333:    #333;
-$_152025: #152025;
-$_111:    #111;
-
 $white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
+$gray-100: #f1f1f1;
+$gray-200: #e0e4e7;
+$gray-300: #ddd;
+$gray-400: rgba(255, 255, 255, 0.25);
+$gray-500: rgba(255, 255, 255, 0.5);
+$gray-600: #999;
+$gray-700: rgba(45, 55, 65, 0.25);
+$gray-800: rgba(45, 55, 65, 0.5);
 $gray-900: rgba(45, 55, 65, 0.85);
-$black:    #000;
+$gray-925: #333;
+$gray-950: #152025;
+$black:    #111;
 
 $theme-colors: (
   primary: $gray-900
@@ -41,5 +34,18 @@ $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem;
+$font-size-xxxxl:             $font-size-base * 2.25;
+$font-size-xxxl:              $font-size-base * 2;
+$font-size-xxl:               $font-size-base * 1.75;
+$font-size-xl:                $font-size-base * 1.5;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-md:                $font-size-base * 1.125;
+$font-size-sm:                $font-size-base * 0.9;
+$font-size-xs:                $font-size-base * 0.875;
+
+$line-height-xs:              1.1;
+$line-height-sm:              1.4;
+$line-height-base:            1.5;
+$line-height-lg:              1.7;
 
 $h1-font-size:                $font-size-base * 1.75;

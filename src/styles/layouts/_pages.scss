@@ -4,32 +4,32 @@ body.page .main {
 
 .main p {
   margin-bottom: 1.5rem;
-  font-size: $font-size-base * 1.125;
+  font-size: $font-size-md;
 }
 
 .main p.lead {
-  font-size: $font-size-base * 1.25;
-  line-height: 1.5;
+  font-size: $font-size-lg;
+  line-height: $line-height-base;
 }
 
 .main .social-menu li {
-  font-size: $font-size-base * 1.125;
-  line-height: 1.5;
+  font-size: $font-size-md;
+  line-height: $line-height-base;
 }
 
 .main a {
-  border-bottom: 0.0625em solid rgba(45, 55, 65, 0.25);
+  border-bottom: 0.0625em solid $gray-700;
   color: inherit;
   text-decoration: none;
   transition: all 0.1s linear;
 }
 
 .main a:hover {
-  border-bottom-color: rgba(45, 55, 65, 0.85);
+  border-bottom-color: $gray-900;
 }
 
 .page-header h1 {
-  font-size: $font-size-base * 1.75;
+  font-size: $font-size-xxl;
 }
 
 .excerpt {
@@ -40,15 +40,15 @@ body.page .main {
 @include media-breakpoint-up(lg) {
   .main p {
     margin-bottom: 1.5rem;
-    font-size: $font-size-base * 1.25;
+    font-size: $font-size-lg;
   }
 
   .main p.lead {
-    font-size: $font-size-base * 2;
-    line-height: 1.4;
+    font-size: $font-size-xxxl;
+    line-height: $line-height-sm;
   }
 
   .page-header h1 {
-    font-size: $font-size-base * 2.25;
+    font-size: $font-size-xxxxl;
   }
 }
