@@ -5,7 +5,7 @@ date: 2018-04-09T09:50:16+01:00
 draft: false
 ---
 
-{{< img src="sullivan-montage-1440x810.jpg" alt="Notre Dame - photo by Pedro Lastra" caption="Notre Dame - photo by Pedro Lastra">}}
+{{< img src="sullivan-montage-1440x810.jpg" alt="Notre Dame - photo by Pedro Lastra" caption="Notre Dame - photo by Pedro Lastra" >}}
 
 Sullivan includes custom styling for all WooCommerce pages and features, and it also adds a couple of custom ones on top of them. It has search with instant results served over AJAX, dropdown modals for the basket and account settings/login in the header, slideshows on the shop page and blog page, optional sticky menu, a fallback image setting, and much more.
 

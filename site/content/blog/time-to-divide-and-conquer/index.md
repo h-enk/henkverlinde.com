@@ -5,7 +5,7 @@ date: 2018-08-01T09:30:16+01:00
 draft: false
 ---
 
-{{< img src="divide-conquer-logo-white-gradient-bg-wallpaper_2880x1800-1440x900" alt="Notre Dame - photo by Pedro Lastra" caption="Poster by <a href=\"https://www.behance.net/gallery/7329643/Aktiv-Grotesk-Specimen\">Carlos Jiménez</a>.">}}
+{{< img src="divide-conquer-logo-white-gradient-bg-wallpaper_2880x1800-1440x900" alt="Notre Dame - photo by Pedro Lastra" caption="Poster by <a href=\"https://www.behance.net/gallery/7329643/Aktiv-Grotesk-Specimen\">Carlos Jiménez</a>." class="wide" >}}
 
 Divide & Conquer was founded earlier this summer by Thord D. Hedengren and Helena Waern. Thord is the author of books like Smashing WordPress: Beyond the Blog and Smashing WordPress Themes, and he recruited me to the web agency Odd Alice back when I was still building free WordPress themes in the evenings. (I still do that on occasion, but you get the point.) When he sold Odd Alice to 24HR Communications last year, he stayed on as interim CEO for the Stockholm office. Helena was head of operations at the Stockholm office at 24HR, and she has 15 years of experience working at agencies from before that.
 

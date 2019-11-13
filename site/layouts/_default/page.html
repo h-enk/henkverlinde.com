@@ -1,0 +1,9 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    {{ partial "page-header" . }}
+    <p class="excerpt">{{ .Description }}</p>
+    {{- .Content -}}
+  </div>
+</div>
+{{ end }}

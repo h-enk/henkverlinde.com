@@ -1,0 +1,16 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="row">
+  <div class="col-lg-8 offset-lg-1">
+    <h1 class="sr-only">{{ .Site.Title }}</h1>
+    <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    {{- .Content -}}
+    <nav class="section-navigation nav flex-column">
+      {{ partial "section-navigation" . }}
+    </nav>
+  </div>
+</div>
+{{ end }}

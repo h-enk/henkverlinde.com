@@ -16,7 +16,7 @@
 {{- end -}}
 {{- $imgSrcSet = (delimit $imgSrcSet ",") -}}
 
-<figure class="figure">
+<figure{{ with .Get "class" }} class="{{.}}"{{ end }}>
   <img class="figure-img img-fluid lazyload blur-up" data-sizes="auto" src="{{ $lqip.Permalink }}" data-srcset="{{ $imgSrcSet }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ with .Get "alt" }}alt="{{.}}"{{ end }}>
   <noscript><img class="figure-img img-fluid" sizes="100vw" srcset="{{ $imgSrcSet }}" src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ with .Get "alt" }}alt="{{.}}"{{ end }}></noscript>
   {{ with .Get "caption" }}<figcaption class="figure-caption">{{ . | safeHTML }}</figcaption>{{ end }}

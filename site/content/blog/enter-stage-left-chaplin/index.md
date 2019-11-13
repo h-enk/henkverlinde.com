@@ -5,7 +5,7 @@ date: 2019-07-02T10:50:16+01:00
 draft: false
 ---
 
-{{< img src="chaplin-collage-compressed.jpg" alt="Notre Dame - photo by Pedro Lastra" >}}
+{{< img src="chaplin-collage-compressed.jpg" alt="Notre Dame - photo by Pedro Lastra" class="wide" >}}
 
 Most of my themes are pretty static. What you see in the screenshot is what you’re going to see when you activate the theme on your site, and if you want to modify that look in any way, you’re going to have to create a child theme or add custom CSS. Both options involve more messing about with template files and code than most people are comfortable with. That’s a drawback to most of my themes – but also a feature, I think. In a theme landscape where most themes require five plugins and an hour with the documentation (if one exists) to replicate the screenshot on an actual website, it’s convenient with themes that look exactly like the screenshot the minute you activate them.
 
