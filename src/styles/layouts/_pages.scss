@@ -15,12 +15,18 @@
   transition: all 0.1s linear;
 }
 
+.main .list-inline-item a {
+  margin-right: 0.5rem;
+}
+
 .main a:hover {
   border-bottom-color: $gray-900;
 }
 
 .page-header h1 {
   font-size: $font-size-xxl;
+  letter-spacing: -0.025em;
+  line-height: $line-height-sm;
 }
 
 .excerpt {
@@ -37,6 +43,10 @@
   .main p.lead {
     font-size: $font-size-xxxl;
     line-height: $line-height-sm;
+  }
+
+  .main .list-inline-item a {
+    margin-right: 1rem;
   }
 
   .page-header h1 {

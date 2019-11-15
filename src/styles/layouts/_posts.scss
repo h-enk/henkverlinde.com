@@ -18,11 +18,11 @@
 .posts .meta {
   color: $gray-800;
   display: block;
-  font-feature-settings: "onum";
-  font-variant-numeric: oldstyle-nums;
-  font-variant-caps: small-caps;
+  font-weight: 500;
+  font-size: 0.825em;
+  letter-spacing: 0.01em;
   margin-top: 0;
-  text-transform: lowercase;
+  text-transform: uppercase;
 }
 
 .posts li {

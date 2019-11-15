@@ -9,7 +9,6 @@ draft: false
 <ul class="list-inline">
   <li class="list-inline-item"><a href="#">Live Demo</a></li>
   <li class="list-inline-item"><a href="#">Download</a></li>
-  <li class="list-inline-item">13,610 Downloads</li>
 </ul>
 
 {{< img src="BFR_Clouds_B_noRCS.jpg" alt="Notre Dame - photo by Pedro Lastra" >}}

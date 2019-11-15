@@ -15,7 +15,7 @@ enableEmoji = true
 pygmentsUseClasses = true
 pygmentsCodeFences = true
 
-paginate = 2
+paginate = 3
 
 [permalinks]
   blog = "/:title/"

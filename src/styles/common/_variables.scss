@@ -28,24 +28,27 @@ $navbar-light-toggler-icon-bg: none;
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
-$font-family-monospace:       Menlo, Consolas, monaco, monospace;
-$font-family-base:            $font-family-sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+$font-family-monospace:  Menlo, Consolas, monaco, monospace;
+$font-family-base:       $font-family-sans-serif;
 // stylelint-enable value-keyword-case
 
-$font-size-base:              1rem;
-$font-size-xxxxl:             $font-size-base * 2.25;
-$font-size-xxxl:              $font-size-base * 2;
-$font-size-xxl:               $font-size-base * 1.75;
-$font-size-xl:                $font-size-base * 1.5;
-$font-size-lg:                $font-size-base * 1.25;
-$font-size-md:                $font-size-base * 1.125;
-$font-size-sm:                $font-size-base * 0.9;
-$font-size-xs:                $font-size-base * 0.875;
+$font-size-base:     1rem;
+$font-size-xxxxl:    $font-size-base * 2.25;
+$font-size-xxxl:     $font-size-base * 1.85;
+$font-size-xxl:      $font-size-base * 1.75;
+$font-size-xl:       $font-size-base * 1.5;
+$font-size-lg:       $font-size-base * 1.25;
+$font-size-md:       $font-size-base * 1.125;
+$font-size-sm:       $font-size-base * 0.9;
+$font-size-xs:       $font-size-base * 0.875;
 
-$line-height-xs:              1.1;
-$line-height-sm:              1.4;
-$line-height-base:            1.5;
-$line-height-lg:              1.7;
+$line-height-xs:     1.1;
+$line-height-sm:     1.4;
+$line-height-base:   1.5;
+$line-height-lg:     1.7;
 
-$h1-font-size:                $font-size-base * 1.75;
+$h1-font-size:       $font-size-base * 1.75;
+
+$font-weight-normal: 400;
+$lead-font-weight:   $font-weight-normal;

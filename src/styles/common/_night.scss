@@ -1,0 +1,29 @@
+body.night {
+  background: $gray-900;
+  color: $white;
+}
+
+.night .main a {
+  border-bottom-color: $gray-400;
+}
+
+.night .main a:hover {
+  border-bottom-color: $white;
+}
+
+.night .sidebar .site-title a{
+  color: $white;
+}
+
+.night .sidebar a.nav-link {
+  color: $gray-500;
+}
+
+.night .sidebar a.nav-link:hover,
+.night .sidebar .banner .nav a:hover,
+.night .banner .nav .sidebar a:hover,
+.night .sidebar a.nav-link.active,
+.night .sidebar .banner .nav a.active,
+.night .banner .nav .sidebar a.active {
+  color: $white;
+}

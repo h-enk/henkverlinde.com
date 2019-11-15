@@ -1,3 +1,14 @@
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
+
+body {
+  letter-spacing: -0.015em;
+}
+
 @supports (font-variation-settings: normal) {
   body {
     font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
