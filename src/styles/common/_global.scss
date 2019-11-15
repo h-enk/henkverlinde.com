@@ -1,3 +1,9 @@
+@supports (font-variation-settings: normal) {
+  body {
+    font-family: "Inter var", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, sans-serif;
+  }
+}
+
 ::selection {
   background: $black;
   color: $white;

@@ -48,13 +48,13 @@ summary::-webkit-details-marker {
 }
 
 summary::before {
-  padding-right: 0.5rem;
-  content: "🡣 ";  /* Instead of Triangle closed */
+  padding-right: 1rem;
+  content: "\2193";  /* Instead of Triangle closed */
 }
 
 details[open] summary::before {
-  padding-right: 0.5rem;
-  content: "🡡 "; /* Instead of Triangle open */
+  padding-right: 1rem;
+  content: "\2191"; /* Instead of Triangle open */
 }
 
 summary:focus {
