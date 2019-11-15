@@ -44,3 +44,6 @@ paginate = 3
 
 [params]
   footer = "I enjoy designing and building things that look nice and work well, whether it’s websites, services or brands. I’ve been fortunate enough to have that be my day job, at the digital agency <a href=\"#\">Divide & Conquer</a> located in Vasastan, Stockholm."
+  description = "Text about my cool site"
+  images = ["site-feature-image.jpg"]
+  title = "Henk Verlinde"
