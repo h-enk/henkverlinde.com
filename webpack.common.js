@@ -1,6 +1,6 @@
 const webpack = require("webpack");
 const path = require("path");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+// const CopyWebpackPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const AssetsPlugin = require("assets-webpack-plugin");
 
@@ -17,7 +17,8 @@ module.exports = {
     rules: [
       {
         test: /\.((png)|(eot)|(woff)|(woff2)|(ttf)|(svg)|(gif))(\?v=\d+\.\d+\.\d+)?$/,
-        loader: "file-loader?name=/[hash].[ext]"
+        // loader: "file-loader?name=/[hash].[ext]"
+        loader: "file-loader"
       },
 
       {
@@ -56,6 +57,7 @@ module.exports = {
       prettyPrint: true
     }),
 
+    /*
     new CopyWebpackPlugin([
       {
         from: "./src/fonts/",
@@ -63,5 +65,6 @@ module.exports = {
         flatten: true
       }
     ])
+    */
   ]
 };
