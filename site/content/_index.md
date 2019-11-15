@@ -20,4 +20,5 @@ images: ["2013_Wilhelminapier-02_500Watt_500Watt.jpg"]
 {{< socials >}}
 
 <p class="text-uppercase"><small><strong>I've worked with</strong></small></p>
+
 Bonnier Brands & Magazines — Enjoy Wine & Spirits — Feministiskt Initiativ — Feministiskt Perspektiv — Marginalen Bank — Renée Voltaire — Ung Media — Volante — Zeta
