@@ -1,28 +1,34 @@
-{{- with .Params.robots -}}
+{{ with .Params.robots -}}
   <meta name="robots" content="{{ . }}">
-{{- end -}}
+{{ end -}}
 
-{{- if .IsHome -}}
+{{ if .IsHome -}}
   <title>{{ .Site.Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Data.seo.titleAddition }}</title>
-{{- else -}}
+{{ else -}}
   <title>{{ .Title }} {{ .Site.Data.seo.titleSeparator }} {{ .Site.Title }}</title>
-{{- end -}}
+{{ end -}}
 
-{{- with .Description -}}
+{{ with .Description -}}
   <meta name="description" content="{{ . }}">
-{{- else -}}
+{{ else -}}
   <meta name="description" content="{{ .Site.Data.seo.description }}">
-{{- end -}}
+{{ end -}}
 
-{{- with .Params.canonical -}}
+{{ with .Params.canonical -}}
   <link rel="canonical" href="{{ . }}">
-{{- else -}}
+{{ else -}}
   <link rel="canonical" href="{{ .Permalink }}">
-{{- end -}}
+{{ end -}}
 
-{{- template "_internal/twitter_cards.html" . -}}
+{{ template "_internal/twitter_cards.html" . -}}
 <meta name="twitter:site" content="{{ .Site.Data.seo.twitterSite }}">
 <meta name="twitter:creator" content="{{ .Site.Data.seo.twitterCreator }}">
 
-{{- template "_internal/opengraph.html" . -}}
+{{ template "_internal/opengraph.html" . -}}
 <meta property="og:locale" content="{{ .Site.Data.seo.ogLocale }}">
+
+{{ range .AlternativeOutputFormats -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML -}}
+{{ end -}}
+
+{{ partial "json-ld" . -}}

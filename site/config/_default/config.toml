@@ -1,12 +1,14 @@
 baseurl = "/"
-languageCode = "en-US"
+languageCode = "en-us"
 languageLang = "en"
 title = "Henk Verlinde"
 
-# RSS, categories and tags disabled for an easy start
+# Categories and tags disabled for an easy start
 # See configuration options for more details: 
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+rssLimit = 10
 
 disableHugoGeneratorInject = true
 enableRobotsTXT = true
@@ -43,7 +45,16 @@ paginate = 3
     weight = 2
 
 [params]
-  footer = "I enjoy designing and building things that look nice and work well, whether it’s websites, services or brands. I’ve been fortunate enough to have that be my day job, at the digital agency <a href=\"#\">Divide & Conquer</a> located in Vasastan, Stockholm."
+  footer = "This <a href=\"https://jamstack.org/\">JAMstack</a> website is powered by <a href=\"https://github.com/h-enk/notre-dame\">Notre Dame</a>, a Hugo starter with a webpack development workflow. The code and content live on GitHub and the website is hosted on Netlify. The website theme is a Bootstrap port of the Harrison theme by Anders Norén."
   description = "Text about my cool site"
   images = ["site-feature-image.jpg"]
   title = "Henk Verlinde"
+  author = "Henk Verlinde"
+
+[author]
+  name = "Henk Verlinde"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
