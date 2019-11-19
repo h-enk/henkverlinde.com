@@ -24,7 +24,6 @@ sitemap:
 
 <div class="row">
   <div class="col-md-7">
-    <!--<p class="text-uppercase"><small><strong>Sign up for my newsletter</strong></small></p>-->
     <h2 class="h3">Sign up for my newsletter</h2>
     <form>
       <div class="input-group">
