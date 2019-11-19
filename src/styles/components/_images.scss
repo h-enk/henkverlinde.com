@@ -27,6 +27,10 @@ figure.wide {
   figure.wide-md {
     margin: 1rem -0.9375rem 2.25rem;
   }
+
+  figure.wide-md .figure-caption {
+    margin: 0.5rem 0.9375rem -0.5rem;
+  }
 }
 
 .figure-img {
