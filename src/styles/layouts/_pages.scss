@@ -34,6 +34,18 @@
   margin-bottom: 1rem;
 }
 
+@include media-breakpoint-up(md) {
+  .text-columns {
+    column-count: 2;
+    column-gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .text-columns p {
+    line-height: 1.45;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   .main p {
     margin-bottom: 1.5rem;
@@ -51,5 +63,9 @@
 
   .page-header h1 {
     font-size: $font-size-xxxxl;
+  }
+
+  .text-columns {
+    column-gap: 4rem;
   }
 }

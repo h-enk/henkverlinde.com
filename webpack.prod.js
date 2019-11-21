@@ -36,7 +36,10 @@ module.exports = merge(common, {
         }),
         whitelist: [
           'lazyloaded',
-          ...whitelister('./src/styles/common/_syntax.scss'),
+          ...whitelister([
+            './src/styles/common/_syntax.scss',
+            './src/styles/components/_code.scss'
+          ]),
         ],
       }),
 
