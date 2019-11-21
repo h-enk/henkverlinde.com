@@ -1,4 +1,4 @@
 {{ $script := .Site.Data.webpack.main }}
 {{- with $script.js -}}
-  <script src="{{ absLangURL . }}"></script>
+  <script async src="{{ absLangURL . }}"></script>
 {{- end -}}
