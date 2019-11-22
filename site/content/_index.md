@@ -21,16 +21,4 @@ sitemap:
 {{< socials >}}
 </div>
 
-<div class="row">
-  <div class="col-md-7">
-    <h2 class="h3">Sign up for my newsletter</h2>
-    <form>
-      <div class="input-group">
-        <input type="email" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2" required>
-        <div class="input-group-append">
-          <button type="submit" id="button-addon2">Sign up</button>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
+{{< newsletter >}}
