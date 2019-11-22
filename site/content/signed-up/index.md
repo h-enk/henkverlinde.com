@@ -5,6 +5,8 @@ date: 2019-11-22T20:14:45+01:00
 draft: false
 layout: page
 images: [""]
+robots: "noindex,noarchive"
+sitemap_exclude: true
 ---
 
-Thanks for signing up! You will get my latest on digital business building - every now and then.
+Thank you for signing up! You will get my latest on digital business building - every now and then.

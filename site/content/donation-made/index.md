@@ -1,7 +1,7 @@
 ---
-title: "You completed your donation"
+title: "Donation Made"
 description: ""
-date: 2019-11-18T12:20:13+01:00
+date: 2019-11-22T20:55:14+01:00
 draft: false
 layout: page
 images: [""]
@@ -9,4 +9,4 @@ robots: "noindex,noarchive"
 sitemap_exclude: true
 ---
 
-Thank you!
+Thank you for your donation!
