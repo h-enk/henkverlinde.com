@@ -20,16 +20,16 @@ figure {
 }
 
 figure.wide {
-  margin: 1rem -0.9375rem 2.25rem;
+  margin: 1rem -1.5rem 2.25rem;
 }
 
 @include media-breakpoint-down(md) {
   figure.wide-md {
-    margin: 1rem -0.9375rem 2.25rem;
+    margin: 1rem -1.5rem 2.25rem;
   }
 
   figure.wide-md .figure-caption {
-    margin: 0.5rem 0.9375rem -0.5rem;
+    margin: 0.5rem 1.5rem -0.5rem;
   }
 }
 
@@ -42,7 +42,7 @@ figure.wide {
 }
 
 figure.wide .figure-caption {
-  margin: 0.5rem 0.9375rem -0.5rem;
+  margin: 0.5rem 1.5rem -0.5rem;
 }
 
 @include media-breakpoint-up(lg) {

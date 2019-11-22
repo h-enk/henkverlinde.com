@@ -37,7 +37,7 @@
 @include media-breakpoint-up(md) {
   .text-columns {
     column-count: 2;
-    column-gap: 3rem;
+    column-gap: $grid-gutter-width;
     margin-bottom: 3rem;
   }
 
@@ -63,9 +63,5 @@
 
   .page-header h1 {
     font-size: $font-size-xxxxl;
-  }
-
-  .text-columns {
-    column-gap: 4rem;
   }
 }
