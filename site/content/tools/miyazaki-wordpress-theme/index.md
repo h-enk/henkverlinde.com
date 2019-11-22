@@ -7,3 +7,5 @@ draft: false
 ---
 
 {{< img src="team-members-pro.jpg" alt="Notre Dame - photo by Pedro Lastra" >}}
+
+{{< newsletter >}}

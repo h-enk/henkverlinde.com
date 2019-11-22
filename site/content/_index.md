@@ -16,7 +16,7 @@ sitemap:
 
 <p>Before founding Ventizo in 2010, I worked for almost 15 years in the financial services industry. Mainly on developing international internet banking products and services. I hold a masters’ degree in Economics and Business from Erasmus University Rotterdam. I've specialized in Management and Organization of Software Innovation Networks.</p>
 
-<p>In my <a href="/blog/">writing</a>, I  like to cover all apects of digital business building, like strategy, analytics, design and tech. My <a href="/tools/">tools</a> for startups and enterprises are open source and available for free. Sign up for the mailing list below to get my latest on digital business building.</p>
+<p>In my <a href="/blog/">writing</a>, I  like to cover all apects of digital business building, like strategy, analytics, design and tech. My <a href="/tools/">tools</a> for startups and enterprises are open source and available for free. Sign up below to get my latest on digital business building - every now and then.</p>
 
 {{< socials >}}
 </div>
