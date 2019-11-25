@@ -1,7 +1,7 @@
 ---
 title: Tools
-description: 
-lead: WordPress themes for bloggers, photographers, designers and businesses. All of them are fully featured, open source and completely free.
-date: 2019-11-12T10:22:56+01:00
+description: Free, open source tools for building a better digital business. For solopreneurs, startup entrepreneurs, and corporate innovators.
+lead: Free, open source tools for building a better digital business. For solopreneurs, startup entrepreneurs, and corporate innovators.
+date: 2019-11-25T08:00:42+00:00
 draft: false
 ---

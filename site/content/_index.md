@@ -1,7 +1,7 @@
 ---
 title: Henk Verlinde - Digital Business Building 
 description: I help organizations with building their digital business. Check out my writing and free tools.
-lead: I like making strategy, innovation and entrepreneurship simple, practical, and applicable. I help organizations with building a successful digital business. Check out my <a href="/blog/">writing</a> and <a href="/tools/">free tools</a>.
+lead: I like making strategy, innovation and entrepreneurship simple, practical, and applicable. I help organizations with building a better digital business. Check out my <a href="/blog/">writing</a> and <a href="/tools/">free tools</a>.
 date: 2019-11-22T13:44:07+00:00
 draft: false
 images: ["henk-verlinde-digital-business-building.jpg"]

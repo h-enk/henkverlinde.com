@@ -16,46 +16,48 @@
 }
 
 figure {
-  margin: 1rem 0 2.25rem;
-}
-
-figure.wide {
-  margin: 1rem -1.5rem 2.25rem;
-}
-
-@include media-breakpoint-down(md) {
-  figure.wide-md {
-    margin: 1rem -1.5rem 2.25rem;
-  }
-
-  figure.wide-md .figure-caption {
-    margin: 0.5rem 1.5rem -0.5rem;
-  }
-}
-
-.figure-img {
-  margin-bottom: 0;
+  margin: 2.25rem 0;
 }
 
 .figure-caption {
   margin: 0.5rem 0 -0.5rem;
 }
 
+figure.wide-md {
+  margin: 1rem -1.5rem 2.25rem;
+}
+
+figure.wide-md .figure-caption {
+  margin: 0.5rem 1.5rem -0.5rem;
+}
+
+figure.wide {
+  margin: 2.5rem -1.5rem;
+}
+
 figure.wide .figure-caption {
   margin: 0.5rem 1.5rem -0.5rem;
 }
 
+.figure-img {
+  margin: -0.5rem 0;
+}
+
 @include media-breakpoint-up(lg) {
   figure {
-    margin: 3rem 0 5rem;
-  }
-
-  figure.wide {
-    margin: 3rem -15rem 5rem -3rem;
+    margin: 5rem 0;
   }
 
   .figure-caption {
     margin: 0.75rem 0 -1rem;
+  }
+
+  figure.wide-md {
+    margin: 2rem -1.5rem 3.25rem;
+  }
+
+  figure.wide {
+    margin: 5rem -15rem 5rem -3rem;
   }
 
   figure.wide .figure-caption {
@@ -65,11 +67,15 @@ figure.wide .figure-caption {
 
 @include media-breakpoint-up(xl) {
   figure {
-    margin: 3rem 0 4.75rem;
+    margin: 4.75rem 0;
+  }
+
+  figure.wide-md {
+    margin: 3rem -1.5rem 4.25rem;
   }
 
   figure.wide {
-    margin: 3rem -18rem 4.75rem -3rem;
+    margin: 4.75rem -18rem 4.75rem -3rem;
   }
 }
 

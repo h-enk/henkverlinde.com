@@ -2,7 +2,7 @@
 title: Enter Stage Left, Chaplin
 description: The 20th member of my family of free WordPress themes, Chaplin, was finally released today. This is a fun one.
 date: 2019-07-02T10:50:16+01:00
-draft: false
+draft: true
 ---
 
 {{< img src="chaplin-collage-compressed.jpg" alt="Notre Dame - photo by Pedro Lastra" class="wide" >}}
