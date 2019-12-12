@@ -1,4 +1,0 @@
-{{ $stylesheet := .Site.Data.webpack.main }}
-{{- with $stylesheet.css -}}
-  <link href="{{ absLangURL . }}" rel="stylesheet">
-{{- end -}}

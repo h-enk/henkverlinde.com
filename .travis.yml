@@ -12,9 +12,11 @@ install:
 
 script:
   - hugo version
+  - yarn test
+  - yarn clean
   - yarn build
 
 env:
   global:
     - PRODUCTION=true
-    - HUGO_RELEASE=0.58.1
+    - HUGO_RELEASE=0.60.1

@@ -1,0 +1,8 @@
+<nav class="list-navigation nav flex-column">
+{{ if .Paginator.HasPrev }}
+  <a class="nav-link" href="{{ .Paginator.Prev.URL }}"><span class="arrow">&rarr;</span><span class="title">Next</span></a>
+{{ end }}
+{{ if .Paginator.HasNext }}
+  <a class="nav-link" href="{{ .Paginator.Next.URL }}"><span class="arrow">&larr;</span><span class="title">Previous</span></a>
+{{ end }}
+</nav>

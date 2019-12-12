@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+  {{ block "head" . }}{{ partial "head/head.html" . }}{{ end }}
+  <body>
+    <div class="wrap container-fluid" role="document">
+      <div class="row">
+        <div class="sidebar col-lg-3">
+          <div class="d-flex align-items-start flex-column h-100">
+            {{ block "header" . }}{{ partial "sidebar/header.html" . }}{{ end }}
+            {{ block "main-menu" . }}{{ partial "sidebar/main-menu.html" . }}{{ end }}
+            {{ block "social-menu" . }}{{ partial "sidebar/social-menu.html" . }}{{ end }}
+          </div>
+        </div>
+        <div class="content col offset-lg-3">
+          <main class="main">
+            {{ block "main" . }}{{ end }}
+          </main>
+        </div>
+      </div>
+    </div>
+    {{ block "script-footer" . }}{{ partial "footer/script-footer.html" . }}{{ end }}
+  </body>
+</html>

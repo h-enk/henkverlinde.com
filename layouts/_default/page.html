@@ -1,0 +1,9 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <h1 class="page-header">{{.Title}}</h1>
+    <p class="excerpt">{{ .Description }}</p>
+    {{- .Content -}}
+  </div>
+</div>
+{{ end }}

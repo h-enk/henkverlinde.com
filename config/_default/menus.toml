@@ -1,0 +1,24 @@
+[[main]]
+  name = "Profile"
+  url = "/"
+  weight = 10
+
+[[main]]
+  name = "Writing"
+  url = "/blog/"
+  weight = 20
+
+[[main]]
+  name = "Tools"
+  url = "/tools/"
+  weight = 30
+
+[[social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/henkverlinde/"
+  weight = 10
+
+[[social]]
+  name = "Twitter"
+  url = "https://twitter.com/henkverlinde"
+  weight = 20

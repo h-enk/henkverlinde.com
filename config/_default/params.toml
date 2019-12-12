@@ -1,0 +1,26 @@
+title = "Henk Verlinde"
+titleSeparator = "-"
+titleAddition = "Digital Business Building"
+description = "I help organizations with building their digital business. Check out my writing and free tools."
+images = ["social-fallback-image.jpg"]
+twitterSite = "@henkverlinde"
+twitterCreator = "@henkverlinde"
+ogLocale = "en_US"
+schemaType = "Person"
+schemaLogo = "logo.png"
+schemaTwitter = "https://twitter.com/henkverlinde"
+schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaSection = "news"
+siteLinksSearchBox = false
+
+themeColor = "#fff"
+
+# googleAnalytics = "UA-99999999-1"
+
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 700, 500]
+portraitPhotoWidths = [1500, 1000, 750]
+lqipWidth = "20x"
+
+footer = "This <a href=\"https://jamstack.org/\">JAMstack</a> website is powered by <a href=\"https://github.com/h-enk/hyas\">Hyas</a>, The Smart, Flexible Hugo Starter. The code and content live on GitHub and the website is hosted on Netlify. The website theme is a Bootstrap port of the Harrison theme by Anders Norén."
