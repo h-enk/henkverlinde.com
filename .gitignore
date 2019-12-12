@@ -1,4 +1,5 @@
-node_modules/
-dist/
-site/data/webpack.json
-site/resources/
+functions
+node_modules
+public
+resources
+yarn-error.log

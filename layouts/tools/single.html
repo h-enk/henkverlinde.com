@@ -1,0 +1,20 @@
+{{ define "main" }}
+<article>
+  <div class="row">
+    <div class="col-lg-8 offset-lg-1">
+      <header>
+        <h1 class="page-header sr-only">{{.Title}}</h1>
+        <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+      </header>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-10 offset-lg-1">
+      {{- .Content -}}
+      <footer>
+        {{ partial "main/section-navigation.html" . }}
+      </footer>
+    </div>
+  </div>
+</article>
+{{ end }}

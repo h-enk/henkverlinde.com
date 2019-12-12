@@ -1,128 +1,139 @@
-# Notre Dame
-[![GitHub release](https://img.shields.io/github/release/ventizo/notre-dame.svg?style=flat-square)](https://github.com/ventizo/notre-dame/releases)
-[![Build Status](https://img.shields.io/travis/ventizo/notre-dame.svg?style=flat-square)](https://travis-ci.org/ventizo/notre-dame)
+# Hyas
+[![GitHub release](https://img.shields.io/github/release/h-enk/hyas.svg?style=flat-square)](https://github.com/h-enk/hyas/releases)
+[![Build Status](https://img.shields.io/travis/h-enk/hyas.svg?style=flat-square)](https://travis-ci.org/h-enk/hyas)
+[![Netlify](https://img.shields.io/netlify/895a161c-86be-48a2-8c57-a8c5d68cd1a4?style=flat-square)](https://hyas.netlify.com/)
 
-**Hugo starter with a webpack development workflow**
+Hyas is The Smart, Flexible [Hugo](https://gohugo.io/) Starter, helping you create a site that is performant, accessible, and optimized for search engine results ranking.
 
-This is a starter for using [Hugo](https://gohugo.io/) as a static site generator and [Webpack](https://webpack.js.org/) as your asset pipeline.
+## Features
 
-Notre Dame setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
+- Bootstrap Sass (no JavaScript) and Autoprefixer
+- Check Sass and JavaScript for errors
+- Environment specific configuration
+- Image shortcode with [lazysizes](https://github.com/aFarkas/lazysizes) and [blur up](https://github.com/aFarkas/lazysizes/tree/master/plugins/blur-up) plugin
+- Fingerprinting and [SRI](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) (production)
+- Remove unused CSS (production)
 
-This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
+## Requirements
 
-## What's included
-- All in [Victor Hugo](https://github.com/netlify-templates/victor-hugo) :pray:
-- Write stylesheets with Sass
-- Bootstrap (sass only, no scripts)
-- Automatically check Sass for errors
-- Automatically remove unused css
-- Automatically check JavaScript for errors
-- Responsive images (minified, lazyloaded)
-- SEO tags (title + description, Open Graph, and Twitter Card)
+Make sure all dependencies have been installed:
 
-## Usage
+- Hugo >= 0.60.1/extended
+- Node.js >= 10.16.0
+- npm >= 6.9.0
+- Yarn >= 1.19.1 (recommended)
 
-### :exclamation: Prerequisites
+## Getting started
 
-You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Notre Dame.
-
-Next step, clone this repository and run:
-
-```bash
-npm install
-```
-
-This will take some time and will install all packages necessary to run Notre Dame and its tasks.
-
-### :construction_worker: Development
-
-While developing your website, use:
+Create a new Hyas project:
 
 ```bash
-npm start
+$ git clone git@github.com:h-enk/hyas.git my-hyas-site
 ```
 
-or for developing your website with `hugo server --buildDrafts --buildFuture`, use:
+Install dependencies:
 
 ```bash
-npm run preview
+# @ my-hyas-site/
+$ yarn install
 ```
 
-Then visit http://localhost:3000/ _- or a new browser windows popped-up already -_ to preview your new website. Webpack Dev Server will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
-
-### :package: Static build
-
-To build a static version of the website inside the `/dist` folder, run:
+Build development theme with live reloading and injection:
 
 ```bash
-npm run build
+# @ my-hyas-site/
+$ yarn start
 ```
 
-To get a preview of posts or articles not yet published, run:
+### Other commands
+- `yarn lint:styles` - Check Sass for errors
+- `yarn lint:scripts` - Check JavaScript for errors
+- `yarn clean` - Delete temporary directories
+- `yarn build` - Build production theme
 
+## Theme structure
+
+```shell
+my-hyas-site/               # → Root of your Hyas based theme
+├── archetypes/             # → Content template files
+├── assets/                 # → Asset files (fonts, images, js, lambda, and sass)
+├── config/                 # → Configuration directives
+│   ├── _default/           # → Development and defaults
+│   ├── production/         # → Production specific
+│   ├── staging/            # → Staging specific
+│   ├── postcss.config.js   # → PostCSS configuration file
+├── content/                # → Content using page bundles
+├── data/                   # → Custom data files
+├── functions/              # → Netlify lambda functions directory (production)
+├── layouts/                # → Template files
+│   ├── _default/           # → Base templates for list & singular pages
+│   ├── partials/           # → Partials (footer, head, header, and sidebar)
+│   ├── shortcodes/         # → Shortcodes (img)
+│   │── 404.html            # → 404 Template
+│   │── index.headers       # → Custom Netlify HTTP headers
+│   │── index.html          # → Homepage template
+│   │── index.redirects     # → Custom Netlify redirect rules
+│   │── robots.txt          # → Template for robots.txt
+│   │── sitemap.xml         # → Custom sitemap template
+├── node_modules/           # → Node.js packages (never edit)
+├── public/                 # → Publish directory (temporary)
+├── resources/              # → Resource cache directory (temporary)
+├── static/                 # → Static content (favicons et cetera)
+├── .eslintrc.json          # → ESLint configuration
+├── .stylelintrc.json       # → stylelint configuration
+├── netlify.toml            # → Netlify configuration
+├── package.json            # → Node.js dependencies and scripts
+└── yarn.lock               # → Yarn lock file (never edit)
+```
+
+## Theme setup
+Edit files in `config/` directory.
+
+
+## Theme development
+### Sass
+
+Don't like Bootstrap? Remove it:
 ```bash
-npm run build:preview
+# @ my-hyas-site/
+$ yarn remove bootstrap
+```
+Also make sure to update your sass files, like `app.scss`.
+
+### Images
+
+Use the image shortcode:
+```
+{{< img src="image-in-page-bundle.jpg" alt="Text description image" caption="Caption, optional" class="wide" >}}
 ```
 
-See [package.json](package.json#L8) for all tasks.
+Configuration in `config/_default/params.toml`:
 
-## Structure
-
-```
-|--site                // Everything in here will be built with hugo
-|  |--content          // Pages and collections - ask if you need extra pages
-|  |--data             // YAML data files with any data for use in examples
-|  |--layouts          // This is where all templates go
-|  |  |--partials      // This is where includes live
-|  |  |--index.html    // The index page
-|  |--static           // Files in here ends up in the public folder
-|--src                 // Files that will pass through the asset pipeline
-|  |--css              // Webpack will bundle imported css seperately
-|  |--index.js         // index.js is the webpack entry for your css & js assets
+```toml
+quality = 85
+bgColor = "#fff"
+landscapePhotoWidths = [900, 700, 500]
+portraitPhotoWidths = [1500, 1000, 750]
+lqipWidth = "20x"
 ```
 
-## Basic Concepts
+### Sitemap
+Exclude a page by adding the following front matter variable:
+```yaml
+sitemap_exclude: true
+```
 
-You can read more about Hugo's template language in their documentation here:
+### Robots
+Add a custom [robots meta tag](https://developers.google.com/search/reference/robots_meta_tag) by adding the following front matter variable:
+```yaml
+robots: "noindex, noarchive"
+```
+This will output:
 
-https://gohugo.io/templates/overview/
+```html
+<meta name=robots content="noindex, noarchive">
+```
 
-The most useful page there is the one about the available functions:
-
-https://gohugo.io/templates/functions/
-
-For assets that are completely static and don't need to go through the asset pipeline,
-use the `site/static` folder. Images, font-files, etc, all go there.
-
-Files in the static folder end up in the web root. So a file called `site/static/favicon.ico`
-will end up being available as `/favicon.ico` and so on...
-
-The `src/index.js` file is the entrypoint for webpack and will be built to `/dist/main.js`
-
-You can use **ES6** and use both relative imports or import libraries from npm.
-
-Any CSS file imported into the `index.js` will be run through Webpack, compiled with [PostCSS Next](http://cssnext.io/), and
-minified to `/dist/[name].[hash:5].css`. Import statements will be resolved as part of the build.
-
-## Environment variables
-
-To separate the development and production _- aka build -_ stages, all tasks run with a node environment variable named either `development` or `production`.
-
-You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
-
-    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
-
-All tasks starting with _build_ set the environment variable to `production` - the other will set it to `development`.
-
-## Deploying to Netlify
-
-- Push your clone to your own GitHub repository.
-- [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
-
-Now Netlify will build and deploy your site whenever you push to git.
-
-You can also click this button:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ventizo/notre-dame)
-
-## Enjoy!! 😸
+## Documentation
+- [Hugo](https://gohugo.io/documentation/)
+- [Goldmark](https://github.com/yuin/goldmark/)

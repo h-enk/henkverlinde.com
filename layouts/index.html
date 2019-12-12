@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div class="row">
+  <div class="col-lg-9 offset-lg-1">
+    <h1 class="page-header sr-only">{{.Title}}</h1>
+    <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    {{- .Content -}}
+    {{ partial "main/footer.html" . }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,8 @@
+<nav class="section-navigation nav flex-column">
+{{ with .NextInSection }}
+  <a class="nav-link" href="{{ .Permalink }}"><span class="arrow">&rarr;</span><span class="title">{{ .Title }}</span></a>
+{{ end }}
+{{ with .PrevInSection }}
+  <a class="nav-link" href="{{ .Permalink }}"><span class="arrow">&larr;</span><span class="title">{{ .Title }}</span></a>
+{{ end }}
+</nav>
