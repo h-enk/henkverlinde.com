@@ -9,10 +9,12 @@ module.exports = {
       content: ['./layouts/**/*.html'],
       whitelist: [
         'lazyloaded',
+        'wide-md',
         'wide',
         ...whitelister([
           './assets/sass/common/_syntax.scss',
           './assets/sass/components/_code.scss',
+          './assets/sass/components/_accordion.scss',
         ]),
       ],
     }),

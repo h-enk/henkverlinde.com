@@ -35,7 +35,7 @@
   border: none;
   display: block;
   line-height: $line-height-base;
-  padding: 1rem 0 0.625rem;
+  padding: 0.9375rem 0 0.625rem;
   text-decoration: none;
 }
 
@@ -61,7 +61,7 @@
   .posts li a {
     align-items: baseline;
     display: flex;
-    padding: 0.9375rem 0 0.875rem;
+    padding: 1rem 0 0.875rem;
   }
 
   .posts li .title {

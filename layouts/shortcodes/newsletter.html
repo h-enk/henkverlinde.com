@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-md-7">
-    <h2 class="h3">Sign up for my newsletter</h2>
+    <h2 class="h3">{{ .Site.Params.newsletterHeader }}</h2>
     <form action="/signed-up/" method="post" name="newsletter" data-netlify="true">
       <div class="input-group">
         <input type="email" name="email" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon" required>

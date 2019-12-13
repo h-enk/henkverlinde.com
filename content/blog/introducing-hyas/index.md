@@ -7,3 +7,11 @@ images: ["hyas-the-smart-flexible-hugo-starter.jpg"]
 ---
 
 {{< img src="hyas-the-smart-flexible-hugo-starter.jpg" alt="Hyas - The Smart, Flexible Hugo Starter" class="wide" >}}
+
+Why. Quickly develop robust, fast, flexible, and seo optimized (micro)websites for testing out ideas.
+
+Hugo. Jekyll didn't fit the bill. Clientside JavaScript websites (e.g. React or Vue based), like Gatsby or Next.js, are appropriate for building (single page) apps, not for building multipage websites or a blog. Golang.
+
+Atlas
+
+Sensible defaults and settings. Headstart.
