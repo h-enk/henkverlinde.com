@@ -1,7 +1,8 @@
 <div class="row">
   <div class="col-md-7">
     <h2 class="h3">{{ .Site.Params.newsletterHeader }}</h2>
-    <form name="newsletter" method="post" data-netlify="true" action="/signed-up/">
+    <form name="newsletter" method="post" action="/signed-up/">
+      <input type="hidden" name="form-name" value="newsletter">
       <div class="input-group">
         <input type="email" name="email" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon" required>
         <input type="hidden" name="page" value="{{ .Page.Permalink | absLangURL }}">
