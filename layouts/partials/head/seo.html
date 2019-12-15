@@ -29,8 +29,8 @@
 {{ template "_internal/opengraph.html" . -}}
 <meta property="og:locale" content="{{ .Site.Params.ogLocale }}">
 
-{{ range .AlternativeOutputFormats -}}
-  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" />` .Rel .MediaType.Type .Permalink | safeHTML }}
 {{ end -}}
 
 {{ block "head/structured-data" . }}{{ partial "head/structured-data.html" . }}{{ end }}

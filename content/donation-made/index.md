@@ -6,6 +6,7 @@ draft: false
 layout: page
 images: [""]
 robots: "noindex,noarchive"
+feed_exclude: true
 sitemap_exclude: true
 ---
 
