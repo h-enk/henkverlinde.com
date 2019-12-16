@@ -9,7 +9,7 @@ sitemap:
   priority: 1.0
 ---
 
-{{< img src="henk-verlinde-digital-business-building.jpg" alt="Wall Art - Colourful Painted Wall by Delila Ziebart" class="wide-md" >}}
+{{< img src="henk-verlinde-digital-business-building.jpg" alt="Henk Verlinde - Digital Business Building" class="wide-md" >}}
 
 <div class="text-columns">
 <p>I'm the founder and CEO of <a href="https://ventizo.com/">Ventizo</a>, a digital agency located in the Netherlands. We work with both local and international clients. We help organizations across the private, public, and social sectors create the change that matters. With e.g. tools like Validate - a business experiments platform (coming soon).</p>
