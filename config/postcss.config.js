@@ -13,9 +13,9 @@ module.exports = {
       whitelist: [
         'lazyloaded',
         ...whitelister([
-          './assets/sass/common/_syntax.scss',
-          './assets/sass/components/_code.scss',
-          './assets/sass/components/_accordion.scss',
+          './assets/scss/common/_syntax.scss',
+          './assets/scss/components/_code.scss',
+          './node_modules/flickity/dist/flickity.css',
         ]),
       ],
     }),

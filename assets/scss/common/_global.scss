@@ -1,0 +1,76 @@
+.monospace {
+  font-family: $font-family-monospace;
+}
+
+.content {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section {
+  background: $gray-150;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: 2rem 0 1rem;
+}
+
+@include media-breakpoint-up(md) {
+  body {
+    font-size: $font-size-md;
+  }
+
+  .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    margin-bottom: 1.125rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .content {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+.infinite-scroll-request {
+  margin-top: 3rem;
+}

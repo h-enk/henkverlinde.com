@@ -1,2 +1,2 @@
-baseurl = "https://henkverlinde.com/"
-# canonifyURLs = true
+baseurl = "https://beta.henkverlinde.com/"
+canonifyURLs = false

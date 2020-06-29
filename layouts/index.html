@@ -1,14 +1,40 @@
 {{ define "main" }}
-<div class="row">
-  <div class="col-lg-9 offset-lg-1">
-    <h1 class="page-header sr-only">{{.Title}}</h1>
-    <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+{{ partial "content/page-header.html" . -}}
+<div class="featured-posts">
+  <div class="row">
+    <div class="col-lg-6 offset-lg-1">
+    {{ range first 1 (where .Site.RegularPages "Section" "blog")  -}}
+      {{ .Render "featured-first" -}}
+    {{ end -}}
+    </div>
+    <div class="col-lg-5">
+    {{ range first 3 (after 1 (where .Site.RegularPages "Section" "blog")) -}}
+      {{ .Render "featured" -}}
+    {{ end -}}
+    </div>
   </div>
 </div>
-<div class="row">
-  <div class="col-lg-10 offset-lg-1">
-    {{- .Content -}}
-    {{ partial "main/footer.html" . }}
+{{ end }}
+
+{{ define "sidebar-prefooter" }}
+<div class="section">
+  <div class="container">
+    {{ partial "sidebar/category-navigation.html" . -}}
+  </div>
+</div>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<div class="section bg-white">
+  <div class="container">
+    {{ partial "content/list-header.html" . -}}
+    <div class="post-list">
+    {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Section" "blog") -}}
+    {{ range $paginator.Pages -}}
+      {{ partial "content/post-list-item.html" . -}}
+    {{ end -}}
+    </div>
+    {{ partial "content/pagination.html" . -}}
   </div>
 </div>
 {{ end }}
