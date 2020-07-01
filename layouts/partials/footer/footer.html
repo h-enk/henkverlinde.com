@@ -6,9 +6,9 @@
       </div>
       <div class="col-lg-6 order-1 order-lg-2">
         <ul class="list-inline">
-          {{ range .Site.Menus.social }}
+          {{ range .Site.Menus.social -}}
             <li class="list-inline-item"><a target="_blank" rel="noopener" href="{{ .URL }}">{{- .Name -}}</a></li>
-          {{ end }}
+          {{ end -}}
         </ul>
       </div>
     </div>  

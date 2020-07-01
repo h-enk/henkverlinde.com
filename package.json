@@ -14,9 +14,10 @@
     "clean": "rimraf public resources functions",
     "clean:deps": "node scripts/clean-deps",
     "copy:deps": "node scripts/copy-deps",
-    "lint": "npm run -s lint:scripts && npm run -s lint:styles",
+    "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js assets/lambda config",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
+    "lint:markdown": "markdownlint content/**/*.md",
     "test": "npm run -s lint"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "autoprefixer": "^9.8",
     "eslint": "^7.2",
     "ga-lite": "^2.0.5",
+    "markdownlint-cli": "^0.23.2",
     "netlify-lambda": "^1.6",
     "postcss-cli": "^7.1",
     "purgecss-whitelister": "^2.4",

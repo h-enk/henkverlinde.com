@@ -10,4 +10,5 @@ _build:
   list: always
   publishResources: false
 sitemap_exclude: true
+feed_exclude: true
 ---
