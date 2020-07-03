@@ -1,23 +1,30 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-  {{ block "head" . }}{{ partial "head/head.html" . }}{{ end }}
-  <body>
-    <div class="wrap container-fluid" role="document">
-      <div class="row">
-        <div class="sidebar col-lg-3">
-          <div class="d-flex align-items-start flex-column h-100">
-            {{ block "header" . }}{{ partial "sidebar/header.html" . }}{{ end }}
-            {{ block "main-menu" . }}{{ partial "sidebar/main-menu.html" . }}{{ end }}
-            {{ block "social-menu" . }}{{ partial "sidebar/social-menu.html" . }}{{ end }}
-          </div>
-        </div>
-        <div class="content col offset-lg-3">
-          <main class="main">
-            {{ block "main" . }}{{ end }}
-          </main>
-        </div>
+  {{ partial "head/head.html" . }}
+  {{ if eq .Kind "home" -}}
+    {{ .Scratch.Set "class" "home" -}}
+  {{ else if eq .Kind "404" -}}
+    {{ .Scratch.Set "class" "error404" -}}
+  {{ else if eq .Kind "page" -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " single" -}}
+  {{ else -}}
+    {{ .Scratch.Set "class" .Type -}}
+    {{ .Scratch.Add "class" " list" -}}
+  {{ end -}}
+  <body class="{{ .Scratch.Get "class" }}">
+    {{ if and .IsHome .Site.Params.alert }}
+      {{ partial "header/alert.html" . }}
+    {{ end }}
+    {{ partial "header/header.html" . }}
+    <div class="wrap container" role="document">
+      <div class="content">
+        {{ block "main" . }}{{ end }}
       </div>
     </div>
-    {{ block "script-footer" . }}{{ partial "footer/script-footer.html" . }}{{ end }}
+    {{ block "sidebar-prefooter" . }}{{ end }}
+    {{ block "sidebar-footer" . }}{{ end }}
+    {{ partial "footer/footer.html" . }}
+    {{ partial "footer/script-footer.html" . }}
   </body>
 </html>

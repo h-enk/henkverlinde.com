@@ -1,15 +1,18 @@
 {{ define "main" }}
 <div class="row">
-  <div class="col-lg-9 offset-lg-1">  
-    <h1 class="page-header sr-only">{{.Title}}</h1>
-    <p class="lead">{{ .Params.Lead | safeHTML }}</p>
+  <div class="col-lg-11 offset-lg-1">
+    <h1>{{ .Title }}</h1>
   </div>
 </div>
-<div class="row">
-  <div class="col-lg-10 offset-lg-1">
-    {{.Content}}
-    {{ partial "main/list.html" . }}
-    {{ partial "main/list-navigation.html" . }}
-  </div>
+
+{{ partial "content/list-header.html" . -}}
+
+<div class="post-list">
+{{ $paginator := .Paginate ( .Data.Pages ) }}
+{{ range $paginator.Pages }}
+  {{ partial "content/post-list-item.html" . -}}
+{{ end -}}
 </div>
+
+{{ partial "content/pagination.html" . -}}
 {{ end }}

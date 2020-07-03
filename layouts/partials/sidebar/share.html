@@ -1,0 +1,8 @@
+<h3 class="share section-label monospace underline-dash">Share</h3>
+{{ $categories := delimit .Params.categories "," }}
+{{ $categories = replace $categories " " "" -}}
+<ul class="list-unstyled">
+  <li><a class="share-link" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}&hashtags={{ $categories }}&via={{ .Site.Params.twitterSite }}">Twitter</a></li>
+  <li><a class="share-link" target="_blank" rel="noopener" href="https://www.facebook.com/sharer.php?t={{ .Title }}&u={{ .Permalink }}">Facebook</a></li>
+  <li><a class="share-link" target="_blank" rel="noopener" href="https://www.linkedin.com/shareArticle?title={{ .Title }}&url={{ .Permalink }}&mini=true">LinkedIn</a></li>
+</ul>

@@ -1,0 +1,66 @@
+.img svg,
+.img img {
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+figure {
+  margin: 2rem 0;
+}
+
+.figure-caption {
+  margin: 0.25rem 0 0.75rem;
+  font-family: monospace;
+  font-size: $font-size-base;
+}
+
+figure.wide {
+  margin: 2rem -1.5rem;
+}
+
+figure.wide .figure-caption {
+  margin: 0.25rem 1.5rem 0.75rem;
+}
+
+@include media-breakpoint-up(md) {
+  .figure-caption {
+    font-size: $font-size-md;
+  }
+
+  figure.wide {
+    margin: 2rem -3rem;
+  }
+
+  figure.wide .figure-caption {
+    margin: 0.25rem 3rem 0.75rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  figure.wide {
+    margin: 2rem -5rem;
+  }
+
+  figure.wide .figure-caption {
+    margin: 0.25rem 5rem 0.75rem;
+  }
+}
+
+.blur-up {
+  filter: blur(5px);
+}
+
+.blur-up.lazyloaded {
+  filter: unset;
+}

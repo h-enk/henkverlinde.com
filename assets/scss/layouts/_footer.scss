@@ -1,0 +1,35 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer p {
+  font-size: $font-size-sm;
+  margin-bottom: 0;
+}
+
+@include media-breakpoint-up(md) {
+  .footer p {
+    font-size: $font-size-base;
+  }
+}
+
+.footer .list-inline-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .footer .list-inline {
+    text-align: right;
+    margin-bottom: 0;
+  }
+}
+
+.footer a {
+  color: $gray-900;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: $primary;
+}

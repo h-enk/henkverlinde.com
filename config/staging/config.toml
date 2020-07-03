@@ -1,2 +1,2 @@
 baseurl = "https://staging.henkverlinde.com/"
-# canonifyURLs = true
+canonifyURLs = false

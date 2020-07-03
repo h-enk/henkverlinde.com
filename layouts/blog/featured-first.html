@@ -1,0 +1,8 @@
+{{ $image := index .Params.images 0 -}}
+{{ .Scratch.Set "src" $image -}}
+{{ .Scratch.Add "alt" .Title -}}
+<a href="{{ .Permalink }}">
+{{ partial "content/img.html" . -}}
+</a>
+<h2 class="featured-first"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+{{ .Render "meta-sm" -}}

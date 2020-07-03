@@ -1,7 +1,14 @@
 ---
-title: Writing
-description: "Writing covering all aspects of digital business building: design, product, tech, legal, data, sales, marketing, research, and finance."
-lead: "Writing covering all aspects of digital business building: design, product, tech, legal, data, sales, marketing, research, and finance."
-date: 2019-11-12T10:23:45+01:00
+title: "Blog"
+description: "Blog"
+date: 2020-06-19T11:18:43+02:00
+lastmod: 2020-06-29T08:13:21+02:00
 draft: false
+images: ["henk-verlinde.png"]
+_build:
+  render: false
+  list: always
+  publishResources: false
+sitemap_exclude: true
+feed_exclude: true
 ---
