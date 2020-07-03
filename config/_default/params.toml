@@ -1,7 +1,7 @@
 title = "Henk Verlinde"
-titleSeparator = "-"
-titleAddition = "Modern Hugo Starter"
-description = "Hugo starter helping you build modern websites."
+titleSeparator = "—"
+titleAddition = "Company of One"
+description = "Tools, guides, and insights for your company of one."
 images = ["henk-verlinde.png"]
 twitterSite = "henkverlinde"
 twitterCreator = "henkverlinde"
@@ -18,7 +18,7 @@ siteLinksSearchBox = false
 
 themeColor = "#fff"
 
-# googleAnalytics = "UA-99999999-1"
+googleAnalytics = "UA-88189921-1"
 
 quality = 85
 bgColor = "#fff"
