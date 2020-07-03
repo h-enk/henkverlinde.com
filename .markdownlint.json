@@ -3,5 +3,6 @@
 
   "default": true,
   "line_length": false,
-  "no-inline-html": false
+  "no-inline-html": false,
+  "no-trailing-punctuation": false
 }

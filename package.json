@@ -6,7 +6,7 @@
     "defaults"
   ],
   "scripts": {
-    "start": "hugo server --disableFastRender",
+    "start": "hugo server --disableFastRender --bind 0.0.0.0 --baseURL http://192.168.1.10:1313/",
     "build": "hugo --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
