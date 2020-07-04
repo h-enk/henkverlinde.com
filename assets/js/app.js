@@ -26,3 +26,8 @@ if (document.querySelector('.category-cards') !== null) {
   /* eslint-enable */
 
 }
+
+const galite = require('ga-lite')
+
+galite('create', 'UA-88189921-1', 'auto')
+galite('send', 'pageview')
