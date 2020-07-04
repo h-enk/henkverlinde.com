@@ -8,7 +8,7 @@
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
-  {{ $js := slice $lazysizes $infiniteScroll $flickity $gaLite $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
