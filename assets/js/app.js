@@ -26,3 +26,13 @@ if (document.querySelector('.category-cards') !== null) {
   /* eslint-enable */
 
 }
+
+/* eslint-disable */
+(function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
+;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
+;c.parentNode.insertBefore(a,c)
+})(window,document,"galite","script","https://henkverlinde.com/js/vendor/ga-lite/ga-lite.min.js");
+
+galite('create', 'UA-88189921-1', 'auto');
+galite('send', 'pageview');
+/* eslint-enable */
