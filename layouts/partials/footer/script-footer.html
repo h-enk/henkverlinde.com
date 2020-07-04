@@ -1,13 +1,14 @@
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $infiniteScroll := resources.Get "js/vendor/infinite-scroll/infinite-scroll.pkgd.min.js" -}}
 {{ $flickity := resources.Get "js/vendor/flickity/flickity.pkgd.min.js" -}}
+{{ $gaLite := resources.Get "js/vendor/ga-lite/dist/ga-lite.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
   {{ $app := resources.Get "js/app.js" -}}
   {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
-  {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $infiniteScroll $flickity $gaLite $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
