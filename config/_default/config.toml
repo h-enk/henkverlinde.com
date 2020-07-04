@@ -76,9 +76,6 @@ toLower = false
     source = "static"
     target = "static"
   [[module.mounts]]
-    source = "node_modules/ga-lite"
-    target = "assets/js/vendor/ga-lite"
-  [[module.mounts]]
     source = "node_modules/lazysizes"
     target = "assets/js/vendor/lazysizes"
   [[module.mounts]]
@@ -87,3 +84,6 @@ toLower = false
   [[module.mounts]]
     source = "node_modules/flickity/dist"
     target = "assets/js/vendor/flickity"
+  [[module.mounts]]
+    source = "node_modules/ga-lite/dist"
+    target = "static/js/vendor/ga-lite"
