@@ -1,4 +1,14 @@
 {{ if isset .Site.Params "googleanalytics" -}}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $.Site.Params.googleAnalytics }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '{{ $.Site.Params.googleAnalytics }}');
+</script>
+<!--
 <script>
 (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
 ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
@@ -8,4 +18,5 @@
 galite('create', '{{ $.Site.Params.googleAnalytics }}', 'auto');
 galite('send', 'pageview');
 </script>
+-->
 {{ end -}}
