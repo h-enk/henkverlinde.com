@@ -1,20 +1,3 @@
-.img svg,
-.img img {
-  margin: 0;
-  width: 100%;
-  height: auto;
-}
-
-.img {
-  position: relative;
-}
-
-.img img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 figure {
   margin: 2rem 0;
 }
@@ -39,11 +22,11 @@ figure.wide .figure-caption {
   }
 
   figure.wide {
-    margin: 2rem -3rem;
+    margin: 2rem -2.5rem;
   }
 
   figure.wide .figure-caption {
-    margin: 0.25rem 3rem 0.75rem;
+    margin: 0.25rem 2.5rem 0.75rem;
   }
 }
 
