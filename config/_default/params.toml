@@ -22,8 +22,8 @@ themeColor = "#fff"
 
 quality = 85
 bgColor = "#fff"
-landscapePhotoWidths = [960, 720, 540]
-portraitPhotoWidths = [720, 540]
+landscapePhotoWidths = [1000, 800, 700, 600, 500]
+portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
 footer = "© 2020 Henk Verlinde"
