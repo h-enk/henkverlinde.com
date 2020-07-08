@@ -28,7 +28,6 @@ if (document.querySelector('.category-cards') !== null) {
 }
 
 /* eslint-disable */
-/*
 (function(e,t,n,i,s,a,c){e[n]=e[n]||function(){(e[n].q=e[n].q||[]).push(arguments)}
 ;a=t.createElement(i);c=t.getElementsByTagName(i)[0];a.async=true;a.src=s
 ;c.parentNode.insertBefore(a,c)
@@ -40,13 +39,4 @@ galite('send', 'pageview');
 window.addEventListener('unload', function() {
   galite('send', 'timing', 'JS Dependencies', 'unload')
 })
-*/
-/* eslint-enable */
-
-/* https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tag */
-
-/* eslint-disable */
-window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-ga('create', 'UA-88189921-1', 'auto');
-ga('send', 'pageview');
 /* eslint-enable */
