@@ -35,7 +35,7 @@ See a working example at [hyas.netlify.app](https://hyas.netlify.app/)
 
 Check the [Hyas Docs](https://gethyas.com/docs/prologue/introduction/#get-started) or click the Deploy to Netlify button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas "Deploy to Netlify")
 
 ## Where can I get help?
 
