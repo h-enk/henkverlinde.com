@@ -10,7 +10,7 @@
       {{ range $name, $taxonomy := .Site.Taxonomies.categories -}}
       <div class="card category-card">
         <div class="card-body">
-          <a class="monospace" href="{{ "/categories/" | absURL }}{{ $name | urlize }}/" class="card-link">{{ $name | humanize | title }} ({{ $taxonomy.Count }})</a>
+          <a class="monospace card-link" href="{{ "/categories/" | absURL }}{{ $name | urlize }}/">{{ $name | humanize | title }} ({{ $taxonomy.Count }})</a>
         </div>
       </div>
       {{ end -}}
