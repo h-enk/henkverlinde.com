@@ -30,7 +30,7 @@ window.plausible = window.plausible || function() { (window.plausible.q = window
 if (document.querySelector('#deploy-to-netlify') !== null) {
  
   document.getElementById('deploy-to-netlify').addEventListener('click', function(){
-    window.plausible('Deploy to Netlify')
+    plausible('Deploy to Netlify')
   });
 
 }
