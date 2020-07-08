@@ -10,4 +10,5 @@
   {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
 {{ end -}}
