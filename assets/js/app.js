@@ -20,7 +20,6 @@ if (document.querySelector('.category-cards') !== null) {
   });
 }
 
-/*
 window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }
 
 if (document.querySelector('#deploy-to-netlify') !== null) {
@@ -28,5 +27,4 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
     plausible('Deploy to Netlify');
   });
 }
-*/
 /* eslint-enable */
