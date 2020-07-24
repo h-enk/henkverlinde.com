@@ -4,5 +4,6 @@
   "default": true,
   "line_length": false,
   "no-inline-html": false,
-  "no-trailing-punctuation": false
+  "no-trailing-punctuation": false,
+  "no-bare-urls": false
 }

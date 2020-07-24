@@ -33,6 +33,8 @@ notAlternative = true
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      linkify = false
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
@@ -53,6 +55,7 @@ notAlternative = true
 
 [taxonomies]
   category = "categories"
+  tag = "tags"
 
 [permalinks]
   blog = "/:title/"
@@ -64,6 +67,9 @@ toLower = false
   [[related.indices]]
   name = "categories"
   weight = 100
+  [[related.indices]]
+  name = "tags"
+  weight = 80
   [[related.indices]]
   name = "date"
   weight = 10

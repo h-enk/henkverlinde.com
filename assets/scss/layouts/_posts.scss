@@ -88,12 +88,6 @@ p.meta a:focus {
   color: $gray-550;
 }
 
-@include media-breakpoint-up(md) {
-  .post-item p.meta {
-    font-size: $font-size-base;
-  }
-}
-
 .more {
   text-align: center;
 }

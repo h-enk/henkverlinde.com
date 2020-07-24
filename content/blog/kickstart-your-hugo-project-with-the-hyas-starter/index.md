@@ -1,18 +1,21 @@
 ---
-title: "Kickstart your Hugo project with the Hyas starter"
+title: "Kickstart Your Hugo Project With the Hyas Starter"
 description: "When you are kicking off a new Hugo project, you shouldn’t have to start from scratch."
 excerpt: "Shouldn’t you be able to quickly bootstrap a project, configure it your way, and deploy it? Oh, and bonus points if you can set up SEO, security and performance in the same workflow?"
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
 weight: 50
-images: ["kickstart-your-hugo-project-with-the-hyas-starter.png"]
+images: ["kickstart-your-hugo-project-with-the-hyas-starter.jpg"]
 categories: ["Tools", "Projects"]
+tags: ["Hugo", "Jamstack", "Netlify"]
 ---
 
 When you are kicking off a new Hugo project, you shouldn’t have to start from scratch. Shouldn’t you be able to quickly bootstrap a project, configure it your way, and deploy it? Oh, and bonus points if you can set up SEO, security and performance in the same workflow?
 
 Yep. I think so. That’s why I’ve created the Hugo starter [Hyas](https://gethyas.com/).
+
+{{< img src="kickstart-your-hugo-project-with-the-hyas-starter.jpg" alt="Kickstart Your Hugo Project With the Hyas Starter" caption="Kickstart Your Hugo Project With the Hyas Starter — Photo by <em>Harley-Davidson</em>" class="wide" >}}
 
 ## What’s inside Hyas?
 

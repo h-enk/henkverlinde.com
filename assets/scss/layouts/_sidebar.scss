@@ -61,6 +61,10 @@
 }
 
 @include media-breakpoint-up(lg) {
+  .sidebar {
+    margin-bottom: 3.6875rem;
+  }
+
   .sidebar .list-unstyled li {
     margin: 0.25rem 0;
   }
@@ -80,4 +84,11 @@
 .sidebar a:hover.share-link,
 .sidebar a:focus.share-link {
   color: $primary;
+}
+
+.share-icon {
+  margin-right: 0.5rem;
+  margin-bottom: 0.25rem;
+  width: 1rem;
+  color: $gray-550;
 }
