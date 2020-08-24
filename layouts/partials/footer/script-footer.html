@@ -6,8 +6,9 @@
   {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
+  {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | minify -}}
-  {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $infiniteScroll $flickity $instantPage $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
