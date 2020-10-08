@@ -1,4 +1,4 @@
-baseurl = "http://192.168.1.10:1313/"
+baseurl = "/"
 disableAliases = true
 disableHugoGeneratorInject = true
 enableEmoji = true
