@@ -1,8 +1,8 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
-  X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self' https://stats.henkverlinde.com; font-src 'self'; img-src 'self' https://www.netlify.com; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' https://stats.henkverlinde.com https://gist.github.com; style-src 'self' https://github.githubassets.com
+  X-XSS-Protection: 1; mode=block  
+  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self' https://stats.henkverlinde.com/api/event; font-src 'self'; img-src 'self'; script-src 'self' 'nonce-dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=' https://gist.github.com/h-enk/f04b584a5fdbd4b72b7a2f2836fbba5d.js https://stats.henkverlinde.com/js/index.js; style-src 'self' https://github.githubassets.com/assets/
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
   Feature-Policy: geolocation 'self'
