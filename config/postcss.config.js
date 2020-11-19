@@ -12,6 +12,7 @@ module.exports = {
       ],
       safelist: [
         'lazyloaded',
+        'my-2',
         ...whitelister([
           './assets/scss/components/_syntax.scss',
           './assets/scss/components/_code.scss',
