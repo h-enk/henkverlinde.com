@@ -37,6 +37,8 @@ Node.js versions used: `14.x`, and `15.x`.
 
 {{< gist h-enk f04b584a5fdbd4b72b7a2f2836fbba5d >}}
 
+<script type="text/javascript" nonce="dXNlcj0iaGVsbG8iLGRvbWFpbj0iaGVua3ZlcmxpbmRlLmNvbSIsZG9jdW1lbnQud3JpdGUodXNlcisiQCIrZG9tYWluKTs=" src="https://gist.github.com/h-enk/f04b584a5fdbd4b72b7a2f2836fbba5d.js" async></script>
+
 ## Further reading
 
 - [Building and testing Node.js](https://docs.github.com/en/free-pro-team@latest/actions/guides/building-and-testing-nodejs)
