@@ -15,7 +15,7 @@
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js assets/lambda config",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
-    "lint:markdown": "markdownlint content/**/*.md",
+    "lint:markdown": "markdownlint *.md content/**/*.md",
     "test": "npm run -s lint"
   },
   "devDependencies": {
