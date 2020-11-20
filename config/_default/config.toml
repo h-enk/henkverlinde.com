@@ -49,7 +49,7 @@ notAlternative = true
     tabWidth = 4
 
 [sitemap]
-  changefreq = "monthly"
+  changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
 
