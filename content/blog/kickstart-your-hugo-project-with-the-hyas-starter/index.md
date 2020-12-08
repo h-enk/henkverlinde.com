@@ -13,7 +13,7 @@ tags: ["Hugo", "Jamstack", "Netlify"]
 
 Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created [Hyas](https://github.com/h-enk/hyas) 💚
 
-{{< img src="kickstart-your-hugo-project-with-the-hyas-starter.jpg" alt="Kickstart your Hugo project with the Hyas starter" caption="Kickstart your Hugo project with Hyas — Photo by <em>Harley-Davidson</em>" class="wide" >}}
+{{< img src="kickstart-your-hugo-project-with-the-hyas-starter.jpg" alt="Kickstart your Hugo project with the Hyas starter" caption="Kickstart your Hugo project with Hyas — photo by <em>Harley-Davidson</em>" class="wide" >}}
 
 ## Building on the work of others
 
