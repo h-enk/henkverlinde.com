@@ -12,7 +12,7 @@ tags: ["Hugo", "GitHub", "Node.js"]
 ---
 
 Recently, I set up a Continuous Integration (CI) workflow for [Doks](https://github.com/h-enk/doks).
-Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically 🤖
+Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically.
 
 {{< img src="continuous-integration-workflow-for-your-hyas-project.jpg" alt="CI workflow automation for your Hyas project" caption="CI workflow automation for your Hyas project — Rijkswachter WhiteBOT by <em>Studio Hamerhaai</em>" class="wide" >}}
 

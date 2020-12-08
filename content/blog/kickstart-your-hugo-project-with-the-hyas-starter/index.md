@@ -11,7 +11,7 @@ categories: ["Tools", "Projects"]
 tags: ["Hugo", "Jamstack", "Netlify"]
 ---
 
-Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created [Hyas](https://github.com/h-enk/hyas) 💚
+Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created [Hyas](https://github.com/h-enk/hyas).
 
 {{< img src="kickstart-your-hugo-project-with-the-hyas-starter.jpg" alt="Kickstart your Hugo project with the Hyas starter" caption="Kickstart your Hugo project with Hyas — photo by <em>Harley-Davidson</em>" class="wide" >}}
 
@@ -33,10 +33,10 @@ Making use of the power of Hugo. Following best practices for performance, SEO a
 - Get 100 scores on [Google Lighthouse](https://googlechrome.github.io/lighthouse/viewer/?gist=8b7aec005ae7b9e128ad5c4e2f125fea) by default. Hyas removes unused css, prefetches links, and lazy loads images.
 - Get A+ scores on [Mozilla Observatory](https://observatory.mozilla.org/analyze/hyas.netlify.app) out of the box. Easily change the default Security Headers to suit your needs.
 
-## Need help?
+## Get started
 
-Extensive documentation is available. [Visit the Hyas website](https://gethyas.com/).
+- [Check the Hyas website →](https://gethyas.com/)
 
-## Try Hyas!
+## Try Hyas
 
-👉 [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas) in less than a minute
+- [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/hyas) in less than a minute
