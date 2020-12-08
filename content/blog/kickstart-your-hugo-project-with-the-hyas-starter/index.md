@@ -1,7 +1,7 @@
 ---
 title: "Introducing Hyas: Hugo starter helping you build modern websites"
-description: "Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch."
-excerpt: "Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch."
+description: "Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch."
+excerpt: "Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch."
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
