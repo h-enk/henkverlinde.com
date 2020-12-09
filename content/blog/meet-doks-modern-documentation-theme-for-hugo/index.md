@@ -18,7 +18,7 @@ Doks is a Hugo theme helping you build modern documentation websites that are se
 ## User Experience
 
 - Lightweight feel
-- Simple, intuitive setup
+- Simple, intuitive layout
 - Strong, simple color palette
 - Modern, functional font — [Jost*](https://indestructibletype.com/Jost.html)
 
