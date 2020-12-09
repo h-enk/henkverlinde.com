@@ -13,9 +13,16 @@ tags: ["Hugo", "Jamstack", "Netlify"]
 
 Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own.
 
-{{< img src="color-palette-doks.png" alt="Doks default color palette — colors by Basecamp" caption="Doks default color palette — colors by <em>Basecamp</em>" class="wide" >}}
+{{< img src="color-palette-doks.png" alt="Doks default colors — palette by Basecamp" caption="Doks default colors — palette by <em>Basecamp</em>" class="wide" >}}
 
-{{< img src="fonts-doks.png" alt="Doks default font — Jost font by Owen Earl" caption="Doks default font — Jost font by <em>Owen Earl</em>" class="wide" >}}
+## User Experience
+
+- Lightweight feel
+- Simple, intuitive setup
+- Strong, simple color palette
+- Modern, functional font — [Jost*](https://indestructibletype.com/Jost.html)
+
+{{< img src="fonts-doks.png" alt="Doks default font — Jost\* by Owen Earl" caption="Doks default font — Jost* by <em>Owen Earl</em>" class="wide" >}}
 
 ## Demo
 
