@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0",
-    "autoprefixer": "^10.0",
+    "autoprefixer": "^10.1",
     "bootstrap": "^4.5",
     "eslint": "^7.15",
     "flickity": "^2.2",
