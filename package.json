@@ -19,7 +19,7 @@
     "test": "npm run -s lint"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0",
+    "@fullhuman/postcss-purgecss": "^3.1",
     "autoprefixer": "^10.1",
     "bootstrap": "^4.5",
     "eslint": "^7.15",
