@@ -2,31 +2,41 @@
   "name": "henkverlinde",
   "version": "1.0.0",
   "private": true,
+  "hugo-bin": {
+    "buildTags": "extended"
+  },
   "browserslist": [
     "defaults"
   ],
   "scripts": {
+    "init": "rimraf .git && git init -b main",
+    "create": "hugo new",
+    "prestart": "npm run clean",
     "start": "hugo server --disableFastRender --bind 0.0.0.0 --baseURL http://192.168.1.10:1313/",
+    "prebuild": "npm run clean",
     "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
     "build:preview": "npm run build -D -F",
-    "server": "hugo server",
     "clean": "rimraf public resources functions",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js assets/lambda config",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint *.md content/**/*.md",
-    "test": "npm run -s lint"
+    "release": "standard-version",
+    "server": "hugo server",
+    "test": "npm run -s lint",
+    "env": "env"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.1",
-    "autoprefixer": "^10.1",
+    "autoprefixer": "^10.2",
     "bootstrap": "^4.5",
     "eslint": "^7.2",
     "flickity": "^2.2",
+    "hugo-bin": "^0.68.0",
     "infinite-scroll": "^4.0",
     "instant.page": "^5.1",
-    "lazysizes": "^5.2",
+    "lazysizes": "^5.3",
     "markdownlint-cli": "^0.26",
     "netlify-lambda": "^2.0",
     "postcss": "^8.2",
