@@ -28,7 +28,7 @@
     "env": "env"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.1",
+    "@fullhuman/postcss-purgecss": "^4.0",
     "autoprefixer": "^10.2",
     "bootstrap": "^4.5",
     "eslint": "^7.2",
