@@ -8,6 +8,7 @@ draft: false
 weight: 50
 images: ["kickstart-your-hugo-project-with-the-hyas-starter.jpg"]
 categories: ["Tools", "Projects"]
+series: []
 tags: ["Hugo", "Jamstack", "Netlify"]
 ---
 

@@ -5,7 +5,7 @@ enableEmoji = true
 enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 2
+paginate = 3
 rssLimit = 10
 
 # add redirects/headers
@@ -55,6 +55,7 @@ notAlternative = true
 
 [taxonomies]
   category = "categories"
+  series = "series"
   tag = "tags"
 
 [permalinks]

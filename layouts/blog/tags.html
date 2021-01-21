@@ -1,1 +1,1 @@
-<p class="meta monospace">{{ if .Params.tags -}}{{ range $index, $tag := .Params.tags -}}{{ if gt $index 0 -}}, {{ end -}}<a class="list-meta-link" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</p>
+<p class="meta monospace mt-4">{{ if .Params.tags -}}{{ range $index, $tag := .Params.tags -}}{{ if gt $index 0 -}}, {{ end -}}<a class="list-meta-link" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end -}}{{ end -}}</p>

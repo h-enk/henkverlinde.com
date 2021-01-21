@@ -1,12 +1,25 @@
 .alert {
   font-family: $font-family-monospace;
   font-size: $font-size-sm;
-  text-align: center;
 }
 
 @include media-breakpoint-up(md) {
   .alert {
     font-size: $font-size-base;
+  }
+}
+
+.alert-icon {
+  margin-right: 0.75rem;
+}
+
+.blog .alert {
+  margin: 2rem -1.5rem;
+}
+
+@include media-breakpoint-up(md) {
+  .blog .alert {
+    margin: 2rem 0;
   }
 }
 
@@ -16,7 +29,7 @@
 
 .alert-dark {
   color: $gray-150;
-  background-color: $gray-950;
+  background-color: $gray-900;
 }
 
 .alert-dark .alert-link {
@@ -24,12 +37,8 @@
 }
 
 .alert-light {
-  color: #215888;
-  background: linear-gradient(-45deg, rgb(212, 245, 255), rgb(234, 250, 255), rgb(234, 250, 255), #d3f6ef);
-}
-
-.alert-light .alert-link {
-  color: #215888;
+  color: $gray-900;
+  background: $gray-150;
 }
 
 .alert-primary {

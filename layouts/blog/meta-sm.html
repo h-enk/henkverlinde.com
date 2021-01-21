@@ -1,1 +1,5 @@
-<p class="meta monospace"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" -}}</time></p>
+<p class="meta monospace"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "January 2, 2006" -}}</time>
+  {{ if .Params.series -}}
+  {{ $name := index .Params.series 0 }}— <a href="{{ "/series/" | absURL }}{{ $name | urlize }}/">{{ $name }}</a>
+  {{ end -}}
+</p>
