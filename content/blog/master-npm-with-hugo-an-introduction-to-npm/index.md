@@ -32,7 +32,7 @@ I’ll do my best to explain some npm concepts throughout the series, but the of
 
 ## Installation
 
-Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. I suggest installing the Long Term Support (LTS) release, which is recommended for most users. But if you like, you could install the current release containing the latest features.
+Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. I recommend installing the current release.
 
 ## Usage
 
@@ -53,7 +53,7 @@ npm init -y
 For this example we're only installing one dependency: [Bootstrap](https://getbootstrap.com/), the popular HTML, CSS, and JS library:
 
 ```bash
-npm install bootstrap@next
+npm install bootstrap@next --save-dev
 ```
 
 You’ll then  get the following output:
@@ -81,7 +81,7 @@ And your `package.json` will look like:
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "bootstrap": "^5.0.0-beta1"
   }
 }
@@ -144,6 +144,6 @@ That’s it. Add `node_modules` to your `.gitignore` and let npm handle it. Now 
 
 You're now familiar with the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo/tree/basic-example) repo I've set up.
 
-In the next post we're going to talk about how you use npm with Hugo.
+In the [next post](/master-npm-with-hugo-managing-dependencies/) we're going to talk about how to manage dependencies.
 
 {{< alert icon="💬" text="Share your thoughts on \"npm with Hugo\" in <a href=\"https://github.com/h-enk/henkverlinde.com/discussions\">Discussions</a>." >}}
