@@ -5,7 +5,7 @@ excerpt: "In a series of three posts I will introduce you to npm, show you how t
 date: 2021-01-27T15:55:56+01:00
 lastmod: 2021-01-27T15:55:56+01:00
 draft: false
-weight: 50
+weight: 40
 images: ["master-npm-with-hugo-managing-dependencies.png"]
 categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
@@ -200,10 +200,10 @@ npm update
 
 ## Wrap up
 
-You've learned to view Hugo itself as a dependency to your project. And that a starter theme provides you with full control over your project's dependencies and gives you the possibility to customize build scripts.
+You've now seen that Hugo itself can be viewed as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo/tree/extended-example) repo I've set up.
 
 In the next post we’re going to talk about how to customize build scripts.
 
-{{< alert icon="💬" text="Share your thoughts on \"npm with Hugo\" in <a href=\"https://github.com/h-enk/henkverlinde.com/discussions\">Discussions</a>." >}}
+{{< alert icon="💡" text="<a href=\"https://gethyas.com/\">Hyas</a> is a modern Hugo starter using npm for dependency management and customized build scripts." >}}
