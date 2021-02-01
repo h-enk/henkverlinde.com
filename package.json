@@ -33,7 +33,7 @@
     "@fullhuman/postcss-purgecss": "^4.0",
     "autoprefixer": "^10.2",
     "bootstrap": "^4.6",
-    "eslint": "^7.2",
+    "eslint": "^7.19",
     "flickity": "^2.2",
     "hugo-bin": "^0.68.0",
     "infinite-scroll": "^4.0",
