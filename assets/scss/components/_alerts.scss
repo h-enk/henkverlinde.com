@@ -13,6 +13,18 @@
   margin-right: 0.75rem;
 }
 
+.home .alert .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .home .alert .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 .blog .alert {
   margin: 2rem -1.5rem;
 }
@@ -53,4 +65,9 @@
 .alert .alert-link:hover,
 .alert .alert-link:focus {
   text-decoration: none;
+}
+
+.home .alert .alert-link:hover,
+.home .alert .alert-link:focus {
+  text-decoration: underline;
 }

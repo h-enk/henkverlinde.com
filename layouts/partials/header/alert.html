@@ -1,3 +1,5 @@
 <div class="alert alert-dark" role="alert">
-  {{ .Site.Params.alertText | safeHTML }}
+  <div class="container">
+    {{ .Site.Params.alertText | safeHTML }}
+  </div>
 </div>
