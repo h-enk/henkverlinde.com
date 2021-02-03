@@ -5,7 +5,7 @@ excerpt: "In a series of three posts I will introduce you to npm, show you how t
 date: 2021-01-27T15:55:56+01:00
 lastmod: 2021-01-27T15:55:56+01:00
 draft: false
-weight: 40
+weight: 10
 images: ["master-npm-with-hugo-managing-dependencies.png"]
 categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]

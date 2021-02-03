@@ -5,7 +5,7 @@ excerpt: "Continuous integration (CI) workflow to test and build your Hyas proje
 date: 2020-11-19T10:10:58+01:00
 lastmod: 2020-11-19T10:10:58+01:00
 draft: false
-weight: 50
+weight: 30
 images: ["continuous-integration-workflow-for-your-hyas-project.jpg"]
 categories: ["Tools", "Guides"]
 tags: ["Hugo", "GitHub", "Node.js"]

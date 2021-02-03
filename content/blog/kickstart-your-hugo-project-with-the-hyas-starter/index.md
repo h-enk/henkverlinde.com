@@ -5,7 +5,7 @@ excerpt: "Some website projects require a solid starting point. Sometimes you ju
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
-weight: 50
+weight: 40
 images: ["kickstart-your-hugo-project-with-the-hyas-starter.jpg"]
 categories: ["Tools", "Projects"]
 series: []
