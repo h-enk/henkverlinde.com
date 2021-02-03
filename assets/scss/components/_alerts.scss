@@ -62,6 +62,33 @@
   color: $gray-150;
 }
 
+.alert-gradient-mint-blue-dark {
+  background: linear-gradient(-70deg, #a2facf 0%, #64acff 100%);
+  color: $gray-900;
+}
+
+.alert-gradient-mint-blue-dark .alert-link {
+  color: $gray-900;
+}
+
+.alert-gradient-turq-purple-dark {
+  background: linear-gradient(-70deg, #3bf0e4 0%, #bca1f7 100%);
+  color: $gray-900;
+}
+
+.alert-gradient-turq-purple-dark .alert-link {
+  color: $gray-900;
+}
+
+.alert-gradient-pink-blue {
+  background: linear-gradient(-70deg, #db469f 0%, #2188ff 100%);
+  color: $gray-150;
+}
+
+.alert-gradient-pink-blue .alert-link {
+  color: $gray-150;
+}
+
 .alert .alert-link:hover,
 .alert .alert-link:focus {
   text-decoration: none;
