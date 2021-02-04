@@ -7,7 +7,7 @@ draft: false
 images: []
 ---
 
-I believe in experimenting to learn and to grow. I love making things that are simple, easy to use, and look nice. I work on digital products at [Ventizo](https://ventizo.com/).
+I believe in experimenting — to learn and to grow. I love making things that are simple, easy to use, and look nice. I work on digital products at [Ventizo](https://ventizo.com/).
 
 ## Projects
 
