@@ -1,13 +1,12 @@
 ---
 title: "Hi, I'm Henk Verlinde"
-description: "I believe in experimenting to learn and to grow. I love making things that are simple, easy to use, and look nice. I work on digital products at Ventizo."
+description: "I believe in experimenting — to learn and to grow. I love making stuff that's simple, easy to use, and looks nice. I create digital products at Ventizo."
 date: 2020-07-20T19:39:19+02:00
 lastmod: 2020-07-20T19:39:19+02:00
 draft: false
 images: []
 ---
-
-I love making things that are simple, easy to use, and look nice. I work on digital products at [Ventizo](https://ventizo.com/).
+I believe in experimenting — to learn and to grow. I love making stuff that's simple, easy to use, and looks nice. I create digital products at [Ventizo](https://ventizo.com/).
 
 ## Projects
 
