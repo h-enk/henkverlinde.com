@@ -1,5 +1,5 @@
 ---
-title: "Hi, I'm Henk Verlinde"
+title: "About"
 description: "I believe in experimenting — to learn and to grow. I love making stuff that's simple, easy to use, and looks nice. I create digital products at Ventizo."
 date: 2020-07-20T19:39:19+02:00
 lastmod: 2020-07-20T19:39:19+02:00
