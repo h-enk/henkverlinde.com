@@ -20,7 +20,6 @@ In the [second post](/master-npm-with-hugo-managing-dependencies/) of the series
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure.
 
-
 Now we’re ready to talk about how to customize build scripts.
 
 ## Add Bootstrap scss
@@ -28,7 +27,6 @@ Now we’re ready to talk about how to customize build scripts.
 In the first post we installed [Bootstrap](https://getbootstrap.com/), the popular HTML, CSS, and JS library.
 
 ## Add PurgeCSS (Hugo's?)
-
 
 ## Wrap up
 
