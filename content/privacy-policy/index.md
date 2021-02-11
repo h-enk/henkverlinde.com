@@ -1,6 +1,6 @@
 ---
 title: "Privacy policy"
-description: ""
+description: "I do not use cookies and I do not collect any personal data."
 date: 2020-07-20T15:56:50+02:00
 lastmod: 2020-07-20T15:56:50+02:00
 draft: false
