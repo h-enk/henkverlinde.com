@@ -45,7 +45,7 @@
     "postcss-cli": "^8.3",
     "purgecss-whitelister": "^2.4",
     "rimraf": "^3.0",
-    "stylelint": "^13.7",
+    "stylelint": "^13.10",
     "stylelint-config-standard": "^20.0"
   }
 }
