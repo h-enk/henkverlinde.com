@@ -200,7 +200,7 @@ npm update
 
 ## Wrap up
 
-You've now seen that Hugo itself can be viewed as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
+You're now aware that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo/tree/extended-example) repo I've set up.
 
