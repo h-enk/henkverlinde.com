@@ -56,3 +56,8 @@ There are two main ways to get started with Doks:
 ## Try Doks
 
 - [Deploy to Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/h-enk/doks) in less than a minute
+
+## Steve says
+
+{{< tweet 1356319171173363713 >}}
+
