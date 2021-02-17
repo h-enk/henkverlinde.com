@@ -12,7 +12,7 @@ series: ["Master npm with Hugo"]
 tags: ["Hugo", "Node.js", "npm"]
 ---
 
-In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the first post of the series.
+In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the _first_ post of the series.
 
 {{< img src="master-npm-with-hugo-an-introduction-to-npm.png" alt="Master npm with Hugo: an introduction to npm" class="wide" >}}
 
@@ -30,11 +30,11 @@ Most dependency managers also include a global registry of available packages. F
 
 I’ll do my best to explain some npm concepts throughout the series, but the official [npm Docs](https://docs.npmjs.com/packages-and-modules) are quite accessible as well. It’s recommended to read them to get a full understanding of npm.
 
-## Installation
+### Installation
 
 Installing npm is pretty simple. Download and install [Node.js](https://nodejs.org/) (it includes npm) for your platform. I recommend installing the current release.
 
-## Usage
+### Usage
 
 Seeing npm in action usually solves most of the confusion you might have after reading about dependencies and packages. Let’s go through the most basic example of installing a single dependency to an empty project.
 
@@ -142,8 +142,8 @@ That’s it. Add `node_modules` to your `.gitignore` and let npm handle it. Now 
 
 ## Wrap up
 
-You're now familiar with the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo/tree/basic-example) repo I've set up.
+You're now familiar with the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo) repo I've set up.
 
-In the [next post](/master-npm-with-hugo-managing-dependencies/) we're going to talk about how to manage dependencies.
+In the [next post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) we're going to talk about how to manage dependencies.
 
-{{< alert icon="💡" text="<a href=\"https://gethyas.com/\">Hyas</a> is a modern Hugo starter using npm to manage dependencies and run customized build scripts." >}}
+{{< alert icon="💡" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
