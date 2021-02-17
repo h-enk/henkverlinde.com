@@ -13,6 +13,7 @@ module.exports = {
       safelist: [
         'lazyloaded',
         'alert-link',
+        'blockquote',
         ...whitelister([
           './assets/scss/components/_syntax.scss',
           './assets/scss/components/_code.scss',
