@@ -1,6 +1,4 @@
 name: Hyas CI
-author: Henk Verlinde
-description: Testing and building a Hyas project
 
 on:
   push:
