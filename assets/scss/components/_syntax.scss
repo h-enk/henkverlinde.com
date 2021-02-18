@@ -1,130 +1,101 @@
-/*!
- * GitHub Light v0.5.0
- * Copyright (c) 2012 - 2017 GitHub, Inc.
- * Licensed under MIT (https://github.com/primer/github-syntax-theme-generator/blob/master/LICENSE)
- */
+/*
 
-.c1,
-.c /* comment, punctuation.definition.comment, string.comment */ {
+docs.github.com style — © 2021 GitHub, Inc.
+
+*/
+
+/*
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: .5em;
+  color: #24292e;
+  background: #fafbfc
+}
+*/
+
+.hljs-comment,
+.hljs-quote {
   color: #6a737d;
+  font-style: italic
 }
 
-.v /* variable */,
-.smw /* sublimelinter.mark.warning */ {
-  color: #e36209;
-}
-
-// .c1 /* constant, entity.name.constant, variable.other.constant, variable.language, support, meta.property-name, support.constant, support.variable, meta.module-reference, markup.raw, meta.diff.header, meta.output */,
-.s .v /* string variable */ {
-  color: #005cc5;
-}
-
-.e /* entity */,
-.en /* entity.name */ {
-  color: #6f42c1;
-}
-
-.smi /* variable.parameter.function, storage.modifier.package, storage.modifier.import, storage.type.java, variable.other */,
-.s .s1 /* string source */ {
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
   color: #24292e;
+  font-weight: bold
 }
 
-.ent /* entity.name.tag, markup.quote */ {
-  color: #22863a;
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #176f2c
 }
 
-.k /* keyword, storage, storage.type */ {
-  color: #d73a49;
+.hljs-string,
+.hljs-doctag {
+  color: #005cc5
 }
 
-.s /* string */,
-.pds /* punctuation.definition.string, source.regexp, string.regexp.character-class */,
-.s .pse .s1 /* string punctuation.section.embedded source */,
-.sr /* string.regexp */,
-.sr .cce /* string.regexp constant.character.escape */,
-.sr .sre /* string.regexp source.ruby.embedded */,
-.sr .sra /* string.regexp string.regexp.arbitrary-repitition */ {
-  color: #032f62;
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #9e1c23;
+  font-weight: bold
 }
 
-.bu /* invalid.broken, invalid.deprecated, invalid.unimplemented, message.error, brackethighlighter.unmatched, sublimelinter.mark.error */ {
-  color: #b31d28;
+.hljs-subst {
+  font-weight: normal
 }
 
-.ii /* invalid.illegal */ {
-  color: #fafbfc;
-  background-color: #b31d28;
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #044289;
+  font-weight: bold
 }
 
-.c2 /* carriage-return */ {
-  color: #fafbfc;
-  background-color: #d73a49;
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #044289;
+  font-weight: normal
 }
 
-.c2::before /* carriage-return */ {
-  content: "^M";
+.hljs-regexp,
+.hljs-link {
+  color: #176f2c
 }
 
-.sr .cce /* string.regexp constant.character.escape */ {
-  font-weight: bold;
-  color: #22863a;
+.hljs-symbol,
+.hljs-bullet {
+  color: #6f42c1
 }
 
-.ml /* markup.list */ {
-  color: #735c0f;
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #044289
 }
 
-.mh /* markup.heading */,
-.mh .en /* markup.heading entity.name */,
-.ms /* meta.separator */ {
-  font-weight: bold;
-  color: #005cc5;
+.hljs-meta {
+  color: #6a737d;
+  font-weight: bold
 }
 
-.mi /* markup.italic */ {
-  font-style: italic;
-  color: #24292e;
+.hljs-deletion {
+  background: #fdaeb7
 }
 
-.mb /* markup.bold */ {
-  font-weight: bold;
-  color: #24292e;
+.hljs-addition {
+  background: #bef5cb
 }
 
-.md /* markup.deleted, meta.diff.header.from-file, punctuation.definition.deleted */ {
-  color: #b31d28;
-  background-color: #ffeef0;
+.hljs-emphasis {
+  font-style: italic
 }
 
-.mi1 /* markup.inserted, meta.diff.header.to-file, punctuation.definition.inserted */ {
-  color: #22863a;
-  background-color: #f0fff4;
-}
-
-.mc /* markup.changed, punctuation.definition.changed */ {
-  color: #e36209;
-  background-color: #ffebda;
-}
-
-.mi2 /* markup.ignored, markup.untracked */ {
-  color: #f6f8fa;
-  background-color: #005cc5;
-}
-
-.mdr /* meta.diff.range */ {
-  font-weight: bold;
-  color: #6f42c1;
-}
-
-.ba /* brackethighlighter.tag, brackethighlighter.curly, brackethighlighter.round, brackethighlighter.square, brackethighlighter.angle, brackethighlighter.quote */ {
-  color: #586069;
-}
-
-.sg /* sublimelinter.gutter-mark */ {
-  color: #959da5;
-}
-
-.corl /* constant.other.reference.link, string.other.link */ {
-  text-decoration: underline;
-  color: #032f62;
+.hljs-strong {
+  font-weight: bold
 }

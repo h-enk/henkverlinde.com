@@ -28,3 +28,9 @@ if (document.querySelector('#deploy-to-netlify') !== null) {
   });
 }
 /* eslint-enable */
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
