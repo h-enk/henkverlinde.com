@@ -35,7 +35,7 @@ Node.js versions used: `14.x`, and `15.x`.
 
 ## Workflow file
 
-{{< gist h-enk f04b584a5fdbd4b72b7a2f2836fbba5d >}}
+{{< gist h-enk f3bbca43d050e6d6b10bdb229dd7052f >}}
 
 ## Further reading
 
