@@ -26,12 +26,17 @@ Node.js versions used: `14.x`, and `15.x`.
 
 ## Steps
 
-1. Install Hugo (using [peaceiris/actions-hugo@v2](https://github.com/peaceiris/actions-hugo))
-2. Check install Hugo
+1. Check out Hyas project
+2. Set up Node.js
 3. Install dependencies
-4. Check for linting errors
-5. Delete temporary directories
-6. Build production website
+4. Run Hyas test script:
+   - check scripts,
+   - styles, and
+   - markdown for errors.
+5. Run Hyas build script:
+   - delete temporary directories, and
+   - build production website,
+   - including functions.
 
 ## Workflow file
 
