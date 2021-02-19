@@ -21,6 +21,7 @@ tags: ["Hugo", "Jamstack", "Netlify"]
 - Simple, intuitive layout
 - Strong, simple color palette — Basecamp
 - Modern, functional font — [Jost*](https://indestructibletype.com/Jost.html)
+- UX and design — [@tomtev](https://github.com/tomtev)
 
 ## Build on Hyas
 
