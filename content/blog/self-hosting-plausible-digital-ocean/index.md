@@ -138,6 +138,14 @@ GEOIPUPDATE_LICENSE_KEY=<your-license-key>
 - Name: `[subdomain]`
 - Value: IPv4 address of DigitalOcean droplet
 
+### Add current user to docker group
+
+<!-- https://github.com/docker/compose/issues/4181#issuecomment-777572764 -->
+
+```bash
+sudo usermod -aG docker $USER
+```
+
 ## Running
 
 ### Start server
