@@ -15,12 +15,17 @@ Super simple, robust, and secure setup for self-hosting Plausible Analytics on D
 
 {{< img src="self-hosting-plausible-digitalocean.png" alt="Self-Hosting Plausible Analytics on DigitalOcean" caption="Self-Hosting Plausible Analytics on DigitalOcean" class="wide" >}}
 
+Elements:
+
 - [Plausible](https://plausible.io/)
 - [DigitalOcean](https://www.digitalocean.com/)
 - [Docker](https://www.docker.com/)
 - [Caddy](https://caddyserver.com/)
 
-{{< alert icon="💡" text="Get started on DigitalOcean with a $100, 60-day credit — for new users. <a href=\"https://m.do.co/c/c37c98036922\">Referral Invite →</a>" >}}
+Services:
+
+- [Postmark](https://postmarkapp.com/)
+- [MaxMind](https://www.maxmind.com/)
 
 ## Provisioning
 
@@ -31,6 +36,8 @@ Super simple, robust, and secure setup for self-hosting Plausible Analytics on D
 - 1 GB RAM
 - 25 GB NVMe SSDs
 - 1,000 GB transfer
+
+See also:  [Recommended Initial Droplet Configuration](https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/)
 
 ### Upgrade installed packages
 
@@ -64,16 +71,65 @@ openssl rand -base64 64
 nano plausible-conf.env
 ```
 
+```env
+ADMIN_USER_NAME=replace-me
+ADMIN_USER_EMAIL=replace-me
+ADMIN_USER_PWD=replace-me
+BASE_URL=replace-me
+SECRET_KEY_BASE=replace-me
+DISABLE_REGISTRATION=true
+MAILER_EMAIL=replace-me
+SMTP_HOST_ADDR=replace-me
+SMTP_USER_NAME=replace-me
+SMTP_USER_PWD=replace-me
+MAILER_ADAPTER=Bamboo.PostmarkAdapter
+POSTMARK_API_KEY=replace-me
+GOOGLE_CLIENT_ID=replace-me
+GOOGLE_CLIENT_SECRET=replace-me
+```
+
 ### Configure Caddy
 
 ```bash
 nano reverse-proxy/docker-compose.caddy-gen.yml
 ```
 
+```yml
+version: "3.3"
+services:
+  caddy-gen:
+    container_name: caddy-gen
+    image: "wemakeservices/caddy-gen:latest"
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - caddy-certificates:/data/caddy
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - plausible
+
+  plausible:
+    labels:
+      virtual.host: "example.com" # change to your domain name
+      virtual.port: "8000"
+      virtual.tls-email: "admin@example.com" # change to your email
+
+volumes:
+    caddy-certificates:
+        driver: local
+```
+
 ### Configure MaxMind
 
 ```bash
 nano geoip/geoip.conf
+```
+
+```conf
+GEOIPUPDATE_ACCOUNT_ID=<your-account-id>
+GEOIPUPDATE_LICENSE_KEY=<your-license-key>
 ```
 
 ### Add DNS record
@@ -104,14 +160,6 @@ docker-compose down
 
 ## Resources
 
-### Plausible
-
-- [Plausible Analytics setup examples](https://github.com/plausible/hosting)
 - [Getting started](https://plausible.io/docs/self-hosting)
 - [Configuration options](https://plausible.io/docs/self-hosting-configuration)
-
-### Services
-
-- [Postmark](https://postmarkapp.com/)
-- [MaxMind](https://www.maxmind.com/)
-- [Cloud Firewalls](https://www.digitalocean.com/docs/networking/firewalls/)
+- [Plausible Analytics setup examples](https://github.com/plausible/hosting)
