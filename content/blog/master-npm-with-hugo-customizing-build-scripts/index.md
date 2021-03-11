@@ -1,7 +1,7 @@
 ---
 title: "Master npm with Hugo: customizing build scripts"
 description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the third post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the third post of the series."
+excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>third</em> post of the series."
 date: 2021-02-10T15:55:56+01:00
 lastmod: 2021-02-10T15:55:56+01:00
 draft: false
@@ -11,10 +11,6 @@ categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
 tags: ["Hugo", "Node.js", "npm"]
 ---
-
-In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the _third_ post of the series.
-
-{{< img src="master-npm-with-hugo-customizing-build-scripts.png" alt="Master npm with Hugo: customizing build scripts" class="wide" >}}
 
 In the [second post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 
@@ -177,7 +173,7 @@ We could also use dependencies to pull in extra functionality into our starter t
 
 {{< alert icon="💡" text="Expect a number of <a href=\"https://www.npmjs.com/org/hyas\">Hyas plugins</a> coming soon." >}}
 
-## Wrap up
+## Wrapping up
 
 You're now familiar with customizing build scripts. We also extended our example with Bootstrap, and optimized it for use in production. You're also aware that you could use dependencies to pull in extra functionality.
 

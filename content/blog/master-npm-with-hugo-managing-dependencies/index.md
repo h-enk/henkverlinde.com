@@ -1,7 +1,7 @@
 ---
 title: "Master npm with Hugo: managing dependencies"
 description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the second post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the second post of the series."
+excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>second</em> post of the series."
 date: 2021-01-27T15:55:56+01:00
 lastmod: 2021-01-27T15:55:56+01:00
 draft: false
@@ -11,10 +11,6 @@ categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
 tags: ["Hugo", "Node.js", "npm"]
 ---
-
-In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the _second_ post of the series.
-
-{{< img src="master-npm-with-hugo-managing-dependencies.png" alt="Master npm with Hugo: managing dependencies" class="wide" >}}
 
 In the [first post]({{< ref "master-npm-with-hugo-an-introduction-to-npm" >}}) of the series, I introduced to the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project.
 
@@ -198,7 +194,7 @@ The [`npm update`](https://docs.npmjs.com/cli/v7/commands/npm-update) command wi
 npm update [<pkg>...]
 ```
 
-## Wrap up
+## Wrapping up
 
 You're now aware that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 

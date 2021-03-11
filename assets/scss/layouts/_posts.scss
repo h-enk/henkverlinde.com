@@ -1,3 +1,32 @@
+.post-image {
+  margin: 0 -1.5rem 2rem;
+}
+
+@include media-breakpoint-up(lg) {
+  .post-image {
+    margin: 0 0 5rem;
+  }
+
+  .post-title::before {
+    background: url(/images/dot-left-corner.png) no-repeat;
+    content: "";
+    width: 120px;
+    height: 285px;
+    position: absolute;
+    bottom: 1.375rem;
+    left: -6.375rem;
+    pointer-events: none;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .post-title::before {
+    position: absolute;
+    bottom: 1.5rem;
+    left: -6.375rem;
+  }
+}
+
 .spacer-line {
   display: inline-block;
   height: 1px;

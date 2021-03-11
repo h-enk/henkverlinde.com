@@ -1,20 +1,15 @@
 ---
 title: "Continuous Integration workflow for your Hyas project"
 description: "Continuous integration (CI) workflow to test and build your Hyas project."
-excerpt: "Continuous integration (CI) workflow to test and build your Hyas project."
+excerpt: "Recently, I set up a Continuous Integration (CI) workflow for <a href=\"https://github.com/h-enk/doks\">Doks</a>. Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically."
 date: 2020-11-19T10:10:58+01:00
 lastmod: 2020-11-19T10:10:58+01:00
 draft: false
 weight: 30
-images: ["continuous-integration-workflow-for-your-hyas-project.jpg"]
+images: ["continuous-integration-workflow-for-your-hyas-project.png"]
 categories: ["Tools", "Guides"]
 tags: ["Hugo", "GitHub", "Node.js"]
 ---
-
-Recently, I set up a Continuous Integration (CI) workflow for [Doks](https://github.com/h-enk/doks).
-Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically.
-
-{{< img src="continuous-integration-workflow-for-your-hyas-project.jpg" alt="CI workflow automation for your Hyas project" caption="CI workflow automation for your Hyas project — Rijkswachter WhiteBOT by <em>Studio Hamerhaai</em>" class="wide" >}}
 
 ## Operating systems
 

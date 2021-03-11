@@ -1,7 +1,7 @@
 ---
 title: "Master npm with Hugo: an introduction to npm"
 description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the first post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the first post of the series."
+excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>first</em> post of the series."
 date: 2021-01-15T15:55:48+01:00
 lastmod: 2021-01-15T15:55:48+01:00
 draft: false
@@ -11,10 +11,6 @@ categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
 tags: ["Hugo", "Node.js", "npm"]
 ---
-
-In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the _first_ post of the series.
-
-{{< img src="master-npm-with-hugo-an-introduction-to-npm.png" alt="Master npm with Hugo: an introduction to npm" class="wide" >}}
 
 ## npm
 
@@ -140,7 +136,7 @@ This means that when you’re using npm, you check the following files into your
 
 That’s it. Add `node_modules` to your `.gitignore` and let npm handle it. Now whoever wants to setup your project, they just run the standard `git clone` followed by `npm install`.
 
-## Wrap up
+## Wrapping up
 
 You're now familiar with the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo) repo I've set up.
 

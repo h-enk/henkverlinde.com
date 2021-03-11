@@ -1,20 +1,16 @@
 ---
-title: "Introducing Hyas: Hugo starter helping you build modern websites"
+title: "Hyas: Hugo starter helping you build modern websites"
 description: "Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch."
-excerpt: "Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch."
+excerpt: "Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created <a href=\"https://github.com/h-enk/hyas\">Hyas</a>."
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
 weight: 40
-images: ["kickstart-your-hugo-project-with-the-hyas-starter.jpg"]
+images: ["hyas-hugo-starter-helping-you-build-modern-websites.png"]
 categories: ["Tools", "Projects"]
 series: []
 tags: ["Hugo", "Jamstack", "Netlify"]
 ---
-
-Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created [Hyas](https://github.com/h-enk/hyas).
-
-{{< img src="kickstart-your-hugo-project-with-the-hyas-starter.jpg" alt="Kickstart your Hugo project with the Hyas starter" caption="Kickstart your Hugo project with Hyas — photo by <em>Harley-Davidson</em>" class="wide" >}}
 
 ## Building on the work of others
 

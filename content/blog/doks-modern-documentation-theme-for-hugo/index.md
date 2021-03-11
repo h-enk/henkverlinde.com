@@ -1,19 +1,15 @@
 ---
-title: "Meet Doks: modern documentation theme for Hugo"
+title: "Doks: modern documentation theme for Hugo"
 description: "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-excerpt: "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
+excerpt: "<a href=\"https://getdoks.org/\">Doks</a> is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own."
 date: 2020-12-07T14:08:47+01:00
 lastmod: 2020-12-07T14:08:47+01:00
 draft: false
 weight: 20
-images: ["fonts-doks.png"]
+images: ["doks-modern-documentation-theme-for-hugo.png"]
 categories: ["Themes", "Projects"]
 tags: ["Hugo", "Jamstack", "Netlify"]
 ---
-
-[Doks](https://getdoks.org/) is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own.
-
-{{< img src="fonts-doks.png" alt="Doks default font — Jost\* by Owen Earl" caption="Doks default font — Jost* by <em>Owen Earl</em>" class="wide" >}}
 
 ## User Experience
 
@@ -21,11 +17,11 @@ tags: ["Hugo", "Jamstack", "Netlify"]
 - Simple, intuitive layout
 - Strong, simple color palette — Basecamp
 - Modern, functional font — [Jost*](https://indestructibletype.com/Jost.html)
-- UX and design — [@tomtev](https://github.com/tomtev)
+- UX and design — [@tommyvedvik](https://twitter.com/tommyvedvik)
 
 ## Build on Hyas
 
-Get all the [Hyas]({{< ref "kickstart-your-hugo-project-with-the-hyas-starter" >}}) goodness:
+Get all the [Hyas]({{< ref "hyas-hugo-starter-helping-you-build-modern-websites" >}}) goodness:
 
 - Security aware
 - Fast by default ⚡️

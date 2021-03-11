@@ -11,12 +11,6 @@ categories: ["Tools", "Guides"]
 tags: ["Plausible", "DigitalOcean", "Docker", "Caddy"]
 ---
 
-Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean.
-
-{{< img src="self-hosting-plausible-digitalocean.png" alt="Self-Hosting Plausible Analytics on DigitalOcean" caption="Self-Hosting Plausible Analytics on DigitalOcean" class="wide" >}}
-
-Elements:
-
 - [Plausible](https://plausible.io/)
 - [DigitalOcean](https://www.digitalocean.com/)
 - [Docker](https://www.docker.com/)

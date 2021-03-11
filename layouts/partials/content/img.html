@@ -1,5 +1,5 @@
 {{ $image := .Page.Resources.GetMatch (printf "*%s*" (.Scratch.Get "src")) -}}
-{{ $image := $image.Fit "1280x768" }}
+{{ $image := $image.Fit "1500x750" }}
 {{ $lqip := $image.Resize $.Site.Params.lqipWidth -}}
 
 {{ $imgSrc := "" -}}

@@ -8,10 +8,10 @@
         {{ if .Params.categories -}}
           {{ range $index, $category := .Params.categories }}{{ if gt $index 0 }}, {{ end }}<a class="list-meta-link" href="{{ "/categories/" | absURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
         {{ end -}}
-      </p>      
+      </p>
       <h3 class="h4"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
       {{ if .Params.excerpt -}}
-        <p>{{ .Params.excerpt }}</p>
+        <p>{{ .Params.excerpt | safeHTML }}</p>
       {{ end -}}
     </div>
   </div>
