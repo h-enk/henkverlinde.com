@@ -202,4 +202,4 @@ We also extended our basic example with a local Hugo install, a Hugo project str
 
 In the [next post]({{< ref "master-npm-with-hugo-customizing-build-scripts" >}}) we’re going to talk about how to customize build scripts.
 
-{{< alert icon="💡" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
+{{< alert icon="👉" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}

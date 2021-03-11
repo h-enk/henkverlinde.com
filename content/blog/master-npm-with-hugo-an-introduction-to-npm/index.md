@@ -142,4 +142,4 @@ You're now familiar with the basic concepts of npm. We also went through the mos
 
 In the [next post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) we're going to talk about how to manage dependencies.
 
-{{< alert icon="💡" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
+{{< alert icon="👉" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
