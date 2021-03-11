@@ -2,7 +2,7 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
-  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self' https://stats.henkverlinde.com/api/event; font-src 'self'; frame-src https://platform.twitter.com; img-src 'self'; script-src 'self' https://platform.twitter.com/js/ https://platform.twitter.com/widgets.js 'sha256-xaG/r9RlNDgzYcyQapBKrkdpKGiU81Qg5/1ZY6canT8=' https://gist.github.com/h-enk/ https://stats.henkverlinde.com/js/index.js; style-src 'self' 'unsafe-inline' https://github.githubassets.com/assets/
+  Content-Security-Policy: default-src 'self'; manifest-src 'self'; connect-src 'self' https://stats.henkverlinde.com/api/event; font-src 'self'; frame-src https://platform.twitter.com; img-src 'self'; script-src 'self' https://platform.twitter.com/js/ https://platform.twitter.com/widgets.js 'sha256-407QARF8gHZXK/sXlYaP+UniTAxF+YXOX3kFkICAd3Q=' https://gist.github.com/h-enk/ https://stats.henkverlinde.com/js/index.js; style-src 'self' 'unsafe-inline' https://github.githubassets.com/assets/
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: strict-origin
   Feature-Policy: geolocation 'self'
