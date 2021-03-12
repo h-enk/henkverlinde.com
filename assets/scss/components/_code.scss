@@ -49,6 +49,10 @@ code a {
   border-bottom-color: $gray-900;
 }
 
+.alert code {
+  background: $gray-200;
+}
+
 .file.my-2 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;

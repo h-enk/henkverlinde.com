@@ -69,7 +69,7 @@ Your `package.json` will now look like:
 }
 ```
 
-> In this series we also use the `npx` command. [npx](https://docs.npmjs.com/cli/v7/commands/npx) (included with npm) runs a command from a local or remote npm package.
+{{< alert icon="☝️" text="In this series we also use the <code>npx</code> command. <a href=\"https://docs.npmjs.com/cli/v7/commands/npx\">npx</a>  (included with npm) runs a command from a local or remote npm package." >}}
 
 Let's check the locally installed Hugo version:
 
@@ -142,7 +142,7 @@ We now have a theme structure living in the `themes/blank-theme` folder.
 
 However, our theme will be a starter that lives in the project root.
 
-> In this series we also use the `shx` command. [shx](https://github.com/shelljs/shx) runs simple Unix-like, cross-platform commands from npm package scripts and the command line.
+{{< alert icon="☝️" text="In this series we also use the <code>shx</code> command. <a href=\"https://github.com/shelljs/shx\">shx</a> runs simple Unix-like, cross-platform commands from npm package scripts and the command line." >}}
 
 Let's install shx first:
 
