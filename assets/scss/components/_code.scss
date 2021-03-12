@@ -30,6 +30,7 @@ pre code {
   padding: 0;
 }
 
+/*
 @include media-breakpoint-down(xs) {
   pre {
     margin: 2rem -1.5rem;
@@ -42,6 +43,7 @@ pre code {
     border-radius: 0;
   }
 }
+*/
 
 code a {
   border-bottom-color: $gray-900;
