@@ -103,9 +103,9 @@ Add the `resources` and `public` folders to `.gitignore`, and check the result w
 
 ### Removing unused CSS
 
-We can also use dependencies to pull in tooling for our build process. Let's make our project production ready by stripping out unnecessary CSS:
+We can also use dependencies to pull in tooling for our build process. Let's make our project production ready by stripping out unnecessary CSS.
 
-> [PurgeCSS](https://purgecss.com/) analyzes your content and your CSS files. Then it matches the selectors used in your files with the one in your content files. It removes unused selectors from your CSS, resulting in smaller CSS files
+{{< alert icon="💡" text="<a href=\"https://purgecss.com/\">PurgeCSS</a> analyzes your content and your CSS files. Then it matches the selectors used in your files with the ones in your content files. It removes unused selectors from your CSS, resulting in smaller CSS files." >}}
 
 We will also be installing [Autoprefixer](https://github.com/postcss/autoprefixer), a [PostCSS](https://github.com/postcss/postcss) plugin to parse CSS and add vendor prefixes to CSS rules using values from [Can I Use](https://caniuse.com/):
 
