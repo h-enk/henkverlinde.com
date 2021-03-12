@@ -169,7 +169,7 @@ Run `npm run build` and check the result. That's it. We've brought down the file
 
 ## Plugins
 
-We could also use dependencies to pull in extra functionality into our starter theme. Think e.g. of SEO, performance, and security.
+We could also use dependencies to pull in extra functionality into our starter theme. Think of e.g. SEO, performance, and security.
 
 {{< alert icon="👉" text="Expect a number of <a href=\"https://www.npmjs.com/org/hyas\">Hyas plugins</a> coming soon." >}}
 
