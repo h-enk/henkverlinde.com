@@ -53,3 +53,12 @@ code a {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
 }
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1.25rem 1.5rem !important;
+  margin: -1.25rem -1.5rem;
+  background: $gray-150;
+  color: $gray-900;
+}

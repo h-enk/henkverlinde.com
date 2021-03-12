@@ -65,7 +65,7 @@ openssl rand -base64 64
 nano plausible-conf.env
 ```
 
-```env
+```bash
 ADMIN_USER_NAME=replace-me
 ADMIN_USER_EMAIL=replace-me
 ADMIN_USER_PWD=replace-me
@@ -121,7 +121,7 @@ volumes:
 nano geoip/geoip.conf
 ```
 
-```conf
+```bash
 GEOIPUPDATE_ACCOUNT_ID=<your-account-id>
 GEOIPUPDATE_LICENSE_KEY=<your-license-key>
 ```
