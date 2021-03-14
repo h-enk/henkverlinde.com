@@ -11,6 +11,8 @@ categories: ["Tools", "Guides"]
 tags: ["Plausible", "DigitalOcean", "Docker", "Caddy"]
 ---
 
+Main components:
+
 - [Plausible](https://plausible.io/)
 - [DigitalOcean](https://www.digitalocean.com/)
 - [Docker](https://www.docker.com/)
