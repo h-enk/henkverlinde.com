@@ -68,20 +68,20 @@ nano plausible-conf.env
 ```
 
 ```bash
-ADMIN_USER_NAME=replace-me
-ADMIN_USER_EMAIL=replace-me
-ADMIN_USER_PWD=replace-me
-BASE_URL=replace-me
-SECRET_KEY_BASE=replace-me
+ADMIN_USER_NAME=<your-admin-user-name>
+ADMIN_USER_EMAIL=<your-admin-user-email>
+ADMIN_USER_PWD=<your-admin-user-password>
+BASE_URL=<your-base-url>
+SECRET_KEY_BASE=<your-secret-key-base>
 DISABLE_REGISTRATION=true
-MAILER_EMAIL=replace-me
-SMTP_HOST_ADDR=replace-me
-SMTP_USER_NAME=replace-me
-SMTP_USER_PWD=replace-me
+MAILER_EMAIL=<your-mailer-email>
+SMTP_HOST_ADDR=<your-smtp-host-address>
+SMTP_USER_NAME=<your-smtp-user-name>
+SMTP_USER_PWD=<your-smtp-user-password>
 MAILER_ADAPTER=Bamboo.PostmarkAdapter
-POSTMARK_API_KEY=replace-me
-GOOGLE_CLIENT_ID=replace-me
-GOOGLE_CLIENT_SECRET=replace-me
+POSTMARK_API_KEY=<your-postmark-api-key>
+GOOGLE_CLIENT_ID=<your-google-client-id>
+GOOGLE_CLIENT_SECRET=<your-google-client-secret>
 ```
 
 ### Configure Caddy
