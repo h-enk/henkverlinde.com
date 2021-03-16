@@ -7,7 +7,7 @@ draft: false
 images: []
 ---
 
-I think experimenting is key to learn and to grow — both professionally and personaly. I like making digital products that are simple, easy to use, and look nice. I'm the founder of [Ventizo](https://ventizo.com/).
+I think experimenting is key to learn and to grow — both professionally and personally. I like making digital products that are simple, easy to use, and look nice. I'm the founder of [Ventizo](https://ventizo.com/).
 
 This website is my journal — recording my findings as a developer. I hope it serves you too. [Contact me]({{< ref "contact/index.md" >}}) if you have any questions.
 
