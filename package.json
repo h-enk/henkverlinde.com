@@ -40,13 +40,13 @@
     "infinite-scroll": "^4.0",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
-    "markdownlint-cli": "^0.26",
+    "markdownlint-cli": "^0.27",
     "netlify-lambda": "^2.0",
     "postcss": "^8.2",
     "postcss-cli": "^8.3",
     "purgecss-whitelister": "^2.4",
     "rimraf": "^3.0",
-    "stylelint": "^13.11",
-    "stylelint-config-standard": "^20.0"
+    "stylelint": "^13.12",
+    "stylelint-config-standard": "^21.0"
   }
 }
