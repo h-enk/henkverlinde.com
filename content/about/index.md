@@ -13,8 +13,8 @@ This website is my journal — recording my findings as a developer. I hope it s
 
 ## Projects
 
-- [Doks](https://github.com/h-enk/doks)
-- [Hyas](https://github.com/h-enk/hyas)
+- [Hyas](https://gethyas.com/)
+- [Doks](https://getdoks.org/)
 
 ## Interests
 
