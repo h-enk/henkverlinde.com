@@ -9,7 +9,7 @@ figure {
 }
 
 figure.wide {
-  margin: 2rem -1.5rem;
+  margin: 2rem 0;
 }
 
 figure.wide .figure-caption {
@@ -46,4 +46,8 @@ figure.wide .figure-caption {
 
 .blur-up.lazyloaded {
   filter: unset;
+}
+
+.img-simple {
+  margin: 1rem 0 2rem;
 }
