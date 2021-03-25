@@ -6,14 +6,12 @@ date: 2021-03-25T13:56:26+01:00
 lastmod: 2021-03-25T13:56:26+01:00
 draft: false
 weight: 50
-images: ["subresource-integrity-sri-generator.png", "sri-hash-generator.png"]
+images: ["subresource-integrity-sri-generator.png"]
 categories: ["Tools", "Projects"]
 tags: ["SRI", "React", "CRA", "PWA"]
 ---
 
 ## App
-
-{{< img-simple src="sri-hash-generator.png" alt="Subresource Integrity (SRI) Generator" class="border" >}}
 
 - [sri-gen.henkverlinde.com](https://sri-gen.henkverlinde.com/)
 
