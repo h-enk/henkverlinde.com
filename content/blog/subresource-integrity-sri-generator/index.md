@@ -5,7 +5,7 @@ excerpt: "Progressive Web Application (PWA) generating a <code>&lt;script&gt;</c
 date: 2021-03-25T13:56:26+01:00
 lastmod: 2021-03-25T13:56:26+01:00
 draft: false
-weight: 50
+weight: 20
 images: ["subresource-integrity-sri-generator.png"]
 categories: ["Tools", "Projects"]
 tags: ["SRI", "React", "CRA", "PWA"]

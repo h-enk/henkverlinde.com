@@ -5,7 +5,7 @@ excerpt: "Recently, I set up a Continuous Integration (CI) workflow for <a href=
 date: 2020-11-19T10:10:58+01:00
 lastmod: 2020-11-19T10:10:58+01:00
 draft: false
-weight: 30
+weight: 50
 images: ["continuous-integration-workflow-for-your-hyas-project.png"]
 categories: ["Tools", "Guides"]
 tags: ["Hugo", "GitHub", "Node.js"]

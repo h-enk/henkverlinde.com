@@ -5,7 +5,7 @@ excerpt: "Some website projects require a solid starting point. With a great dev
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
-weight: 40
+weight: 50
 images: ["hyas-hugo-starter-helping-you-build-modern-websites.png"]
 categories: ["Tools", "Projects"]
 series: []

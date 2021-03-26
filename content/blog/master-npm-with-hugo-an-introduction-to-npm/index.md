@@ -5,7 +5,7 @@ excerpt: "In a series of three posts I will introduce you to npm, show you how t
 date: 2021-01-15T15:55:48+01:00
 lastmod: 2021-01-15T15:55:48+01:00
 draft: false
-weight: 50
+weight: 40
 images: ["master-npm-with-hugo-an-introduction-to-npm.png"]
 categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]

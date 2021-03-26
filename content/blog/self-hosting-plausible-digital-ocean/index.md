@@ -5,7 +5,7 @@ excerpt: "Super simple, robust, and secure setup for self-hosting Plausible Anal
 date: 2021-03-09T08:33:25+01:00
 lastmod: 2021-03-09T08:33:25+01:00
 draft: false
-weight: 5
+weight: 10
 images: ["self-hosting-plausible-digitalocean.png"]
 categories: ["Tools", "Guides"]
 tags: ["Plausible", "DigitalOcean", "Docker", "Caddy"]

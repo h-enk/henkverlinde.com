@@ -5,7 +5,7 @@ excerpt: "<a href=\"https://getdoks.org/\">Doks</a> is a Hugo theme helping you 
 date: 2020-12-07T14:08:47+01:00
 lastmod: 2020-12-07T14:08:47+01:00
 draft: false
-weight: 20
+weight: 30
 images: ["doks-modern-documentation-theme-for-hugo.png"]
 categories: ["Themes", "Projects"]
 tags: ["Hugo", "Jamstack", "Netlify"]
