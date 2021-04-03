@@ -8,8 +8,8 @@
 Check out my latest blog posts:
 <!--START_SECTION:feed-->
 * [Self-Hosting Plausible Analytics on DigitalOcean](https:&#x2F;&#x2F;henkverlinde.com&#x2F;self-hosting-plausible-analytics-on-digitalocean&#x2F;)
-* [Master npm with Hugo: customizing build scripts](https:&#x2F;&#x2F;henkverlinde.com&#x2F;master-npm-with-hugo-customizing-build-scripts&#x2F;)
+* [Subresource Integrity (SRI) Generator](https:&#x2F;&#x2F;henkverlinde.com&#x2F;subresource-integrity-sri-generator&#x2F;)
 * [Doks: modern documentation theme for Hugo](https:&#x2F;&#x2F;henkverlinde.com&#x2F;doks-modern-documentation-theme-for-hugo&#x2F;)
-* [Continuous Integration workflow for your Hyas project](https:&#x2F;&#x2F;henkverlinde.com&#x2F;continuous-integration-workflow-for-your-hyas-project&#x2F;)
-* [Hyas: Hugo starter helping you build modern websites](https:&#x2F;&#x2F;henkverlinde.com&#x2F;hyas-hugo-starter-helping-you-build-modern-websites&#x2F;)
+* [Master npm with Hugo: an introduction to npm](https:&#x2F;&#x2F;henkverlinde.com&#x2F;master-npm-with-hugo-an-introduction-to-npm&#x2F;)
+* [Master npm with Hugo: customizing build scripts](https:&#x2F;&#x2F;henkverlinde.com&#x2F;master-npm-with-hugo-customizing-build-scripts&#x2F;)
 <!--END_SECTION:feed-->
