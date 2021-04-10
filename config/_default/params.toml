@@ -27,4 +27,4 @@ lqipWidth = "20x"
 footer = "© 2021 Henk Verlinde — <a href=\"/privacy-policy/\">Privacy</a>"
 
 alert = true
-alertText = "👊 Thank you <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\" target=\"_blank\" rel=\"noopener\">all 200+ stargazers</a> for starring the Doks repo!"
+alertText = "👊 Thank you <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\" target=\"_blank\" rel=\"noopener\">all 300+ stargazers</a> for starring the Doks repo!"
