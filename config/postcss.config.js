@@ -14,6 +14,12 @@ module.exports = {
         'lazyloaded',
         'alert-link',
         'blockquote',
+        'table',
+        'thead',
+        'tbody',
+        'tr',
+        'th',
+        'td',
         ...whitelister([
           './assets/scss/components/_syntax.scss',
           './assets/scss/components/_code.scss',

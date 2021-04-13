@@ -9,7 +9,7 @@ weight: 50
 images: ["hyas-hugo-starter-helping-you-build-modern-websites.png"]
 categories: ["Tools", "Projects"]
 series: []
-tags: ["Hugo", "Jamstack", "Netlify"]
+tags: ["Hugo", "Jamstack", "Netlify", "Hyas"]
 ---
 
 ## Building on the work of others

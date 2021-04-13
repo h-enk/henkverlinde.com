@@ -9,7 +9,7 @@ weight: 50
 images: ["master-npm-with-hugo-managing-dependencies.png"]
 categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
-tags: ["Hugo", "Node.js", "npm"]
+tags: ["Hugo", "Node.js", "npm", "Hyas"]
 ---
 
 In the [first post]({{< ref "master-npm-with-hugo-an-introduction-to-npm" >}}) of the series, I introduced to the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project.

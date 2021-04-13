@@ -9,7 +9,7 @@ weight: 50
 images: ["master-npm-with-hugo-customizing-build-scripts.png"]
 categories: ["Tools", "Guides"]
 series: ["Master npm with Hugo"]
-tags: ["Hugo", "Node.js", "npm"]
+tags: ["Hugo", "Node.js", "npm", "Hyas"]
 ---
 
 In the [second post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
