@@ -76,7 +76,6 @@ Use `hyas <command> --help` for more information about a command.
 
 You’ll get notified when an update is available.
 
-
 ## Documentation
 
 - [Hyas CLI](https://gethyas.com/hyas-cli)
