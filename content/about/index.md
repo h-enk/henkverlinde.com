@@ -7,21 +7,8 @@ draft: false
 images: []
 ---
 
-I think experimenting is key to learn and to grow — both professionally and personally. I like making digital products that are simple, easy to use, and look nice. I'm the founder of [Ventizo](https://ventizo.com/).
+Hi, I'm Henk Verlinde! I am the founder and CEO of [Ventizo](https://ventizo.com/), a digital products company headquartered in the Netherlands. I hold a MSc in Economics and Business from Erasmus University Rotterdam. I've worked as Business Analyst, Project Manager, and Business Developer for international banks. On the side, I've always liked to code stuff.
 
-This website is my journal — recording my findings as a developer. I hope it serves you too. [Contact me]({{< ref "contact/index.md" >}}) if you have any questions.
+I strongly believe experimenting is key to learn and to grow personally, and professionally. I love making innovative stuff that is simple, easy to use, and looks nice. At Ventizo, and as side projects, I like to create digital products — the [Jamstack](https://jamstack.org/) way.
 
-## Projects
-
-- [Hyas](https://gethyas.com/)
-- [Doks](https://getdoks.org/)
-
-## Interests
-
-- Testing business ideas
-- Digital products
-- [Jamstack](https://jamstack.org/)
-
-## Education
-
-- MSc Economics and Business — Erasmus University Rotterdam
+This website is a journal, where I record my thoughts and learnings, and showcase my projects. I do hope it will serve you too. Feel free to [contact me]({{< ref "contact/index.md" >}}) if you have any questions.

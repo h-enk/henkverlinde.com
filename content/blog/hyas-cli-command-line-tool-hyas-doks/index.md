@@ -1,12 +1,12 @@
 ---
-title: "Introducing the Hyas CLI"
-description: "Command line tool making it easier and more seamless to work with Hyas from the command line."
-excerpt: "Command line tool making it easier and more seamless to work with Hyas from the command line."
+title: "Hyas CLI: command line tool for Hyas and Doks"
+description: "Command line tool making it easier and more seamless to work with Hyas — and Doks — from the command line."
+excerpt: "Command line tool making it easier and more seamless to work with Hyas — and Doks — from the command line."
 date: 2021-04-12T09:30:07+02:00
 lastmod: 2021-04-12T09:30:07+02:00
 draft: false
 weight: 10
-images: ["hyas-cli.png"]
+images: ["hyas-cli-command-line-tool-hyas-doks.png"]
 categories: ["Tools", "Projects"]
 tags: ["CLI", "Hyas", "Doks"]
 ---
