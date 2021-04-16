@@ -7,7 +7,7 @@
 
 Check out my latest blog posts:
 <!--START_SECTION:feed-->
-* [Introducing the Hyas CLI](https:&#x2F;&#x2F;henkverlinde.com&#x2F;introducing-the-hyas-cli&#x2F;)
+* [Hyas CLI: command line tool for Hyas and Doks](https:&#x2F;&#x2F;henkverlinde.com&#x2F;hyas-cli-command-line-tool-for-hyas-and-doks&#x2F;)
 * [Subresource Integrity (SRI) Generator](https:&#x2F;&#x2F;henkverlinde.com&#x2F;subresource-integrity-sri-generator&#x2F;)
 * [Self-Hosting Plausible Analytics on DigitalOcean](https:&#x2F;&#x2F;henkverlinde.com&#x2F;self-hosting-plausible-analytics-on-digitalocean&#x2F;)
 * [Doks: modern documentation theme for Hugo](https:&#x2F;&#x2F;henkverlinde.com&#x2F;doks-modern-documentation-theme-for-hugo&#x2F;)
