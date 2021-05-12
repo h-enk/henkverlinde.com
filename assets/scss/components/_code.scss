@@ -1,68 +1,26 @@
-pre,
-code,
-kbd,
-samp {
-  font-family: $font-family-monospace;
-  font-size: $font-size-sm;
-}
-
 pre {
-  background: $gray-150;
-  color: $gray-900;
-  line-height: $line-height-base;
-  margin: 2rem 0;
+  background: $color-background-content-code;
+  padding: 1em;
+  display: block;
+  margin: 1em 0;
   overflow: auto;
-  padding: 1.25rem 1.5rem;
-  tab-size: 4;
-  border-radius: 0.1875rem;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 code {
-  background: $gray-150;
-  color: $gray-900;
-  padding: 0.125rem 0.375rem;
-  border-radius: 0.1875rem;
+  font-size: $font-size-content-code;
+  color: $color-text-content-body;
+  word-wrap: break-word;
 }
 
 pre code {
-  background: none;
-  font-size: inherit;
-  padding: 0;
+  line-height: 1.4;
+  font-size: $font-size-content-code;
+  color: $color-text-content-body;
+  word-break: normal;
 }
 
-/*
-@include media-breakpoint-down(xs) {
-  pre {
-    margin: 2rem -1.5rem;
-  }
-
-  pre,
-  code,
-  kbd,
-  samp {
-    border-radius: 0;
-  }
-}
-*/
-
-code a {
-  border-bottom-color: $gray-900;
-}
-
-.alert code {
-  background: $gray-200;
-}
-
-.file.my-2 {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-}
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 1.25rem 1.5rem !important;
-  margin: -1.25rem -1.5rem;
-  background: $gray-150;
-  color: $gray-900;
+a > code {
+  color: inherit;
 }

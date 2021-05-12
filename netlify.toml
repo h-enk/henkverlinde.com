@@ -3,31 +3,15 @@
   functions = "functions"
 
 [build.environment]
+  HUGO_VERSION = "0.80.0"
   NODE_VERSION = "15.5.1"
   NPM_VERSION = "7.3.0"
 
 [context.production]
-  command = "hugo --gc --minify -b $URL && npm run build:functions"
+  command = "hugo -b $URL --gc --minify && npm run build:functions"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
-
-[[plugins]]
-  package = "netlify-plugin-submit-sitemap"
-
-	[plugins.inputs]
-    baseUrl = "https://henkverlinde.com"
-    sitemapPath = "/sitemap.xml"
-    providers = [
-      "google",
-      "bing",
-      "yandex"
-    ]
-
-[dev]
-  command = "npm run start"
-  targetPort = 1313
-  framework = "#custom"
+  command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"

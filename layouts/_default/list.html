@@ -1,18 +1,15 @@
 {{ define "main" }}
-<div class="row">
-  <div class="col-lg-11 offset-lg-1">
+<div class="row justify-content-center">
+  <div class="col-lg-7">
     <h1>{{ .Title }}</h1>
+    {{ $paginator := .Paginate (.Data.Pages) -}}
+    {{ range $paginator.Pages -}}
+    <article>
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      {{ .Description }}
+    </article>
+    {{ end -}}
+    {{ template "_internal/pagination.html" . -}}
   </div>
 </div>
-
-{{ partial "content/list-header.html" . -}}
-
-<div class="post-list">
-{{ $paginator := .Paginate ( .Data.Pages ) }}
-{{ range $paginator.Pages }}
-  {{ partial "content/post-list-item.html" . -}}
-{{ end -}}
-</div>
-
-{{ partial "content/pagination.html" . -}}
 {{ end }}

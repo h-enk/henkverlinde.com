@@ -1,21 +1,12 @@
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
-{{ $infiniteScroll := resources.Get "js/vendor/infinite-scroll/infinite-scroll.pkgd.min.js" -}}
-{{ $flickity := resources.Get "js/vendor/flickity/flickity.pkgd.min.js" -}}
-
-{{ $highlight := resources.Get "js/highlight.js" -}}
-{{ $highlight := $highlight | js.Build -}}
-
 {{ if eq (hugo.Environment) "development" -}}
-  {{ $app := resources.Get "js/app.js" -}}
-  {{ $js := slice $lazysizes $infiniteScroll $flickity $app | resources.Concat "main.js" -}}
-  <script src="{{ $highlight.Permalink }}" defer></script>
+  {{ $app := resources.Get "js/app.js" | babel -}}
+  {{ $js := slice $lazysizes $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
-  {{ $app := resources.Get "js/app.js" | minify -}}
-  {{ $js := slice $lazysizes $infiniteScroll $flickity $instantPage $app | resources.Concat "main.js" -}}
+  {{ $app := resources.Get "js/app.js" | babel | minify -}}
+  {{ $js := slice $lazysizes $instantPage $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
-  {{ $highlight = $highlight | minify | resources.Fingerprint "sha512" }}
-  <script src="{{ $highlight.Permalink }}" integrity="{{ $highlight.Data.Integrity }}" crossorigin="anonymous" defer></script>
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}

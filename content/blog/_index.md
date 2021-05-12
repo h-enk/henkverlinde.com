@@ -1,10 +1,10 @@
 ---
 title: "Blog"
-description: "Henk Verlinde blog."
-date: 2020-06-19T11:18:43+02:00
-lastmod: 2020-06-29T08:13:21+02:00
+description: "Hyas Blog"
+date: 2020-04-17T12:17:27+00:00
+lastmod: 2020-04-17T12:17:27+00:00
 draft: false
 images: []
-sitemap_exclude: false
-feed_exclude: false
 ---
+
+This is the home for our latest updates and news.

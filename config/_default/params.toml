@@ -1,30 +1,36 @@
 title = "Henk Verlinde"
-titleSeparator = "—"
-titleAddition = "Digital Products"
-description = "Tools, guides, and insights on digital products."
-images = ["henk-verlinde.png"]
-twitterSite = "henkverlinde"
-twitterCreator = "henkverlinde"
+titleSeparator = "-"
+titleAddition = "Modern Hugo Starter"
+description = "Hugo starter helping you build modern websites."
+
+images = ["hyas.png"]
+
+twitterSite = "@henkverlinde"
+twitterCreator = "@henkverlinde"
 facebookAuthor = "verlinde.henk"
 facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
-schemaType = "Person"
-schemaLogo = "logo-henk-verlinde.png"
+
+schemaType = "Organization"
+schemaLogo = "logo-hyas.png"
 schemaTwitter = "https://twitter.com/henkverlinde"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
+
 siteLinksSearchBox = false
 
 themeColor = "#fff"
 
 quality = 85
 bgColor = "#fff"
-landscapePhotoWidths = [800, 700, 600, 500]
+landscapePhotoWidths = [1000, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
 
-footer = "© 2021 Henk Verlinde — <a href=\"/privacy-policy/\">Privacy</a>"
+# Footer
+# footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://gethyas.com/\">Hyas</a>"
+footer = "© 2021 Henk Verlinde"
 
-alert = true
-alertText = "👊 Thank you <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\" target=\"_blank\" rel=\"noopener\">all 300+ stargazers</a> for starring the Doks repo!"
+alert = false
+alertText = "Deliver web projects 10x faster. <a class=\"alert-link\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper →</a>"

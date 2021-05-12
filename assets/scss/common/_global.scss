@@ -1,16 +1,9 @@
-.monospace {
-  font-family: $font-family-monospace;
-}
-
-.content {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-.section {
-  background: $gray-150;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+@include media-breakpoint-up(md) {
+  .container,
+  .container-fluid {
+    padding-right: $grid-gutter-width * 2;
+    padding-left: $grid-gutter-width * 2;
+  }
 }
 
 h1,
@@ -29,20 +22,6 @@ h6,
 }
 
 @include media-breakpoint-up(md) {
-  body {
-    font-size: $font-size-md;
-  }
-
-  .content {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   h1,
   h2,
   h3,
@@ -59,18 +38,79 @@ h6,
   }
 }
 
-@include media-breakpoint-up(lg) {
-  .content {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
-
-  .section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-  }
+a {
+  cursor: pointer;
+  color: $color-text-primary;
+  transition: opacity 0.1s ease-in-out;
 }
 
-.infinite-scroll-request {
-  margin-top: 3rem;
+a:hover {
+  opacity: 0.8;
+}
+
+.content {
+  padding-top: 3rem;
+  padding-bottom: 9rem;
+}
+
+.content p,
+.content li {
+  font-size: $font-size-content-body;
+  color: $color-text-content-body;
+}
+
+.content h1 {
+  font-size: $font-size-content-title;
+  color: $color-text-content-title;
+}
+
+.content h2 {
+  font-size: $font-size-content-header2;
+  color: $color-text-content-header;
+  font-weight: $font-weight-bolder;
+}
+
+.content h3 {
+  font-size: $font-size-content-header3;
+  color: $color-text-content-header;
+  font-weight: $font-weight-bolder;
+}
+
+.content h4 {
+  font-size: $font-size-content-header4;
+  color: $color-text-content-header;
+  font-weight: $font-weight-bolder;
+}
+
+.content a {
+  color: $color-text-content-link;
+  text-decoration: underline;
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+.section {
+  background: $gray-200;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.section p,
+.section a {
+  margin: 0;
+  text-align: center;
+}
+
+.section svg {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-top;
+}
+
+.monospace {
+  font-family: $font-family-code;
 }

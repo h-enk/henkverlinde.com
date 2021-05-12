@@ -1,14 +1,15 @@
 ---
-title: "Doks: modern documentation theme for Hugo"
+title: "Meet Doks"
 description: "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
 excerpt: "<a href=\"https://getdoks.org/\">Doks</a> is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own."
 date: 2020-12-07T14:08:47+01:00
 lastmod: 2020-12-07T14:08:47+01:00
 draft: false
 weight: 40
-images: ["doks-modern-documentation-theme-for-hugo.png"]
+images: ["bill-jelen-woWf_VJ7dNs-unsplash.jpg"]
 categories: ["Themes", "Projects"]
-tags: ["Hugo", "Jamstack", "Netlify", "Doks"]
+tags: ["Hugo", "Netlify", "Hyas"]
+authors: ["Henk Verlinde"]
 ---
 
 ## User Experience

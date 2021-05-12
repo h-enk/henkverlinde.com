@@ -1,14 +1,15 @@
 ---
-title: "Self-Hosting Plausible Analytics on DigitalOcean"
+title: "Self-Hosting Plausible Analytics"
 description: "Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean."
 excerpt: "Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean."
 date: 2021-03-09T08:33:25+01:00
 lastmod: 2021-03-09T08:33:25+01:00
 draft: false
 weight: 30
-images: ["self-hosting-plausible-digitalocean.png"]
+images: []
 categories: ["Tools", "Guides"]
-tags: ["Plausible", "DigitalOcean", "Docker", "Caddy"]
+tags: ["Analytics", "Privacy"]
+authors: ["Henk Verlinde", "Bot"]
 ---
 
 Main components:
