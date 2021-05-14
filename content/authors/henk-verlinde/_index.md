@@ -6,9 +6,4 @@ lastmod: 2020-10-06T08:50:45+00:00
 draft: false
 images: []
 avatar: "henk-verlinde.jpg"
-twitter: "@HenkVerlinde"
 ---
-
-Creator of Hyas.
-
-[@HenkVerlinde](https://twitter.com/henkverlinde)

@@ -1,0 +1,41 @@
+.page-list {
+  margin: 2rem 0;
+}
+
+@include media-breakpoint-up(lg) {
+  .page-list {
+    margin: 3rem 0;
+  }
+}
+
+.page-item {
+  margin-bottom: 1rem;
+}
+
+.page-item a {
+  text-decoration: none;
+}
+
+.page-title,
+.page-meta {
+  margin-bottom: 0;
+  font-size: $font-size-content-list;
+}
+
+.page-item a .page-title {
+  font-weight: 500;
+  color: $color-text-primary;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.page-item a:hover .page-title,
+.page-item a:focus .page-title,
+.page-item a:hover .page-meta,
+.page-item a:focus .page-meta {
+  opacity: 0.8;
+}
+
+.page-item a:hover .page-title:hover,
+.page-item a:focus .page-title:focus {
+  text-decoration: underline;
+}

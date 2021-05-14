@@ -9,7 +9,7 @@ weight: 30
 images: []
 categories: ["Tools", "Guides"]
 tags: ["Analytics", "Privacy"]
-authors: ["Henk Verlinde", "Bot"]
+authors: ["Henk Verlinde"]
 ---
 
 Main components:

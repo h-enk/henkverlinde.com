@@ -4,12 +4,12 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
     <div class="page-list">
-      {{ range .Data.Pages -}}
+      {{ range .Data.Pages.ByTitle -}}
         <article class="page-item">
           <a href="{{ .Permalink }}">
             <div class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center">
               <p class="page-title">{{ .Title }}</p>
-              <p class="page-meta"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2 2006" -}}</time></p>
+              <p class="page-meta">{{ len .Data.Pages }}</p>
             </div>
           </a>
         </article>
