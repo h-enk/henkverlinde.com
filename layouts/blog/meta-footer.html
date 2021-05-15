@@ -7,7 +7,7 @@
       {{ $lqip := $image.Resize $.Site.Params.lqipWidth -}}
       <a class="avatar-link" href="{{ .Permalink }}">
         <figure class="avatar">
-          <img class="img-simple rounded img-fluid lazyload blur-up" draggable="false" src="{{ $lqip.Permalink }}" data-src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Title }}">
+          <img class="img-simple rounded-circle img-fluid lazyload blur-up" draggable="false" src="{{ $lqip.Permalink }}" data-src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Title }}">
         </figure>
       </a>
     {{ end -}}

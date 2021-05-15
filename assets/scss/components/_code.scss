@@ -16,7 +16,10 @@ code {
 
 pre code {
   line-height: 1.4;
-  font-size: $font-size-content-code;
+  // font-size: $font-size-content-code;
+
+  @include font-size(1.0625rem);
+
   color: $color-text-content-body;
   word-break: normal;
 }

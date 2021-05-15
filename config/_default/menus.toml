@@ -13,10 +13,10 @@
   url = "/privacy-policy/"
   weight = 10
 
-[[legal]]
-  name = "Colophon"
-  url = "/colophon/"
-  weight = 20
+# [[legal]]
+#   name = "Colophon"
+#   url = "/colophon/"
+#   weight = 20
 
 [[social]]
   name = "LinkedIn"

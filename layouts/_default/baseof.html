@@ -12,9 +12,6 @@
     {{ .Scratch.Set "class" .Type -}}
     {{ .Scratch.Add "class" " list" -}}
   {{ end -}}
-  {{ if (ne .Section "blog") -}}
-    {{ .Scratch.Add "class" " main" -}}
-  {{ end -}}
   <body class="{{ .Scratch.Get "class" }}">
     {{ if and .IsHome .Site.Params.alert }}
       {{ partial "header/alert.html" . }}
