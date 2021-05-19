@@ -1,14 +1,57 @@
-{{ define "main" }}
-<div class="row justify-content-center">
-  <div class="col-lg-7">
-    <h1 class="visually-hidden">{{ .Title }}</h1>
-    {{ .Content }}
+{{ define "sidebar-postheader" }}
+<section class="section section-postheader container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <h1 class="visually-hidden">{{ .Title }}</h1>
+      {{ with .GetPage "about/index.md" }}
+        {{ .Content }}
+      {{ end }}
+    </div>
   </div>
-</div>
+</section>
 {{ end }}
 
-{{ define "section" }}
-<section class="section container-fluid">
-  {{- .Content -}}
+{{ define "sidebar-prefooter" }}
+<section class="section section-prefooter container-fluid bg-light">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-footer" }}
+<section class="section section-footer container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      {{ with .GetPage "contact/index.md" }}
+        {{ .Content }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "sidebar-postfooter" }}
+<section class="section section-postfooter container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <h2>Journal</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <div class="row grid">
+        {{ range (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
+          <div class="col-sm-6 col-xl-4 grid-item">
+            <h3><a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+            <p class="date"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2 2006" -}}</time></p>
+            <p>{{ .Params.excerpt | safeHTML }}</p>
+          </div>
+        {{ end -}}
+      </div>
+    </div>
+  </div>
 </section>
 {{ end }}

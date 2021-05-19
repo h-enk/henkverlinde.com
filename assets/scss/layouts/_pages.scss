@@ -39,3 +39,65 @@
 .page-item a:focus .page-title:focus {
   text-decoration: underline;
 }
+
+.home .section-postheader p {
+  font-size: $font-size-body;
+  line-height: $line-height-body;
+  font-weight: 500;
+  color: $gray-700;
+}
+
+.home .section-footer p {
+  font-size: $font-size-medium;
+  line-height: $line-height-body;
+  color: $gray-700;
+}
+
+.home .section-footer h2,
+.home .section-postfooter h2 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.home .section-postheader a,
+.home .section-footer a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 0.07em solid $gray-700;
+}
+
+.home .section-postheader a.external,
+.home .section-footer a.external {
+  white-space: nowrap;
+  margin-right: 1em;
+}
+
+.home .section-postheader a.external::after,
+.home .section-footer a.external::after {
+  content: "\2197";
+  position: absolute;
+  text-decoration: none;
+  border-bottom: 0;
+}
+
+.home .section-postfooter h3 {
+  font-size: $font-size-medium;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
+}
+
+.home .section-postfooter .grid-item:hover,
+.home .section-postfooter .grid-item:focus {
+  opacity: 0.8;
+}
+
+.home .section-postfooter a:hover,
+.home .section-postfooter a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home .section-postfooter p {
+  font-size: $font-size-small;
+  margin-bottom: 0.5em;
+}

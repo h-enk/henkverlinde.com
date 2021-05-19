@@ -93,22 +93,20 @@ strong {
 }
 
 .section {
-  background: $gray-200;
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
-.section p,
-.section a {
-  margin: 0;
-  text-align: center;
+.section-postheader,
+.section-prefooter,
+.section-footer,
+.section-postfooter {
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 
-.section svg {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  vertical-align: text-top;
+.section-postfooter .grid {
+  margin-bottom: 0.375rem;
 }
 
 .monospace {

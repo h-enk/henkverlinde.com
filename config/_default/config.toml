@@ -63,6 +63,7 @@ notAlternative = true
 [taxonomies]
   author = "authors"
   category = "categories"
+  series = "series"
   tag = "tags"
 
 [permalinks]
@@ -95,3 +96,6 @@ toLower = false
   [[module.mounts]]
     source = "node_modules/bootstrap"
     target = "assets/js/vendor/bootstrap"
+  [[module.mounts]]
+    source = "node_modules/masonry-layout"
+    target = "assets/js/vendor/masonry-layout"

@@ -9,7 +9,8 @@ pre {
 }
 
 code {
-  font-size: $font-size-content-code;
+  @include font-size(1.25rem);
+
   color: $color-text-content-body;
   word-wrap: break-word;
 }
