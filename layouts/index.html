@@ -42,7 +42,7 @@
   </div>
   <div class="row justify-content-center">
     <div class="col-lg-7">
-      <div class="row grid">
+      <div class="row grid" data-masonry='{ "horizontalOrder": true, "percentPosition": true, "transitionDuration": 0 }'>
         {{ range (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
           <div class="col-sm-6 col-xl-4 grid-item">
             <h3><a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
