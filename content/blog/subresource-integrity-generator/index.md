@@ -7,8 +7,10 @@ lastmod: 2021-03-25T13:56:26+01:00
 draft: false
 weight: 20
 images: []
-categories: ["Tools", "Projects"]
-tags: ["SRI", "React", "CRA", "PWA"]
+categories: ["Tools"]
+series: []
+tags: ["SRI", "React", "PWA"]
+authors: ["Henk Verlinde"]
 ---
 
 ## App

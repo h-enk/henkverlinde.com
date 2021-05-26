@@ -1,18 +1,19 @@
 ---
 title: "Managing dependencies"
-description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the second post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>second</em> post of the series."
+description: "This is the second post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+excerpt: "This is the <em>second</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
 date: 2021-01-27T15:55:56+01:00
 lastmod: 2021-01-27T15:55:56+01:00
 draft: false
 weight: 50
 images: []
-categories: ["Tools", "Guides"]
-series: ["Master npm with Hugo"]
-tags: ["Hugo", "Node.js", "npm", "Hyas"]
+categories: ["Guides"]
+series: ["Using npm with Hugo"]
+tags: ["Hugo", "Nodejs", "npm"]
+authors: ["Henk Verlinde"]
 ---
 
-In the [first post]({{< ref "master-npm-with-hugo-an-introduction-to-npm" >}}) of the series, I introduced to the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project.
+In the [first post]({{< ref "introduction-to-npm" >}}) of the series, I introduced to the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project.
 
 ## Integrating with Hugo
 
@@ -69,7 +70,9 @@ Your `package.json` will now look like:
 }
 ```
 
-{{< alert-simple icon="☝️" text="In this series we also use the <code>npx</code> command. <a href=\"https://docs.npmjs.com/cli/v7/commands/npx\">npx</a>  (included with npm) runs a command from a local or remote npm package." >}}
+{{< aside title="npx" >}}
+In this series we also use the <code>npx</code> command. [npx](https://docs.npmjs.com/cli/v7/commands/npx)  (included with npm) runs a command from a local or remote npm package.
+{{< /aside >}}
 
 Let's check the locally installed Hugo version:
 
@@ -142,7 +145,9 @@ We now have a theme structure living in the `themes/blank-theme` folder.
 
 However, our theme will be a starter that lives in the project root.
 
-{{< alert-simple icon="☝️" text="In this series we also use the <code>shx</code> command. <a href=\"https://github.com/shelljs/shx\">shx</a> runs simple Unix-like, cross-platform commands from npm package scripts and the command line." >}}
+{{< aside title="shx" >}}
+In this series we also use the <code>shx</code> command. [shx](https://github.com/shelljs/shx) runs simple Unix-like, cross-platform commands from npm package scripts and the command line.
+{{< /aside >}}
 
 Let's install shx first:
 
@@ -200,6 +205,8 @@ You're now aware that Hugo itself can be seen as a dependency of your project, a
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo) repo I've set up.
 
-In the [next post]({{< ref "master-npm-with-hugo-customizing-build-scripts" >}}) we’re going to talk about how to customize build scripts.
+In the [next post]({{< ref "customizing-build-scripts" >}}) we’re going to talk about how to customize build scripts.
 
-{{< alert icon="👉" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
+{{< aside title="Hyas" >}}
+Take a look at [Hyas](https://gethyas.com/) for a modern Hugo starter using npm to manage dependencies and run customized build scripts.
+{{< /aside >}}

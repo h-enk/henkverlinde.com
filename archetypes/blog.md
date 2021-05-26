@@ -6,8 +6,9 @@ date: {{ .Date }}
 lastmod: {{ .Date }}
 draft: true
 weight: 50
-images: ["{{ .Name | urlize }}.jpg"]
-categories: [""]
+images: []
+categories: []
+series: []
+tags: []
+authors: ["Henk Verlinde"]
 ---
-
-{{< img src="{{ .Name | urlize }}.jpg" alt="{{ replace .Name "-" " " | title }}" caption="{{ replace .Name "-" " " | title }}" class="wide" >}}

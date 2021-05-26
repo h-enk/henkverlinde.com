@@ -31,6 +31,6 @@ I run [Plausible](https://plausible.io/) analytics on henkverlinde.com. The foll
 
 ## Contact me
 
-[Contact me]({{< ref "contact/index.md" >}}) if you have any questions.
+If you have any questions, contact me at <a class="eml-protected" href="#">85ede0e9e9eac5ede0ebeef3e0f7e9ecebe1e0abe6eae8</a>.
 
 Effective Date: _20th July 2020_

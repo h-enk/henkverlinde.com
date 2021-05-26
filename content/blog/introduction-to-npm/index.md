@@ -1,15 +1,16 @@
 ---
-title: "An introduction to npm"
-description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the first post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>first</em> post of the series."
+title: "Introduction to npm"
+description: "This is the first post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+excerpt: "This is the <em>first</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
 date: 2021-01-15T15:55:48+01:00
 lastmod: 2021-01-15T15:55:48+01:00
 draft: false
 weight: 50
 images: []
-categories: ["Tools", "Guides"]
-series: ["Master npm with Hugo"]
-tags: ["Hugo", "Node.js", "npm", "Hyas"]
+categories: ["Guides"]
+series: ["Using npm with Hugo"]
+tags: ["Hugo", "Nodejs", "npm"]
+authors: ["Henk Verlinde"]
 ---
 
 ## npm
@@ -140,6 +141,8 @@ That’s it. Add `node_modules` to your `.gitignore` and let npm handle it. Now 
 
 You're now familiar with the basic concepts of npm. We also went through the most basic example of installing a single dependency to an empty project. You can find the example in the [npm-hugo](https://github.com/h-enk/npm-hugo) repo I've set up.
 
-In the [next post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) we're going to talk about how to manage dependencies.
+In the [next post]({{< ref "managing-dependencies" >}}) we're going to talk about how to manage dependencies.
 
-{{< alert icon="👉" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
+{{< aside title="Hyas" >}}
+Take a look at [Hyas](https://gethyas.com/) for a modern Hugo starter using npm to manage dependencies and run customized build scripts.
+{{< /aside >}}

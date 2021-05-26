@@ -1,0 +1,23 @@
+.card-aside {
+  border: 0;
+  background-color: $color-background-content-code;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.card-aside .card-title {
+  font-size: $font-size-content-header4;
+  margin-top: 0;
+}
+
+.card-aside .card-body,
+.card-aside p,
+.card-aside li {
+  font-size: $font-size-small;
+}
+
+.card-aside ul,
+.card-aside ol,
+.card-aside p:last-child {
+  margin-bottom: 0;
+}

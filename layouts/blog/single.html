@@ -9,6 +9,9 @@
     <article>
       <h1>{{ .Title }}</h1>
       {{ .Render "meta-header" -}}
+      {{ if .Params.series -}}
+        {{ .Render "series-navigation" -}}
+      {{ end -}}
       <p>{{ .Params.excerpt | safeHTML }}</p>
       {{ .Content }}
       {{ .Render "meta-footer" -}}

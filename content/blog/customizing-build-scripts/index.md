@@ -1,18 +1,19 @@
 ---
 title: "Customizing build scripts"
-description: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the third post of the series."
-excerpt: "In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts. This is the <em>third</em> post of the series."
+description: "This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+excerpt: "This is the <em>third</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
 date: 2021-02-10T15:55:56+01:00
 lastmod: 2021-02-10T15:55:56+01:00
 draft: false
 weight: 50
 images: []
-categories: ["Tools", "Guides"]
-series: ["Master npm with Hugo"]
-tags: ["Hugo", "Node.js", "npm", "Hyas"]
+categories: ["Guides"]
+series: ["Using npm with Hugo"]
+tags: ["Hugo", "Nodejs", "npm"]
+authors: ["Henk Verlinde"]
 ---
 
-In the [second post]({{< ref "master-npm-with-hugo-managing-dependencies" >}}) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
+In the [second post]({{< ref "managing-dependencies" >}}) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure.
 
@@ -161,17 +162,17 @@ Add to `package.json`:
 }
 ```
 
+{{< aside title="Tools" >}}
+
+- [http-server](https://github.com/http-party/http-server) is a simple, zero-configuration command-line http server — handy for viewing a local production build.
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/) is a set of web developer tools built directly into the Google Chrome browser.
+{{< /aside >}}
+
 Run `npm run build` and check the result. That's it. We've brought down the file size of our CSS file from 185.76 KB to — yes that's right — 2.63 KB.
-
-{{< alert icon="💡" text="<a href=\"https://github.com/http-party/http-server\">http-server</a> is a simple, zero-configuration command-line http server — handy for viewing a local production build." >}}
-
-{{< alert icon="💡" text="<a href=\"https://developers.google.com/web/tools/chrome-devtools/\">Chrome DevTools</a> is a set of web developer tools built directly into the Google Chrome browser." >}}
 
 ## Plugins
 
 We could also use dependencies to pull in extra functionality into our starter theme. Think of e.g. SEO, performance, and security.
-
-{{< alert icon="👉" text="Expect a number of <a href=\"https://www.npmjs.com/org/hyas\">Hyas plugins</a> coming soon." >}}
 
 ## Wrapping up
 
@@ -181,4 +182,6 @@ You can find the full example in the [npm-hugo](https://github.com/h-enk/npm-hug
 
 In case you’re curious, the idea for this series was taken from a similar post written about [WordPress](https://roots.io/using-composer-with-wordpress/).
 
-{{< alert icon="👉" text="Hyas is a <a href=\"https://gethyas.com/\">modern Hugo starter</a> using npm to manage dependencies and run customized build scripts." >}}
+{{< aside title="Hyas" >}}
+Take a look at [Hyas](https://gethyas.com/) for a modern Hugo starter using npm to manage dependencies and run customized build scripts.
+{{< /aside >}}

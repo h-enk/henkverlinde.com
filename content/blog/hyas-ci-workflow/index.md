@@ -7,8 +7,10 @@ lastmod: 2020-11-19T10:10:58+01:00
 draft: false
 weight: 50
 images: []
-categories: ["Tools", "Guides"]
-tags: ["Hugo", "GitHub", "Node.js"]
+categories: ["Guides"]
+series: []
+tags: ["Hyas", "CI", "GitHub"]
+authors: ["Henk Verlinde"]
 ---
 
 ## Operating systems

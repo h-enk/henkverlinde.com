@@ -7,7 +7,8 @@ lastmod: 2020-12-07T14:08:47+01:00
 draft: false
 weight: 40
 images: ["bill-jelen-woWf_VJ7dNs-unsplash.jpg"]
-categories: ["Themes", "Projects"]
+categories: ["Themes"]
+series: []
 tags: ["Hugo", "Netlify", "Hyas"]
 authors: ["Henk Verlinde"]
 ---
@@ -22,7 +23,7 @@ authors: ["Henk Verlinde"]
 
 ## Build on Hyas
 
-Get all the [Hyas]({{< ref "hyas-hugo-starter-helping-you-build-modern-websites" >}}) goodness:
+Get all the [Hyas]({{< ref "introducing-hyas" >}}) goodness:
 
 - Security aware
 - Fast by default ⚡️

@@ -1,3 +1,5 @@
-<div class="alert alert-primary" role="alert">
-  {{ .Site.Params.alertText | safeHTML }}
+<div class="alert alert-dark" role="alert">
+  <div class="container-fluid">
+    {{ .Site.Params.alertText | safeHTML }}
+  </div>
 </div>
