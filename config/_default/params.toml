@@ -1,18 +1,16 @@
 title = "Henk Verlinde"
 titleSeparator = "-"
-titleAddition = "Modern Hugo Starter"
-description = "Hugo starter helping you build modern websites."
+titleAddition = "Digital Business Developer"
+description = "Hi, I’m Henk Verlinde, a digital business developer, and the founder and CEO of Ventizo, a digital products company headquartered in the Netherlands."
 
 images = ["hyas.png"]
 
 twitterSite = "@henkverlinde"
 twitterCreator = "@henkverlinde"
-facebookAuthor = "verlinde.henk"
-facebookPublisher = "verlinde.henk"
 ogLocale = "en_US"
 
-schemaType = "Organization"
-schemaLogo = "logo-hyas.png"
+schemaType = "Person"
+schemaLogo = "logo-henk-verlinde.png"
 schemaTwitter = "https://twitter.com/henkverlinde"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
@@ -34,5 +32,4 @@ footer = "© 2021 Henk Verlinde"
 
 alert = false
 # alertText = "Deliver web projects 10x faster. <a class=\"alert-link external\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper</a>"
-alertText = "👊 Thank you <a class=\"alert-link\" href=\"https://github.com/h-enk/doks/stargazers\">all 400+ stargazers</a> for starring the Doks repo!"
-
+alertText = "New! Collaborative Deploy Previews to get better, more frequent feedback from your team. <a class=\"alert-link\" href=\"/\">Learn more</a>"

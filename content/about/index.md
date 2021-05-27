@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "About Henk Verlinde."
+description: "A little about Henk Verlinde."
 date: 2021-05-18T19:28:16+02:00
 lastmod: 2021-05-18T19:28:16+02:00
 draft: false
@@ -14,8 +14,8 @@ sitemap_exclude: true
 feed_exclude: true
 ---
 
-Hello, I'm Jack, an independent freelance designer and developer, currently based in London.
+Hi, I’m Henk Verlinde, a digital business developer, and the founder and CEO of {{< external-link text="Ventizo" link="https://ventizo.com/" >}}, a digital products company headquartered in the Netherlands.
 
-I'm a big fan of building products that are intuitive and fun, eliminating noise through good code and simple design. Specialising in content management, publishing, e-commerce, live streaming and real-time applications, video and audio, and storytelling.
+I hold a MSc in Economics and Business from Erasmus University Rotterdam. I’ve worked as a business analyst, project manager, and business developer for several international banks. On the side, I’ve always liked to code.
 
-I've worked with companies such as Air New Zealand, Tesco, News UK, IBM, and The Economist as a developer. Built and lead technology teams at agencies. And built websites for clients such as {{< external-link text="Beryl" link="https://www.beryl.cc/" >}} and {{< external-link text="Bullboat" link="https://www.bullboat.co.uk" >}}. Alongside my client work, I also make my own products such as {{< external-link text="Unalike" link="https://www.unalike.net/" >}}.
+I believe experimenting is key to learn and to grow personally, and professionally. I love making innovative stuff that is simple, easy to use, and looks nice. At Ventizo, and as side projects, I like to create digital products, the {{< external-link text="Jamstack" link="https://jamstack.org/" >}} way.
