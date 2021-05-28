@@ -1,3 +1,4 @@
+<!--
 {{ with $.Params.images -}}
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ $.Permalink }}{{ index . 0 }}">
@@ -19,7 +20,18 @@
     {{ end -}}
   {{ end -}}
 {{ end -}}
+-->
 
+<meta name="twitter:card" content="summary_large_image">
+
+{{ if and (eq .Kind "page") (or (eq .Section "news") (eq .Section "products")) -}}
+  <meta name="twitter:label1" content="Written by">
+  <meta name="twitter:data1" content="{{ $.Param "author" }}">
+  <meta name="twitter:label2" content="Est. reading time">
+  <meta name="twitter:data2" content="{{ .ReadingTime }} minute{{ if ne .ReadingTime 1 }}s{{ end }}">
+{{ end -}}
+
+<!--
 <meta name="twitter:title" content="{{ .Title }}">
 <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
 {{ with .Site.Social.twitter -}}
@@ -31,3 +43,7 @@
     <meta name="twitter:creator" content="@{{ . }}">
   {{ end -}}
 {{ end -}}
+
+<meta name="twitter:site" content="{{ .Site.Params.twitterSite }}">
+<meta name="twitter:creator" content="{{ .Site.Params.twitterCreator }}">
+-->

@@ -3,7 +3,7 @@ titleSeparator = "-"
 titleAddition = "Digital Business Developer"
 description = "Hi, I’m Henk Verlinde, a digital business developer, and the founder and CEO of Ventizo, a digital products company headquartered in the Netherlands."
 
-images = ["hyas.png"]
+images = ["henk-verlinde-share-image.png"]
 
 twitterSite = "@henkverlinde"
 twitterCreator = "@henkverlinde"
@@ -16,6 +16,7 @@ schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
 
+domainTLD = "henkverlinde.com"
 siteLinksSearchBox = false
 
 themeColor = "#fff"

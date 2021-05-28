@@ -15,10 +15,11 @@ Todo:
   ✔ Add homepage alert @done(21-05-27 10:00)
   ✔ Add homepage portfolio image/slider/gif/mp4 @done(21-05-27 14:37)
   ✔ Add Plausible @done(21-05-27 16:35)
-  ☐ Update social media tags @today
-  ☐ Add social media images @today
+  ✔ Update social media tags @done(21-05-28 12:21)
+  ✔ Add social media images @done(21-05-28 12:21)
+  ✔ Update README @done(21-05-28 12:38)
   ☐ Add dark mode
   ☐ Add syntax highlighting
 
 Fix:
-  ✔ Update CSP @critical @done(21-05-27 16:30)
+  ✔ Update CSP @critical @done(21-05-28 12:29)
