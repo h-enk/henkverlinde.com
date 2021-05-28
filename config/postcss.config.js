@@ -12,9 +12,16 @@ module.exports = {
       ],
       safelist: [
         'lazyloaded',
+        'table',
+        'thead',
+        'tbody',
+        'tr',
+        'th',
+        'td',
+        'blockquote',
         ...whitelister([
-          // './assets/scss/components/_syntax.scss',
           './assets/scss/components/_code.scss',
+          './assets/scss/components/_syntax.scss',
         ]),
       ],
     }),

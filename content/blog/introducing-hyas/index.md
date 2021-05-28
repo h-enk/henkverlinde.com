@@ -6,7 +6,7 @@ date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 draft: false
 weight: 50
-images: ["4d5524ff-3908-485b-b925-e4dc438cf0e2.gif", "3c6c8dd7-ca9e-4fad-a49f-b812b0522449.gif", "source.gif"]
+images: []
 categories: ["Tools"]
 series: []
 tags: ["Hugo", "Netlify", "Hyas"]

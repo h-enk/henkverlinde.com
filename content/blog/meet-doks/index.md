@@ -6,7 +6,7 @@ date: 2020-12-07T14:08:47+01:00
 lastmod: 2020-12-07T14:08:47+01:00
 draft: false
 weight: 40
-images: ["bill-jelen-woWf_VJ7dNs-unsplash.jpg"]
+images: []
 categories: ["Themes"]
 series: []
 tags: ["Hugo", "Netlify", "Hyas"]
