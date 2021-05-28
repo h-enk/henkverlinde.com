@@ -1,11 +1,13 @@
 baseurl = "/"
+canonifyURLs = false
 disableAliases = true
 disableHugoGeneratorInject = true
+# disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 5
+paginate = 7
 rssLimit = 10
 
 # add redirects/headers
@@ -55,11 +57,12 @@ notAlternative = true
     tabWidth = 4
 
 [sitemap]
-  changefreq = "weekly"
+  changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
 
 [taxonomies]
+  author = "authors"
   category = "categories"
   series = "series"
   tag = "tags"
@@ -75,9 +78,6 @@ toLower = false
   name = "categories"
   weight = 100
   [[related.indices]]
-  name = "tags"
-  weight = 80
-  [[related.indices]]
   name = "date"
   weight = 10
 
@@ -92,11 +92,11 @@ toLower = false
     source = "node_modules/lazysizes"
     target = "assets/js/vendor/lazysizes"
   [[module.mounts]]
-    source = "node_modules/infinite-scroll/dist"
-    target = "assets/js/vendor/infinite-scroll"
-  [[module.mounts]]
-    source = "node_modules/flickity/dist"
-    target = "assets/js/vendor/flickity"
-  [[module.mounts]]
     source = "node_modules/instant.page"
     target = "assets/js/vendor/instant.page"
+  [[module.mounts]]
+    source = "node_modules/bootstrap"
+    target = "assets/js/vendor/bootstrap"
+  [[module.mounts]]
+    source = "node_modules/masonry-layout"
+    target = "assets/js/vendor/masonry-layout"

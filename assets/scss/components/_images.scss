@@ -2,14 +2,40 @@ figure {
   margin: 2rem 0;
 }
 
+figure.avatar {
+  display: inline-block;
+  margin: 0;
+}
+
+figure.post-image {
+  margin: 2rem -1.5rem 0;
+}
+
+@include media-breakpoint-up(lg) {
+  figure.post-image {
+    margin: 2rem 0 0;
+  }
+}
+
+.img-gif {
+  width: 100%;
+}
+
+.content a.avatar-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+.avatar-link:not(:last-child) {
+  margin-right: 0.8125rem;
+}
+
 .figure-caption {
   margin: 0.25rem 0 0.75rem;
-  font-family: monospace;
-  font-size: $font-size-base;
 }
 
 figure.wide {
-  margin: 2rem 0;
+  margin: 2rem -1.5rem;
 }
 
 figure.wide .figure-caption {
@@ -17,10 +43,6 @@ figure.wide .figure-caption {
 }
 
 @include media-breakpoint-up(md) {
-  .figure-caption {
-    font-size: $font-size-md;
-  }
-
   figure.wide {
     margin: 2rem -2.5rem;
   }
@@ -46,12 +68,4 @@ figure.wide .figure-caption {
 
 .blur-up.lazyloaded {
   filter: unset;
-}
-
-img {
-  background-color: $gray-150;
-}
-
-.img-simple {
-  margin: 1rem 0 2rem;
 }

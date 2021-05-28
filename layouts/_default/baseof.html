@@ -17,13 +17,17 @@
       {{ partial "header/alert.html" . }}
     {{ end }}
     {{ partial "header/header.html" . }}
+    {{ block "sidebar-postheader" . }}{{ end }}
+    {{ if ne .Kind "home" -}}
     <div class="wrap container" role="document">
       <div class="content">
         {{ block "main" . }}{{ end }}
       </div>
     </div>
+    {{ end -}}
     {{ block "sidebar-prefooter" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
+    {{ block "sidebar-postfooter" . }}{{ end }}
     {{ partial "footer/footer.html" . }}
     {{ partial "footer/script-footer.html" . }}
   </body>

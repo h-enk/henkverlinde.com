@@ -1,0 +1,15 @@
+<p class="meta-footer">{{ if .Params.tags -}}{{ range $index, $tag := .Params.tags -}}{{ if gt $index 0 -}}&nbsp;{{ end -}}<a class="list-meta-link" href="{{ "/tags/" | absURL }}{{ . | urlize }}/">#{{ . | lower }}</a>{{ end -}}{{ end -}}</p>
+{{- range .Params.authors -}}
+  {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) -}}
+    {{ if .Params.avatar -}}
+      {{ $image := .Resources.GetMatch (printf "**%s" .Params.avatar) -}}
+      {{ $image := $image.Fill "60x60" -}}
+      {{ $lqip := $image.Resize $.Site.Params.lqipWidth -}}
+      <a class="avatar-link" href="{{ .Permalink }}">
+        <figure class="avatar">
+          <img class="img-simple rounded-circle img-fluid lazyload blur-up" draggable="false" src="{{ $lqip.Permalink }}" data-src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Title }}">
+        </figure>
+      </a>
+    {{ end -}}
+  {{ end -}}
+{{ end -}}

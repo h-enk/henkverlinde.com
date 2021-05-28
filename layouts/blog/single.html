@@ -1,50 +1,21 @@
 {{ define "main" }}
-<article>
-  <div class="row">
-    <div class="col-lg-9 offset-lg-2">
-      {{ $image := index .Params.images 0 -}}
-      {{ .Scratch.Set "src" $image -}}
-      {{ .Scratch.Add "alt" .Title -}}
-      <div class="post-image">
-        {{ partial "content/img.html" . -}}
-      </div>
-    </div>
+<div class="row justify-content-center">
+{{ if .Params.images }}
+  <div class="col-lg-8">
+    {{ partial "content/img.html" . -}}
   </div>
-  <div class="row">
-    <div class="col-lg-7 offset-lg-2">
-      {{ .Render "meta" -}}
-      <h1 class="post-title">{{ .Title }}</h1>
-    </div>
-  </div>
-  {{ if .Params.series -}}
-  <div class="row">
-    <div class="col-lg-7 offset-lg-2">
-      {{ $name := index .Params.series 0 }}<p class="meta monospace mb-4"><a href="{{ "/series/" | absURL }}{{ $name | urlize }}/">{{ $name }}</a></p>
-    </div>
-  </div>
-  {{ end -}}
-  <div class="row">
-    <div class="col-lg-7 offset-lg-2">
+{{ end }}
+  <div class="col-lg-7">
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ .Render "meta-header" -}}
+      {{ if .Params.series -}}
+        {{ .Render "series-navigation" -}}
+      {{ end -}}
       <p>{{ .Params.excerpt | safeHTML }}</p>
       {{ .Content }}
-      {{ .Render "tags" -}}
-      {{ if .Params.series -}}
-        {{ partial "content/serie-navigation.html" . -}}
-      {{ end -}}
-    </div>
-    <div class="col-lg-2 offset-lg-1 align-self-start">
-      <div class="sidebar">
-        {{ partial "sidebar/share.html" . -}}
-      </div>
-    </div>
-  </div>
-</article>
-{{ end }}
-
-{{ define "sidebar-footer" }}
-<div class="section">
-  <div class="container">
-    {{ partial "sidebar/single-navigation.html" . -}}
+      {{ .Render "meta-footer" -}}
+    </article>
   </div>
 </div>
 {{ end }}

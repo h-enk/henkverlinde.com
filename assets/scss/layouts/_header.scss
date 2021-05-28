@@ -1,33 +1,52 @@
-.banner .nav li {
-  @extend .nav-item;
+header {
+  padding: 2rem 0;
 }
 
-.banner .nav a {
-  @extend .nav-link;
+header .nav {
+  margin-top: 1.5rem;
 }
 
-@include media-breakpoint-up(md) {
-  .navbar-brand {
-    font-size: $font-size-xl;
-  }
+.nav-link {
+  @include font-size(1.25rem);
+
+  color: $color-text-primary;
 }
 
-.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
+.nav-link:hover,
+.nav-link:focus {
+  color: $color-text-primary;
 }
 
-.navbar-nav .nav-item:not(:last-child) .nav-link {
-  padding-right: 1.125rem;
+header .nav-item:first-child .nav-link {
   padding-left: 0;
 }
 
 @include media-breakpoint-up(md) {
-  .navbar-nav .nav-item:not(:last-child) .nav-link {
-    padding-right: 1.5rem;
-    padding-left: 0;
+  header .nav {
+    margin-top: 0;
   }
+
+  header .nav-item:first-child .nav-link {
+    padding-left: 1rem;
+  }
+
+  header .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
+}
+
+.site-title {
+  @include font-size(2rem);
+
+  font-weight: $font-weight-bolder;
+  color: $color-text-head;
+}
+
+.nav-link .nav-name {
+  border-bottom: 0.125rem solid transparent;
+}
+
+.nav-link:hover .nav-name,
+.nav-link:focus .nav-name {
+  border-bottom: 0.125rem solid $color-text-primary;
 }

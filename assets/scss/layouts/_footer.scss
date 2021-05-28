@@ -1,44 +1,50 @@
-.footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+footer {
+  padding: 2rem 0;
 }
 
-.footer p {
-  font-size: $font-size-sm;
-  margin-bottom: 0;
+.nav-link {
+  @include font-size(1.25rem);
+
+  color: $color-text-primary;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: $color-text-primary;
+}
+
+footer .nav-item:first-child .nav-link {
+  padding-left: 0;
 }
 
 @include media-breakpoint-up(md) {
-  .footer p {
-    font-size: $font-size-base;
+  footer .nav-item:first-child .nav-link {
+    padding-left: 1rem;
+  }
+
+  footer .nav-item:last-child .nav-link {
+    padding-right: 0;
   }
 }
 
-.footer .list-inline-item:not(:last-child) {
-  margin-right: 1rem;
+.nav-text {
+  @include font-size(1.25rem);
+
+  color: $color-text-primary;
+  margin: 0.5rem 0;
 }
 
-@include media-breakpoint-up(lg) {
-  .footer .list-inline {
-    text-align: right;
-    margin-bottom: 0;
+@include media-breakpoint-up(md) {
+  footer .nav-text {
+    margin: 0 1rem 0 0;
   }
 }
 
-.footer a {
-  color: $gray-900;
+.nav-link .nav-name {
+  border-bottom: 0.125rem solid transparent;
 }
 
-.footer a:hover,
-.footer a:focus {
-  color: $primary;
-}
-
-.footer svg {
-  color: $gray-550;
-}
-
-.footer svg:hover,
-.footer svg:focus {
-  color: $gray-900;
+.nav-link:hover .nav-name,
+.nav-link:focus .nav-name {
+  border-bottom: 0.125rem solid $color-text-primary;
 }

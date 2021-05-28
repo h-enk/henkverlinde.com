@@ -1,40 +1,57 @@
-{{ define "main" }}
-{{ partial "content/page-header.html" . -}}
-<div class="featured-posts">
-  <div class="row">
-    <div class="col-lg-6 offset-lg-1">
-    {{ range first 1 (where .Site.RegularPages "Section" "blog")  -}}
-      {{ .Render "featured-first" -}}
-    {{ end -}}
-    </div>
-    <div class="col-lg-5">
-    {{ range first 3 (after 1 (where .Site.RegularPages "Section" "blog")) -}}
-      {{ .Render "featured" -}}
-    {{ end -}}
+{{ define "sidebar-postheader" }}
+<section class="section section-postheader container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <h1 class="visually-hidden">{{ .Title }}</h1>
+      {{ with .GetPage "about/index.md" }}
+        {{ .Content }}
+      {{ end }}
     </div>
   </div>
-</div>
+</section>
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
-<div class="section">
-  <div class="container">
-    {{ partial "sidebar/category-navigation.html" . -}}
+<section class="section section-prefooter container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      {{ .Content }}
+    </div>
   </div>
-</div>
+</section>
 {{ end }}
 
 {{ define "sidebar-footer" }}
-<div class="section bg-white">
-  <div class="container">
-    {{ partial "content/list-header.html" . -}}
-    <div class="post-list">
-    {{ $paginator := .Paginate (where .Site.RegularPages.ByDate.Reverse "Section" "blog") -}}
-    {{ range $paginator.Pages -}}
-      {{ partial "content/post-list-item.html" . -}}
-    {{ end -}}
+<section class="section section-footer container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      {{ with .GetPage "contact/index.md" }}
+        {{ .Content }}
+      {{ end }}
     </div>
-    {{ partial "content/pagination.html" . -}}
   </div>
-</div>
+</section>
+{{ end }}
+
+{{ define "sidebar-postfooter" }}
+<section class="section section-postfooter container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <h2>Journal</h2>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-lg-7">
+      <div class="row grid" data-masonry='{ "horizontalOrder": true, "percentPosition": true, "transitionDuration": 0 }'>
+        {{ range (where .Site.RegularPages.ByDate.Reverse "Section" "blog")  -}}
+          <div class="col-sm-6 col-xl-4 grid-item">
+            <h3><a class="stretched-link" href="{{ .RelPermalink }}">{{ .Params.title }}</a></h3>
+            <p class="date"><time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "Jan 2 2006" -}}</time></p>
+            <p>{{ .Params.excerpt | safeHTML }}</p>
+          </div>
+        {{ end -}}
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}

@@ -1,5 +1,0 @@
-{{ .Render "meta" -}}
-<h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
-{{ if .Params.series -}}
-  {{ $name := index .Params.series 0 }}<p class="meta monospace mt-0"><a href="{{ "/series/" | absURL }}{{ $name | urlize }}/">{{ $name }}</a></p>
-{{ end -}}

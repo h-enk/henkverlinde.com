@@ -1,0 +1,25 @@
+.card-aside {
+  border: 1px solid $color-text-content-body;
+  border-radius: 0;
+  background: $white;
+  padding: 0.5rem;
+  margin: 2rem 0;
+}
+
+.card-aside .card-title {
+  font-size: $font-size-medium;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.card-aside .card-body,
+.card-aside p,
+.card-aside li {
+  font-size: $font-size-small;
+}
+
+.card-aside ul,
+.card-aside ol,
+.card-aside p:last-child {
+  margin-bottom: 0;
+}

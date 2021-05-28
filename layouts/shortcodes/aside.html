@@ -1,0 +1,8 @@
+<aside>
+  <div class="card card-aside">
+    <div class="card-body">
+      {{ with .Get "title" }}<h3 class="card-title">{{.}}</h3>{{ end }}
+      {{ with .Inner}}{{ . | markdownify}}{{ end }}
+    </div>
+  </div>
+</aside>

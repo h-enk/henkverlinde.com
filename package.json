@@ -1,18 +1,23 @@
 {
-  "name": "henkverlinde",
-  "version": "1.0.0",
-  "private": true,
+  "name": "@hyas/core",
+  "description": "Hyas core",
+  "version": "1.4.4",
   "hugo-bin": {
     "buildTags": "extended"
   },
   "browserslist": [
     "defaults"
   ],
+  "repository": "https://github.com/h-enk/hyas",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "init": "rimraf .git && git init -b main",
     "create": "hugo new",
     "prestart": "npm run clean",
-    "start": "hugo server --disableFastRender --bind 0.0.0.0 --baseURL http://192.168.1.10:1313/",
+    "start": "hugo server --disableFastRender",
     "prebuild": "npm run clean",
     "build": "hugo --gc --minify && npm run build:functions",
     "build:functions": "netlify-lambda build assets/lambda",
@@ -23,6 +28,7 @@
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint *.md content/**/*.md",
     "release": "standard-version",
+    "release:dry-run": "standard-version --dry-run",
     "server": "hugo server",
     "test": "npm run -s lint",
     "env": "env",
@@ -30,22 +36,25 @@
     "check": "hugo version"
   },
   "devDependencies": {
+    "@babel/cli": "^7.13",
+    "@babel/core": "^7.14",
+    "@babel/preset-env": "^7.14",
     "@fullhuman/postcss-purgecss": "^4.0",
     "autoprefixer": "^10.2",
-    "bootstrap": "^4.6",
-    "eslint": "^7.25",
-    "flickity": "^2.2",
-    "highlight.js": "^10.7",
-    "hugo-bin": "^0.70",
-    "infinite-scroll": "^4.0",
+    "bootstrap": "^5.0",
+    "eslint": "^7.26",
+    "highlight.js": "^10.7.2",
+    "hugo-bin": "^0.71",
     "instant.page": "^5.1",
     "lazysizes": "^5.3",
     "markdownlint-cli": "^0.27",
+    "masonry-layout": "^4.2.2",
     "netlify-lambda": "^2.0",
     "postcss": "^8.2",
     "postcss-cli": "^8.3",
     "purgecss-whitelister": "^2.4",
     "rimraf": "^3.0",
+    "standard-version": "^9.3",
     "stylelint": "^13.13",
     "stylelint-config-standard": "^22.0"
   }

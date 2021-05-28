@@ -1,0 +1,25 @@
+Content:
+  ✔ Shorten blog post titles + folder names @done(21-05-25 18:15)
+  ✔ Update about page @done(21-05-27 14:36)
+  ✔ Update contact page @done(21-05-27 16:12)
+
+Meta data blog posts:
+  ✔ Add authors @done(21-05-25 18:07)
+  ✔ Add series @done(21-05-25 18:25)
+  ✔ Update categories @done(21-05-26 16:08)
+  ✔ Update tags @done(21-05-26 17:31)
+
+Todo:
+  ✔ Replace page alert w/ aside block @done(21-05-26 15:17)
+  ✔ Add favicons @done(21-05-27 09:19)
+  ✔ Add homepage alert @done(21-05-27 10:00)
+  ✔ Add homepage portfolio image/slider/gif/mp4 @done(21-05-27 14:37)
+  ✔ Add Plausible @done(21-05-27 16:35)
+  ✔ Update social media tags @done(21-05-28 12:21)
+  ✔ Add social media images @done(21-05-28 12:21)
+  ✔ Update README @done(21-05-28 12:38)
+  ✔ Add syntax highlighting @done(21-05-28 14:53)
+  ☐ Add dark mode
+
+Fix:
+  ✔ Update CSP @critical @done(21-05-28 12:29)
