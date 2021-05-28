@@ -7,7 +7,7 @@ Based on Ascetic by (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 1em;
+  padding: 1rem;
   background: $color-background-content-code;
   color: $color-text-content-body;
 }
@@ -22,6 +22,7 @@ Based on Ascetic by (c) Ivan Sagalaev <Maniac@SoftwareManiacs.Org>
 .hljs-attribute,
 .hljs-link {
   color: $color-unalike;
+  color: $color-field-discussion;
 }
 
 .hljs-comment,

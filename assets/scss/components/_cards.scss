@@ -1,13 +1,14 @@
 .card-aside {
-  border: 0;
+  border: 1px solid $color-text-content-body;
   border-radius: 0;
-  background-color: $color-background-content-code;
+  background: $white;
   padding: 0.5rem;
   margin: 2rem 0;
 }
 
 .card-aside .card-title {
-  font-size: $font-size-content-header4;
+  font-size: $font-size-medium;
+  font-weight: 600;
   margin-top: 0;
 }
 

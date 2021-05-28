@@ -33,7 +33,7 @@ Making use of the power of Hugo. Following best practices for performance, SEO a
 
 ## Get started
 
-- [Check the Hyas website →](https://gethyas.com/)
+- [Check the Hyas website](https://gethyas.com/)
 
 ## Try Hyas
 
