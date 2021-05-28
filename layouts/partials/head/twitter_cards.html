@@ -24,7 +24,7 @@
 
 <meta name="twitter:card" content="summary_large_image">
 
-{{ if and (eq .Kind "page") (or (eq .Section "news") (eq .Section "products")) -}}
+{{ if and (eq .Kind "page") (or (eq .Section "blog") (eq .Section "products")) -}}
   <meta name="twitter:label1" content="Written by">
   <meta name="twitter:data1" content="{{ $.Param "author" }}">
   <meta name="twitter:label2" content="Est. reading time">
