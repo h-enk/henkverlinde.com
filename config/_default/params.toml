@@ -31,6 +31,7 @@ lqipWidth = "20x"
 # Footer
 # footer = "Powered by <a href=\"https://www.netlify.com/\">Netlify</a>, <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://gethyas.com/\">Hyas</a>"
 footer = "© 2021 Henk Verlinde"
+copyRight = "© 2021 Henk Verlinde"
 
 alert = false
 # alertText = "Deliver web projects 10x faster. <a class=\"alert-link external\" href=\"https://www.netlify.com/whitepaper/\" target=\"_blank\" rel=\"noopener\">Get the free enterprise paper</a>"
