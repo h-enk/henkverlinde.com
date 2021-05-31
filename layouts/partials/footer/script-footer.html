@@ -1,7 +1,7 @@
 {{ $highlight := resources.Get "js/highlight.js" -}}
 {{ $highlight := $highlight | js.Build -}}
 {{ $clipBoard := resources.Get "js/clipboard.js" -}}
-{{ $clipBoard := $clipBoard | js.Build -}}
+{{ $clipBoard := $clipBoard | js.Build | minify -}}
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $masonry := resources.Get "js/vendor/masonry-layout/dist/masonry.pkgd.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
