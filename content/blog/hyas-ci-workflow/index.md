@@ -31,7 +31,42 @@ Node.js versions used: `14.x`, and `15.x`.
 
 ## Workflow file
 
-{{< gist h-enk f3bbca43d050e6d6b10bdb229dd7052f >}}
+```yaml
+name: Hyas CI
+
+on:
+  push:
+    branches: master
+  pull_request:
+    branches: master
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [14.x, 15.x]
+
+    steps:
+    - name: Check out Hyas project
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ matrix.node }}
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Hyas test script
+      run: npm test
+
+    - name: Run Hyas build script
+      run: npm run build
+```
 
 ## Further reading
 
