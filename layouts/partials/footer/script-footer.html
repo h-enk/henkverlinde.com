@@ -1,18 +1,20 @@
 {{ $highlight := resources.Get "js/highlight.js" -}}
 {{ $highlight := $highlight | js.Build -}}
+{{ $clipBoard := resources.Get "js/clipboard.js" -}}
+{{ $clipBoard := $clipBoard | js.Build -}}
 {{ $lazysizes := resources.Get "js/vendor/lazysizes/lazysizes.min.js" -}}
 {{ $masonry := resources.Get "js/vendor/masonry-layout/dist/masonry.pkgd.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
   <script src="{{ $highlight.RelPermalink }}" defer></script>
   {{ $app := resources.Get "js/app.js" | babel -}}
-  {{ $js := slice $lazysizes $masonry $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $masonry $clipBoard $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
   <script src="{{ $highlight.RelPermalink }}" integrity="{{ $highlight.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
   {{ $app := resources.Get "js/app.js" | babel | minify -}}
-  {{ $js := slice $lazysizes $masonry $instantPage $app | resources.Concat "main.js" -}}
+  {{ $js := slice $lazysizes $masonry $clipBoard $instantPage $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
 {{ end -}}
