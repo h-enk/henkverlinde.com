@@ -1,1 +1,4 @@
+{{ $masonry := resources.Get "js/vendor/masonry-layout/dist/masonry.pkgd.min.js" -}}
+{{ $masonry := $masonry | minify | fingerprint "sha512" -}}
+<script src="{{ $masonry.Permalink }}" integrity="{{ $masonry.Data.Integrity }}" crossorigin="anonymous" async></script>
 <script async defer data-domain="henkverlinde.com" src="https://analytics.ventizo.com/js/plausible.js"></script>
