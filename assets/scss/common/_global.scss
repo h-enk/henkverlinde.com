@@ -1,3 +1,9 @@
+.fonts-loaded {
+  body {
+    font-family: "Inter var", $font-family-sans-serif;
+  }
+}
+
 @include media-breakpoint-up(md) {
   .container,
   .container-fluid {
