@@ -11,7 +11,6 @@ module.exports = {
         './content/**/*.md',
       ],
       safelist: [
-        'fonts-loaded',
         'lazyloaded',
         'table',
         'thead',
