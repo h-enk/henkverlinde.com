@@ -1,4 +1,6 @@
-<link rel="preconnect" href="https://analytics.ventizo.com">
+{{ $masonry := resources.Get "js/vendor/masonry-layout/dist/masonry.pkgd.min.js" -}}
+<link rel="preload" as="script" href="{{ $masonry.Permalink }}">
 <link rel="preload" as="font" href="{{ "fonts/vendor/inter-web/inter.var.woff2" | absURL }}" type="font/woff2" crossorigin>
 <!-- <link rel="preload" as="font" href="{{ "fonts/vendor/inter-web/inter-roman.var.woff2" | absURL }}" type="font/woff2" crossorigin> -->
 <!-- <link rel="preload" as="font" href="{{ "fonts/vendor/inter-web/inter-italic.var.woff2" | absURL }}" type="font/woff2" crossorigin> -->
+<link rel="preconnect" href="https://analytics.ventizo.com">
