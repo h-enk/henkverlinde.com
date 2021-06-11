@@ -4,7 +4,7 @@
   font-display: swap;
   font-style: normal;
   src: url("fonts/vendor/inter-web/inter-roman.var.woff2") format("woff2");
-  unicode-range: U+000-5FF; /* Latin glyphs */
+  unicode-range: U+2197, U+000-5FF; /* Latin glyphs */
 }
 
 @font-face {
