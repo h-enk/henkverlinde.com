@@ -37,11 +37,6 @@
 {{ partial "head/opengraph.html" . }}
 {{ partial "head/twitter_cards.html" . }}
 
-<!--
-<meta property="article:publisher" content="https://www.facebook.com/{{ .Site.Params.facebookPublisher }}">
-<meta property="article:author" content="https://www.facebook.com/{{ .Site.Params.facebookAuthor }}">
--->
-
 {{ range .AlternativeOutputFormats -}}
   <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
 {{ end -}}

@@ -1,23 +1,41 @@
+# Meta Data for SEO
+
+## Homepage
 title = "Henk Verlinde"
 titleSeparator = "-"
 titleAddition = "Digital Business Developer"
 description = "Hi, I’m Henk Verlinde, a digital business developer, and the founder and CEO of Ventizo, a digital products company headquartered in the Netherlands."
 author = "Henk Verlinde"
 
+## Open Graph
 images = ["henk-verlinde-share-image.png"]
-
 twitterSite = "@henkverlinde"
 twitterCreator = "@henkverlinde"
 ogLocale = "en_US"
+domainTLD = "henkverlinde.com"
+titleHome = "Henk Verlinde"
 
+## JSON-LD
 schemaType = "Person"
+# schemaType = "Organization"
+schemaName = "Henk Verlinde"
+schemaAuthor = "Henk Verlinde"
+schemaAuthorTwitter = "https://twitter.com/henkverlinde"
+schemaAuthorLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
+schemaAuthorGitHub = "https://github.com/h-enk"
+schemaLocale = "en-US"
 schemaLogo = "logo-henk-verlinde.png"
+schemaLogoWidth = 512
+schemaLogoHeight = 512
+schemaImage = "henk-verlinde.jpg"
+schemaImageWidth = 610
+schemaImageHeight = 610
 schemaTwitter = "https://twitter.com/henkverlinde"
 schemaLinkedIn = "https://www.linkedin.com/in/henkverlinde/"
 schemaGitHub = "https://github.com/h-enk"
 schemaSection = "blog"
 
-domainTLD = "henkverlinde.com"
+## Sitelinks Search Box
 siteLinksSearchBox = false
 
 themeColor = "#fff"
