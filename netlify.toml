@@ -15,3 +15,6 @@
 
 [context.branch-deploy]
   command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
+
+[functions]
+  node_bundler = "esbuild"
