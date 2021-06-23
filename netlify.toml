@@ -2,19 +2,18 @@
   publish = "public"
   functions = "functions"
 
+[functions]
+  node_bundler = "esbuild"
+
 [build.environment]
-  HUGO_VERSION = "0.80.0"
-  NODE_VERSION = "15.5.1"
-  NPM_VERSION = "7.3.0"
+  NODE_VERSION = "16.3.0"
+  NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "hugo -b $URL --gc --minify && npm run build:functions"
+  command = "hugo -b $URL --gc --minify"
 
 [context.deploy-preview]
   command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
 
 [context.branch-deploy]
   command = "hugo -b $DEPLOY_PRIME_URL --gc --minify"
-
-[functions]
-  node_bundler = "esbuild"
