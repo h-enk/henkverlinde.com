@@ -1,11 +1,11 @@
 {
-  "name": "@hyas/core",
-  "description": "Hyas core",
-  "version": "1.4.4",
+  "name": "henkverlinde.com",
+  "description": "Henk Verlinde website",
+  "version": "1.0.0",
   "browserslist": [
     "defaults"
   ],
-  "repository": "https://github.com/h-enk/hyas",
+  "repository": "https://github.com/h-enk/henkverlinde.com",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -19,18 +19,18 @@
     "build": "exec-bin bin/hugo/hugo --gc --minify",
     "build:preview": "npm run build -D -F",
     "clean": "shx rm -rf public resources",
+    "clean:install": "shx rm -rf package-lock.json bin node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
     "lint:scripts": "eslint assets/js config functions",
     "lint:styles": "stylelint \"assets/scss/**/*.{css,sass,scss,sss,less}\"",
     "lint:markdown": "markdownlint *.md content/**/*.md",
-    "release": "standard-version",
-    "release:dry-run": "standard-version --dry-run",
     "server": "exec-bin bin/hugo/hugo server",
     "test": "npm run -s lint",
     "env": "env",
     "precheck": "npm version",
     "check": "exec-bin bin/hugo/hugo version",
-    "postinstall": "hugo-installer --version otherDependencies.hugo --extended"
+    "postinstall": "hugo-installer --version otherDependencies.hugo --extended",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "devDependencies": {
     "@babel/cli": "^7.14",
@@ -52,7 +52,6 @@
     "postcss-cli": "^8.3",
     "purgecss-whitelister": "^2.4",
     "shx": "^0.3.3",
-    "standard-version": "^9.3",
     "stylelint": "^13.13",
     "stylelint-config-standard": "^22.0"
   },
