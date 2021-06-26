@@ -35,6 +35,10 @@ The solution is to use a binary wrapper for Hugo with a `package.json` file alre
 
 There's been some [discussion](https://github.com/fenneclab/hugo-bin/issues/32) about migrating this package to Hugo, but it hasn’t happened yet and isn’t likely to anytime soon.
 
+{{< aside class="card-yellow" >}}
+_Update: Jun 26 2021_: Unlike hugo-bin, [hugo-installer](https://github.com/dominique-mueller/hugo-installer) verifies the checksum & runs a health check when installing.
+{{< /aside >}}
+
 ### Installing
 
 We need the extended version of Hugo for [Sass/SCSS](https://sass-lang.com/) processing. Add a local `.npmrc` configuration file to the project root:
