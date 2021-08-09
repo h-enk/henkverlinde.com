@@ -6,7 +6,7 @@ date: 2020-11-19T10:10:58+01:00
 lastmod: 2020-11-19T10:10:58+01:00
 draft: false
 weight: 50
-images: []
+images: ["greek-dance.jpg"]
 categories: ["Guides"]
 series: []
 tags: ["Hyas", "CI", "GitHub"]
