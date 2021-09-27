@@ -6,7 +6,7 @@ date: 2021-03-25T13:56:26+01:00
 lastmod: 2021-03-25T13:56:26+01:00
 draft: false
 weight: 20
-images: []
+images: ["subresource-integrity-generator.webp"]
 categories: ["Tools"]
 series: []
 tags: ["SRI", "React", "PWA"]
@@ -43,3 +43,6 @@ Major changes:
 - Add Reset button
 - Replace Copied alert with in page message
 - Replace CSS with [Water.css](https://watercss.kognise.dev/)
+
+Photo:
+- Hannah Le Leu / Ocean Photography Awards
