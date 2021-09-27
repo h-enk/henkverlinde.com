@@ -2,18 +2,29 @@
   publish = "public"
   functions = "functions"
 
-[functions]
-  node_bundler = "esbuild"
-
 [build.environment]
   NODE_VERSION = "16.3.0"
   NPM_VERSION = "7.16.0"
 
 [context.production]
-  command = "exec-bin bin/hugo/hugo -b $URL --gc --minify"
+  command = "npm run build"
 
 [context.deploy-preview]
-  command = "exec-bin bin/hugo/hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "exec-bin bin/hugo/hugo -b $DEPLOY_PRIME_URL --gc --minify"
+  command = "npm run build -- -b $DEPLOY_PRIME_URL"
+
+[context.next]
+  command = "npm run build"
+
+[context.next.environment]
+  HUGO_ENV = "next"
+
+[dev]
+  framework = "#custom"
+  command = "npm run start"
+  targetPort = 1313
+  port = 8888
+  publish = "public"
+  autoLaunch = false
