@@ -45,4 +45,5 @@ Major changes:
 - Replace CSS with [Water.css](https://watercss.kognise.dev/)
 
 Photo:
+
 - Hannah Le Leu / Ocean Photography Awards
