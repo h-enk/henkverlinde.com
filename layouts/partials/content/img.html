@@ -24,5 +24,8 @@
   <figure class="post-image">
     <img class="img-fluid lazyload blur-up" draggable="false" data-sizes="auto" src="{{ $lqip.Permalink }}" data-srcset="{{ $imgSrcSet }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Title }}">
     <noscript><img class="img-fluid" draggable="false" sizes="100vw" srcset="{{ $imgSrcSet }}" src="{{ $image.Permalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" alt="{{ .Title }}"></noscript>
+    {{ with .Params.caption -}}
+    <figcaption class="figure-caption">{{ . | safeHTML }}</figcaption>
+    {{ end -}}
   </figure>
 {{ end -}}

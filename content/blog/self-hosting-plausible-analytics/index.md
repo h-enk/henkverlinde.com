@@ -6,7 +6,8 @@ date: 2021-03-09T08:33:25+01:00
 lastmod: 2021-03-09T08:33:25+01:00
 draft: false
 weight: 30
-images: []
+images: ["self-hosting-plausible-analytics.webp"]
+caption: "Photograph: Jason Kirk/Baylor College of Medicine"
 categories: ["Guides"]
 series: []
 tags: ["Analytics", "Privacy"]
