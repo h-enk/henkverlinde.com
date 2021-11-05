@@ -1,126 +1,126 @@
 // Color system
 
 // stylelint-disable value-keyword-case
-$color-white:#fff;
-$color-background:#f4eee9;
-$color-background-secondary:#f4eee9;
-$color-background-dark:#100e0e;
-$color-background-dark-secondary:#080808;
-$color-background-light:#fcfcfd;
-$color-text-primary:#100e0e;
-$color-text-primary-dark:#fff;
-$color-text-secondary:#100e0e;
-$color-text-secondary-dark:#fff;
-$color-text-body:#404043;
-$color-text-body-dark:#fff;
-$color-button:#100e0e;
-$color-form-label:#b5b5b5;
-$color-form-label-dark:#b5b5b5;
-$color-input-text:#333;
-$color-input-background:#fff;
-$color-input-border:#0b0c0c;
-$color-input-text-dark:#121212;
-$color-input-background-dark:#fff;
-$color-input-border-dark:#fff;
-$color-border:#b5b5b5;
-$color-border-placeholder:#c9c9c9;
-$color-border-dark:#b5b5b5;
-$color-border-placeholder-dark:#323539;
-$color-text-header:#060606;
-$color-text-header-dark:#fff;
-$color-text-label:#b5b5b5;
-$color-input-placeholder:#c9c9c9;
-$color-text-info:#848484;
-$color-status-default:#848484;
-$color-status-draft:#ff8652;
-$color-status-published:#7effa6;
-$color-field-discussion:#d63a50;
-$color-field-media:#064c57;
-$color-field-info:#ffb54d;
-$color-field-tags:#077d9c;
-$color-field-narration:#80e1f9;
-$color-unalike:#513ef8;
-$font-family-primary:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-family-pass:"pass","Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-size-ui-xs:18px;
-$font-size-ui-s:20px;
-$font-size-ui-m:21px;
-$font-size-ui-d:23px;
-$font-size-ui-l:25px;
-$font-size-ui-xl:27px;
-$font-size-ui-h1:42px;
-$font-size-ui-h2:38px;
-$font-size-ui-h3:34px;
-$font-size-ui-h4:30px;
-$font-size-ui-h5:26px;
-$font-size-ui-h6:23px;
-$font-line-height:1.4;
-$font-line-height-heading:1.2;
-$color-background-content:#fff;
-$color-background-content-secondary:#f3f3f3;
-$color-background-content-dark:#1c1c1c;
-$color-text-head:#121212;
-$color-text-foot:#121212;
-$color-menu-background:#111;
-$color-menu-text:#fff;
-$color-text-content-title:#121212;
-$color-text-content-header:#121212;
-$color-text-content-body:#404043;
-$color-text-content-link:#121212;
-$color-text-content-info:#848484;
-$color-text-content-tags:#848484;
-$color-text-content-media-caption:#b3b3b3;
-$color-text-content-quote:#404043;
-$color-text-content-quote-line:#ccc;
-$font-family-text-content-quote:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$color-content-hr-line:#ccc;
-$color-background-content-code:#f5f2f0;
-$font-family-content-title:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-family-content-date:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-family-content-headers:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-family-content-body:"Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
-$font-size-content-body:calc(19.38776px + 0.16327vw);
-$font-size-content-caption:calc(19.38776px + 0.16327vw);
-$font-size-content-code:calc(19.38776px + 0.16327vw);
-$font-size-content-title:calc(27.34694px + 2.04082vw);
-$font-size-content-header2:calc(22.93878px + 0.81633vw);
-$font-size-content-header3:calc(21.55102px + 0.65306vw);
-$font-size-content-header4:calc(17.55102px + 0.65306vw);
-$font-size-content-header5:calc(17.77551px + 0.32653vw);
-$font-size-content-list:calc(19.08163px + 0.2449vw);
-$font-size-content-list-date:calc(19.08163px + 0.2449vw);
-$font-size-text-content-quote:calc(19.77551px + 0.32653vw);
-$dimension-content-width:calc(265.30612px + 35.91837vw);
-$dimension-content-width-home:calc(365.30612px + 35.91837vw);
-$dimension-content-padding:calc(16.93878px + 0.81633vw);
-$dimension-content-padding-s:calc(6.93878px + 0.81633vw);
-$dimension-content-padding-xs:calc(3.46939px + 0.40816vw);
-$dimension-content-margin-vertical:calc(8.46939px + 0.40816vw);
-$dimension-content-margin-vertical-large:calc(10.40816px + 1.22449vw);
-$dimension-content-margin-vertical-xlarge:calc(23.87755px + 1.63265vw);
-$color-content-discussion-border:#eee;
-$color-select:rgba(0, 0, 0, 0.99);
-$color-select-text:#fff;
+$color-white: #fff;
+$color-background: #f4eee9;
+$color-background-secondary: #f4eee9;
+$color-background-dark: #100e0e;
+$color-background-dark-secondary: #080808;
+$color-background-light: #fcfcfd;
+$color-text-primary: #100e0e;
+$color-text-primary-dark: #fff;
+$color-text-secondary: #100e0e;
+$color-text-secondary-dark: #fff;
+$color-text-body: #404043;
+$color-text-body-dark: #fff;
+$color-button: #100e0e;
+$color-form-label: #b5b5b5;
+$color-form-label-dark: #b5b5b5;
+$color-input-text: #333;
+$color-input-background: #fff;
+$color-input-border: #0b0c0c;
+$color-input-text-dark: #121212;
+$color-input-background-dark: #fff;
+$color-input-border-dark: #fff;
+$color-border: #b5b5b5;
+$color-border-placeholder: #c9c9c9;
+$color-border-dark: #b5b5b5;
+$color-border-placeholder-dark: #323539;
+$color-text-header: #060606;
+$color-text-header-dark: #fff;
+$color-text-label: #b5b5b5;
+$color-input-placeholder: #c9c9c9;
+$color-text-info: #848484;
+$color-status-default: #848484;
+$color-status-draft: #ff8652;
+$color-status-published: #7effa6;
+$color-field-discussion: #d63a50;
+$color-field-media: #064c57;
+$color-field-info: #ffb54d;
+$color-field-tags: #077d9c;
+$color-field-narration: #80e1f9;
+$color-unalike: #513ef8;
+$font-family-primary: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-family-pass: "pass","Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-size-ui-xs: 18px;
+$font-size-ui-s: 20px;
+$font-size-ui-m: 21px;
+$font-size-ui-d: 23px;
+$font-size-ui-l: 25px;
+$font-size-ui-xl: 27px;
+$font-size-ui-h1: 42px;
+$font-size-ui-h2: 38px;
+$font-size-ui-h3: 34px;
+$font-size-ui-h4: 30px;
+$font-size-ui-h5: 26px;
+$font-size-ui-h6: 23px;
+$font-line-height: 1.4;
+$font-line-height-heading: 1.2;
+$color-background-content: #fff;
+$color-background-content-secondary: #f3f3f3;
+$color-background-content-dark: #1c1c1c;
+$color-text-head: #121212;
+$color-text-foot: #121212;
+$color-menu-background: #111;
+$color-menu-text: #fff;
+$color-text-content-title: #121212;
+$color-text-content-header: #121212;
+$color-text-content-body: #404043;
+$color-text-content-link: #121212;
+$color-text-content-info: #848484;
+$color-text-content-tags: #848484;
+$color-text-content-media-caption: #b3b3b3;
+$color-text-content-quote: #404043;
+$color-text-content-quote-line: #ccc;
+$font-family-text-content-quote: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$color-content-hr-line: #ccc;
+$color-background-content-code: #f5f2f0;
+$font-family-content-title: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-family-content-date: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-family-content-headers: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-family-content-body: "Inter var",-apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif;
+$font-size-content-body: calc(19.38776px + 0.16327vw);
+$font-size-content-caption: calc(19.38776px + 0.16327vw);
+$font-size-content-code: calc(19.38776px + 0.16327vw);
+$font-size-content-title: calc(27.34694px + 2.04082vw);
+$font-size-content-header2: calc(22.93878px + 0.81633vw);
+$font-size-content-header3: calc(21.55102px + 0.65306vw);
+$font-size-content-header4: calc(17.55102px + 0.65306vw);
+$font-size-content-header5: calc(17.77551px + 0.32653vw);
+$font-size-content-list: calc(19.08163px + 0.2449vw);
+$font-size-content-list-date: calc(19.08163px + 0.2449vw);
+$font-size-text-content-quote: calc(19.77551px + 0.32653vw);
+$dimension-content-width: calc(265.30612px + 35.91837vw);
+$dimension-content-width-home: calc(365.30612px + 35.91837vw);
+$dimension-content-padding: calc(16.93878px + 0.81633vw);
+$dimension-content-padding-s: calc(6.93878px + 0.81633vw);
+$dimension-content-padding-xs: calc(3.46939px + 0.40816vw);
+$dimension-content-margin-vertical: calc(8.46939px + 0.40816vw);
+$dimension-content-margin-vertical-large: calc(10.40816px + 1.22449vw);
+$dimension-content-margin-vertical-xlarge: calc(23.87755px + 1.63265vw);
+$color-content-discussion-border: #eee;
+$color-select: rgba(0, 0, 0, 99%);
+$color-select-text: #fff;
+$screen-size-mobile: 680px;
+$screen-size-desktop: 992px;
+$color-text: #fff;
 
-$screen-size-mobile:680px;
-$screen-size-desktop:992px;
-$color-text:#fff;
 // $color-background:#000;
-$font-size-logo:calc(27.36842px + 0.70175vw);
-$font-size-body:calc(19.89474px + 0.5614vw);
-$font-size-medium:calc(18.68421px + 0.35088vw);
-$font-size-small:calc(17.47368px + 0.14035vw);
-$font-size-header:calc(37.36842px + 0.70175vw);
-$font-size-h1:calc(20.78947px + 1.12281vw);
-$font-size-h2:calc(20.78947px + 1.12281vw);
-$font-size-h3:calc(21.57895px + 0.91228vw);
-$font-size-h4:calc(22.63158px + 0.63158vw);
-$font-size-h5:calc(23.68421px + 0.35088vw);
-$line-height-body:1.5;
-$line-height-header:1.3;
-$padding:calc(27.36842px + 0.70175vw);
-$padding-small:calc(7.36842px + 0.70175vw);
-$padding-xsmall:calc(3.68421px + 0.35088vw);
+$font-size-logo: calc(27.36842px + 0.70175vw);
+$font-size-body: calc(19.89474px + 0.5614vw);
+$font-size-medium: calc(18.68421px + 0.35088vw);
+$font-size-small: calc(17.47368px + 0.14035vw);
+$font-size-header: calc(37.36842px + 0.70175vw);
+$font-size-h1: calc(20.78947px + 1.12281vw);
+$font-size-h2: calc(20.78947px + 1.12281vw);
+$font-size-h3: calc(21.57895px + 0.91228vw);
+$font-size-h4: calc(22.63158px + 0.63158vw);
+$font-size-h5: calc(23.68421px + 0.35088vw);
+$line-height-body: 1.5;
+$line-height-header: 1.3;
+$padding: calc(27.36842px + 0.70175vw);
+$padding-small: calc(7.36842px + 0.70175vw);
+$padding-xsmall: calc(3.68421px + 0.35088vw);
 // stylelint-enable value-keyword-case
 
 $color-btn-text: #c1d1d9;
@@ -128,7 +128,7 @@ $color-btn-bg: #21262d;
 $color-btn-border: #30363d;
 
 // scss-docs-start gray-color-variables
-$white:    #fff;
+$white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #e9ecef;
 $gray-300: #dee2e6;
@@ -138,26 +138,25 @@ $gray-600: #6c757d;
 $gray-700: #404043;
 $gray-800: #343a40;
 $gray-900: #121212;
-$black:    #000;
+$black: #000;
+
 // scss-docs-end gray-color-variables
 
 // Color system
 
-$blue:        #0366d6;
-$white:       #fff;
-$black:       #000;
+$blue: #0366d6;
+$white: #fff;
+$black: #000;
 $gray-darker: #586069;
-$gray-dark:   #6a737d;
-$gray:        #dfe2e5;
-$gray-light:  #fafbfc;
-$blue-dark:   #038;
-
-$thingsthat-gray:   #ddd;
-$thingsthat-blue:   #cfd7df;
+$gray-dark: #6a737d;
+$gray: #dfe2e5;
+$gray-light: #fafbfc;
+$blue-dark: #038;
+$thingsthat-gray: #ddd;
+$thingsthat-blue: #cfd7df;
 $thingsthat-orange: #fa755a;
 $thingsthat-yellow: #fefde5;
-
-$primary:   $blue;
+$primary: $blue;
 
 /** Bootstrap navbar fix (https://git.io/fADqW) */
 $navbar-dark-toggler-icon-bg: none;
@@ -173,9 +172,9 @@ $enable-responsive-font-sizes: true;
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12;
-$grid-gutter-width:           1.5rem;
-$grid-row-columns:            6;
+$grid-columns: 12;
+$grid-gutter-width: 1.5rem;
+$grid-row-columns: 6;
 
 // Container padding
 
@@ -183,44 +182,42 @@ $container-padding-x: $grid-gutter-width;
 
 // Prefix for :root CSS variables
 
-$variable-prefix:             bs-;
+$variable-prefix: bs-;
 
 // Body
 //
 // Settings for the `<body>` element.
 
-$body-bg:                   $white;
-$body-color:                $gray-700;
-$body-text-align:           null;
+$body-bg: $white;
+$body-color: $gray-700;
+$body-text-align: null;
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      "Inter var", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-sans-serif: "Inter var", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 // stylelint-enable value-keyword-case
-$font-family-base:            var(--#{$variable-prefix}font-sans-serif);
-$font-family-code:            var(--#{$variable-prefix}font-monospace);
-
-$font-size-base:              1rem; // Assumes the browser default, typically `16px`
-$font-size-xl:                $font-size-base * 1.375;
-$font-size-lg:                $font-size-base * 1.25;
-$font-size-md:                $font-size-base * 1.125;
-$font-size-sm:                $font-size-base * 0.875;
-
-$font-weight-bold:            600;
-$font-weight-bolder:          700;
-
-$line-height-base:            1.5;
+$font-family-base: var(--#{$variable-prefix}font-sans-serif);
+$font-family-code: var(--#{$variable-prefix}font-monospace);
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-xl: $font-size-base * 1.375;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-md: $font-size-base * 1.125;
+$font-size-sm: $font-size-base * 0.875;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+$line-height-base: 1.5;
 
 // scss-docs-start headings-variables
-$headings-font-family:        null;
-$headings-font-style:         null;
-$headings-font-weight:        800;
-$headings-line-height:        1.2;
-$headings-color:              $gray-900;
+$headings-font-family: null;
+$headings-font-style: null;
+$headings-font-weight: 800;
+$headings-line-height: 1.2;
+$headings-color: $gray-900;
+
 // scss-docs-end headings-variables
 
 // Spacing
@@ -233,33 +230,31 @@ $spacer: 1rem;
 
 // Navbar
 
-$navbar-padding-y:                  $spacer * 1.5;
-$navbar-padding-x:                  $spacer;
+$navbar-padding-y: $spacer * 1.5;
+$navbar-padding-x: $spacer;
 
 // Alerts
 //
 // Define alert colors, border radius, and padding.
 
-$alert-padding-y:                   0.75rem;
-$alert-padding-x:                   1.5rem;
-$alert-margin-bottom:               0;
-$alert-border-radius:               0;
-$alert-link-font-weight:            $headings-font-weight;
-$alert-border-width:                0;
-
-$alert-bg-level:                    0;
-$alert-border-level:                0;
-$alert-color-level:                 0;
+$alert-padding-y: 0.75rem;
+$alert-padding-x: 1.5rem;
+$alert-margin-bottom: 0;
+$alert-border-radius: 0;
+$alert-link-font-weight: $headings-font-weight;
+$alert-border-width: 0;
+$alert-bg-level: 0;
+$alert-border-level: 0;
+$alert-color-level: 0;
 
 // Links
 //
 // Style anchor elements.
 
-$link-color:                              $primary;
-$link-decoration:                         none;
-$link-shade-percentage:                   20%;
-$link-hover-color:                        shift-color($link-color, $link-shade-percentage);
-$link-hover-decoration:                   underline;
-
-$stretched-link-pseudo-element:           after;
-$stretched-link-z-index:                  1;
+$link-color: $primary;
+$link-decoration: none;
+$link-shade-percentage: 20%;
+$link-hover-color: shift-color($link-color, $link-shade-percentage);
+$link-hover-decoration: underline;
+$stretched-link-pseudo-element: after;
+$stretched-link-z-index: 1;
