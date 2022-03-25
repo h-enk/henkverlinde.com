@@ -6,14 +6,14 @@
 {{ $masonry := resources.Get "js/vendor/masonry-layout/dist/masonry.pkgd.min.js" -}}
 {{ if eq (hugo.Environment) "development" -}}
   <script src="{{ $highlight.Permalink }}" defer></script>
-  {{ $app := resources.Get "js/app.js" | babel -}}
+  {{ $app := resources.Get "js/app.js" | js.Build -}}
   {{ $js := slice $lazysizes $masonry $clipBoard $app | resources.Concat "main.js" -}}
   <script src="{{ $js.Permalink }}" defer></script>
 {{ else -}}
   {{ $highlight := $highlight | minify | fingerprint "sha512" -}}
   <script src="{{ $highlight.Permalink }}" integrity="{{ $highlight.Data.Integrity }}" crossorigin="anonymous" defer></script>
   {{ $instantPage := resources.Get "js/vendor/instant.page/instantpage.js" | minify -}}
-  {{ $app := resources.Get "js/app.js" | babel | minify -}}
+  {{ $app := resources.Get "js/app.js" | js.Build | minify -}}
   {{ $js := slice $lazysizes $masonry $clipBoard $instantPage $app | resources.Concat "main.js" -}}
   {{ $secureJS := $js | resources.Fingerprint "sha512" -}}
   <script src="{{ $secureJS.Permalink }}" integrity="{{ $secureJS.Data.Integrity }}" crossorigin="anonymous" defer></script>
