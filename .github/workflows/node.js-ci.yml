@@ -25,6 +25,8 @@ jobs:
         node-version: ${{ matrix.node }}
 
     - name: Install dependencies
+      env:
+        VENTIZO_AUTH_TOKEN: ${{ secrets.VENTIZO_AUTH_TOKEN }}
       run: npm ci
 
     - name: Run Hyas test script
