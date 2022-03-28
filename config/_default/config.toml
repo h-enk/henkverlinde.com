@@ -4,10 +4,10 @@ disableAliases = true
 disableHugoGeneratorInject = true
 # disableKinds = ["taxonomy", "taxonomyTerm"]
 enableEmoji = true
-enableGitInfo = false
+enableGitInfo = true
 enableRobotsTXT = true
 languageCode = "en-US"
-paginate = 7
+paginate = 10
 rssLimit = 10
 
 # add redirects/headers
@@ -64,11 +64,13 @@ notAlternative = true
 [taxonomies]
   author = "authors"
   category = "categories"
-  series = "series"
-  tag = "tags"
 
 [permalinks]
   blog = "/:title/"
+  legal = "/:title/"
+
+[minify.tdewolff.html]
+  keepWhitespace = false
 
 [related]
 threshold = 80
@@ -78,16 +80,49 @@ toLower = false
   name = "categories"
   weight = 100
   [[related.indices]]
+  name = "tags"
+  weight = 80
+  [[related.indices]]
   name = "date"
   weight = 10
 
 [module]
+  [[module.mounts]]
+    source = "node_modules/@ventizo/core/archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "node_modules/@ventizo/core/assets"
+    target = "assets"
+#  [[module.mounts]]
+#    source = "node_modules/@ventizo/core/content"
+#    target = "content"
+  [[module.mounts]]
+    source = "node_modules/@ventizo/core/data"
+    target = "data"
+  [[module.mounts]]
+    source = "node_modules/@ventizo/core/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "node_modules/@ventizo/core/static"
+    target = "static"
   [[module.mounts]]
     source = "assets"
     target = "assets"
   [[module.mounts]]
     source = "static"
     target = "static"
+  [[module.mounts]]
+    source = "content"
+    target = "content"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "archetypes"
+    target = "archetypes"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
   [[module.mounts]]
     source = "node_modules/lazysizes"
     target = "assets/js/vendor/lazysizes"
@@ -97,6 +132,3 @@ toLower = false
   [[module.mounts]]
     source = "node_modules/bootstrap"
     target = "assets/js/vendor/bootstrap"
-  [[module.mounts]]
-    source = "node_modules/masonry-layout"
-    target = "assets/js/vendor/masonry-layout"

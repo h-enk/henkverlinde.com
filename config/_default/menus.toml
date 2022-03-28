@@ -1,22 +1,82 @@
 [[main]]
-  name = "Blog"
-  url = "/blog/"
+  name = "Products"
+  url = "/products/"
   weight = 10
+
+# [[main]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 20
 
 [[main]]
   name = "About"
   url = "/about/"
+  weight = 30
+
+[[main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 40
+
+[[platform]]
+  name = "Analytics"
+  url = "https://analytics.ventizo.com/"
+  weight = 10
+
+[[platform]]
+  name = "API"
+  url = "https://api.ventizo.com/"
   weight = 20
+
+[[platform]]
+  name = "Store"
+  url = "https://store.ventizo.com/"
+  weight = 30
+
+[[platform]]
+  name = "Support"
+  url = "https://support.ventizo.com/"
+  weight = 40
+
+[[platform]]
+  name = "Status"
+  url = "https://status.ventizo.com/"
+  weight = 50
+
+[[company]]
+  name = "About"
+  url = "/about/"
+  weight = 10
+
+# [[company]]
+#   name = "Blog"
+#   url = "/blog/"
+#   weight = 20
+
+[[company]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 30
 
 [[legal]]
   name = "Privacy"
   url = "/privacy-policy/"
   weight = 10
 
-# [[legal]]
-#   name = "Colophon"
-#   url = "/colophon/"
-#   weight = 20
+[[legal]]
+  name = "Terms"
+  url = "/terms-of-use/"
+  weight = 20
+
+[[legal]]
+  name = "EULA"
+  url = "/end-user-license-agreement/"
+  weight = 30
+
+[[social]]
+  name = "Twitter"
+  url = "https://twitter.com/henkverlinde"
+  weight = 10
 
 [[social]]
   name = "LinkedIn"
@@ -24,6 +84,6 @@
   weight = 20
 
 [[social]]
-  name = "Twitter"
-  url = "https://twitter.com/henkverlinde"
+  name = "GitHub"
+  url = "https://github.com/h-enk"
   weight = 30

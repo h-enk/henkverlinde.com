@@ -7,6 +7,8 @@ module.exports = {
     autoprefixer(),
     purgecss({
       content: [
+        './node_modules/@ventizo/core/layouts/**/*.html',
+        './node_modules/@ventizo/core/content/**/*.md',
         './layouts/**/*.html',
         './content/**/*.md',
       ],
@@ -18,12 +20,14 @@ module.exports = {
         'tr',
         'th',
         'td',
-        'blockquote',
-        'btn',
+        'h3',
+        'alert-link',
+        'stretched-link',
         ...whitelister([
-          './assets/scss/components/_buttons.scss',
-          './assets/scss/components/_code.scss',
-          './node_modules/highlight.js/styles/github-dark.css',
+          './node_modules/@ventizo/core/assets/scss/common/_variables.scss',
+          './node_modules/@ventizo/core/assets/scss/components/_alerts.scss',
+          './node_modules/@ventizo/core/assets/scss/components/_code.scss',
+          // './node_modules/@ventizo/core/assets/scss/components/_syntax.scss',
         ]),
       ],
     }),
