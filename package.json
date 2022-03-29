@@ -5,11 +5,8 @@
   "browserslist": [
     "defaults"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/h-enk/henkverlinde.com.git"
-  },
-  "license": "MIT",
+  "repository": "https://github.com/h-enk/henkverlinde.com",
+  "license": "UNLICENSED",
   "publishConfig": {
     "access": "public"
   },
