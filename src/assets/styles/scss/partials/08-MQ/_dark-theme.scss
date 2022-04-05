@@ -40,7 +40,7 @@
   .gradient-home {
     background-image: url("/assets/images/mesh-gradient-black.webp");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
 
   /*! purgecss ignore */
@@ -91,7 +91,7 @@
   .gradient-home.light-theme {
     background-image: url("/assets/images/mesh-gradient-white.webp");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
   }
 
   /*! purgecss ignore */

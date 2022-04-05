@@ -1,5 +1,5 @@
 {
-  "title": "Yetty",
+  "title": "Henk Verlinde",
   "url": "https://yetty.netlify.app",
   "description": "Yet another Eleventy starter kit for my (& your) new projects with accessibility and performance in mind.",
   "repo": "https://github.com/ygoex/yetty",
@@ -14,11 +14,11 @@
     "url": "https://yetty.netlify.app/feed/feed.json"
   },
   "author": {
-    "name": "Yolanda Gorriz Exposito",
-    "email": "helloygoex@gmail.com",
-    "username": "ygoex",
+    "name": "Henk Verlinde",
+    "email": "henk@henkverlinde.com",
+    "username": "h-enk",
     "url": "https://yetty.netlify.app/about-me/",
-    "github": "https://github.com/ygoex",
+    "github": "https://github.com/h-enk",
     "twitter": "https://twitter.com/ygoex",
     "codepen": "https://codepen.io/ygoex",
     "dribbble": "https://dribbble.com/ygoex",
