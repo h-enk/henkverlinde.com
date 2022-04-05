@@ -1,4 +1,14 @@
-bin
-node_modules
-public
-resources
+# node
+node_modules/
+
+# MacOS
+.DS_Store
+
+# build directory
+dist
+
+# sass
+*.map
+
+# remote images
+.cache/
