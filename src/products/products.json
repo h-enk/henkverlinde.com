@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "products"
+  ],
+  "permalink": "products/{{ title | slugify}}/"
+}

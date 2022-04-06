@@ -22,3 +22,11 @@
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+.divider {
+  margin: var(--space-sm-4) var(--space-0);
+
+  @include media-query(sm) {
+    margin: var(--space-lg-1q) var(--space-0);
+  }
+}

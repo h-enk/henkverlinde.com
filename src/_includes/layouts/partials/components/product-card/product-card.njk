@@ -1,0 +1,47 @@
+{# collections.tagList returns only the tags added in markdown files. #}
+
+<div class="product-card__image">
+  {% if params.product.data.imgUrl %}
+    <img src="{{ params.product.data.imgUrl | imgSize }}" alt="{{ params.product.data.imgAlt }}" loading="lazy" decoding="async">
+  {% else %}
+    <img src="https://source.unsplash.com/collection/2195859/640x440/?sig={{ range(0, 99) | random }}/daily" alt="Random abstract image to fill the card." loading="lazy" decoding="async" width="640" height="440">
+  {% endif %}
+</div>
+<div class="product-card__content">
+  <!--
+  {% if params.product.data.tags %}
+    <ul class="product-card__tags display-flex">
+      {% for tag in params.product.data.tags %}
+        {# Check if tag exists in tagList. If indexOf is -1 means that the tag is 'posts', the one added to all posts from posts.json #}
+        {# An alternative way to filter the generic tags from posts.json can be seen here https://stackoverflow.com/questions/66261187/11ty-how-to-display-post-tags-in-my-post-njk-file #}
+        {%- if params.tagList.indexOf(tag) != -1 -%}
+          <li class="product-card__tag">
+            <span>#{{ tag }}</span>
+          </li>
+        {% endif %}
+      {%- endfor %}
+    </ul>
+  {% endif %}
+  -->
+  {% if params.product.data.title %}
+    <p class="product-card__title h5">
+      <a class="product-card__link" href="{{ params.product.url | url }}">{{ params.product.data.title }}</a>
+    </p>
+  {% endif %}
+  <!--
+  {% if params.product.data.description %}
+    <p>{{ params.product.data.description }}</p>
+  {% endif %}
+  -->
+  <!--
+  {%- if params.product.date %}
+    <div class="product-card__date-time">
+      <time class="product-card__date text-muted font-sm" datetime="{{ params.product.date | dateStringISO }}">
+        {{ params.product.date | dateFilter }}
+      </time>
+      <span class="font-bold" aria-hidden="true">&middot;</span>
+      <span class="product-card__time text-muted font-sm">{{ params.product | readingTime }} read</span>
+    </div>
+  {% endif %}
+  -->
+</div>

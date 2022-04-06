@@ -1,0 +1,12 @@
+{%- from "layouts/partials/component.njk" import component -%}
+
+<ul class="productlist test">
+  {% for product in productslist %}
+    <li class="productlist__item product-card">
+      {{ component('product-card', {
+        product: product,
+        tagList: collections.tagList
+      }) }}
+    </li>
+  {% endfor %}
+</ul>

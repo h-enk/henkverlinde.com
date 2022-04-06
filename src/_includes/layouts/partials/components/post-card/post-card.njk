@@ -4,8 +4,7 @@
   {% if params.post.data.imgUrl %}
     <img src="{{ params.post.data.imgUrl | imgSize }}" alt="{{ params.post.data.imgAlt }}" loading="lazy" decoding="async">
   {% else %}
-    <img src="
-      https://source.unsplash.com/collection/2195859/640x440/?sig={{ range(0, 99) | random }}/daily" alt="Random abstract image to fill the card." loading="lazy" decoding="async" width="640" height="440">
+    <img src="https://source.unsplash.com/collection/2195859/640x440/?sig={{ range(0, 99) | random }}/daily" alt="Random abstract image to fill the card." loading="lazy" decoding="async" width="640" height="440">
   {% endif %}
 </div>
 <div class="post-card__content">
