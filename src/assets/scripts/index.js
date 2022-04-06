@@ -1,5 +1,6 @@
 "use strict";
 
+/*
 if ("serviceWorker" in navigator) {
   navigator
     .serviceWorker
@@ -9,6 +10,7 @@ if ("serviceWorker" in navigator) {
     })
     .catch(console.error);
 }
+*/
 
 document.addEventListener("DOMContentLoaded", function(){
 

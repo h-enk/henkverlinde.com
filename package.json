@@ -1,7 +1,15 @@
 {
-  "name": "yetty",
-  "version": "1.0.0",
-  "description": "Yet another Eleventy starter kit for my (& your) new projects.Built with accessibility and performance in mind.",
+  "name": "henkverlinde.com",
+  "description": "Henk Verlinde website",
+  "version": "1.1.0",
+  "browserslist": [
+    "defaults"
+  ],
+  "repository": "https://github.com/h-enk/henkverlinde.com",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "eleventy:dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
     "eleventy:prod": "cross-env ELEVENTY_ENV=production eleventy",
@@ -17,27 +25,15 @@
     "sass:prod": "node-sass src/assets/styles/scss/ --output src/assets/styles/  --output-style compressed",
     "sass:dev": "node-sass src/assets/styles/scss/ --output src/assets/styles/ --source-map true --source-map-contents true",
     "sass:watch": "node-sass src/assets/styles/scss/main.scss --output src/assets/styles/ --source-map true --source-map-contents true -w",
-    "lint:sass": "stylelint --fix 'src/assets/styles/scss/**/*.scss' 'src/assets/styles/scss/**/**/*.scss' 'src/assets/styles/scss/**/**/**/*.scss'",
+    "lint": "npm run -s lint:sass",
+    "lint:sass": "stylelint \"src/assets/styles/scss/**/*.{css,sass,scss}\"",
     "scripts": "webpack --mode=production",
     "clean": "rimraf dist",
     "clean:install": "rimraf package-lock.json node_modules",
     "modernizr": "npx modernizr -c .modernizrrc.json -d src/assets/scripts/vendors/modernizr.min.js -u",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run -s lint",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/ygoex/yetty.git"
-  },
-  "author": {
-    "name": "Yolanda Gorriz Exposito",
-    "email": "helloygoex@gmail.com",
-    "url": "https://ygoex.com/"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ygoex/yetty/issues"
-  },
-  "homepage": "https://github.com/ygoex/yetty#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0",
     "@11ty/eleventy-img": "^2.0",
@@ -45,28 +41,30 @@
     "@11ty/eleventy-plugin-rss": "^1.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0",
     "@fullhuman/postcss-purgecss": "^4.1",
+    "auto-changelog": "^2.4",
     "autoprefixer": "^10.4",
     "clean-css": "^5.3",
     "concurrently": "^7.1",
     "critical": "^4.0.1",
     "cross-env": "^7.0.3",
     "eleventy-critical-css": "^1.1.0",
-    "eleventy-plugin-pwa": "^1.0.8",
     "eleventy-plugin-reading-time": "^0.0.1",
     "html-minifier": "^4.0.0",
+    "instant.page": "^5.1",
     "luxon": "^2.3",
     "markdown-it": "^12.3",
     "markdown-it-anchor": "^8.5",
     "markdown-it-link-attributes": "^4.0",
     "modernizr": "^3.11.8",
+    "netlify-plugin-submit-sitemap": "^0.3.0",
     "node-sass": "^7.0",
     "postcss": "^8.3.11",
     "postcss-cli": "^9.1",
     "rimraf": "^3.0.2",
     "stylelint": "^14.6",
     "stylelint-config-standard-scss": "^3.0",
-    "stylelint-scss": "^4.2",
     "stylelint-order": "^5.0",
+    "stylelint-scss": "^4.2",
     "webpack": "^5.71",
     "webpack-cli": "^4.9"
   }

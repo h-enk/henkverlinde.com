@@ -8,7 +8,7 @@ const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const CleanCSS = require("clean-css");
 const criticalCss = require("eleventy-critical-css");
-const pluginPWA = require("eleventy-plugin-pwa");
+// const pluginPWA = require("eleventy-plugin-pwa");
 const imageShortcode = require('./utils/shortcodes/imageProcess.js');
 const dateFilter = require("./utils/filters/dateFilter.js");
 const imgSize = require("./utils/filters/imgSize.js");
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
     });
   }
   // PWA
-  eleventyConfig.addPlugin(pluginPWA);
+  // eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(readingTime);
 
   // Setup mermaid markdown highlighter

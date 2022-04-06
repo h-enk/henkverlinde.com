@@ -1,4 +1,37 @@
 [build]
   publish = "dist"
-  environment = { NODE_VERSION = "17.8.0" }
+  functions = "functions"
+
+[build.environment]
+  NODE_VERSION = "16.13.1"
+  NPM_VERSION = "8.1.2"
+
+[context.production]
   command = "npm run build"
+
+[context.deploy-preview]
+  command = "npm run build"
+
+[context.branch-deploy]
+  command = "npm run build"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+    baseUrl = "https://henkverlinde.com/"
+    sitemapPath = "/sitemap.xml"
+    ignorePeriod = 0
+    providers = [
+      "google",
+      "bing",
+      "yandex"
+    ]
+
+[dev]
+  framework = "#custom"
+  command = "npm run start"
+  targetPort = 8080
+  port = 8888
+  publish = "public"
+  autoLaunch = false

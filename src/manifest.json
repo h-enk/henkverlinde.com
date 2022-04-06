@@ -1,8 +1,8 @@
 {
-  "name": "Yetty",
-  "short_name": "Yetty",
-  "theme_color": "#ffffff",
-  "background_color": "#004740",
+  "name": "Henk Verlinde",
+  "short_name": "Henk",
+  "theme_color": "#fff",
+  "background_color": "#fff",
   "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
@@ -10,42 +10,36 @@
   "icons": [
     {
       "src": "./assets/images/favicon/favicon.ico",
-      "sizes": "32x32",
+      "sizes": "48x48",
       "type": "image/ico",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/images/favicon/icon-48x48.png",
-      "sizes": "48x48",
+      "src": "./assets/images/favicon/favicon-16x16.png",
+      "sizes": "16x16",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/images/favicon/icon-72x72.png",
-      "sizes": "72x72",
+      "src": "./assets/images/favicon/favicon-32x32.png",
+      "sizes": "32x32",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/images/favicon/icon-96x96.png",
-      "sizes": "96x96",
+      "src": "./assets/images/favicon/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/images/favicon/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "./assets/images/favicon/icon-192x192.png",
+      "src": "./assets/images/favicon/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "./assets/images/favicon/icon-512x512.png",
+      "src": "./assets/images/favicon/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
