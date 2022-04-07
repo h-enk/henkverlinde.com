@@ -230,6 +230,17 @@ module.exports = function(eleventyConfig) {
     ghostMode: false
   });
 
+  // https://gist.github.com/cmaas/1686dbb8bf999871c8ffb127aa07ff84
+  eleventyConfig.addFilter('filterRelated', (collection = [], related = []) => {
+    const filtered = collection.filter(page => related.includes(page.fileSlug));
+    return filtered.sort( (a, b) => related.indexOf(a.fileSlug) - related.indexOf(b.fileSlug));
+  });
+
+  // https://11ty.rocks/eleventyjs/tags/
+  eleventyConfig.addFilter("hasTag", (tags, tag) => {
+    return (tags || []).includes(tag);
+  });
+
   return {
     templateFormats: [
       "md",

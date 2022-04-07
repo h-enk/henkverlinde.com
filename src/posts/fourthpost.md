@@ -3,7 +3,7 @@ title: The spectacle before us was indeed sublime
 subtitle: You would have loved it
 description: This is a post on My Blog about touchpoints and circling wagons.
 date: 2018-09-30
-tags: second-tag
+tags: ["second-tag", "product"]
 imgUrl: ./src/assets/images/engin-akyurt--GVpdpShB7M-unsplash.jpg
 imgAlt: Ink in water
 imgSize: '(min-width: 30em) 50vw, 100vw'

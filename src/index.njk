@@ -18,19 +18,19 @@
 
   {% set maxProducts = collections.products.length | min(2) %}
 
-  <h2>Latest {% if maxPosts == 1 %}product{% else %}products{% endif %}
+  <h2>Recent {% if maxProducts == 1 %}product{% else %}products{% endif %}
   </h2>
 
   {% set productslist = collections.products | head(-2) | reverse %}
   {% set productslistCounter = collections.products | length %}
   {% include "layouts/partials/products-list.njk" %}
 
-  <p>More products can be found in the <a class="underline-dashed" href="{{ '/products/' | url }}">products</a>.</p>
+  <p><a class="underline-dashed" href="{{ '/products/' | url }}">Check out all products →</a></p>
 
   <div class="divider"></div>
 
   {% set maxPosts = collections.posts.length | min(3) %}
-  <h2>Recent {% if maxPosts == 1 %}post{% else %}posts{% endif %}
+  <h2>Latest {% if maxPosts == 1 %}post{% else %}posts{% endif %}
   </h2>
 
   {% set postslist = collections.posts | head(-3) | reverse %}

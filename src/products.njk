@@ -14,8 +14,8 @@ eleventyNavigation:
   order: 1
 pagination:
   data: collections.products
-  size: 3
-  alias: posts
+  size: 2
+  alias: products
   reverse: true
 ---
 
@@ -24,17 +24,21 @@ pagination:
 {% block content %}
   <div class="blog-heading-tags">
     <h1>{{ title }}</h1>
+    <!--
     {{ component('tags-list', {
         tags: collections.tagList
     }) }}
+    -->
   </div>
 
+  <!--
   {% imageNjk imgUrl, imgAlt, imgSize, pictureClass, imgClass, imgBorderColor %}
+  -->
 
-  {% set allPosts = collections.posts %}
-  {% set postslist = posts %}
+  {% set allProducts = collections.products %}
+  {% set productslist = products %}
 
-  {% include "layouts/partials/posts-list.njk" %}
+  {% include "layouts/partials/products-list.njk" %}
   {% include "layouts/partials/pagination.njk" %}
 
 {% endblock %}

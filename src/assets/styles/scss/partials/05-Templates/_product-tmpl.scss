@@ -1,0 +1,147 @@
+.tmpl-product {
+  // Center all elements under article except picture and hero
+  article > *:not(figure):not(.hero) {
+    @extend %grid-column-center;
+  }
+}
+
+.product__header {
+  flex-direction: column;
+
+  h2 {
+    margin-top: var(--space-0);
+  }
+}
+
+.product__content {
+  max-width: var(--line-length);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: inline-block;
+
+    &:hover {
+      + .direct-link {
+        filter: brightness(0%);
+      }
+    }
+  }
+
+  // Add margin bottom to all direct paragraphs that are descendant of .product-content:
+  > p {
+    margin-bottom: var(--space-lg-1);
+  }
+
+  // Add margin top to all elements, except paragraph and headings, that follow a paragraph.
+  > p + *:not(p)*:not(h2, h3, h4, h5, h6) {
+    margin-top: var(--space-lg-2);
+  }
+
+  // Add margin top to all paragraphs that follow elements that are not another paragraph or a .direct-link
+  > *:not(p):not(.direct-link) + p {
+    margin-top: var(--space-lg-2);
+  }
+
+  //No margin bottom for the last child
+  > p:last-child {
+    margin-bottom: var(--space-0);
+  }
+
+  a:not(.direct-link) {
+    @extend %underline-dashed;
+  }
+}
+
+.product__footer {
+  /*
+  content-visibility: auto;
+  contain-intrinsic-size: 150px;
+  */
+  padding-top: var(--space-lg-5);
+  padding-bottom: var(--space-lg-1);
+}
+
+.product__next-prev {
+  display: flex;
+  flex-direction: column;
+
+  @include media-query(md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.product__next,
+.product__prev {
+  @include media-query(md) {
+    width: 50%;
+  }
+}
+
+.product__prev {
+  @include media-query(md) {
+    text-align: right;
+  }
+}
+
+.product__prev--label,
+.product__next--label {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  letter-spacing: var(--space-sm-1);
+  text-transform: uppercase;
+
+  &::after {
+    margin-left: var(--space-sm-4n);
+    content: ":";
+  }
+
+  @include media-query(md) {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.product__next--label {
+  @include media-query(md) {
+    margin-left: -0.5rem;
+  }
+}
+
+.product__prev--label {
+  @include media-query(md) {
+    margin-right: var(--space-sm-8n);
+  }
+}
+
+.product__prev--icon,
+.product__next--icon {
+  display: none;
+
+  @include media-query(md) {
+    display: inline;
+    position: relative;
+    top: var(--space-sm-8);
+  }
+}
+
+.product__prev--icon {
+  left: var(--space-sm-4n);
+}
+
+.product__next--icon {
+  right: var(--space-sm-4n);
+}
+
+.product__prev--link,
+.product__next--link {
+  @extend %underline-dashed;
+
+  @include media-query(md) {
+    display: block;
+  }
+}

@@ -1,11 +1,10 @@
 ---
+title: Tags
 permalink: /tags/
 layout: layouts/home.njk
 ---
 
 {%- from "layouts/partials/component.njk" import component -%}
-
-<h1>Tags</h1>
 
 {{ component('tags-list', {
     tags: collections.tagList

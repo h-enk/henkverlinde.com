@@ -2,9 +2,12 @@
   {% for tag in params
     .tags
     .sort() %}
-    {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-    <li class="tag__item">
-      <a class="tag__link" href="{{ tagUrl | url }}">#{{ tag }}</a>
-    </li>
+    {% if tag | hasTag('products') %}
+    {% else %}
+      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      <li class="tag__item">
+        <a class="tag__link" href="{{ tagUrl | url }}">#{{ tag }}</a>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
