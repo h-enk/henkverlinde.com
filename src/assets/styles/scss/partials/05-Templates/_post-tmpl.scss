@@ -65,8 +65,11 @@
 }
 
 .post__footer {
+  /*
   content-visibility: auto;
   contain-intrinsic-size: 150px;
+  */
+  padding-top: var(--space-lg-5);
   padding-bottom: var(--space-lg-1);
 }
 
@@ -150,4 +153,8 @@
   @include media-query(md) {
     display: block;
   }
+}
+
+h2.related-posts {
+  margin-bottom: 3rem;
 }

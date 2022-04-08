@@ -4,8 +4,12 @@ subtitle: Another example
 description: This is a post on My Blog about leveraging agile frameworks.
 date: 2018-07-04
 tags:
-  - number-2
+- product
+- legal
 layout: layouts/post.njk
+related:
+- firstpost
+- fourthpost
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

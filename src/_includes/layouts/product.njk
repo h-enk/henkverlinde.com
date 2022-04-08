@@ -59,13 +59,12 @@
       <a href="{{ productUrl }}">Get {{ title }} →</a>
     </div>
 
-
     {% if related %}
       <footer class="product__footer">
 
         {% set maxProducts = collections.products.length | min(2) %}
 
-        <h2>Other {% if maxProducts == 1 %}product{% else %}products{% endif %}
+        <h2 class="related-products">Related {% if maxProducts == 1 %}product{% else %}products{% endif %}
         </h2>
 
         {% set productslist = collections.products | filterRelated(related) | head(-2) %}

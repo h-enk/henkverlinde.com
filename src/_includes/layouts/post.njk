@@ -56,6 +56,24 @@
       {{ content | safe }}
     </div>
 
+
+    {% if related %}
+      <footer class="post__footer">
+
+        {% set maxPosts = collections.posts.length | min(3) %}
+
+        <h2 class="related-posts">Related {% if maxPosts == 1 %}post{% else %}posts{% endif %}
+        </h2>
+
+        {% set postslist = collections.posts | filterRelated(related) | head(-3) | reverse %}
+        {% set postslistCounter = collections.posts | length %}
+        {% include "layouts/partials/posts-list.njk" %}
+
+      </footer>
+    {% endif %}
+
+
+    <!--
     <footer class="post__footer">
       <hr>
       <ul class="post__next-prev">
@@ -97,6 +115,7 @@
         {% endif %}
       </ul>
     </footer>
+    -->
 
   </article>
 {% endblock %}
