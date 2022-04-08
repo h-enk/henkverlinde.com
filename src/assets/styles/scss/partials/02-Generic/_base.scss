@@ -37,6 +37,21 @@ ul {
   list-style-type: none;
 }
 
+.page__content ul,
+.post__content ul,
+.product__content ul {
+  margin-top: var(--space-lg-2);
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+.page__content ol,
+.post__content ol,
+.product__content ol {
+  margin-top: var(--space-lg-2);
+  margin-left: var(--space-lg-2);
+}
+
 hr {
   margin: var(--space-lg-2) var(--space-0);
 }
@@ -59,6 +74,12 @@ video {
 
 picture {
   display: block;
+}
+
+.page__content picture,
+.post__content picture,
+.product__content picture {
+  margin-top: var(--space-lg-2h);
 }
 
 // Focus state as seen in: https://moderncss.dev/modern-css-upgrades-to-improve-accessibility/

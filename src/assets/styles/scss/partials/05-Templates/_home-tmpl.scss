@@ -23,10 +23,18 @@
   background-size: contain;
 }
 
-.divider {
+.divider-home {
   margin: var(--space-sm-4) var(--space-0);
 
   @include media-query(sm) {
     margin: var(--space-lg-1q) var(--space-0);
+  }
+}
+
+.divider-post {
+  margin: var(--space-sm-10) var(--space-0);
+
+  @include media-query(sm) {
+    margin: var(--space-lg-1e) var(--space-0);
   }
 }

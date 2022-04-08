@@ -21,7 +21,7 @@
 }
 
 .productlist__item {
-  max-width: var(--line-length);
+  // max-width: var(--line-length);
   max-width: 100%;
   transition: var(--transition-default);
   border-radius: var(--border-radius-default);
@@ -32,5 +32,11 @@
   &:hover {
     cursor: pointer;
     box-shadow: 0 10px 15px -3px var(--black-100-a), 0 -3px 6px -2px var(--black-50-a);
+  }
+}
+
+.products .productlist__item {
+  @include media-query(lg) {
+    max-height: calc(100% - 0.5rem);
   }
 }

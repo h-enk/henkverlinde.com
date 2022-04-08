@@ -22,7 +22,8 @@
   text-decoration: none;
 
   &::after {
-    display: inline-block;
+    // display: inline-block;
+    display: none;
     position: relative;
     top: var(--space-sm-2);
     width: var(--space-lg-1h);

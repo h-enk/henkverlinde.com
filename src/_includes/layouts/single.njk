@@ -1,0 +1,26 @@
+{% extends 'layouts/base.njk' %}
+
+{% if templateClass is not defined %}
+  {% set templateClass = 'tmpl-home grid single ' + page.fileSlug %}
+{% endif %}
+
+{% block content %}
+
+  {% if title %}
+    <h1>{{ title }}</h1>
+  {% endif %}
+
+  {%- if imgUrl %}
+    {% imageNjk imgUrl,
+    imgAlt,
+    imgSize,
+    pictureClass,
+    imgClass,
+    imgBorderColor %}
+  {% endif %}
+
+  <div class="page__content columns-1">
+    {{ content | safe }}
+  </div>
+
+{% endblock %}

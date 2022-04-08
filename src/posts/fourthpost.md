@@ -1,6 +1,6 @@
 ---
 title: The spectacle before us was indeed sublime
-subtitle: You would have loved it
+subtitle: You should have there
 description: This is a post on My Blog about touchpoints and circling wagons.
 date: 2018-09-30
 tags: ["second-tag", "product"]
@@ -14,6 +14,16 @@ layout: layouts/post.njk
 ---
 
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+
+- Aliquam finibus ut odio sed semper
+- Praesent et nulla quis lacus
+
+Aliquam finibus ut odio sed semper. Praesent et nulla quis lacus egestas pretium sit amet eu sem. Proin metus dolor, placerat gravida enim consequat, volutpat mollis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+1. Aliquam finibus ut odio sed semper
+2. Praesent et nulla quis lacus
+
+Aliquam finibus ut odio sed semper. Praesent et nulla quis lacus egestas pretium sit amet eu sem. Proin metus dolor, placerat gravida enim consequat, volutpat mollis nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Section Header
 
