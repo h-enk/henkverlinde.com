@@ -1,10 +1,10 @@
 ---
 layout: layouts/single.njk
 title: Privacy Policy
-# imgUrl: https://source.unsplash.com/mV9-1XjnM4Y/
-# imgAlt: Abstract black and white photograph of a person in a mountain.
-# imgSize: '(min-width: 30em) 50vw, 100vw'
-# pictureClass: grid-column-full
+imgUrl: https://source.unsplash.com/mV9-1XjnM4Y/
+imgAlt: Abstract black and white photograph of a person in a mountain.
+imgSize: '(min-width: 30em) 50vw, 100vw'
+pictureClass: grid-column-full
 imgClass: img-full
 imgBorderColor: '#3f51b5'
 pageClass: page-privacy
