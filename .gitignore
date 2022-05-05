@@ -1,4 +1,6 @@
-bin
 node_modules
-public
-resources
+.svelte-kit
+build
+# Local Netlify folder
+.netlify
+.vscode/settings.json
