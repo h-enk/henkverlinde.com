@@ -37,12 +37,18 @@
 	<ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
 		{#if !showMobileMenu}
 			<li><a href="/"><img src="/Logo.svg" alt="Logo" /></a></li>
+			{#each navItems as item}
+				<li>
+					<a href={item.href}>{item.label}</a>
+				</li>
+			{/each}
+		{:else}
+			{#each navItems as item}
+				<li on:click={toggleMobileMenuVisible}>
+					<a href={item.href}>{item.label}</a>
+				</li>
+			{/each}
 		{/if}
-		{#each navItems as item}
-			<li on:click={toggleMobileMenuVisible}>
-				<a href={item.href}>{item.label}</a>
-			</li>
-		{/each}
 	</ul>
 </nav>
 
