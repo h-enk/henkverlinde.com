@@ -3,6 +3,7 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"paths": {
+			"$lib":["src/lib"],
 			"$lib/*": ["src/lib/*"]
 		},
 
@@ -25,8 +26,14 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
-		"checkJs": false,
-		"config.kit.prerender.default": true
+		"checkJs": false
 	},
-	"include": ["src/**/*.js", "src/**/*.svelte"]
+	"include": ["src/**/*.js", "src/**/*.svelte"],
+	"config": {
+		"kit": {
+			"prerender": {
+				"default": true
+			}
+		}
+	}
 }
