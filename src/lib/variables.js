@@ -1,6 +1,6 @@
 export const variables = {
 	// URL where live site is deployed, used in sitemap, RSS feed
-	siteUrl: 'https://paws.codexfelis.dev',
+	siteUrl: 'https://deploy-preview-184--henkverlinde.netlify.app',
 	// Used in page titles, helps with SEO
 	projectName: 'My Cool Project!',
 	// Brief website description, used in description fields in RSS, HTML head. Helps with SEO
