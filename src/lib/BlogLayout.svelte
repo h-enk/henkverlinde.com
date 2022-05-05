@@ -45,7 +45,6 @@
 	rel="noopener noreferrer">Tweet this post</a
 >
 -->
-
 <style>
 	article {
 		width: 100%;

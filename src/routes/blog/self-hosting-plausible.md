@@ -1,19 +1,19 @@
 ---
-title: "Self-Hosting Plausible Analytics"
-description: "Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean."
-excerpt: "Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean."
+title: 'Self-Hosting Plausible Analytics'
+description: 'Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean.'
+excerpt: 'Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean.'
 date: 2021-03-09T08:33:25+01:00
 lastmod: 2021-03-09T08:33:25+01:00
 publishDate: '2021-03-09'
 lastUpdated: '2022-05-05'
 draft: false
 weight: 30
-images: ["self-hosting-plausible-analytics.webp"]
-caption: "Photograph: Jason Kirk/Baylor College of Medicine"
-categories: ["Guides"]
+images: ['self-hosting-plausible-analytics.webp']
+caption: 'Photograph: Jason Kirk/Baylor College of Medicine'
+categories: ['Guides']
 series: []
-tags: ["Analytics", "Privacy"]
-authors: ["Henk Verlinde"]
+tags: ['Analytics', 'Privacy']
+authors: ['Henk Verlinde']
 ---
 
 Main components:
@@ -38,7 +38,7 @@ Services:
 - 25 GB NVMe SSDs
 - 1,000 GB transfer
 
-See also:  [Recommended Initial Droplet Configuration](https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/)
+See also: [Recommended Initial Droplet Configuration](https://www.digitalocean.com/docs/droplets/tutorials/recommended-setup/)
 
 ### Upgrade installed packages
 
@@ -96,30 +96,30 @@ nano reverse-proxy/docker-compose.caddy-gen.yml
 ```
 
 ```yml
-version: "3.3"
+version: '3.3'
 services:
   caddy-gen:
     container_name: caddy-gen
-    image: "wemakeservices/caddy-gen:latest"
+    image: 'wemakeservices/caddy-gen:latest'
     restart: always
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - caddy-certificates:/data/caddy
     ports:
-      - "80:80"
-      - "443:443"
+      - '80:80'
+      - '443:443'
     depends_on:
       - plausible
 
   plausible:
     labels:
-      virtual.host: "example.com" # change to your domain name
-      virtual.port: "8000"
-      virtual.tls-email: "admin@example.com" # change to your email
+      virtual.host: 'example.com' # change to your domain name
+      virtual.port: '8000'
+      virtual.tls-email: 'admin@example.com' # change to your email
 
 volumes:
-    caddy-certificates:
-        driver: local
+  caddy-certificates:
+    driver: local
 ```
 
 ### Configure MaxMind
