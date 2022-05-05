@@ -6,9 +6,10 @@ export const variables = {
 	// Brief website description, used in description fields in RSS, HTML head. Helps with SEO
 	siteDescription: 'My cool project is a project about stuff that does things.',
 	// The twitter username for you/project/department
-	twitter: 'codexfelis',
+	twitter: 'henkverlinde',
 	// Whatever GitHub you want to link to in the footer
-	github: 'https://github.com/codexfelis/paws-template',
+	github: 'https://github.com/h-enk',
+	linkedin: 'https://www.linkedin.com/in/henkverlinde/',
 	// URL segment for the content you update regularly
 	// If you change this, you also need to change the file/folder names
 	contentPath: 'blog'
