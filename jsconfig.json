@@ -26,7 +26,7 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"checkJs": false,
-		"config.kit.prerender.default": true,
+		"config.kit.prerender.default": true
 	},
 	"include": ["src/**/*.js", "src/**/*.svelte"]
 }
