@@ -25,13 +25,15 @@
 </script>
 
 <!-- TODO UPDATE THE SEO INFO -->
-<Seo title="Paws" description={variables.siteDescription} path="/" openGraphImage="OGExample.png"/>
+<Seo title="Henk Verlinde" description={variables.siteDescription} path="/" openGraphImage="OGExample.png"/>
 
 # Henk Verlinde
 
 <p class=emph>
-Lightweight and simple tools for building your digital business.
+Building a great digital business.
 </p>
+
+[Source](https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/building-a-great-digital-business)
 
 [Use this template]({variables.github}) in GitHub, or read the [deployed documentation]({variables.siteUrl}).
 

@@ -3,7 +3,7 @@
 </script>
 
 <!-- TODO UPDATE THE SEO INFO -->
-<Seo title="About Paws" description="" path="/about" />
+<Seo title="About Henk Verlinde" description="" path="/about" />
 
 # Hi! 👋
 

@@ -2,9 +2,9 @@ export const variables = {
 	// URL where live site is deployed, used in sitemap, RSS feed
 	siteUrl: 'https://deploy-preview-184--henkverlinde.netlify.app',
 	// Used in page titles, helps with SEO
-	projectName: 'My Cool Project!',
+	projectName: 'Henk Verlinde',
 	// Brief website description, used in description fields in RSS, HTML head. Helps with SEO
-	siteDescription: 'My cool project is a project about stuff that does things.',
+	siteDescription: 'Building a great digital business.',
 	// The twitter username for you/project/department
 	twitter: 'henkverlinde',
 	// Whatever GitHub you want to link to in the footer
