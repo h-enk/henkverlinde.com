@@ -5,21 +5,20 @@
 <footer>
 	<p>
 		<a href="https://twitter.com/{variables.twitter}" target="_blank" rel="noopener noreferrer"
-			>Twitter</a
+			>🐤 Twitter</a
 		>
-		|
-		<a href={variables.github} target="_blank" rel="noopener noreferrer">GitHub</a> |
-		<a href={variables.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+		<a href={variables.github} target="_blank" rel="noopener noreferrer">😺 GitHub</a>
+		<!-- <a href="/rss.xml" rel="external">📰 RSS</a> -->
+		<a href={variables.linkedin} target="_blank" rel="noopener noreferrer">🏢 LinkedIn</a>
 	</p>
 	<p>
-		<!--
 		Built with <a
 			href="https://github.com/codexfelis/paws-template"
 			target="blank"
 			rel="noopener noreferrer">🐾</a
 		>
 		by
-		<a href="https://codexfelis.dev" target="blank" rel="noopener noreferrer">Codex Felis</a>. --><a
+		<a href="https://codexfelis.dev" target="blank" rel="noopener noreferrer">Codex Felis</a>. <a
 			href="/privacy/">This website does not use cookies 🍪</a
 		>
 	</p>

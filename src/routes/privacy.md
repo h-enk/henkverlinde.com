@@ -1,17 +1,21 @@
 <script>
 	import Seo from '$lib/Seo.svelte';
+	import { onMount } from 'svelte';
+	onMount(async () => {
+		await import('$lib/obfuscate-email.js');
+	});
 </script>
 
 <!-- TODO UPDATE THE SEO INFO -->
 <Seo title="Privacy" description="" path="/privacy" />
 
-# Privacy
+# Privacy policy
 
 ## TL;DR
 
 This website does not use cookies and does not collect any personal data.
 
-## Information processing
+## Information not collected and processing policy
 
 When you visit the henkverlinde.com website:
 
@@ -24,17 +28,17 @@ When you visit the henkverlinde.com website:
 
 ## Information collected and what it's used for
 
-I run [Plausible Analytics](https://plausible.io/) on henkverlinde.com. The following information is collected:
+This website uses [Plausible Analytics](https://plausible.io/) to collect the following information:
 
-- **Page URL**. I track the page URL of each page view on my website. I use this to understand which pages have been viewed and how many times a particular page has been viewed. For example: _https://henkverlinde.com_.
-- **HTTP Referer**. I use the referrer string to understand the number of visitors referred to my website from links on other sites. For example: _https://github.com_.
-- **Browser**. I use this to understand what browsers people use when visiting my website. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _Chrome_.
-- **Operating system**. I use this to understand what operating systems people use when visiting my website. I only use the brand of the operating system and don’t include the version number or any other details. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _macOS_.
-- **Device type**. I use this to understand what devices people use when visiting my website. This is derived from window.innerWidth. The actual width of the browser in pixels is discarded. For example: _Desktop_.
-- **Visitor Country**. I look up the visitor’s country using the IP address. I do not track anything more granular than the country of origin and the IP address of the visitor is discarded. I never store IP addresses in databases or logs. For example: _United Kingdom_.
+- **Page URL**. The page URL of each page you view is tracked. This is used to understand which pages have been viewed and how many times a particular page has been viewed. For example: _https://henkverlinde.com/about_.
+- **HTTP Referer**. The referrer string is used to identify the pages you are visiting henkverlinde.com from. For example: _https://github.com_.
+- **Browser**. Used to understand what browser you use when visiting this website. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _Chrome_.
+- **Operating system**. Used to understand what operating system you use when visiting this website. Only the brand of the operating system is used and doesn't include the version number or any other details. This is derived from the User-Agent HTTP header. The full User-Agent is discarded. For example: _macOS_.
+- **Device type**. Used to understand what device you use when visiting this website. This is derived from `window.innerWidth`. The actual width of the browser in pixels is discarded. For example: _Desktop_.
+- **Visitor Country**. The country you're visting this website from is looked up using your IP address. Anything more granular than your country of origin is not tracked and your IP address is discarded. IP addresses are never stored in databases or logs. For example: _United Kingdom_.
 
-## Contact me
+## Contact
 
-If you have any questions, contact me at hello at henkverlinde.com.
+If you have any questions, drop an email at <a class="eml-protected" href="/">85ede0e9e9eac5ede0ebeef3e0f7e9ecebe1e0abe6eae8</a>.
 
 Effective Date: _20th July 2020_
