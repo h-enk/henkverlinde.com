@@ -18,9 +18,8 @@
 			rel="noopener noreferrer">🐾</a
 		>
 		by
-		<a href="https://codexfelis.dev" target="blank" rel="noopener noreferrer">Codex Felis</a>. <a
-			href="/privacy/">This website does not use cookies 🍪</a
-		>
+		<a href="https://codexfelis.dev" target="blank" rel="noopener noreferrer">Codex Felis</a>.
+		<a href="/privacy/">This website does not use cookies 🍪</a>
 	</p>
 </footer>
 
