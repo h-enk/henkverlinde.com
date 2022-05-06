@@ -5,7 +5,7 @@ const __dirname = path.resolve();
 const buildDir = path.join(__dirname, 'build');
 
 function main() {
-  const headers = `/*
+	const headers = `/*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
@@ -17,8 +17,8 @@ function main() {
   Permissions-Policy: accelerometer=(), autoplay=(), camera=(), document-domain=(), encrypted-media=(), fullscreen=(), gyroscope=(), interest-cohort=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), sync-xhr=(), usb=(), xr-spatial-tracking=(), geolocation=()
 `;
 
-  const headersFile = path.join(buildDir, '_headers');
-  fs.writeFileSync(headersFile, headers);
+	const headersFile = path.join(buildDir, '_headers');
+	fs.writeFileSync(headersFile, headers);
 }
 
 main();
