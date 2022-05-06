@@ -1,19 +1,19 @@
 ---
-title: "Subresource Integrity Generator"
-description: "Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute."
-excerpt: "Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute."
+title: 'Subresource Integrity Generator'
+description: 'Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute.'
+excerpt: 'Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute.'
 date: 2021-03-25T13:56:26+01:00
 lastmod: 2021-03-25T13:56:26+01:00
 publishDate: '2021-03-25'
 lastUpdated: '2022-05-25'
 draft: false
 weight: 20
-images: ["subresource-integrity-generator.webp"]
-caption: "Photograph: Hannah Le Leu/Ocean Photography Awards"
-categories: ["Tools"]
+images: ['subresource-integrity-generator.webp']
+caption: 'Photograph: Hannah Le Leu/Ocean Photography Awards'
+categories: ['Tools']
 series: []
-tags: ["SRI", "React", "PWA"]
-authors: ["Henk Verlinde"]
+tags: ['SRI', 'React', 'PWA']
+authors: ['Henk Verlinde']
 ---
 
 Progressive Web Application (PWA) generating a `<script>` or `<link>` element with an integrity attribute.

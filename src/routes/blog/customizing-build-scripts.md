@@ -1,7 +1,7 @@
 ---
-title: "Customizing build scripts"
-description: "This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
-excerpt: "This is the <em>third</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+title: 'Customizing build scripts'
+description: 'This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
+excerpt: 'This is the <em>third</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
 date: 2021-02-10T15:55:56+01:00
 lastmod: 2021-02-10T15:55:56+01:00
 publishDate: '2021-02-10'
@@ -9,11 +9,12 @@ lastUpdated: '2022-02-10'
 draft: false
 weight: 50
 images: []
-categories: ["Guides"]
-series: ["Using npm with Hugo"]
-tags: ["Hugo", "Nodejs", "npm"]
-authors: ["Henk Verlinde"]
+categories: ['Guides']
+series: ['Using npm with Hugo']
+tags: ['Hugo', 'Nodejs', 'npm']
+authors: ['Henk Verlinde']
 ---
+
 This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.
 
 In the [second post](/managing-dependencies) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
@@ -83,9 +84,9 @@ And process the SCSS with Hugo in `./layouts/partials/head.html`:
 
 ```html
 <head>
-  {{ $options := (dict "targetPath" "main.css" "includePaths" (slice "node_modules")) -}}
-  {{ $css := resources.Get "app.scss" | resources.ToCSS $options -}}
-  <link rel="stylesheet" href="{{ $css.Permalink }}">
+	{{ $options := (dict "targetPath" "main.css" "includePaths" (slice "node_modules")) -}} {{ $css :=
+	resources.Get "app.scss" | resources.ToCSS $options -}}
+	<link rel="stylesheet" href="{{ $css.Permalink }}" />
 </head>
 ```
 
@@ -93,13 +94,13 @@ Let's add some Bootstrap styling to `./layouts/index.html`:
 
 ```html
 {{ define "main" }}
-  <div class="container-fluid">
-    <div class="row vh-100 align-items-center justify-content-center">
-      <div class="col-md-7">
-        <h1 class="text-center">{{ .Title }} 🎉</h1>
-      </div>
-    </div>
-  </div>
+<div class="container-fluid">
+	<div class="row vh-100 align-items-center justify-content-center">
+		<div class="col-md-7">
+			<h1 class="text-center">{{ .Title }} 🎉</h1>
+		</div>
+	</div>
+</div>
 {{ end }}
 ```
 
@@ -120,29 +121,27 @@ npm i -D @fullhuman/postcss-purgecss postcss-cli autoprefixer
 Add `./postcss.config.js`:
 
 ```js
-const autoprefixer = require('autoprefixer')
-const purgecss = require('@fullhuman/postcss-purgecss')
+const autoprefixer = require('autoprefixer');
+const purgecss = require('@fullhuman/postcss-purgecss');
 
 module.exports = {
-  plugins: [
-    autoprefixer(),
-    purgecss({
-      content: ['./layouts/**/*.html']
-    })
-  ]
-}
+	plugins: [
+		autoprefixer(),
+		purgecss({
+			content: ['./layouts/**/*.html']
+		})
+	]
+};
 ```
 
 Update `./layouts/partials/head.html`:
 
 ```html
 <head>
-  {{ $options := (dict "targetPath" "main.css" "includePaths" (slice "node_modules")) -}}
-  {{ $css := resources.Get "app.scss" | resources.ToCSS $options -}}
-  {{ if hugo.IsProduction -}}
-    {{ $css = $css | minify | fingerprint | resources.PostCSS | resources.PostProcess -}}
-  {{ end -}}
-  <link rel="stylesheet" href="{{ $css.Permalink }}">
+	{{ $options := (dict "targetPath" "main.css" "includePaths" (slice "node_modules")) -}} {{ $css :=
+	resources.Get "app.scss" | resources.ToCSS $options -}} {{ if hugo.IsProduction -}} {{ $css = $css
+	| minify | fingerprint | resources.PostCSS | resources.PostProcess -}} {{ end -}}
+	<link rel="stylesheet" href="{{ $css.Permalink }}" />
 </head>
 ```
 
