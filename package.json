@@ -14,7 +14,7 @@
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"prepare": "husky install",
-		"postbuild": "node scripts/sitemap.js && node scripts/headers.js"
+		"postbuild": "node scripts/sitemap.js"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-netlify": "next",
