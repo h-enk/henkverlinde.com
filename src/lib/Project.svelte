@@ -6,9 +6,9 @@
 </script>
 
 <section>
-	<h2><a href={link} rel="noopener noreferrer" target="_blank">{title}</a></h2>
+	<h2><a href={link} rel="noopener" target="_blank">{title}</a></h2>
 	<p><slot /></p>
-	<a href={link} rel="noopener noreferrer" target="_blank"><img src={picture} alt={altText} /></a>
+	<a href={link} rel="noopener" target="_blank"><img src={picture} alt={altText} /></a>
 </section>
 
 <style>

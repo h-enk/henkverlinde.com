@@ -29,7 +29,7 @@ const xml = (
         <item>
           <title>${post.title}</title>
           <description>${post.description}</description>
-          <link>${siteUrl}/${post.layout}/${post.slug}/</link> 
+          <link>${siteUrl}/${post.layout}/${post.slug}/</link>
           <guid isPermaLink="false">${siteUrl}/${variables.contentPath}/${post.slug}/</guid>
       <pubDate>${new Date(post.publishDate || post.lastUpdated).toLocaleDateString(
 				'sv-SE'

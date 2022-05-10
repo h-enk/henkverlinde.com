@@ -5,9 +5,10 @@
 	let showMobileMenu = false;
 
 	const navItems = [
-		{ label: 'Home', href: '/' },
+		// { label: 'Home', href: '/', reload: true },
+		{ label: 'Tools', href: `/tools` },
 		{ label: 'Blog', href: `/${variables.contentPath}` },
-		{ label: 'About', href: '/about' }
+		{ label: 'About', href: '/about', reload: false }
 	];
 
 	const toggleMobileMenuVisible = () => (showMobileMenu = !showMobileMenu);
@@ -36,16 +37,27 @@
 	</button>
 	<ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
 		{#if !showMobileMenu}
-			<li><a href="/"><img src="/Logo.svg" alt="Logo" /></a></li>
+			<li><a sveltekit:reload href="/"><img src="/Logo.svg" alt="Logo" /></a></li>
 			{#each navItems as item}
 				<li>
-					<a href={item.href}>{item.label}</a>
+					{#if item.reload === true}
+						<a sveltekit:reload href={item.href}>{item.label}</a>
+					{:else}
+						<a href={item.href}>{item.label}</a>
+					{/if}
 				</li>
 			{/each}
 		{:else}
+			<li on:click={toggleMobileMenuVisible}>
+				<a sveltekit:reload href="/">Home</a>
+			</li>
 			{#each navItems as item}
 				<li on:click={toggleMobileMenuVisible}>
-					<a href={item.href}>{item.label}</a>
+					{#if item.reload === true}
+						<a sveltekit:reload href={item.href}>{item.label}</a>
+					{:else}
+						<a href={item.href}>{item.label}</a>
+					{/if}
 				</li>
 			{/each}
 		{/if}

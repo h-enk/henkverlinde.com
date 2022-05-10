@@ -1,6 +1,5 @@
 import readingTime from 'remark-reading-time';
 import slugPlugin from 'rehype-slug';
-import rehypeExternalLinks from 'rehype-external-links';
 
 export const mdsvexConfig = {
 	extensions: ['.md'],
@@ -8,8 +7,9 @@ export const mdsvexConfig = {
 		dashes: 'oldschool'
 	},
 	remarkPlugins: [readingTime()],
-	rehypePlugins: [slugPlugin, rehypeExternalLinks],
+	rehypePlugins: [slugPlugin],
 	layout: {
-		blog: './src/lib/BlogLayout.svelte'
+		blog: './src/lib/BlogLayout.svelte',
+		tools: './src/lib/Tool.svelte'
 	}
 };

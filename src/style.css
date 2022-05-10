@@ -144,6 +144,21 @@ blockquote,
 	padding: 0 0 0 50px;
 }
 
+aside {
+	background-color: rgba(46, 52, 64, 0.1);
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 0.3em;
+}
+
+aside p {
+	margin: 0;
+}
+
+aside li {
+	margin-top: 0.4rem;
+}
+
 code {
 	font-size: 1rem;
 	font-family: var(--font-mono);

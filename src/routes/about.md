@@ -7,10 +7,8 @@
 
 # Hi! 👋
 
-Here's the page where you might want to write about yourself or your project and why it is cool. This page, like the blog posts, is written in Markdown, but is not hooked up to the [CMS](/blog/cms) (if you are using one).
+I’m Henk Verlinde, founder and CEO of [Ventizo](https://ventizo.com/), a digital products company headquartered in the Netherlands. Founded in 2010, fully owned and run by me. Formerly a digital agency (2010-2020), now a digital product company.
 
-## But I want another page like this
+I hold a MSc in Economics and Business from Erasmus University Rotterdam. I’ve worked as a business analyst, project manager, and business developer for several international banks. On the side, I’ve always liked to code.
 
-Make another file in `src/routes`, called whatever you want the URL of that page to be (this page lives at `www.yoursite.com/about`and `src/routes/about.md`) and add some content.
-Copy over the few code lines from the start of this file, and fill in the [`Seo` component](/blog/seo) with the path to your new page and a description of what is written there.
-See the section on [adding your pages](/blog/initial-setup#add-your-pages) for more detail.
+I believe experimenting is key to learn and to grow personally, and professionally. I love making innovative stuff that is simple, easy to use, and looks nice. At Ventizo, and as side projects, I like to create digital products, the [Jamstack](https://jamstack.org/) way.

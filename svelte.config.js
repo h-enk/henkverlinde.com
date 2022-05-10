@@ -16,7 +16,8 @@ const config = {
 		adapter: adapter(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		// target: '#svelte',
-		prerender: { entries: ['*', '/rss.xml'] }
+		prerender: { entries: ['*', '/rss.xml'] },
+		trailingSlash: 'never'
 	}
 };
 

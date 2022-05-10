@@ -1,11 +1,11 @@
 ---
-title: 'Subresource Integrity Generator'
+title: 'SRI Generator'
 description: 'Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute.'
 excerpt: 'Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute.'
 date: 2021-03-25T13:56:26+01:00
 lastmod: 2021-03-25T13:56:26+01:00
 publishDate: '2021-03-25'
-lastUpdated: '2022-05-25'
+lastUpdated: '2021-05-25'
 draft: false
 weight: 20
 images: ['subresource-integrity-generator.webp']
@@ -14,9 +14,16 @@ categories: ['Tools']
 series: []
 tags: ['SRI', 'React', 'PWA']
 authors: ['Henk Verlinde']
+picture: ['/sri-generator.png']
 ---
 
-Progressive Web Application (PWA) generating a `<script>` or `<link>` element with an integrity attribute.
+![Subresource Integrity Generator](/sri-generator.png)
+
+[Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) generating a `<script>` or `<link>` element with an `integrity` attribute.
+
+<a class=emph href="https://sri-gen.henkverlinde.com/">
+Use SRI Generator!
+</a>
 
 ## App
 

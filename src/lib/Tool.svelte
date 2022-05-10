@@ -17,7 +17,7 @@
 	}
 </script>
 
-<p><a href="/{variables.contentPath}" class="dim">← Back to list</a></p>
+<p><a href="/{variables.toolsPath}" class="dim">← Back to list</a></p>
 <h1>{title}</h1>
 <p class="dim"><time>{new Date(publishDate).toDateString()}</time> | {readingTime.text}</p>
 {#if lastUpdated}
@@ -30,7 +30,7 @@
 <Seo
 	{title}
 	{description}
-	path={`/${variables.contentPath}/${slug}`}
+	path={`/${variables.toolsPath}/${slug}`}
 	openGraph={openGraphDetails()}
 	openGraphImage={openGraphImage || ''}
 />
@@ -39,7 +39,7 @@
 <a
 	class="tweet"
 	href="https://twitter.com/intent/tweet?text={encodeURI(title)}&url={encodeURI(
-		`${variables.siteUrl}/${variables.contentPath}/${slug}`
+		`${variables.siteUrl}/${variables.toolsPath}/${slug}`
 	)}&via={variables.twitter}"
 	target="_blank"
 	rel="noopener">Tweet this post</a

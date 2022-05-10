@@ -4,22 +4,22 @@
 
 <footer>
 	<p>
-		<a href="https://twitter.com/{variables.twitter}" target="_blank" rel="noopener noreferrer"
+		<a href="https://twitter.com/{variables.twitter}" target="_blank" rel="noopener"
 			>🐤 Twitter</a
 		>
-		<a href={variables.github} target="_blank" rel="noopener noreferrer">😺 GitHub</a>
+		<a href={variables.github} target="_blank" rel="noopener">😺 GitHub</a>
 		<!-- <a href="/rss.xml" rel="external">📰 RSS</a> -->
-		<a href={variables.linkedin} target="_blank" rel="noopener noreferrer">🏢 LinkedIn</a>
+		<a href={variables.linkedin} target="_blank" rel="noopener">🏢 LinkedIn</a>
 	</p>
 	<p>
 		Built with <a
 			href="https://github.com/codexfelis/paws-template"
 			target="blank"
-			rel="noopener noreferrer">🐾</a
+			rel="noopener">🐾</a
 		>
 		by
-		<a href="https://codexfelis.dev" target="blank" rel="noopener noreferrer">Codex Felis</a>.
-		<a href="/privacy/">This website does not use cookies 🍪</a>
+		<a href="https://codexfelis.dev" target="_blank" rel="noopener">Codex Felis</a>.
+		<a sveltekit:reload href="/privacy">This website does not use cookies 🍪</a>
 	</p>
 </footer>
 

@@ -15,11 +15,22 @@ tags: ['Hugo', 'Nodejs', 'npm']
 authors: ['Henk Verlinde']
 ---
 
-This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.
+This is the <em>third</em> post of the three piece series <em>Using npm with Hugo</em>.
 
-In the [second post](/managing-dependencies) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
+<aside>
+<p>The <em>Using npm with Hugo</em> series:</p>
+<ol>
+<li><a href="/blog/introduction-to-npm">Introduction to npm</a></li>
+<li><a href="/blog/managing-dependencies">How to manage dependencies</a></li>
+<li><a href="/blog/customizing-build-scripts">How to customize build scripts</a></li>
+</ol>
+</aside>
+
+In the [second post](/blog/managing-dependencies) of the series, I showed you that Hugo itself can be seen as a dependency of your project, and that a starter theme provides you with full control over your dependencies and gives you the possibility to customize build scripts.
 
 We also extended our basic example with a local Hugo install, a Hugo project structure, and a starter theme structure.
+
+Let's continue.
 
 ## Customizing scripts
 
@@ -181,4 +192,6 @@ You can find the full example in the [npm-hugo](https://github.com/h-enk/npm-hug
 
 In case you’re curious, the idea for this series was taken from a similar post written about [WordPress](https://roots.io/using-composer-with-wordpress/).
 
-Take a look at [Hyas](https://gethyas.com/) for a modern Hugo starter using npm to manage dependencies and run customized build scripts.
+<aside>
+<p>Take a look at <a href="https://gethyas.com/">Hyas</a> for a modern Hugo starter using npm to manage dependencies and run customized build scripts.</p>
+</aside>
