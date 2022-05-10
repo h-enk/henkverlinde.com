@@ -14,8 +14,19 @@ const config = {
 	],
 	kit: {
 		adapter: adapter(),
-		// hydrate the <div id="svelte"> element in src/app.html
-		// target: '#svelte',
+    csp: {
+      directives: {
+				'default-src': 'self',
+				'manifest-src': 'self',
+        'connect-src': ['self', 'https://analytics.ventizo.com/api/event'],
+				'font-src': 'self',
+				'frame-src': ['https://app.netlify.com', 'https://platform.twitter.com'],
+				'frame-ancestors': 'https://feeder.co',
+				'img-src': 'self',
+				'script-src': ['self', 'https://netlify-cdp-loader.netlify.app/netlify.js', 'https://platform.twitter.com/js/', 'https://platform.twitter.com/widgets.js', 'https://analytics.ventizo.com/js/plausible.js'],
+				'style-src': ['self', 'unsafe-inline', 'https://github.githubassets.com/assets/']
+      }
+    },
 		prerender: { entries: ['*', '/rss.xml'] },
 		trailingSlash: 'never'
 	}
