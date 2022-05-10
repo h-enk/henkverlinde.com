@@ -1,7 +1,7 @@
 ---
-title: "Hyas CI workflow"
-description: "Continuous integration (CI) workflow to test and build your Hyas project."
-excerpt: "Recently, I set up a Continuous Integration (CI) workflow for <a href=\"https://github.com/h-enk/doks\">Doks</a>. Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically."
+title: 'Hyas CI workflow'
+description: 'Continuous integration (CI) workflow to test and build your Hyas project.'
+excerpt: 'Recently, I set up a Continuous Integration (CI) workflow for <a href="https://github.com/h-enk/doks">Doks</a>. Just thought I''d share my workflow. Use it to test and build your Hyas project — automatically.'
 date: 2020-11-19T10:10:58+01:00
 lastmod: 2020-11-19T10:10:58+01:00
 publishDate: '2020-11-19'
@@ -9,10 +9,10 @@ lastUpdated: '2020-11-19'
 draft: false
 weight: 50
 images: []
-categories: ["Guides"]
+categories: ['Guides']
 series: []
-tags: ["Hyas", "CI", "GitHub"]
-authors: ["Henk Verlinde"]
+tags: ['Hyas', 'CI', 'GitHub']
+authors: ['Henk Verlinde']
 ---
 
 Recently, I set up a Continuous Integration (CI) workflow for [Doks](https://github.com/h-enk/doks). Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically.
@@ -56,22 +56,22 @@ jobs:
         node: [14.x, 15.x]
 
     steps:
-    - name: Check out Hyas project
-      uses: actions/checkout@v2
+      - name: Check out Hyas project
+        uses: actions/checkout@v2
 
-    - name: Set up Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node }}
+      - name: Set up Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
 
-    - name: Install dependencies
-      run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-    - name: Run Hyas test script
-      run: npm test
+      - name: Run Hyas test script
+        run: npm test
 
-    - name: Run Hyas build script
-      run: npm run build
+      - name: Run Hyas build script
+        run: npm run build
 ```
 
 ## Further reading

@@ -1,9 +1,9 @@
 export async function get() {
-  return {
-    headers: {
-      'Content-Type': 'application/xml'
-    },
-    body: `
+	return {
+		headers: {
+			'Content-Type': 'application/xml'
+		},
+		body: `
       <?xml version="1.0" encoding="UTF-8" ?>
       <urlset
         xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
@@ -16,5 +16,5 @@ export async function get() {
         <!-- <url> elements go here -->
       </urlset>
     `.trim()
-  };
+	};
 }

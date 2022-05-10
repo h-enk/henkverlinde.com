@@ -1,7 +1,7 @@
 ---
-title: "Introduction to npm"
-description: "This is the first post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
-excerpt: "This is the <em>first</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+title: 'Introduction to npm'
+description: 'This is the first post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
+excerpt: 'This is the <em>first</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
 date: 2021-01-15T15:55:48+01:00
 lastmod: 2021-01-15T15:55:48+01:00
 publishDate: '2021-01-15'
@@ -9,10 +9,10 @@ lastUpdated: '2021-01-15'
 draft: false
 weight: 50
 images: []
-categories: ["Guides"]
-series: ["Using npm with Hugo"]
-tags: ["Hugo", "Nodejs", "npm"]
-authors: ["Henk Verlinde"]
+categories: ['Guides']
+series: ['Using npm with Hugo']
+tags: ['Hugo', 'Nodejs', 'npm']
+authors: ['Henk Verlinde']
 ---
 
 This is the <em>first</em> post of the three piece series <em>Using npm with Hugo</em>.
@@ -68,7 +68,7 @@ For this example we're only installing one dependency: [Bootstrap](https://getbo
 npm install bootstrap@next --save-dev
 ```
 
-You’ll then  get the following output:
+You’ll then get the following output:
 
 ```bash
 added 2 packages, and audited 2 packages in 2s
@@ -83,19 +83,19 @@ And your `package.json` will look like:
 
 ```json
 {
-  "name": "npm-hugo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "^5.0.0-beta1"
-  }
+	"name": "npm-hugo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^5.0.0-beta1"
+	}
 }
 ```
 

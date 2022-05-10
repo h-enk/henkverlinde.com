@@ -1,7 +1,7 @@
 ---
-title: "Hyas"
-description: "Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch."
-excerpt: "Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created <a href=\"https://github.com/h-enk/hyas\">Hyas</a>."
+title: 'Hyas'
+description: 'Some website projects require a solid starting point. Sometimes you just don’t want to start from scratch.'
+excerpt: 'Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created <a href="https://github.com/h-enk/hyas">Hyas</a>.'
 date: 2020-07-03T16:29:48+02:00
 lastmod: 2020-07-03T16:29:48+02:00
 publishDate: '2020-07-03'
@@ -9,10 +9,10 @@ lastUpdated: '2020-07-03'
 draft: false
 weight: 50
 images: []
-categories: ["Tools"]
+categories: ['Tools']
 series: []
-tags: ["Hugo", "Netlify", "Hyas"]
-authors: ["Henk Verlinde"]
+tags: ['Hugo', 'Netlify', 'Hyas']
+authors: ['Henk Verlinde']
 ---
 
 Some website projects require a solid starting point. With a great developer experience and a sound user experience. Sometimes you just don’t want to start from scratch. That’s why I created Hyas.

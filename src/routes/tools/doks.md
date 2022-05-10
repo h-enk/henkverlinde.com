@@ -1,7 +1,7 @@
 ---
-title: "Doks"
-description: "Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default."
-excerpt: "<a href=\"https://getdoks.org/\">Doks</a> is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own."
+title: 'Doks'
+description: 'Doks is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default.'
+excerpt: '<a href="https://getdoks.org/">Doks</a> is a Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own.'
 date: 2020-12-07T14:08:47+01:00
 lastmod: 2020-12-07T14:08:47+01:00
 publishDate: '2020-12-07'
@@ -9,10 +9,10 @@ lastUpdated: '2020-12-07'
 draft: false
 weight: 40
 images: []
-categories: ["Themes"]
+categories: ['Themes']
 series: []
-tags: ["Hugo", "Netlify", "Hyas"]
-authors: ["Henk Verlinde"]
+tags: ['Hugo', 'Netlify', 'Hyas']
+authors: ['Henk Verlinde']
 ---
 
 Doks is an open source Hugo theme helping you build modern documentation websites that are secure, fast, and SEO-ready — by default. Use the standard setup or easily make it your own.
@@ -26,7 +26,7 @@ Get Doks!
 - Lightweight feel
 - Simple, intuitive layout
 - Strong, simple color palette — Basecamp
-- Modern, functional font — [Jost*](https://indestructibletype.com/Jost.html)
+- Modern, functional font — [Jost\*](https://indestructibletype.com/Jost.html)
 - UX and design — [@tommyvedvik](https://twitter.com/tommyvedvik)
 
 ## Build on Hyas
@@ -71,4 +71,3 @@ I'm blown away by the quality and quantity of themes for @GoHugoIO available tod
 </blockquote>
 
 _Steve Francia, creator of Hugo_
-

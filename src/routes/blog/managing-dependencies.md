@@ -1,7 +1,7 @@
 ---
-title: "Managing dependencies"
-description: "This is the second post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
-excerpt: "This is the <em>second</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
+title: 'Managing dependencies'
+description: 'This is the second post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
+excerpt: 'This is the <em>second</em> post of the series <em>Using npm with Hugo</em>. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
 date: 2021-01-27T15:55:56+01:00
 lastmod: 2021-01-27T15:55:56+01:00
 publishDate: '2021-01-27'
@@ -9,10 +9,10 @@ lastUpdated: '2021-06-26'
 draft: false
 weight: 50
 images: []
-categories: ["Guides"]
-series: ["Using npm with Hugo"]
-tags: ["Hugo", "Nodejs", "npm"]
-authors: ["Henk Verlinde"]
+categories: ['Guides']
+series: ['Using npm with Hugo']
+tags: ['Hugo', 'Nodejs', 'npm']
+authors: ['Henk Verlinde']
 ---
 
 This is the <em>second</em> post of the three piece series <em>Using npm with Hugo</em>.
@@ -32,7 +32,7 @@ Let's continue.
 
 ## Integrating with Hugo
 
-Now we're ready to talk about how you could use npm with Hugo. When you think about a typical Hugo site, the easiest example of dependencies are themes. But there’s something more fundamental to realize: __Hugo itself is a dependency__.
+Now we're ready to talk about how you could use npm with Hugo. When you think about a typical Hugo site, the easiest example of dependencies are themes. But there’s something more fundamental to realize: **Hugo itself is a dependency**.
 
 If you think about it, you’re creating a site, or application, that _depends_ on Hugo. The Hugo binary is a 3rd party library that is required for your application to work. This is difficult to understand at first due to that Hugo is usually installed in a global location.
 
@@ -74,20 +74,20 @@ Your `package.json` will now look like:
 
 ```json
 {
-  "name": "npm-hugo",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "bootstrap": "^5.0.0-beta1",
-    "hugo-bin": "^0.68.0"
-  }
+	"name": "npm-hugo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^5.0.0-beta1",
+		"hugo-bin": "^0.68.0"
+	}
 }
 ```
 
