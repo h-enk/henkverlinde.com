@@ -25,7 +25,7 @@ const config = {
 				'frame-ancestors': ['https://feeder.co'],
 				'img-src': ['self'],
 				'script-src': ['self', 'https://netlify-cdp-loader.netlify.app/netlify.js', 'https://platform.twitter.com/js/', 'https://platform.twitter.com/widgets.js', 'https://analytics.ventizo.com/js/plausible.js'],
-				'style-src': ['self', 'unsafe-inline', 'https://github.githubassets.com/assets/']
+				'style-src': ['self', 'unsafe-inline', 'https://github.githubassets.com/assets/', 'https://fonts.googleapis.com/css']
       }
     },
 		prerender: { entries: ['*', '/rss.xml'] },
