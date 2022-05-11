@@ -4,3 +4,9 @@
 
 [functions]
   directory = "functions"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Referrer-Policy = "strict-origin"
+    X-Content-Type-Options = "nosniff"
