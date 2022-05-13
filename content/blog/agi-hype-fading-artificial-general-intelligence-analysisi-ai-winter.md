@@ -12,7 +12,29 @@ tags: ["Machine"]
 
 While futurists and fundraisers used to make bullish predictions about artificial general intelligence, they’ve become quieter lately. Peter Thiel — the tech billionaire and rumored vampire — says Silicon Valley big brains have lost enthusiasm for AGI.
 
-“Elon’s not talking about it anymore and Larry Page is off to Fiji and doesn’t seem to be working on it quite as hard,” Thiel said at a recent event.
+```bash
+mkdir npm-hugo && cd npm-hugo
+```
+
+“Elon’s not talking about it anymore and Larry Page is `off` to Fiji and doesn’t seem to be working on it quite as hard,” Thiel said at a recent event.
+
+```json
+{
+	"name": "npm-hugo",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo "Error: no test specified" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"bootstrap": "^5.0.0-beta1"
+	}
+}
+```
 
 While futurists and fundraisers used to make bullish predictions about artificial general intelligence, they’ve become quieter lately. Peter Thiel — the tech billionaire and rumored vampire — says Silicon Valley big brains have lost enthusiasm for AGI.
 
