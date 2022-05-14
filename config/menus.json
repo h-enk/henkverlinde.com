@@ -1,58 +1,30 @@
 {
   "mainMenu": [
     {
-      "name": "Home",
-      "link": "/"
-    },
-    {
-      "name": "About",
-      "link": "/about"
+      "name": "Tools",
+      "link": "#",
+      "submenu": [
+        {
+          "name": "Hyas",
+          "link": "/blog/get-a-solid-starting-point-for-your-hugo-project-with-hyas"
+        },
+        {
+          "name": "Doks",
+          "link": "/blog/create-a-modern-documentation-website-for-hugo-with-doks"
+        },
+        {
+          "name": "SRI Gen",
+          "link": "/blog/generate-an-integrity-attribute-for-your-styles-and-scripts-with-the-click-of-a-button"
+        }
+      ]
     },
     {
       "name": "Blog",
       "link": "/blog"
     },
     {
-      "name": "Archive",
-      "link": "/blog/archive"
-    },
-    {
-      "name": "Pages",
-      "link": "#",
-      "submenu": [
-        {
-          "name": "Author",
-          "link": "/author"
-        },
-        {
-          "name": "Author Single",
-          "link": "/author/chris-impey"
-        },
-        {
-          "name": "Elements",
-          "link": "/blog/elements"
-        },
-        {
-          "name": "Tags",
-          "link": "/tags"
-        },
-        {
-          "name": "Categories",
-          "link": "/categories"
-        },
-        {
-          "name": "Tag Single",
-          "link": "/tags/machine"
-        },
-        {
-          "name": "Category Single",
-          "link": "/categories/ai"
-        },
-        {
-          "name": "Privacy",
-          "link": "/privacy"
-        }
-      ]
+      "name": "About",
+      "link": "/about"
     },
     {
       "name": "Contact",
