@@ -146,6 +146,7 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
+                  {/*
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
                       href={`https://www.pinterest.com/pin/create/button/?&text=${title}&url=${pageUrl}&description=${title}`}
@@ -157,6 +158,7 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
+                  */}
                 </ul>
               </div>
             </div>
