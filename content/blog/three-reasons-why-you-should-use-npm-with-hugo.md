@@ -1,5 +1,5 @@
 ---
-title: 'Why you should use npm as a dependency manager for Hugo'
+title: 'Three reasons why you should use npm with Hugo'
 description: 'This is the first post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
 image: "/images/blog/why-npm-hugo.webp"
 date: "2021-01-15T15:55:48+01:00"

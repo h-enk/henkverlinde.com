@@ -1,5 +1,5 @@
 ---
-title: "How to manage dependencies with npm for Hugo"
+title: "How to manage dependencies with npm — for Hugo"
 description: "This is the second post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts."
 image: "/images/blog/dependency-management-npm-hugo.webp"
 date: "2021-01-27T15:55:56+01:00"

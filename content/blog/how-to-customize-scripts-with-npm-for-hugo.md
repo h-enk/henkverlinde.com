@@ -1,5 +1,5 @@
 ---
-title: 'How to customize scripts with npm for Hugo'
+title: 'How to customize scripts with npm — for Hugo'
 description: 'This is the third post of the series Using npm with Hugo. In a series of three posts I will introduce you to npm, show you how to manage dependencies, and show you how to customize build scripts.'
 image: "/images/blog/customizing-scripts-npm-hugo.webp"
 date: "2021-02-10T15:55:56+01:00"
