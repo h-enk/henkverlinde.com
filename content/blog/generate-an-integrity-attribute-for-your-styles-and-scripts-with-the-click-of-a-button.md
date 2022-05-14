@@ -1,12 +1,12 @@
 ---
-title: 'Generate an integrity attribute for your styles and scripts with the click of a button'
-description: 'Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute.'
+title: "Generate an integrity attribute for your styles and scripts with the click of a button"
+description: "Progressive Web Application (PWA) generating a <script> or <link> element with an integrity attribute."
 image: "/images/blog/subresource-integrity-generator.webp"
 date: "2021-03-25T13:56:26+01:00"
 lastmod: "2021-03-25T13:56:26+01:00"
 author: "Henk Verlinde"
-categories: ['Tools']
-tags: ['SRI', 'React', 'PWA']
+categories: ["Tools"]
+tags: ["SRI", "React", "PWA"]
 series: []
 ---
 
@@ -15,10 +15,6 @@ series: []
 _Source: [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)_
 
 [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) generating a `<script>` or `<link>` element with an `integrity` attribute.
-
-<a class=emph href="https://sri-gen.henkverlinde.com/">
-Use SRI Generator!
-</a>
 
 ## App
 

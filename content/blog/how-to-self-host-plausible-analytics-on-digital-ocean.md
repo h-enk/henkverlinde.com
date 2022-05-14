@@ -1,12 +1,12 @@
 ---
-title: 'How to self-host Plausible Analytics on DigitalOcean'
-description: 'Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean.'
+title: "How to self-host Plausible Analytics on DigitalOcean"
+description: "Super simple, robust, and secure setup for self-hosting Plausible Analytics on DigitalOcean."
 image: "/images/blog/plausible-analytics.webp"
 date: "2021-03-09T08:33:25+01:00"
 lastmod: "2021-03-09T08:33:25+01:00"
-author: 'Henk Verlinde'
-categories: ['Guides']
-tags: ['Analytics', 'Privacy']
+author: "Henk Verlinde"
+categories: ["Guides"]
+tags: ["Analytics", "Privacy"]
 series: []
 ---
 
@@ -90,26 +90,26 @@ nano reverse-proxy/docker-compose.caddy-gen.yml
 ```
 
 ```yml
-version: '3.3'
+version: "3.3"
 services:
   caddy-gen:
     container_name: caddy-gen
-    image: 'wemakeservices/caddy-gen:latest'
+    image: "wemakeservices/caddy-gen:latest"
     restart: always
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
       - caddy-certificates:/data/caddy
     ports:
-      - '80:80'
-      - '443:443'
+      - "80:80"
+      - "443:443"
     depends_on:
       - plausible
 
   plausible:
     labels:
-      virtual.host: 'example.com' # change to your domain name
-      virtual.port: '8000'
-      virtual.tls-email: 'admin@example.com' # change to your email
+      virtual.host: "example.com" # change to your domain name
+      virtual.port: "8000"
+      virtual.tls-email: "admin@example.com" # change to your email
 
 volumes:
   caddy-certificates:

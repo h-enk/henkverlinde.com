@@ -1,16 +1,16 @@
 ---
-title: 'How to set up Continuous Integration for Hyas on GitHub'
-description: 'Continuous integration (CI) workflow to test and build your Hyas project.'
+title: "How to set up Continuous Integration for Hyas on GitHub"
+description: "Continuous integration (CI) workflow to test and build your Hyas project."
 image: "/images/blog/continuous-integration-hyas-github.webp"
 date: "2020-11-19T10:10:58+01:00"
 lastmod: "2020-11-19T10:10:58+01:00"
 author: "Henk Verlinde"
-categories: ['Guides']
-tags: ['Hyas', 'CI', 'GitHub']
+categories: ["Guides"]
+tags: ["Hyas", "CI", "GitHub"]
 series: []
 ---
 
-Recently, I set up a Continuous Integration (CI) workflow for [Doks](https://github.com/h-enk/doks). Just thought I'd share my workflow. Use it to test and build your Hyas project — automatically.
+Recently, I set up a Continuous Integration (CI) workflow for [Doks](https://github.com/h-enk/doks). Just thought I"d share my workflow. Use it to test and build your Hyas project — automatically.
 
 ## Operating systems
 
