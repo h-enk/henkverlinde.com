@@ -13,6 +13,7 @@ export default function Contact({ contact: { frontMatter } }) {
       <section>
         <div className="container">
           <div className="row gy-5 justify-content-center">
+
             <div className="col-lg-5 col-md-10 ms-lg-auto me-lg-0 me-auto">
               <div className="mb-5">
                 <h2 className="h3 mb-3">{frontMatter.contact.title}</h2>
@@ -40,6 +41,7 @@ export default function Contact({ contact: { frontMatter } }) {
                     {frontMatter.contact.email_address}
                   </a>
                 </p>
+                {/*
                 <p className="mb-0 content">
                   <i
                     className="me-2"
@@ -49,12 +51,11 @@ export default function Contact({ contact: { frontMatter } }) {
                   </i>{' '}
                   {frontMatter.contact.phone_number}
                 </p>
+                */}
               </div>
             </div>
-
             <div className="col-lg-5 me-lg-auto ms-lg-0 ms-auto">
               <h2 className="h3 mb-4">Contact form</h2>
-
               <form
                 className="row g-4"
                 action={contactForm.contactFormAction}

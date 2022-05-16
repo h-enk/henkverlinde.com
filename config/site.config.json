@@ -4,9 +4,9 @@
     "description" : "Making your digital business great is easy when you know how!",
     "author" : "PlatolTheme",
     "keyword" : "qurno, minimal, react, nextjs, blog, template",
-    "ogImage" : "https://qurno-nextjs.vercel.app/images/ogimage.jpg"
+    "ogImage" : "https://henkverlinde.com/images/ogimage.jpg"
   },
-  "baseURL" : "https://qurno-nextjs.vercel.app/",
+  "baseURL" : "https://henkverlinde.com/",
   "logo" : "/images/logo.png",
   "logoText" : "Qurno",
   "favicon" : "/images/favicon.png",
