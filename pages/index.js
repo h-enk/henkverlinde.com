@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import Layout from '@/components/Layout';
-import BannerBlock from '@/components/Banner';
-import Post from '@/components/Post';
-import { getPosts } from '@/libs/getPosts';
-import { getAuthors } from '@/libs/getAuthors';
-import { getSinglePage } from '@/libs/getSinglePage';
-import { IconNewSection } from '@tabler/icons';
+import BannerBlock from "@/components/Banner";
+import Layout from "@/components/Layout";
+import Post from "@/components/Post";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import { getSinglePage } from "@/libs/getSinglePage";
+import { IconNewSection } from "@tabler/icons";
+import Link from "next/link";
 
 export default function Home({ authors, posts, banner }) {
   return (
@@ -48,7 +48,7 @@ export async function getStaticProps() {
     props: {
       authors: getAuthors(),
       posts: getPosts().slice(0, 6),
-      banner: getSinglePage('content/_index.md'),
+      banner: getSinglePage("content/_index.md"),
     },
   };
 }

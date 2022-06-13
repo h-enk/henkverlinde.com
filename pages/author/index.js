@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import Layout from '@/components/Layout';
-import PageHeaderBlock from '@/components/PageHeader';
-import Author from '@/components/Author';
-import { getAuthors } from '@/libs/getAuthors';
-import Post from '@/components/Post';
-import { getPosts } from '@/libs/getPosts';
-import { IconNewSection } from '@tabler/icons';
+import Author from "@/components/Author";
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
+import Post from "@/components/Post";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import { IconNewSection } from "@tabler/icons";
+import Link from "next/link";
 
 export default function Authors({ authors, posts }) {
   const allAuthor = posts.map((author) => author.frontMatter.author);

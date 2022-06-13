@@ -1,12 +1,12 @@
-import fs from 'fs';
-import path from 'path';
-import Layout from '@/components/Layout';
-import Post from '@/components/Post';
-import { getPosts } from '@/libs/getPosts';
-import { getAuthors } from '@/libs/getAuthors';
-import PageHeaderBlock from '@/components/PageHeader';
-import postConfig from '@/config/site.config.json';
-import Pagination from '@/components/Pagination';
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
+import Pagination from "@/components/Pagination";
+import Post from "@/components/Post";
+import postConfig from "@/config/site.config.json";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import fs from "fs";
+import path from "path";
 
 export default function Blog({ authors, posts, currentPage, numberOfPages }) {
   return (
@@ -29,7 +29,7 @@ export default function Blog({ authors, posts, currentPage, numberOfPages }) {
 }
 
 export async function getStaticPaths() {
-  const blogDirFiles = fs.readdirSync(path.join('content/blog'));
+  const blogDirFiles = fs.readdirSync(path.join("content/blog"));
   const numberOfPages = Math.ceil(blogDirFiles.length / postConfig.postPerPage);
 
   let paths = [];
@@ -47,8 +47,8 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const blogDirFiles = fs.readdirSync(path.join('content/blog'));
-  const blogs = blogDirFiles.filter((f) => f.includes('.md'));
+  const blogDirFiles = fs.readdirSync(path.join("content/blog"));
+  const blogs = blogDirFiles.filter((f) => f.includes(".md"));
 
   const returnDirFiles = getPosts();
 

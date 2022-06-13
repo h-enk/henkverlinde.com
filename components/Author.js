@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Author({
   author: {
@@ -26,7 +26,7 @@ export default function Author({
           <p className="mb-0">
             <span className="fw-bold text-black">
               {postCount[title] < 9 ? `0${postCount[title]}` : postCount[title]}
-            </span>{' '}
+            </span>{" "}
             Published posts
           </p>
         </a>

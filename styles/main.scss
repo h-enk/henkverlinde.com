@@ -190,6 +190,9 @@
 
 // archive post block style
 .archive-block {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
   h2 {
     margin-top: 40px;
     line-height: 1;

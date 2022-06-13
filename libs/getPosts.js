@@ -1,7 +1,7 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import { sortByDate } from "@/utils/sortByDate";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 
 const blogDirFiles = fs.readdirSync(path.join("content/blog"));
 const blogs = blogDirFiles.filter((f) => f.includes(".md"));

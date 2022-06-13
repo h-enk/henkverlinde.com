@@ -1,7 +1,7 @@
+import { IconHome } from "@tabler/icons";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { IconHome } from "@tabler/icons";
 
 export default function PageHeaderTaxo({ title }) {
   const convertBreadcrumb = (string) => {
@@ -12,7 +12,7 @@ export default function PageHeaderTaxo({ title }) {
         .replace(/ae/g, "ä")
         .replace(/ue/g, "ü")
         .charAt(0)
-        .toUpperCase() + string.slice(1).replace(/-/g, ' ')
+        .toUpperCase() + string.slice(1).replace(/-/g, " ")
     );
   };
 

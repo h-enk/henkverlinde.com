@@ -1,16 +1,16 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { formatDate } from '@/utils/formatDate';
-import { IconX } from '@tabler/icons';
-import { useEffect, useState, useContext } from 'react';
-import { AppContext } from '@/components/UseContext';
-import { posts } from '../cache/data';
+import { AppContext } from "@/components/UseContext";
+import { formatDate } from "@/utils/formatDate";
+import { IconX } from "@tabler/icons";
+import Image from "next/image";
+import Link from "next/link";
+import { useContext, useEffect, useState } from "react";
+import { posts } from "../cache/data";
 
 export default function Search() {
   const { toggleSearch } = useContext(AppContext);
   const [searchOpen, setSearchOpen] = toggleSearch;
 
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [showSearchResults, setshowSearchResults] = useState([]);
 
   // Get Post Tags
@@ -27,7 +27,7 @@ export default function Search() {
 
   useEffect(() => {
     const getResults = async () => {
-      const res = await fetch('/api/search');
+      const res = await fetch("/api/search");
       const post = await res.json();
       setshowSearchResults(post);
     };
@@ -35,8 +35,8 @@ export default function Search() {
   }, []);
 
   const searchResults = showSearchResults.filter((searchResult) => {
-    if (searchTerm === '') {
-      return '';
+    if (searchTerm === "") {
+      return "";
     } else if (
       searchResult.frontMatter.title
         .toLowerCase()
@@ -79,7 +79,7 @@ export default function Search() {
 
   const resetSearchInput = () => {
     setSearchOpen(!searchOpen);
-    setSearchTerm('');
+    setSearchTerm("");
   };
 
   return (
@@ -105,11 +105,6 @@ export default function Search() {
           onChange={(e) => {
             setSearchTerm(e.target.value);
           }}
-          ref={(inputElement) => {
-            if (inputElement) {
-              inputElement.focus();
-            }
-          }}
           aria-label="search-query"
         />
 
@@ -118,7 +113,7 @@ export default function Search() {
             <div className="search-results row g-4 mt-2">
               <p className="h4 mb-0">
                 <span className="font-secondary">{searchResults.length} </span>
-                {searchResults.length > 1 ? 'results' : 'result'} found.
+                {searchResults.length > 1 ? "results" : "result"} found.
               </p>
               {searchResults.map((r, i) => (
                 <div
@@ -147,7 +142,7 @@ export default function Search() {
                 </div>
               ))}
             </div>
-          ) : searchTerm === '' ? (
+          ) : searchTerm === "" ? (
             <></>
           ) : (
             <div className="search-results row g-4 mt-2">
@@ -165,7 +160,7 @@ export default function Search() {
                 className="list-inline-item me-1 mb-2"
                 onClick={() => resetSearchInput(true)}
               >
-                <Link href={`/tags/${item.replace(/ /g, '-').toLowerCase()}`}>
+                <Link href={`/tags/${item.replace(/ /g, "-").toLowerCase()}`}>
                   <a className="small">{item}</a>
                 </Link>
               </li>
@@ -183,7 +178,7 @@ export default function Search() {
                 onClick={() => resetSearchInput(true)}
               >
                 <Link
-                  href={`/categories/${item.replace(/ /g, '-').toLowerCase()}`}
+                  href={`/categories/${item.replace(/ /g, "-").toLowerCase()}`}
                 >
                   <a className="small">{item}</a>
                 </Link>

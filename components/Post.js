@@ -1,9 +1,9 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { formatDate } from '@/utils/formatDate';
-import { readingTime } from '@/utils/readingTime';
-import { truncateString } from '@/utils/truncateString';
-import { IconCalendarEvent, IconClock } from '@tabler/icons';
+import { formatDate } from "@/utils/formatDate";
+import { readingTime } from "@/utils/readingTime";
+import { truncateString } from "@/utils/truncateString";
+import { IconCalendarEvent, IconClock } from "@tabler/icons";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Post({
   post: {
@@ -60,13 +60,13 @@ export default function Post({
         <div className="card-footer border-top-0 bg-transparent p-0">
           <ul className="card-meta list-inline">
             <li className="list-inline-item mt-2">
-              <Link href={`/author/${author.replace(/ /g, '-').toLowerCase()}`}>
+              <Link href={`/author/${author.replace(/ /g, "-").toLowerCase()}`}>
                 <a
                   className="card-meta-author"
                   title={`Read all posts by - ${author}`}
                 >
                   {authors.map((authorPage, i) =>
-                    author.replace(/ /g, '-').toLowerCase() ===
+                    author.replace(/ /g, "-").toLowerCase() ===
                     authorPage.authorSlug ? (
                       <span key={i}>
                         <Image
@@ -78,11 +78,11 @@ export default function Post({
                         />
                       </span>
                     ) : (
-                      ''
+                      ""
                     )
                   )}
                   <i className="d-inline-block ms-2 ps-1 fst-normal">
-                    by <span>{author.split(' ')[0]}</span>
+                    by <span>{author.split(" ")[0]}</span>
                   </i>
                 </a>
               </Link>
@@ -92,7 +92,7 @@ export default function Post({
               <ul className="card-meta-tag list-inline">
                 {tags.map((t, i) => (
                   <li key={i} className="list-inline-item small">
-                    <Link href={`/tags/${t.replace(/ /g, '-').toLowerCase()}`}>
+                    <Link href={`/tags/${t.replace(/ /g, "-").toLowerCase()}`}>
                       <a>{t}</a>
                     </Link>
                   </li>
