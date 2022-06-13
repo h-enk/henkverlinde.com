@@ -1,16 +1,16 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 const useScript = (url, position, async) => {
   useEffect(() => {
     const placement = document.querySelector(position);
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = url;
-    script.async = typeof async === 'undefined' ? true : async;
+    script.async = typeof async === "undefined" ? true : async;
     placement.appendChild(script);
     return () => {
       placement.removeChild(script);
     };
-  }, [url]);
+  }, [url, position, async]);
 };
 
 export default useScript;

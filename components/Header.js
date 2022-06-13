@@ -1,12 +1,12 @@
-import { AppContext } from '@/components/UseContext';
-import { useRouter } from 'next/router';
-import { useContext, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import Menu from '@/config/menus.json';
-import Search from '@/components/Search';
-import siteConfig from '@/config/site.config.json';
-import { IconMenu2, IconX } from '@tabler/icons';
+import Search from "@/components/Search";
+import { AppContext } from "@/components/UseContext";
+import Menu from "@/config/menus.json";
+import siteConfig from "@/config/site.config.json";
+import { IconMenu2, IconX } from "@tabler/icons";
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useContext, useEffect } from "react";
 
 export default function Header() {
   const { toggleSearch } = useContext(AppContext);
@@ -15,23 +15,23 @@ export default function Header() {
 
   useEffect(() => {
     // search close using Escape key
-    document.addEventListener('keydown', (e) => {
-      e.key === 'Escape' && setSearchOpen(false);
+    document.addEventListener("keydown", (e) => {
+      e.key === "Escape" && setSearchOpen(false);
     });
 
     // sticky header
-    let nav = document.querySelector('.header-nav');
+    let nav = document.querySelector(".header-nav");
     var lastKnownScrollY = 0;
     var currentScrollY = 0;
     const classes = {
-      pinned: 'header-nav-pinned',
-      unpinned: 'header-nav-unpinned',
+      pinned: "header-nav-pinned",
+      unpinned: "header-nav-unpinned",
     };
     let stickyNavigation = () => {
       if (window.scrollY >= 150) {
-        nav.classList.add('header-sticky-top');
+        nav.classList.add("header-sticky-top");
       } else {
-        nav.classList.remove('header-sticky-top');
+        nav.classList.remove("header-sticky-top");
       }
     };
     let navbarPinUnpin = () => {
@@ -65,7 +65,7 @@ export default function Header() {
       navbarPinUnpin();
       stickyNavigation();
     };
-  }, []);
+  }, [setSearchOpen]);
 
   return (
     <>
@@ -149,9 +149,9 @@ export default function Header() {
                           className={`nav-item dropdown
                           ${n.submenu
                             .map((n) =>
-                              router.pathname == `${n.link}` ? `active` : ''
+                              router.pathname == `${n.link}` ? `active` : ""
                             )
-                            .join('')}
+                            .join("")}
                         `}
                         >
                           <a
@@ -172,7 +172,7 @@ export default function Header() {
                                     className={`dropdown-item ${
                                       router.pathname == `${n.link}`
                                         ? `active`
-                                        : ''
+                                        : ""
                                     }`}
                                   >
                                     {n.name}
@@ -186,7 +186,7 @@ export default function Header() {
                         <li
                           key={i}
                           className={`nav-item ${
-                            router.pathname == `${n.link}` ? `active` : ''
+                            router.pathname == `${n.link}` ? `active` : ""
                           }`}
                         >
                           <Link href={n.link}>

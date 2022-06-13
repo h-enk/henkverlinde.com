@@ -1,13 +1,12 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { marked } from 'marked';
-
-import Image from 'next/image';
-import Post from '@/components/Post';
-import Layout from '@/components/Layout';
-import { getAuthors } from '@/libs/getAuthors';
-import { getPosts } from '@/libs/getPosts';
+import Layout from "@/components/Layout";
+import Post from "@/components/Post";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import fs from "fs";
+import matter from "gray-matter";
+import { marked } from "marked";
+import Image from "next/image";
+import path from "path";
 
 export default function AuthorSingle({
   content,
@@ -46,7 +45,7 @@ export default function AuthorSingle({
                       {postCount[title] < 9
                         ? `0${postCount[title]}`
                         : postCount[title]}
-                    </span>{' '}
+                    </span>{" "}
                     Published posts
                   </p>
                   <h1 className="h3 text-dark mb-3">{title}</h1>
@@ -80,12 +79,12 @@ export default function AuthorSingle({
 }
 
 export async function getStaticPaths() {
-  const authorDirFiles = fs.readdirSync(path.join('content/author'));
-  const authors = authorDirFiles.filter((f) => f.includes('.md'));
+  const authorDirFiles = fs.readdirSync(path.join("content/author"));
+  const authors = authorDirFiles.filter((f) => f.includes(".md"));
 
   const paths = authors.map((filename) => ({
     params: {
-      author_slug: filename.replace('.md', ''),
+      author_slug: filename.replace(".md", ""),
     },
   }));
 
@@ -97,8 +96,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { author_slug } }) {
   const fileContents = fs.readFileSync(
-    path.join('content/author', author_slug + '.md'),
-    'utf8'
+    path.join("content/author", author_slug + ".md"),
+    "utf8"
   );
 
   const { data: frontMatter, content } = matter(fileContents);

@@ -1,7 +1,7 @@
-import { marked } from 'marked';
-import Layout from '@/components/Layout';
-import PageHeaderBlock from '@/components/PageHeader';
-import { getSinglePage } from '@/libs/getSinglePage';
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
+import { getSinglePage } from "@/libs/getSinglePage";
+import { marked } from "marked";
 
 export default function About({ privacy: { frontMatter, content } }) {
   return (
@@ -32,7 +32,7 @@ export default function About({ privacy: { frontMatter, content } }) {
 export async function getStaticProps() {
   return {
     props: {
-      privacy: getSinglePage('content/privacy.md'),
+      privacy: getSinglePage("content/privacy.md"),
     },
   };
 }

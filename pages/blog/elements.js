@@ -1,8 +1,8 @@
-import { marked } from 'marked';
-import Layout from '@/components/Layout';
-import PageHeaderBlock from '@/components/PageHeader';
-import { getSinglePage } from '@/libs/getSinglePage';
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
 import useScripts from "@/components/Scripts";
+import { getSinglePage } from "@/libs/getSinglePage";
+import { marked } from "marked";
 
 export default function Elements({ elements: { frontMatter, content } }) {
   return (
@@ -23,7 +23,7 @@ export default function Elements({ elements: { frontMatter, content } }) {
           </div>
         </div>
       </section>
-      
+
       {useScripts("/js/lightense/lightense.min.js", "body", true)}
     </Layout>
   );
@@ -32,7 +32,7 @@ export default function Elements({ elements: { frontMatter, content } }) {
 export async function getStaticProps() {
   return {
     props: {
-      elements: getSinglePage('content/elements.md'),
+      elements: getSinglePage("content/elements.md"),
     },
   };
 }

@@ -1,18 +1,18 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
-import { IconHome } from '@tabler/icons';
+import { IconHome } from "@tabler/icons";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 
 export default function PageHeaderBlock({ title }) {
   const convertBreadcrumb = (string) => {
     return (
       string
-        .replace(/-/g, ' ')
-        .replace(/oe/g, 'ö')
-        .replace(/ae/g, 'ä')
-        .replace(/ue/g, 'ü')
+        .replace(/-/g, " ")
+        .replace(/oe/g, "ö")
+        .replace(/ae/g, "ä")
+        .replace(/ue/g, "ü")
         .charAt(0)
-        .toUpperCase() + string.slice(1).replace(/-/g, ' ')
+        .toUpperCase() + string.slice(1).replace(/-/g, " ")
     );
   };
 
@@ -21,13 +21,13 @@ export default function PageHeaderBlock({ title }) {
 
   useEffect(() => {
     if (router) {
-      const linkPath = router.asPath.split('/');
+      const linkPath = router.asPath.split("/");
       linkPath.shift();
 
       const pathArray = linkPath.slice(0, 1).map((path, i) => {
         return {
           breadcrumb: path,
-          href: '/' + linkPath.slice(0, i + 1).join('/'),
+          href: "/" + linkPath.slice(0, i + 1).join("/"),
         };
       });
 
@@ -55,7 +55,7 @@ export default function PageHeaderBlock({ title }) {
                     <a>
                       <i
                         className="d-inline-block text-dark"
-                        style={{ transform: 'translateY(-' + 2 + 'px)' }}
+                        style={{ transform: "translateY(-" + 2 + "px)" }}
                       >
                         <IconHome size={16} />
                       </i>
