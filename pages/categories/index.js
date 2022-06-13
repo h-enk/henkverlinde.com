@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import PageHeaderBlock from '@/components/PageHeader';
-import Layout from '@/components/Layout';
-import { getPosts } from '@/libs/getPosts';
-import { IconColorSwatch } from '@tabler/icons';
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
+import { getPosts } from "@/libs/getPosts";
+import { IconColorSwatch } from "@tabler/icons";
+import Link from "next/link";
 
 export default function Categories({ posts }) {
   const allCategories = posts.map(
@@ -35,7 +35,7 @@ export default function Categories({ posts }) {
             <div key={i} className="col-lg-4 col-md-6">
               <Link
                 href={`/categories/${category
-                  .replace(/ /g, '-')
+                  .replace(/ /g, "-")
                   .toLowerCase()}`}
               >
                 <a className="p-4 rounded bg-white d-block is-hoverable">

@@ -1,6 +1,6 @@
-import { IconUserPlus } from '@tabler/icons';
-import siteConfig from '@/config/site.config.json';
-import subscription from '@/config/subscription.json';
+import siteConfig from "@/config/site.config.json";
+import subscription from "@/config/subscription.json";
+import { IconUserPlus } from "@tabler/icons";
 
 export default function Footer() {
   return (
@@ -41,16 +41,16 @@ export default function Footer() {
                         <div
                           className="response"
                           id="mce-error-response"
-                          style={{ display: 'none' }}
+                          style={{ display: "none" }}
                         ></div>
                         <div
                           className="response"
                           id="mce-success-response"
-                          style={{ display: 'none' }}
+                          style={{ display: "none" }}
                         ></div>
                       </div>
                       <div
-                        style={{ position: 'absolute', left: -5000 + 'px' }}
+                        style={{ position: "absolute", left: -5000 + "px" }}
                         aria-hidden="true"
                       >
                         <input

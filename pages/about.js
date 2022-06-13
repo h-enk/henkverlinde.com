@@ -1,11 +1,11 @@
-import Image from 'next/image';
-import { marked } from 'marked';
-import Layout from '@/components/Layout';
-import PageHeaderBlock from '@/components/PageHeader';
-import Author from '@/components/Author';
-import { getAuthors } from '@/libs/getAuthors';
-import { getPosts } from '@/libs/getPosts';
-import { getSinglePage } from '@/libs/getSinglePage';
+import Author from "@/components/Author";
+import Layout from "@/components/Layout";
+import PageHeaderBlock from "@/components/PageHeader";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import { getSinglePage } from "@/libs/getSinglePage";
+import { marked } from "marked";
+import Image from "next/image";
 
 export default function About({ authors, posts, about: { frontMatter } }) {
   const allAuthor = posts.map((author) => author.frontMatter.author);
@@ -95,7 +95,7 @@ export default function About({ authors, posts, about: { frontMatter } }) {
 export async function getStaticProps() {
   return {
     props: {
-      about: getSinglePage('content/about.md'),
+      about: getSinglePage("content/about.md"),
       authors: getAuthors(),
       posts: getPosts(),
     },

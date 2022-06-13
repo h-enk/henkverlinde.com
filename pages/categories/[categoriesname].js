@@ -1,24 +1,23 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-
-import Post from '@/components/Post';
-import Layout from '@/components/Layout';
-import { getPosts } from '@/libs/getPosts';
-import { getAuthors } from '@/libs/getAuthors';
-import PageHeaderTaxo from '@/components/PageHeaderTaxonomy';
+import Layout from "@/components/Layout";
+import PageHeaderTaxo from "@/components/PageHeaderTaxonomy";
+import Post from "@/components/Post";
+import { getAuthors } from "@/libs/getAuthors";
+import { getPosts } from "@/libs/getPosts";
+import fs from "fs";
+import matter from "gray-matter";
+import path from "path";
 
 export default function TagSingle({ authors, posts, category }) {
   let flatPosts = posts.flat();
   function getUniquePostsBy(flatPosts, key) {
     return [...new Map(flatPosts.map((item) => [item[key], item])).values()];
   }
-  const uniquePosts = getUniquePostsBy(flatPosts, 'slug');
+  const uniquePosts = getUniquePostsBy(flatPosts, "slug");
 
   return (
     <Layout
       metaTitle={`Showing posts from - ${
-        category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, ' ')
+        category.charAt(0).toUpperCase() + category.slice(1).replace(/-/g, " ")
       }`}
     >
       <div className="container">
@@ -37,11 +36,11 @@ export default function TagSingle({ authors, posts, category }) {
 }
 
 export async function getStaticPaths() {
-  const file = fs.readdirSync(path.join('content/blog'));
+  const file = fs.readdirSync(path.join("content/blog"));
   const allCategories = file.map((file) => {
     const dirFileContents = fs.readFileSync(
-      path.join('content/blog', file),
-      'utf-8'
+      path.join("content/blog", file),
+      "utf-8"
     );
     const { data: frontmatter } = matter(dirFileContents);
 
@@ -53,7 +52,7 @@ export async function getStaticPaths() {
 
   const paths = uniqueCategories.map((t) => ({
     params: {
-      categoriesname: t.toString().replace(/ /g, '-').toLowerCase(),
+      categoriesname: t.toString().replace(/ /g, "-").toLowerCase(),
     },
   }));
 
@@ -64,15 +63,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const file = fs.readdirSync(path.join('content/blog'));
+  const file = fs.readdirSync(path.join("content/blog"));
   const posts = file.map((file) => {
     const dirFileContents = fs.readFileSync(
-      path.join('content/blog', file),
-      'utf-8'
+      path.join("content/blog", file),
+      "utf-8"
     );
     const { data: frontMatter } = matter(dirFileContents);
     const filterFm = frontMatter.categories.filter(
-      (c) => c.toLowerCase().replace(/ /g, '-') === params.categoriesname
+      (c) => c.toLowerCase().replace(/ /g, "-") === params.categoriesname
     );
 
     const post = getPosts();

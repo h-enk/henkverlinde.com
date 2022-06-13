@@ -1,26 +1,26 @@
-import fs from 'fs';
-import path from 'path';
-import matter from 'gray-matter';
-import { marked } from 'marked';
-import Link from 'next/link';
-import Image from 'next/image';
-import Layout from '@/components/Layout';
-import { formatDate } from '@/utils/formatDate';
-import { readingTime } from '@/utils/readingTime';
-import { getAuthors } from '@/libs/getAuthors';
-import { truncateString } from '@/utils/truncateString';
-import siteConfig from '@/config/site.config.json';
-import useScripts from '@/components/Scripts';
+import Layout from "@/components/Layout";
+import useScripts from "@/components/Scripts";
+import siteConfig from "@/config/site.config.json";
+import { getAuthors } from "@/libs/getAuthors";
+import { formatDate } from "@/utils/formatDate";
+import { readingTime } from "@/utils/readingTime";
+import { truncateString } from "@/utils/truncateString";
 import {
-  IconBrandTwitter,
+  IconArrowUpRight,
   IconBrandFacebook,
   IconBrandLinkedin,
-  IconBrandReddit,
   IconBrandPinterest,
+  IconBrandReddit,
+  IconBrandTwitter,
   IconCalendarEvent,
   IconClock,
-  IconArrowUpRight,
-} from '@tabler/icons';
+} from "@tabler/icons";
+import fs from "fs";
+import matter from "gray-matter";
+import { marked } from "marked";
+import Image from "next/image";
+import Link from "next/link";
+import path from "path";
 
 export default function PostPage({
   slug,
@@ -28,7 +28,7 @@ export default function PostPage({
   frontMatter: { title, author, date, image, description, tags },
   authors,
 }) {
-  let pageUrl = `${siteConfig.baseURL.replace(/\/$|$/, '/')}blog/${slug}`;
+  let pageUrl = `${siteConfig.baseURL.replace(/\/$|$/, "/")}blog/${slug}`;
   return (
     <Layout metaTitle={title} metaDescription={description} ogImage={image}>
       <section className="section-sm pb-0">
@@ -42,12 +42,12 @@ export default function PostPage({
                   <li className="list-inline-item mt-2">
                     <Link
                       href={`/author/${author
-                        .replace(/ /g, '-')
+                        .replace(/ /g, "-")
                         .toLowerCase()}`}
                     >
                       <a className="card-meta-author">
                         {authors.map((authorPage, i) =>
-                          author.replace(/ /g, '-').toLowerCase() ===
+                          author.replace(/ /g, "-").toLowerCase() ===
                           authorPage.authorSlug ? (
                             <span key={i}>
                               <Image
@@ -59,7 +59,7 @@ export default function PostPage({
                               />
                             </span>
                           ) : (
-                            ''
+                            ""
                           )
                         )}
                         <i className="d-inline-block ms-2 ps-1 fst-normal">
@@ -99,7 +99,7 @@ export default function PostPage({
               </div>
             </div>
             <div className="col-lg-2 post-share-block order-1 order-lg-0 mt-5 mt-lg-0">
-              <div className="position-sticky" style={{ top: 150 + 'px' }}>
+              <div className="position-sticky" style={{ top: 150 + "px" }}>
                 <span className="d-inline-block mb-3 small">SHARE</span>
                 <ul className="social-share icon-box">
                   <li className="d-inline-block d-lg-block me-2 mb-2">
@@ -146,7 +146,6 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
-                  {/*
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
                       href={`https://www.pinterest.com/pin/create/button/?&text=${title}&url=${pageUrl}&description=${title}`}
@@ -158,7 +157,6 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
-                  */}
                 </ul>
               </div>
             </div>
@@ -171,7 +169,7 @@ export default function PostPage({
                 <li className="list-inline-item">Tags: </li>
                 {tags.map((t, i) => (
                   <li key={i} className="list-inline-item">
-                    <Link href={`/tags/${t.replace(/ /g, '-').toLowerCase()}`}>
+                    <Link href={`/tags/${t.replace(/ /g, "-").toLowerCase()}`}>
                       <a className="bg-white">{t}</a>
                     </Link>
                   </li>
@@ -185,11 +183,11 @@ export default function PostPage({
               <div className="col-lg-10">
                 <div className="d-block d-md-flex">
                   <Link
-                    href={`/author/${author.replace(/ /g, '-').toLowerCase()}`}
+                    href={`/author/${author.replace(/ /g, "-").toLowerCase()}`}
                   >
                     <a>
                       {authors.map((authorPage, i) =>
-                        author.replace(/ /g, '-').toLowerCase() ===
+                        author.replace(/ /g, "-").toLowerCase() ===
                         authorPage.authorSlug ? (
                           <span key={i}>
                             <Image
@@ -204,7 +202,7 @@ export default function PostPage({
                             />
                           </span>
                         ) : (
-                          ''
+                          ""
                         )
                       )}
                     </a>
@@ -213,14 +211,14 @@ export default function PostPage({
                     <h3 className="h4 mb-3">
                       <Link
                         href={`/author/${author
-                          .replace(/ /g, '-')
+                          .replace(/ /g, "-")
                           .toLowerCase()}`}
                       >
                         <a className="text-dark">{author}</a>
                       </Link>
                     </h3>
                     {authors.map((authorPage, i) =>
-                      author.replace(/ /g, '-').toLowerCase() ===
+                      author.replace(/ /g, "-").toLowerCase() ===
                       authorPage.authorSlug ? (
                         <div
                           key={i}
@@ -231,17 +229,17 @@ export default function PostPage({
                           }}
                         ></div>
                       ) : (
-                        ''
+                        ""
                       )
                     )}
                     <div className="content">
                       <Link
                         href={`/author/${author
-                          .replace(/ /g, '-')
+                          .replace(/ /g, "-")
                           .toLowerCase()}`}
                       >
                         <a className="text-dark">
-                          See all posts by this author{' '}
+                          See all posts by this author{" "}
                           <i>
                             <IconArrowUpRight size={20} />
                           </i>
@@ -256,18 +254,18 @@ export default function PostPage({
         </div>
       </section>
 
-      {useScripts('/js/lightense/lightense.min.js', 'body', true)}
+      {useScripts("/js/lightense/lightense.min.js", "body", true)}
     </Layout>
   );
 }
 
 export async function getStaticPaths() {
-  const blogDirFiles = fs.readdirSync(path.join('content/blog'));
-  const blogs = blogDirFiles.filter((f) => f.includes('.md'));
+  const blogDirFiles = fs.readdirSync(path.join("content/blog"));
+  const blogs = blogDirFiles.filter((f) => f.includes(".md"));
 
   const paths = blogs.map((filename) => ({
     params: {
-      slug: filename.replace('.md', ''),
+      slug: filename.replace(".md", ""),
     },
   }));
 
@@ -279,8 +277,8 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params: { slug } }) {
   const fileContents = fs.readFileSync(
-    path.join('content/blog', slug + '.md'),
-    'utf8'
+    path.join("content/blog", slug + ".md"),
+    "utf8"
   );
 
   const { data: frontMatter, content } = matter(fileContents);
