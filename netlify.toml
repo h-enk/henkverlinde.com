@@ -1,0 +1,7 @@
+[build]
+  command = "yarn build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18.1.0"
+  NPM_VERSION = "8.8.0"
