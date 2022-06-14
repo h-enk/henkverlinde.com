@@ -1,14 +1,11 @@
 ---
 title: "About"
-description: "This a dummy meta description of about page"
+description: "Helping you make your digital business great!"
 
 #intro
 intro:
-  title: "Helping you make your digital business great."
-  description: "If ever a place existed where you could just go crazy creatively, it is definitely your about page. It’s your chance to show your readers who you really are. Pictures, quotes, inspirational graphics, whatever it is that drives you.. Display it here in a way that only you can.
-
-
-  I’ve included a plugin in the setup of this theme that will make adding columns to your pages and posts a piece of cake. Let creativity take control, and forget about the technical end of things, I’ve got your six."
+  title: "Helping you make your digital business great!"
+  description: "Hello, I'm Henk Verlinde, the founder and CEO of <a href=\"https://ventizo.com/\" target=\"_blank\" rel=\"noopener\">Ventizo</a>, a digital products company headquartered in the Netherlands. I'm interested in digital business building, startups, and the <a href=\"https://jamstack.org/\" target=\"_blank\" rel=\"noopener\">Jamstack</a>. I hold an MSc in Economics and Business from Erasmus University Rotterdam. Before Ventizo, I’ve worked as a business analyst, project manager, and business developer for several international banks. On the side, I’ve always liked to code. I like to develop modern tools and services by embracing an <a href=\"https://www.embeddedentrepreneur.com/\" target=\"_blank\" rel=\"noopener\">audience driven</a> and <a href=\"https://www.strategyzer.com/books/testing-business-ideas-david-j-bland\" target=\"_blank\" rel=\"noopener\">evidence based</a> approach, helping you make your digital business great!"
 
   # about images
   images:
