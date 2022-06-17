@@ -5,3 +5,16 @@
 [build.environment]
   NODE_VERSION = "18.1.0"
   NPM_VERSION = "8.8.0"
+
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+	[plugins.inputs]
+    baseUrl = "https://henkverlinde.com"
+    sitemapPath = "/sitemap.xml"
+    ignorePeriod = 0
+    providers = [
+      "google",
+      "yandex"
+    ]
