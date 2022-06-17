@@ -50,6 +50,8 @@ export default function Layout({
         */}
       </Head>
 
+      <script async defer data-domain="henkverlinde.com" src="https://analytics.ventizo.com/js/plausible.js" integrity="sha512-xxUSMp7hFFv5deBo21s6s8F9FrPNGzwGMsHm5pXk4/S6V/A0avwKDeZ9krDgdgmfU9BSq0YpdS/jemVu49JnQA==" crossorigin="anonymous"></script>
+
       <Header />
 
       {children}
@@ -65,4 +67,5 @@ Layout.defaultProps = {
   metaAuthor: siteConfig.metaData.author,
   metaKeyword: siteConfig.metaData.keyword,
   ogImage: siteConfig.metaData.ogImage,
+  baseURL: siteConfig.baseURL,
 };
