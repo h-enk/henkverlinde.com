@@ -101,8 +101,8 @@ export default function PostPage({
             </div>
             <div className="col-lg-2 post-share-block order-1 order-lg-0 mt-5 mt-lg-0">
               <div className="position-sticky" style={{ top: 150 + "px" }}>
-                {/* <span className="d-inline-block mb-3 small">SHARE</span> */}
-                <ul className="social-share icon-box mt-2">
+                <span className="d-inline-block mb-3 small">SHARE</span>
+                <ul className="social-share icon-box">
                   {/*
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
