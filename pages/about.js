@@ -58,45 +58,12 @@ export default function About({ authors, posts, about: { frontMatter } }) {
 
           <div className="row justify-content-center">
             <div className="col-lg-10 text-center">
-              <h2 className="section-title mb-5">
-                <span>Tools & guides</span>
-              </h2>
               <div
                 className="content"
                 dangerouslySetInnerHTML={{
-                  __html: marked.parse(frontMatter.intro.products),
+                  __html: marked.parse(frontMatter.intro.description),
                 }}
               ></div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div className="row justify-content-center">
-              <div className="col-lg-10 text-center">
-                <h2 className="section-title my-5">
-                  <span>Education & work experience</span>
-                </h2>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parse(frontMatter.intro.education),
-                  }}
-                ></div>
-              </div>
-            </div>
-          </div>
-          <div className="my-3">
-            <div className="row justify-content-center">
-              <div className="col-lg-10 text-center">
-                <h2 className="section-title my-5">
-                  <span>Work & interests</span>
-                </h2>
-                <div
-                  className="content"
-                  dangerouslySetInnerHTML={{
-                    __html: marked.parse(frontMatter.intro.story),
-                  }}
-                ></div>
-              </div>
             </div>
           </div>
 
@@ -105,7 +72,7 @@ export default function About({ authors, posts, about: { frontMatter } }) {
               <div className="row justify-content-center">
                 <div className="col-lg-10 text-center">
                   <h2 className="section-title">
-                    <span>Our writers</span>
+                    <span>Authors</span>
                   </h2>
                   <div className="row gx-4 gy-5 gx-md-5 justify-content-center text-center">
                     {authors.map((author, i) => (

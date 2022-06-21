@@ -129,6 +129,17 @@ export default function PostPage({
                   </li>
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
+                      href={`https://www.facebook.com/sharer.php?u=${pageUrl}&quote=${title}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i>
+                        <IconBrandFacebook size={18} />
+                      </i>
+                    </a>
+                  </li>
+                  <li className="d-inline-block d-lg-block me-2 mb-2">
+                    <a
                       href={`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${title}&summary=${description}&source=HenkVerlinde`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -160,19 +171,6 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
-                  {/*
-                  <li className="d-inline-block d-lg-block me-2 mb-2">
-                    <a
-                      href={`https://www.facebook.com/sharer.php?u=${pageUrl}&quote=${title}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <i>
-                        <IconBrandFacebook size={18} />
-                      </i>
-                    </a>
-                  </li>
-                  */}
                 </ul>
               </div>
             </div>

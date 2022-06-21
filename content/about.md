@@ -1,14 +1,11 @@
 ---
 title: "About"
-description: "Helping you make your digital business great!"
+description: "Hi, I'm Henk Verlinde, helping you make your digital business great!"
 
 #intro
 intro:
-  title: "Helping you make your digital business great!"
-  description: ""
-  products: "Hi, I'm Henk Verlinde. I develop modern tools and services by embracing an <a href=\"https://www.embeddedentrepreneur.com/\" target=\"_blank\" rel=\"noopener\">audience driven</a> and <a href=\"https://www.strategyzer.com/books/testing-business-ideas-david-j-bland\" target=\"_blank\" rel=\"noopener\">evidence based</a> approach. I also write practical guides. Helping you make your digital business great!"
-  education: "I hold an MSc in Economics and Business from Erasmus University Rotterdam. I’ve worked as a business analyst, project manager, and business developer for several international banks. On the side, I’ve always liked to code."
-  story: "I'm the founder and CEO of <a href=\"https://ventizo.com/\" target=\"_blank\" rel=\"noopener\">Ventizo</a>, formerly a digital agency (2010-2020), now a digital products company headquartered in the Netherlands. I'm interested in digital business building, startups, and the <a href=\"https://jamstack.org/\" target=\"_blank\" rel=\"noopener\">Jamstack</a>."
+  title: "Hi, I'm Henk Verlinde, helping you make your digital business great!"
+  description: "I develop modern tools and services by embracing an <a href=\"https://www.embeddedentrepreneur.com/\" target=\"_blank\" rel=\"noopener\">audience-driven</a> and <a href=\"https://www.strategyzer.com/books/testing-business-ideas-david-j-bland\" target=\"_blank\" rel=\"noopener\">evidence-based</a> approach. I also write practical guides on digital business building, startups, and the <a href=\"https://jamstack.org/\" target=\"_blank\" rel=\"noopener\">Jamstack</a>. I hold a Master of Science degree in Economics and Business from Erasmus University Rotterdam, and have worked as a business analyst, project manager, and business developer for several international banks. On the side, I’ve always liked to code. I'm the founder and CEO of <a href=\"https://ventizo.com/\" target=\"_blank\" rel=\"noopener\">Ventizo</a>, formerly a digital agency (2010-2020), now a digital products company headquartered in the Netherlands."
 
   # about images
   images:
