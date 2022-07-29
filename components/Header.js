@@ -76,7 +76,7 @@ export default function Header() {
             <div className="col-12">
               <nav className="navbar navbar-expand-lg navbar-light p-0">
                 <Link href="/">
-                  <a className="navbar-brand font-weight-bold d-flex mb-0">
+                  <a className="navbar-brand font-weight-bold d-flex mb-0" aria-label="Logo">
                     <svg width="44" height="30" viewBox="0 0 131 89" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.813 89V.937H16V24.75h42.688V89H43.624V38.562H16V89H.812Zm64.112-64.25H81.05L95.988 63.5l1.624 6.75 1.626-6.75 14.937-38.75h16.188L104.675 89H90.55L64.925 24.75Z" fill="#000"/></svg>
                     {/*
                     <Image
