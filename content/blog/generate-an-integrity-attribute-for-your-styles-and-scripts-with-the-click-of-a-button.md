@@ -10,9 +10,7 @@ tags: ["SRI", "React", "PWA"]
 series: []
 ---
 
-> Subresource Integrity (SRI) is a security feature that enables browsers to verify that resources they fetch (for example, from a CDN) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched resource must match.
-
-_Source: [mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)_
+> Subresource Integrity (SRI) is a security feature that enables browsers to verify that resources they fetch (for example, from a CDN) are delivered without unexpected manipulation. It works by allowing you to provide a cryptographic hash that a fetched resource must match. <cite>[mdn web docs](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)</cite>
 
 [Progressive Web App (PWA)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps) generating a `<script>` or `<link>` element with an `integrity` attribute.
 
