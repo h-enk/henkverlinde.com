@@ -687,6 +687,23 @@ footer {
   }
 }
 
+.separator::after {
+  content: "|";
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+a.footer-link {
+  transition: all .3s;
+  text-decoration: none;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-primary;
+    text-decoration: underline;
+  }
+}
+
 
 // 404 page style
 h1.page-not-found-title {
