@@ -11,7 +11,7 @@ import path from "path";
 export default function Blog({ authors, posts, currentPage, numberOfPages }) {
   return (
     <Layout metaTitle="All Posts">
-      <PageHeaderBlock title="All posts" blogPage={true} />
+      <PageHeaderBlock title="All posts" />
 
       <div className="container">
         <div className="row gy-5 gx-4 g-xl-5">

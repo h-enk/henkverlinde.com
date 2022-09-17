@@ -1,42 +1,75 @@
-// newsletter-block style
-.newsletter-block {
-  .input-group-text,
-  .form-control {
-    background-color: transparent;
-    margin: 0 8px;
-  }
-  .input-group-text {
-    padding: 0 1.5rem;
-    height: 50px;
+// footer style
+footer {
+  background: $white;
+  background: linear-gradient(180deg, $body-background 0%, $white 55%);
+  .icon-box a {
+    color: rgba($dark, 0.7);
     @extend .rounded;
-  }
-  .form-control {
-    &:focus {
+    &:hover {
+      color: $white;
+      background-color: $color-primary;
       border-color: $color-primary;
-      ~.input-group-append {
-        .input-group-text {
-          border-color: $color-primary;
-          background-color: $color-primary;
-          color: $white;
-        }
+    }
+  }
+}
+.dark {
+  footer {
+    background: $body-background-dark;
+    background: linear-gradient(180deg, $body-background-dark 0%, #020b12 55%);
+  }
+}
+.footer-menu {
+  li {
+    position: relative;
+    &::after {
+      content: "|";
+      margin-right: 15px;
+      margin-left: 18px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+    a {
+      color: rgba($dark, 0.7);
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
       }
     }
   }
-  ::-webkit-input-placeholder {
-    color: rgba($dark, .7);
+}
+.copyright-text {
+  color: rgba($dark, 0.7);
+  a {
+    color: rgba($dark, 0.7);
   }
-  :-ms-input-placeholder {
-    color: rgba($dark, .7);
-  }
-  ::placeholder {
-    color: rgba($dark, .7);
-  }
-  button.input-group-text {
-    color: $dark;
-    &:hover {
-      border-color: $color-primary;
-      background-color: $color-primary;
-      color: $white;
+}
+.separator::after {
+  content: "|";
+  margin-right: 15px;
+  margin-left: 18px;
+}
+a.footer-link {
+  color: rgba($dark, 0.7);
+  text-decoration: none;
+}
+.dark {
+  .footer-menu {
+    li a {
+      color: rgba($white, 0.7);
+      &:hover {
+        color: $white;
+      }
     }
+  }
+  .copyright-text {
+    color: rgba($white, 0.7);
+    a {
+      color: rgba($white, 0.7);
+    }
+  }
+  a.footer-link {
+    color: rgba($white, 0.7);
+    text-decoration: none;
   }
 }

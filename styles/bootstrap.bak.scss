@@ -1,22 +1,17 @@
 /*!
- * Bootstrap  v5.2.0 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
+ * Bootstrap v5.1.3 (https://getbootstrap.com/)
+ * Copyright 2011-2021 The Bootstrap Authors
+ * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
-/* ========================== 
+ /* ========================== 
   Custom Bootstrap Setting for Qurno Nextjs Template 
   ============================ */
 
-@import "../node_modules/bootstrap/scss/mixins/banner";
-@include bsBanner("");
-
-// scss-docs-start import-stack
 // Configuration
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/utilities";
 
@@ -58,4 +53,3 @@
 
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
-// scss-docs-end import-stack

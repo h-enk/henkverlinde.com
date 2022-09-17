@@ -7,8 +7,9 @@
     "ogImage" : "https://henkverlinde.com/images/ogimage.jpg"
   },
   "baseURL" : "https://henkverlinde.com/",
-  "logo" : "/images/logo.png",
-  "logoText" : "Qurno",
+  "logo" : "/images/logo.svg",
+  "logo_light" : "/images/logo-light.svg",
+  "logoText" : "Henk Verlinde",
   "favicon" : "/images/favicon.png",
   "postPerPage" : 6,
   "copyright" : "© 2022 Henk Verlinde"

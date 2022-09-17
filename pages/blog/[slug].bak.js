@@ -9,11 +9,12 @@ import {
   IconArrowUpRight,
   IconBrandFacebook,
   IconBrandLinkedin,
-  IconBrandPinterest,
+  IconBrandYcombinator,
   IconBrandReddit,
   IconBrandTwitter,
   IconCalendarEvent,
   IconClock,
+  IconHeart,
 } from "@tabler/icons";
 import fs from "fs";
 import matter from "gray-matter";
@@ -102,9 +103,22 @@ export default function PostPage({
               <div className="position-sticky" style={{ top: 150 + "px" }}>
                 <span className="d-inline-block mb-3 small">SHARE</span>
                 <ul className="social-share icon-box">
+                  {/*
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
-                      href={`https://twitter.com/intent/tweet?text=${title}&url=${pageUrl}`}
+                      href={`/`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i>
+                        <IconHeart size={18} />
+                      </i>
+                    </a>
+                  </li>
+                  */}
+                  <li className="d-inline-block d-lg-block me-2 mb-2">
+                    <a
+                      href={`https://twitter.com/intent/tweet?text=${title}&url=${pageUrl}&via=HenkVerlinde`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -126,7 +140,7 @@ export default function PostPage({
                   </li>
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
-                      href={`https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`}
+                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${pageUrl}&title=${title}&summary=${description}&source=HenkVerlinde`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -137,7 +151,7 @@ export default function PostPage({
                   </li>
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
-                      href={`https://www.reddit.com/submit?url=${pageUrl}`}
+                      href={`https://www.reddit.com/submit?url=${pageUrl}&title=${title}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -148,12 +162,12 @@ export default function PostPage({
                   </li>
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
-                      href={`https://www.pinterest.com/pin/create/button/?&text=${title}&url=${pageUrl}&description=${title}`}
+                      href={`https://news.ycombinator.com/submitlink?u=${pageUrl}&t=${title}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <i>
-                        <IconBrandPinterest size={18} />
+                        <IconBrandYcombinator size={18} />
                       </i>
                     </a>
                   </li>
@@ -170,7 +184,7 @@ export default function PostPage({
                 {tags.map((t, i) => (
                   <li key={i} className="list-inline-item">
                     <Link href={`/tags/${t.replace(/ /g, "-").toLowerCase()}`}>
-                      <a className="bg-white text-dark">{t}</a>
+                      <a className="bg-white">{t}</a>
                     </Link>
                   </li>
                 ))}

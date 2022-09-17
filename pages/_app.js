@@ -1,13 +1,14 @@
-import '@/styles/bootstrap.scss';
-import '@/styles/globals.scss';
-import { useState, useEffect } from 'react';
-import { AppContext } from '@/components/UseContext';
+import { AppContext } from "@/components/UseContext";
+import "@/styles/bootstrap.scss";
+import "@/styles/globals.scss";
+import { ThemeProvider } from "next-themes";
+import { useEffect, useState } from "react";
 
 export default function QurnoApp({ Component, pageProps }) {
-  const [searchOpen, setSearchOpen] = useState('');
+  const [searchOpen, setSearchOpen] = useState("");
 
   useEffect(() => {
-    import('bootstrap/dist/js/bootstrap');
+    import("bootstrap/dist/js/bootstrap");
   }, []);
 
   return (
@@ -16,7 +17,9 @@ export default function QurnoApp({ Component, pageProps }) {
         toggleSearch: [searchOpen, setSearchOpen],
       }}
     >
-      <Component {...pageProps} />
+      <ThemeProvider defaultTheme="system" attribute="class">
+        <Component {...pageProps} />
+      </ThemeProvider>
     </AppContext.Provider>
   );
 }
