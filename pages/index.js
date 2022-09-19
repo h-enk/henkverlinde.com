@@ -1,16 +1,16 @@
-import BannerBlock from "@/components/Banner";
+import BannerBlockTwo from "@/components/BannerTwo";
 import Layout from "@/components/Layout";
-import Post from "@/components/Post";
+import PostHorizontal from "@/components/PostHorizontal";
 import { getAuthors } from "@/libs/getAuthors";
 import { getPosts } from "@/libs/getPosts";
 import { getSinglePage } from "@/libs/getSinglePage";
 import { IconNewSection } from "@tabler/icons";
 import Link from "next/link";
 
-export default function Home({ authors, posts, banner }) {
+export default function HomeTwo({ authors, posts, banner }) {
   return (
     <Layout>
-      <BannerBlock banner={banner} />
+      <BannerBlockTwo banner={banner} />
 
       <div className="container">
         <div className="row">
@@ -22,8 +22,8 @@ export default function Home({ authors, posts, banner }) {
         </div>
         <div className="row gy-5 gx-4 g-xl-5">
           {posts.map((post, i) => (
-            <div key={i} className="col-lg-6">
-              <Post post={post} authors={authors} />
+            <div key={i} className="col-lg-12">
+              <PostHorizontal post={post} authors={authors} />
             </div>
           ))}
 

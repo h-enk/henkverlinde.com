@@ -44,15 +44,6 @@ footer {
     color: rgba($dark, 0.7);
   }
 }
-.separator::after {
-  content: "|";
-  margin-right: 15px;
-  margin-left: 18px;
-}
-a.footer-link {
-  color: rgba($dark, 0.7);
-  text-decoration: none;
-}
 .dark {
   .footer-menu {
     li a {
@@ -67,9 +58,5 @@ a.footer-link {
     a {
       color: rgba($white, 0.7);
     }
-  }
-  a.footer-link {
-    color: rgba($white, 0.7);
-    text-decoration: none;
   }
 }

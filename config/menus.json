@@ -2,33 +2,33 @@
   "mainMenu": [
     {
       "name": "Tools",
+      "link": "/categories/tools"
+    },
+    {
+      "name": "Guides",
+      "link": "/categories/guides"
+    },
+    {
+      "name": "Plugins",
+      "link": "/categories/plugins"
+    },
+    {
+      "name": "Themes",
+      "link": "/categories/themes"
+    },
+    {
+      "name": "More",
       "link": "#",
       "submenu": [
         {
-          "name": "Hyas",
-          "link": "/blog/get-a-solid-starting-point-for-your-hugo-project-with-hyas"
+          "name": "About",
+          "link": "/about"
         },
         {
-          "name": "Doks",
-          "link": "/blog/create-a-modern-documentation-website-for-hugo-with-doks"
-        },
-        {
-          "name": "SRI Gen",
-          "link": "/blog/generate-an-integrity-attribute-for-your-styles-and-scripts-with-the-click-of-a-button"
+          "name": "Contact",
+          "link": "/contact"
         }
       ]
-    },
-    {
-      "name": "Blog",
-      "link": "/blog"
-    },
-    {
-      "name": "About",
-      "link": "/about"
-    },
-    {
-      "name": "Contact",
-      "link": "/contact"
     }
   ]
 }

@@ -3,6 +3,7 @@ import {
   IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
+  IconBrandProducthunt,
   IconBrandTwitter,
 } from "@tabler/icons";
 import { marked } from "marked";
@@ -37,8 +38,8 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                     }}
                   ></div>
                 </div>
-
                 <ul className={`social-share icon-box mt-4 pt-2`}>
+                  {/*
                   <li className="d-inline-block me-2 mb-2">
                     <a
                       aria-label="facebook"
@@ -51,10 +52,11 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                       </i>
                     </a>
                   </li>
+                  */}
                   <li className="d-inline-block me-2 mb-2">
                     <a
                       aria-label="twitter"
-                      href="https://twitter.com"
+                      href="https://twitter.com/henkverlinde"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -63,6 +65,7 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                       </i>
                     </a>
                   </li>
+                  {/*
                   <li className="d-inline-block me-2 mb-2">
                     <a
                       aria-label="instagram"
@@ -75,10 +78,11 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                       </i>
                     </a>
                   </li>
+                  */}
                   <li className="d-inline-block me-2 mb-2">
                     <a
                       aria-label="linkedin"
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/henkverlinde"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -89,8 +93,20 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                   </li>
                   <li className="d-inline-block me-2 mb-2">
                     <a
+                      aria-label="producthunt"
+                      href="https://www.producthunt.com/@henk_verlinde"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i>
+                        <IconBrandProducthunt size={18} />
+                      </i>
+                    </a>
+                  </li>
+                  <li className="d-inline-block me-2 mb-2">
+                    <a
                       aria-label="github"
-                      href="https://github.com"
+                      href="https://github.com/h-enk"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

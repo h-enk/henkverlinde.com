@@ -9,7 +9,8 @@ import {
   IconArrowUpRight,
   IconBrandFacebook,
   IconBrandLinkedin,
-  IconBrandPinterest,
+  IconBrandYcombinator,
+  // IconBrandPinterest,
   IconBrandReddit,
   IconBrandTwitter,
   IconCalendarEvent,
@@ -148,6 +149,18 @@ export default function PostPage({
                   </li>
                   <li className="d-inline-block d-lg-block me-2 mb-2">
                     <a
+                      href={`https://news.ycombinator.com/submitlink?u=${pageUrl}&t=${title}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i>
+                        <IconBrandYcombinator size={18} />
+                      </i>
+                    </a>
+                  </li>
+                  {/*
+                  <li className="d-inline-block d-lg-block me-2 mb-2">
+                    <a
                       href={`https://www.pinterest.com/pin/create/button/?&text=${title}&url=${pageUrl}&description=${title}`}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -157,6 +170,7 @@ export default function PostPage({
                       </i>
                     </a>
                   </li>
+                  */}
                 </ul>
               </div>
             </div>

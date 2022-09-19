@@ -82,17 +82,27 @@ export default function Footer() {
           </div>
         </div>
         <div className="pb-5">
-          <div className="row">
-            <div className="col-lg-12 text-center">
-              <p className="mb-0 copyright-text content">
-                {siteConfig.copyright}
-                <span className="separator"></span>
-                <Link href="/privacy/">
-                  <a className="footer-link">
-                    Privacy
-                  </a>
-                </Link>
-              </p>
+          <div className="row g-2 g-lg-4 align-items-center">
+            <div className="col-lg-6 text-center text-lg-start">
+              <p className="mb-0 copyright-text content">{siteConfig.copyright}</p>
+            </div>
+            <div className="col-lg-6 text-center text-lg-end">
+              <ul className="list-inline footer-menu">
+                <li className="list-inline-item m-0">
+                  <Link href="/privacy/">
+                    <a>
+                      Privacy
+                    </a>
+                  </Link>
+                </li>
+                <li className="list-inline-item m-0">
+                  <Link href="/terms/">
+                    <a>
+                      Terms
+                    </a>
+                  </Link>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

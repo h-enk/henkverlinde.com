@@ -3,7 +3,7 @@ title: "Contact"
 
 contact:
   title: "Contact"
-  content: "Got something to say or ask? Feel free to contact me."
+  content: "Have a question? I'll get back to you within 24 hours."
 
   # contact info
   contact_info_title: "Email"
