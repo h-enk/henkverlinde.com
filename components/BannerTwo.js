@@ -1,4 +1,5 @@
 import {
+  IconArrowUpRight,
   // IconBrandFacebook,
   IconBrandGithub,
   // IconBrandInstagram,
@@ -8,6 +9,7 @@ import {
 } from "@tabler/icons";
 import { marked } from "marked";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function BannerBlock({ banner: { frontMatter } }) {
   return (
@@ -37,6 +39,16 @@ export default function BannerBlock({ banner: { frontMatter } }) {
                       __html: marked.parse(frontMatter.description),
                     }}
                   ></div>
+                      <Link
+                        href={`/about`}
+                      >
+                        <a className="text-dark">
+                          More about me
+                          <i>
+                            <IconArrowUpRight size={20} />
+                          </i>
+                        </a>
+                      </Link>
                 </div>
                 <ul className={`social-share icon-box mt-4 pt-2`}>
                   {/*
