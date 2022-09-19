@@ -1,7 +1,7 @@
 import {
-  IconBrandFacebook,
+  // IconBrandFacebook,
   IconBrandGithub,
-  IconBrandInstagram,
+  // IconBrandInstagram,
   IconBrandLinkedin,
   IconBrandProducthunt,
   IconBrandTwitter,
