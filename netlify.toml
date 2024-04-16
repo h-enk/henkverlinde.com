@@ -1,20 +1,35 @@
 [build]
-  command = "yarn build"
-  publish = ".next"
+  publish = "dist"
+  functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "16.15.0"
-  NPM_VERSION = "8.5.5"
+  NODE_VERSION = "20.11.0"
+  NPM_VERSION = "10.2.4"
 
+[context.production]
+  command = "pnpm build"
 
-[[plugins]]
-  package = "netlify-plugin-submit-sitemap"
+[context.deploy-preview]
+  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
 
-	[plugins.inputs]
-    baseUrl = "https://henkverlinde.com"
-    sitemapPath = "/sitemap.xml"
-    ignorePeriod = 0
-    providers = [
-      "google",
-      "yandex"
-    ]
+[context.branch-deploy]
+  command = "pnpm build -- -b $DEPLOY_PRIME_URL"
+
+# Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
+
+# Custom headers — https://docs.netlify.com/routing/headers/#syntax-for-the-netlify-configuration-file
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self'; font-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin"
+    Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
+    Cache-Control= '''
+    public,
+    max-age=604800,
+    immutable'''
+    Access-Control-Allow-Origin = "*"

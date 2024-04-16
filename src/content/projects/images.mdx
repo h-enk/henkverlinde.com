@@ -1,0 +1,33 @@
+---
+title: 'Images: Show images on your Hyas website'
+description: Images is the official images integration for Hyas — solid templates and easy to use.
+publishDate: 'April 11 2024'
+isFeatured: false
+seo:
+  image:
+    src: '/images.png'
+    alt: 'Images: Show images on your Hyas website'
+webSite:
+  text: View Website
+  href: 'https://images.gethyas.com/'
+---
+import { Image } from 'astro:assets';
+import myImage from '../../assets/images/images.png';
+import Button from '../../components/Button.astro';
+
+<Image
+  src={myImage}
+  widths={[480, 576, 768, myImage.width]}
+  sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1600px) 768px, ${myImage.width}px`}
+  alt={frontmatter.title}
+  quality="max"
+  class="w-full "
+  loading="eager"
+  fetchpriority="high"
+/>
+
+{frontmatter.description}
+
+<div class="flex flex-wrap gap-4 mt-8 not-prose">
+   <Button target="_blank" href={frontmatter.webSite.href}>{frontmatter.webSite.text}</Button>
+</div>
