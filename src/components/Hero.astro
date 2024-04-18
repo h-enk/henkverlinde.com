@@ -19,10 +19,11 @@ const hero = siteConfig.hero;
                         widths={[480, 576, 768, myImage.width]}
                         sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1600px) 768px, ${myImage.width}px`}
                         alt={hero.image.alt || ''}
-                        quality="max"
+                        format="avif"
                         class="w-full "
                         loading="eager"
-                        fetchpriority="high"
+                        decoding="async"
+                        fetchpriority="auto"
                     />
                     {hero.image.caption && <figcaption class="mt-3 text-xs sm:text-sm italic">{hero.image.caption}</figcaption>}
                 </figure>

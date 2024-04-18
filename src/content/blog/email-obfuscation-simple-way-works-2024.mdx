@@ -19,11 +19,12 @@ import myImage from '../../assets/images/email-obfuscation-simple-way-works-2024
   src={myImage}
   widths={[480, 576, 768, myImage.width]}
   sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1600px) 768px, ${myImage.width}px`}
-  alt="Email obfuscation: A simple way that works in 2024"
-  quality="max"
+  alt={frontmatter.seo.image.alt}
+  format="avif"
   class="w-full "
-  loading="eager"
-  fetchpriority="high"
+	loading="eager"
+	decoding="async"
+  fetchpriority="auto"
 />
 
 Spencer Mortensen spent a year testing email obfuscation techniques to find out what works in 2024[^1]. One of the (preliminary) findings: instead of using JavaScript, you just need a little HTML and CSS to block 100% of spam.

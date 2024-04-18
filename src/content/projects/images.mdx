@@ -19,11 +19,12 @@ import Button from '../../components/Button.astro';
   src={myImage}
   widths={[480, 576, 768, myImage.width]}
   sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1600px) 768px, ${myImage.width}px`}
-  alt={frontmatter.title}
-  quality="max"
+  alt={frontmatter.seo.image.alt}
+  format="avif"
   class="w-full "
   loading="eager"
-  fetchpriority="high"
+  decoding="async"
+  fetchpriority="auto"
 />
 
 {frontmatter.description}
