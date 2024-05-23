@@ -83,3 +83,10 @@ function formatCanonicalURL(url: string | URL) {
 
 <!-- Plausible Analytics -->
 <script defer data-domain="henkverlinde.com" src="https://plausible.io/js/script.js"></script>
+
+<script>
+    import { listen } from 'quicklink';
+    window.addEventListener('load', () => {
+        listen();
+    });
+</script>
