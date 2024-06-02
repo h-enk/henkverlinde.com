@@ -64,19 +64,15 @@ const siteConfig: SiteConfig = {
             href: '/blog/'
         },
         {
-            text: 'Tags',
-            href: '/tags/'
-        }
-    ],
-    footerNavLinks: [
-        {
             text: 'About',
             href: '/about/'
         },
         {
             text: 'Contact',
             href: '/contact/'
-        },
+        }
+    ],
+    footerNavLinks: [
         {
             text: 'Privacy',
             href: '/privacy/'
@@ -110,8 +106,8 @@ const siteConfig: SiteConfig = {
         },
         actions: [
             {
-                text: 'Get in Touch',
-                href: '/contact/'
+                text: 'Read More',
+                href: '/about/'
             }
         ]
     },
