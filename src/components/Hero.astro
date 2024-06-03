@@ -16,8 +16,8 @@ const hero = siteConfig.hero;
                 <figure>
                     <Image
                         src={myImage}
-                        widths={[480, 576, 768, myImage.width]}
-                        sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1600px) 768px, ${myImage.width}px`}
+                        widths={[480, 576, 768, 1024, myImage.width]}
+                        sizes={`(max-width: 640px) 480px, (max-width: 768px) 576px, (max-width: 1024px) 768px, (max-width: 1600px) 1024px, ${myImage.width}px`}
                         alt={hero.image.alt || ''}
                         format="avif"
                         class="w-full "
