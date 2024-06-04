@@ -44,8 +44,8 @@ export type SiteConfig = {
 
 const siteConfig: SiteConfig = {
     title: 'Henk Verlinde',
-    subtitle: 'Founder & CEO Ventizo',
-    description: 'Product developer, entrepreneur, and technical writer with an M.Sc. from Erasmus University Rotterdam, Netherlands.',
+    subtitle: 'Founder & CEO, Ventizo',
+    description: 'Henk Verlinde is a product developer, entrepreneur, and technical writer with an M.Sc. in Economics and Business from Erasmus University Rotterdam.',
     image: {
         src: '/henk-verlinde.jpg',
         alt: 'The Revenge of the Soga Brothers — Utagawa Kunikazu'
@@ -98,7 +98,8 @@ const siteConfig: SiteConfig = {
     ],
     hero: {
         title: '',
-        text: "I'm a product developer, entrepreneur, and technical writer with an M.Sc. [in economics and business] from Erasmus University Rotterdam, Netherlands. My goal is to solve real-world business and technology problems by leveraging business analytics, innovation, and experimentation methods.",
+        // text: "I'm a product developer, entrepreneur, and technical writer with an M.Sc. [in economics and business] from Erasmus University Rotterdam, Netherlands. My goal is to solve real-world business and technology problems by leveraging business analytics, innovation, and experimentation methods.",
+        text: "Henk Verlinde is a product developer, entrepreneur, and technical writer with an M.Sc. in Economics and Business from Erasmus University Rotterdam. He specializes in business model generation, value proposition design, and web development, aiming to solve real-world problems through business analytics and innovation.",
         image: {
             src: '/henk-verlinde.jpg',
             alt: 'The Revenge of the Soga Brothers — Utagawa Kunikazu',
