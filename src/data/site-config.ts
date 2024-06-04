@@ -121,8 +121,8 @@ const siteConfig: SiteConfig = {
         ]
     },
     subscribe: {
-        title: 'Join my email newsletter',
-        text: 'Get all my new posts delivered directly to your inbox. Unsubscribe anytime.',
+        title: 'Subscribe to Henk\'s Newsletter',
+        text: 'Get tips, technical guides, and best practices. Once a month. Right in your inbox.',
         formUrl: '#'
     },
     postsPerPage: 7,
