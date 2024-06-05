@@ -1,6 +1,6 @@
 ---
-title: 'Email obfuscation: A simple way that works in 2024'
-excerpt: 'Instead of using JavaScript, you just need a little HTML and CSS to block 100% of spam — a Hugo shortcode and an Astro component.'
+title: 'Email Obfuscation: A Hugo Shortcode and Astro Component'
+excerpt: 'A highly effective technique converted into a Hugo shortcode and Astro component.'
 publishDate: 'April 8 2024'
 tags:
   - Email
@@ -10,7 +10,7 @@ isFeatured: true
 seo:
   image:
     src: '/email-obfuscation-simple-way-works-2024.png'
-    alt: 'Email obfuscation: A simple way that works in 2024'
+    alt: 'Email Obfuscation: A Hugo Shortcode and Astro Component'
 ---
 import { Image } from 'astro:assets';
 import myImage from '../../assets/images/email-obfuscation-simple-way-works-2024.png';
@@ -27,9 +27,11 @@ import myImage from '../../assets/images/email-obfuscation-simple-way-works-2024
   fetchpriority="auto"
 />
 
-Spencer Mortensen spent a year testing email obfuscation techniques to find out what works in 2024[^1]. One of the (preliminary) findings: instead of using JavaScript, you just need a little HTML and CSS to block 100% of spam.
+The article [Email Obfuscation: What Works in 2024](https://spencermortensen.com/articles/email-obfuscation/) by Spencer Mortensen discusses various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods like plain text, HTML entities, CSS display properties, JavaScript techniques, and others, testing their effectiveness in blocking spam.
 
-## `CSS` Display none
+Some methods, such as CSS `display: none` and certain JavaScript techniques, are found to be highly effective, while others like HTML comments and symbol substitution offer little protection.
+
+## CSS `display: none`
 
 > This [technique] requires the harvester to interpret style rules contained in a separate stylesheet document. This is impossible for the vast majority of harvesters, which are something less than a full web browser. As a result, this is one of the best obfuscation techniques.
 
@@ -49,9 +51,9 @@ span.email b {
 
 > It's important to use “display: none” to hide elements of the email address, because this is fully supported by all screen readers. Visual-only techniques (such as repositioning part of the text off screen) will prevent everyone except your sighted readers from reaching you.
 
-## Hugo shortcode
+## Hugo Shortcode
 
-For my Hugo websites, I translated this technique into a Hugo shortcode. Follow along with how I did this.
+For my Hugo websites, I converted this technique into a Hugo shortcode. Here's a step-by-step guide on how I accomplished it.
 
 First, add a default email address to `config/_default/params.toml` — we will use this as a fallback when no email address is specified:
 
@@ -107,9 +109,9 @@ Or, by specifying an email address:
 {{< email "email@example.com" >}}
 ```
 
-## Astro component
+## Astro Component
 
-I also translated this technique into an Astro component for my Astro websites.
+I also converted this technique into an Astro component for my Astro websites.
 
 First, add a default email address to `src/params.ts` — we will use this as a fallback when no email address is specified:
 
@@ -177,12 +179,12 @@ import Email from '../components/Email.astro';
 <Email address="email@example.com" />
 ```
 
+{/*
 ## Conclusion
+
+A highly effective technique converted into a Hugo shortcode and Astro component — I hope you find it useful!
 
 Thanks to Spencer Mortensen's thorough testing of email obfuscation techniques, we know we can use a simple and effective way of keeping email addresses hidden from spam bots but accessible to readers.
 
 Instead of using JavaScript, you just need a little HTML and CSS to block 100% of spam. I've translated this concept into a Hugo shortcode and an Astro component — I hope you find it useful!
-
----
-
-[^1]: [Email obfuscation: What works in 2024?](https://spencermortensen.com/articles/email-obfuscation/) — 	Spencer Mortensen
+*/}
