@@ -1,0 +1,44 @@
+.banner .nav li {
+  @extend .nav-item;
+}
+
+.banner .nav a {
+  @extend .nav-link;
+}
+
+.navbar-text {
+  margin-left: 1rem;
+}
+
+@include media-breakpoint-down(sm) {
+  .navbar .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .navbar-brand {
+    font-size: $font-size-xl;
+  }
+
+  .navbar-text {
+    margin-left: 1.25rem;
+  }
+}
+
+header {
+  mix-blend-mode: exclusion;
+}
+
+header h1 {
+  font-size: clamp(96px, 13.333vw, 256px);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  padding-top: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  opacity: 1;
+}

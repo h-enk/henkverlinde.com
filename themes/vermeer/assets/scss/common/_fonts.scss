@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Geist;
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: fallback;
+  src:
+   url('/fonts/geist/Geist-Variable.woff2') format('woff2');
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: fallback;
+  src:
+    url('/fonts/geist-mono/GeistMono-Variable.woff2') format('woff2');
+  font-stretch: normal;
+}
