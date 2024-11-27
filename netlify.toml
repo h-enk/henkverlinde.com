@@ -32,7 +32,43 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
-  from = "/*"
+  from = "/projects/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tags/*"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/about/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/contact/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/privacy/"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/terms/"
   to = "/"
   status = 301
   force = true
