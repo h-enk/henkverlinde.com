@@ -3,7 +3,8 @@ title = "Henk Verlinde"
 description = "I'm passionate about innovation, driven by a love for simplifying complex challenges and creating practical solutions. As the founder and CEO of Ventizo, I also developed the Thulite web framework and the Doks documentation theme."
 images = ["cover.jpg"]
 
-footer = "Brought to you by <a href=\"https://thulite.io/\">Thulite</a>"
+# footer = "Brought to you by <a href=\"https://thulite.io/\">Thulite</a>"
+footer = "Powered by <a href=\"https://vermeer.thulite.io/\">Vermeer</a>"
 
 [vermeer]
   colorScheme = "Default" # Brooklyn, Custom, Default, Emerson, Franklin, Inverted, Kennedy, Morgan, Paisley, Quinn, Seraphina, Skylar, Wilde, or Zoey
