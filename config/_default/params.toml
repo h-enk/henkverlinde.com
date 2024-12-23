@@ -1,6 +1,6 @@
 # Hugo
 title = "Henk Verlinde"
-description = "Hello, I’m Henk Verlinde. I have a deep passion for innovation, fueled by a desire to simplify complex problems and develop practical solutions. I am the founder and CEO at Ventizo and developed the Thulite web framework and the Doks documentation theme."
+description = "Hello, I'm Henk Verlinde. I have a deep passion for innovation, fueled by a desire to simplify complex problems and develop practical solutions. I am the founder and CEO at Ventizo and developed the Thulite web framework and the Doks documentation theme."
 images = ["cover.jpg"]
 
 # footer = "Brought to you by <a href=\"https://thulite.io/\">Thulite</a>"
