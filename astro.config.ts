@@ -9,7 +9,7 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://next--henkverlinde.netlify.app/',
+  site: 'https://henkverlinde.com',
   output: 'static',
   integrations: [
     expressiveCode(),
