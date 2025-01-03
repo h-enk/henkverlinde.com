@@ -4,7 +4,6 @@ import expressiveCode from 'astro-expressive-code';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import spectre from './package/src';
-
 import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
@@ -20,21 +19,21 @@ export default defineConfig({
       openGraph: {
         home: {
           title: 'Henk Verlinde',
-          description: 'A minimalistic theme for Astro.'
+          description: 'I have a deep passion for innovation, fueled by a desire to simplify complex problems and develop practical solutions. I am the founder and CEO at Ventizo and developed the Thulite web framework and the Doks documentation theme.'
         },
         blog: {
           title: 'Blog',
-          description: 'News and guides for Spectre.'
+          description: 'News and guides from Henk Verlinde.'
         },
         projects: {
           title: 'Projects'
         }
       },
       giscus: {
-        repository: 'louisescher/spectre',
-        repositoryId: 'R_kgDONjm3ig',
-        category: 'General',
-        categoryId: 'DIC_kwDONjm3is4ClmBF',
+        repository: 'h-enk/henkverlinde.com',
+        repositoryId: 'MDEwOlJlcG9zaXRvcnkyMTkwNDAyNTM=',
+        category: 'Posts',
+        categoryId: 'DIC_kwDODQ5J_c4CeirK',
         mapping: 'pathname',
         strict: true,
         reactionsEnabled: true,
