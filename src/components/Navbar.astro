@@ -4,7 +4,7 @@ import Icon from "./Icon.astro";
 const path = Astro.url.pathname;
 ---
 <nav>
-  <a class="site-title" href="/">Henk Verlinde</a>
+  <a class="site-title" href="/">Spectre</a>
   <ul>
     <li>
       <a href="/blog" class:list={{ active: path === '/blog' }}>Blog</a>
@@ -20,8 +20,8 @@ const path = Astro.url.pathname;
     </li>
   </ul>
   <button class="mobile-nav-toggle">
-    <Icon name="menu" width={24} height={24} class="menu-closed" />
-    <Icon name="x" width={24} height={24} class="menu-open" />
+    <Icon type="lucide" name="menu" width={24} height={24} class="menu-closed" />
+    <Icon type="lucide" name="x" width={24} height={24} class="menu-open" />
   </button>
 </nav>
 <script is:inline>
@@ -120,7 +120,11 @@ const path = Astro.url.pathname;
       `;
     }
 
-    results.classList.toggle('active', search.results.length > 0);
+    if (search.results.length === 0 && e.target.value.length > 0) {
+      results.innerHTML = '<p style="margin-top: 0;">No results found</p>';
+    }
+
+    results.classList.add('active');
   });
 
   navToggle?.addEventListener('click', () => {

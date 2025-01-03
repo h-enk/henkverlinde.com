@@ -37,7 +37,7 @@ const { Content: About } = await render(about!);
 			<ul class="overview-list">
 				{quickInfo.map((info) => (
 					<li>
-						<Icon name={info.data.icon} width={24} height={24} class='glow-icon' />
+						<Icon type={info.data.icon.type} name={info.data.icon.name as any} width={24} height={24} class='glow-icon' />
 						<span>{info.data.text}</span>
 					</li>
 				))}
@@ -49,7 +49,7 @@ const { Content: About } = await render(about!);
 				{socials.map((item) => (
 					<li>
 						<a href={item.data.link} class="socials-link">
-							<Icon name={item.data.icon} width={24} height={24} class='glow-icon' />
+							<Icon type={item.data.icon.type} name={item.data.icon.name as any} width={24} height={24} class='glow-icon' />
 							<span>{item.data.text}</span>
 						</a>
 					</li>
@@ -60,7 +60,7 @@ const { Content: About } = await render(about!);
 	<div class="layout-grid-right" slot="right">
 		<Card>
 			<div class="header-container">
-				<Icon name="user" width={24} height={24} class='glow-icon' />
+				<Icon type='lucide' name="user" width={24} height={24} class='glow-icon' />
 				<h2>About me</h2>
 			</div>
 			<div class="prose">
@@ -69,7 +69,7 @@ const { Content: About } = await render(about!);
 		</Card>
 		<Card>
 			<div class="header-container">
-				<Icon name="rss" width={24} height={24} class='glow-icon' />
+				<Icon type='lucide' name="rss" width={24} height={24} class='glow-icon' />
 				<h2>Latest Posts</h2>
 			</div>
 			<div class="content-container">
@@ -86,7 +86,7 @@ const { Content: About } = await render(about!);
 		</Card>
 		<Card>
 			<div class="header-container">
-				<Icon name="folder-git" width={24} height={24} class='glow-icon' />
+				<Icon type='lucide' name="folder-git" width={24} height={24} class='glow-icon' />
 				<h2>Latest Projects</h2>
 			</div>
 			<div class="content-container">
@@ -103,7 +103,7 @@ const { Content: About } = await render(about!);
 		</Card>
 		<Card>
 			<div class="header-container">
-				<Icon name="briefcase-business" width={24} height={24} class='glow-icon' />
+				<Icon type='lucide' name="briefcase-business" width={24} height={24} class='glow-icon' />
 				<h2>Work Experience</h2>
 			</div>
 			<div class="work-experience-container">

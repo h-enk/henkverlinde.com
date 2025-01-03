@@ -23,6 +23,8 @@ export const getStaticPaths = (async () => {
   return projects.map((project) => ({ params: { project: project.id }, props: { project } }));
 }) satisfies GetStaticPaths;
 
+console.log(project.data.info);
+
 const { Content } = await render(project);
 ---
 <Layout
@@ -42,7 +44,7 @@ const { Content } = await render(project);
           return (
             <li>
               <Tag href={info.link} class='project-info-item'>
-                <Icon name={info.icon} width={24} height={24} class='glow-icon' />
+                <Icon type={info.icon.type} name={info.icon.name as any} width={24} height={24} class='glow-icon' />
                 <span>{info.text}</span>
               </Tag>
             </li>

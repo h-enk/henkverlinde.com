@@ -13,11 +13,11 @@
   "dependencies": {
     "@astrojs/mdx": "^4.0.3",
     "@astrojs/netlify": "^6.0.1",
-    "@astrojs/node": "^9.0.0",
     "@astrojs/sitemap": "^3.2.1",
     "@iconify-json/lucide": "^1.2.20",
+    "@iconify-json/simple-icons": "^1.2.18",
     "@iconify/utils": "^2.2.1",
-    "astro": "^5.1.1",
+    "astro": "^5.1.2",
     "astro-expressive-code": "^0.38.3",
     "sharp": "^0.33.5"
   },
