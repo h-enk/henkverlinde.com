@@ -1,29 +1,30 @@
 ---
 title: "Email Obfuscation: a Simple, Effective Implementation"
-description: "A Hugo shortcode and Astro component for email obfuscation."
+description: "A highly effective technique converted into a Hugo shortcode and Astro component."
 image: "../assets/spectre.png"
 createdAt: 04-08-2024
-updatedAt: 01-03-2025
+updatedAt: 01-04-2025
 draft: false
 tags:
   - guide
 ---
+import Email from '../../components/Email.astro';
 
-The article **Email Obfuscation: What Works in 2024** by Spencer Mortensen[^1] discusses various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods like plain text, HTML entities, CSS display properties, JavaScript techniques, and others, testing their effectiveness in blocking spam.
+The article **Email Obfuscation: What Works in 2024** by Spencer Mortensen[^1] explores various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods such as plain text, HTML entities, CSS display properties, JavaScript techniques, and more, testing their effectiveness in blocking spam.
 
-Some methods, such as CSS `display: none` and certain JavaScript techniques, are found to be highly effective, while others like HTML comments and symbol substitution offer little protection.
+Some methods, such as CSS `display: none` and certain JavaScript techniques, are highly effective, while others, like HTML comments and symbol substitution, offer minimal protection.
 
 ## CSS `display: none`
 
-> This [technique] requires the harvester to interpret style rules contained in a separate stylesheet document. This is impossible for the vast majority of harvesters, which are something less than a full web browser. As a result, this is one of the best obfuscation techniques.
+> Most harvesters are unable to apply style rules, so this is one of the absolute best techniques. Be sure to add *decoy tags* so the harvester won't be able to guess which parts to omit.
 
-Use the following `HTML`:
+Use the following HTML:
 
 ```html
 <span class="email">email@example<b>.example</b>.com</span>
 ```
 
-And the following `CSS`:
+And the following CSS:
 
 ```css
 span.email b {
@@ -31,34 +32,37 @@ span.email b {
 }
 ```
 
-> It's important to use “display: none” to hide elements of the email address, because this is fully supported by all screen readers. Visual-only techniques (such as repositioning part of the text off screen) will prevent everyone except your sighted readers from reaching you.
+Browser:
+
+<Email />
+
+> This [technique] is fully accessible to everyone, including those who depend on a screen reader. But you *must* use `display: none` to hide the text: if you use any visual-only technique (such as shrinking the font size, or repositioning the text off screen), then you'll break accessibility.
 
 ## Hugo Shortcode
 
-For my Hugo websites, I converted this technique into a Hugo shortcode. Here's a step-by-step guide on how I accomplished it.
+For Hugo websites, this technique can be implemented as a shortcode. Here's how:
 
-First, add a default email address to `config/_default/params.toml` — we will use this as a fallback when no email address is specified:
+### Step 1: Configure Default Email Address
+Add a default email address to `config/_default/params.toml` as a fallback:
 
-```toml
+```toml title="params.toml"
 # defaultEmail
 defaultEmail = "email@example.com"
-
 ```
 
-Next, add the CSS  — to `assets/scss/common/_custom.scss` if you're using Hyas:
+### Step 2: Add CSS
+Include the following CSS in `assets/scss/common/_custom.scss`:
 
-```css
+```css title="_custom.scss"
 span.email b {
   display: none;
 }
-
 ```
 
-Then, create the shortcode file:
+### Step 3: Create the Shortcode
+Create a shortcode file at `layouts/shortcodes/email.html`:
 
-```html
-// layouts/shortcodes/email.html
-
+```html title="email.html" {2, 6, 9-10}
 {{- /* Set defaults and get args. */}}
 {{- $address := index .Params 0 | default site.Params.defaultEmail }}
 
@@ -74,18 +78,21 @@ Then, create the shortcode file:
 <span class="email">
   {{- printf "%s@%s<b>.%s</b>.%s" $userName $domainName $domainName $topLevelDomain | safeHTML -}}
 </span>
-
 ```
 
-The shortcode gets the email address you provided — using the default email address if you didn't specify one. Next, it splits the email address in parts — `userName`, `domainName`, and `topLevelDomain` — and renders the HTML.
+This shortcode:
 
-Now, you can use the shortcode in Markdown — using `defaultEmail`:
+- Retrieves the email address you provide, defaulting to the fallback email address if none is specified.
+- Splits the email address into its components: `userName`, `domainName`, and `topLevelDomain`.
+- Generates and renders the appropriate HTML structure for obfuscation.
+
+Now, you can use the shortcode in Markdown with the default email address:
 
 ```md
 {{< email >}}
 ```
 
-Or, by specifying an email address:
+Or specify an email address:
 
 ```md
 {{< email "email@example.com" >}}
@@ -93,36 +100,27 @@ Or, by specifying an email address:
 
 ## Astro Component
 
-I also converted this technique into an Astro component for my Astro websites.
+For Astro websites, this technique can be implemented as a component. Here's how:
 
-First, add a default email address to `src/params.ts` — we will use this as a fallback when no email address is specified:
+### Step 1: Configure Default Email Address
+Add a default email address to `src/params.ts`:
 
-```ts
+```ts title="params.ts"
 export type siteParams = {
     defaultEmail: string;
 };
 
 const siteParams: siteParams = {
     defaultEmail: "email@example.com"
-}
+};
 
 export default siteParams;
-
 ```
 
-Next, add the CSS to `src/styles/global.css`:
+### Step 2: Create the Component
+Create a component file at `src/components/Email.astro`:
 
-```css
-span.email b {
-    display: none;
-}
-
-```
-
-Then, create the component file:
-
-```astro
-// src/components/Email.astro
+```astro title="Email.astro" {5, 9, 12-13}
 ---
 // Set defaults and get args
 import siteParams from '../params';
@@ -140,31 +138,39 @@ const topLevelDomain = rootDomainParts[1];
 
 <!-- Render -->
 <span class="email">{userName}@{domainName}<b>.{domainName}</b>.{topLevelDomain}</span>
-
+<style>
+  span.email b {
+      display: none;
+  }
+</style>
 ```
 
-The component gets the email address you provided — using the default email address if you didn't specify one. Next, it splits the email address in parts — `userName`, `domainName`, and `topLevelDomain` — and renders the HTML.
+This component:
 
-Now, you can use the component in MDX — using `defaultEmail`:
+- Retrieves the email address you provide, defaulting to the fallback email address if none is specified.
+- Splits the email address into its components: `userName`, `domainName`, and `topLevelDomain`.
+- Generates and renders the appropriate HTML structure and CSS for obfuscation.
+
+Now, you can use the component in MDX with the default email address:
 
 ```mdx
-import Email from '../components/Email.astro';
+import Email from '../../components/Email.astro';
 
 <Email />
 ```
 
-Or, by specifying an email address:
+Or specify an email address:
 
 ```mdx
-import Email from '../components/Email.astro';
+import Email from '../../components/Email.astro';
 
 <Email address="email@example.com" />
 ```
 
 ## Conclusion
 
-Spencer Mortensen showed us that some email obfuscation methods, such as CSS `display: none` and certain JavaScript techniques, are found to be highly effective, while others like HTML comments and symbol substitution offer little protection.
+Spencer Mortensen's analysis demonstrates that some email obfuscation methods, such as CSS `display: none` and certain JavaScript techniques, are highly effective, while others, like HTML comments and symbol substitution, offer little protection.
 
-I've explained how to use the CSS `display: none` technique to hide email addresses from spam bots, and showed you how to convert this technique into a Hugo shortcode and an Astro component — I hope you find it useful!
+This guide explained how to use the CSS `display: none` technique to hide email addresses from spam bots and provided steps to implement it as a Hugo shortcode and an Astro component. I hope you find this information helpful in protecting your email addresses from spam!
 
 [^1]: [Email Obfuscation: What Works in 2024](https://spencermortensen.com/articles/email-obfuscation/)
