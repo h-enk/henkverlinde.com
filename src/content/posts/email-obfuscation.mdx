@@ -3,11 +3,12 @@ title: "Email Obfuscation: a Simple, Effective Implementation"
 description: "A highly effective technique converted into a Hugo shortcode and Astro component."
 image: "../assets/email-obfuscation.png"
 createdAt: 04-08-2024
-updatedAt: 01-03-2025
+updatedAt: 01-06-2025
 draft: false
 tags:
   - guide
 ---
+import Card from '../../components/Card.astro';
 import Email from '../../components/Email.astro';
 
 The article **Email Obfuscation: What Works in 2024** by Spencer Mortensen[^1] explores various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods such as plain text, HTML entities, CSS display properties, JavaScript techniques, and more, testing their effectiveness in blocking spam.
@@ -18,13 +19,13 @@ Some methods, such as CSS `display: none` and certain JavaScript techniques, are
 
 > Most harvesters are unable to apply style rules, so this is one of the absolute best techniques. Be sure to add *decoy tags* so the harvester won't be able to guess which parts to omit.
 
-Use the following HTML:
+Include this HTML:
 
 ```html
 <span class="email">email@example<b>.example</b>.com</span>
 ```
 
-And the following CSS:
+And this CSS:
 
 ```css
 span.email b {
@@ -32,9 +33,13 @@ span.email b {
 }
 ```
 
-Browser:
+This renders in the browser as:
+
+<Card>
 
 <Email />
+
+</Card>
 
 > This [technique] is fully accessible to everyone, including those who depend on a screen reader. But you *must* use `display: none` to hide the text: if you use any visual-only technique (such as shrinking the font size, or repositioning the text off screen), then you'll break accessibility.
 
