@@ -47,4 +47,7 @@ export default defineConfig({
     })
   ],
   adapter: netlify(),
+  prefetch: {
+    prefetchAll: true
+  },
 });
