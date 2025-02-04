@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import type { LocalImageProps, RemoteImageProps } from 'astro:assets';
 
 type Props = LocalImageProps | RemoteImageProps;
@@ -11,8 +11,8 @@ const height = props.height;
 ---
 
 <div class="glow-image">
-  <Image {...props} loading='eager' />
-  <Image
+  <Picture {...props} loading='eager' fetchpriority='auto' />
+  <Picture
     width={width ? ((typeof width === 'number' ? width : Number.parseInt(width)) / 4) : undefined} 
     height={height ? ((typeof height === 'number' ? height : Number.parseInt(height)) / 4) : undefined}
     {...props}
@@ -20,6 +20,7 @@ const height = props.height;
     class:list={[props.class]}
     quality={75}
     loading='eager'
+    fetchpriority='auto'
   />
 </div>
 <style>
