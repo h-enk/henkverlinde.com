@@ -11,13 +11,7 @@ const height = props.height;
 ---
 
 <div class="glow-image">
-  <Image
-    {...props}
-    quality={75}
-    format='avif'
-    loading='eager'
-    fetchpriority='auto'
-  />
+  <Image {...props} quality={75} />
   <Image
     width={width ? ((typeof width === 'number' ? width : Number.parseInt(width)) / 4) : undefined} 
     height={height ? ((typeof height === 'number' ? height : Number.parseInt(height)) / 4) : undefined}
@@ -25,9 +19,6 @@ const height = props.height;
     class='glow'
     class:list={[props.class]}
     quality={75}
-    format='avif'
-    loading='eager'
-    fetchpriority='auto'
   />
 </div>
 <style>
