@@ -1,0 +1,84 @@
+---
+title: "Better Plausible Stats for Your Thulite Website"
+description: "Learn how to get more accurate stats for your Thulite website."
+image: "../assets/plausible-thulite.png"
+createdAt: 02-22-2025
+updatedAt: 02-22-2025
+draft: false
+tags:
+  - guide
+  - Plausible
+  - Thulite
+---
+Accurate website analytics are essential for making informed decisions about your site's performance. If you're using Thulite and Plausible Analytics, you can enhance accuracy by properly configuring your setup. Follow these steps to get better Plausible stats for your Thulite website.
+
+## Step 1: Configure Domain
+
+To ensure Plausible tracks your Thulite website correctly, you need to configure your domain settings. Add your domain to `config/_default/params.toml`:
+
+```toml title="params.toml"
+# Third-party services configuration
+[services]
+  [services.plausible]
+    domain = "example.com" # "example.com" (default)
+```
+
+## Step 2: Configure Rewrites
+
+You can improve tracking reliability by proxying Plausible's scripts. If you're using Netlify to host your Thulite site, add the following redirects to `netlify.toml`:
+
+```js title="netlify.toml"
+[[redirects]]
+  from = "/js/script.js"
+  to = "https://plausible.io/js/script.js"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/event"
+  to = "https://plausible.io/api/event"
+  status = 200
+  force = true
+```
+
+If you're using Vercel to host your Thulite site, add the following redirects to `vercel.json`:
+
+```json title="vercel.json"
+{
+  "rewrites": [
+    {
+      "source": "/js/script.js",
+      "destination": "https://plausible.io/js/script.js"
+    },
+    {
+      "source": "/api/event",
+      "destination": "https://plausible.io/api/event"
+    }
+  ]
+}
+```
+
+This setup helps bypass ad blockers and ensures more accurate tracking by routing the analytics requests through your own domain.
+
+## Step 3: Update Head Script
+
+Next, modify the head script to dynamically insert the correct tracking script. Add the following code to `layouts/partials/head/script-header.html`:
+
+```html title="script-header.html"
+{{- if hugo.IsProduction }}
+  {{- $plausibleDomain := site.Params.services.plausible.domain }}
+  <script defer data-domain="{{ $plausibleDomain }}" src="{{ "js/script.js" | absURL }}"></script>
+{{- end }}
+```
+
+This ensures that Plausible is only loaded in production environments, reducing unnecessary script loading during development.
+
+## Conclusion
+
+By configuring Plausible correctly, setting up redirects, and updating the head script, you can significantly improve the accuracy of your website statistics. This approach helps ensure that your Thulite website analytics remain reliable, even in the face of ad blockers and script restrictions.
+
+## Resources
+
+- [Adblockers and using a proxy for analytics](https://plausible.io/docs/proxy/introduction)
+- [Proxying Plausible through Netlify](https://plausible.io/docs/proxy/guides/netlify)
+- [Proxying Plausible through Vercel](https://plausible.io/docs/proxy/guides/vercel)
