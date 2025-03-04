@@ -19,6 +19,7 @@ interface Props {
 }
 
 const { title, description, image, pagefindIgnore, article } = Astro.props;
+const isProduction = import.meta.env.PROD;
 ---
 
 <!DOCTYPE html>
@@ -69,7 +70,7 @@ const { title, description, image, pagefindIgnore, article } = Astro.props;
 		{description && <meta name="twitter:description" content={description} />}
 		<meta name="twitter:image" content={image?.src || '/img/og.png'} />
 
-		<script defer data-domain="henkverlinde.com" src="/js/script.js"></script>
+		{isProduction && <script defer data-domain="henkverlinde.com" src="/js/script.js"></script>}
 	</head>
 	<body>
 		<main data-pagefind-ignore={pagefindIgnore}>
