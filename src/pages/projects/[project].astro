@@ -23,7 +23,26 @@ export const getStaticPaths = (async () => {
   return projects.map((project) => ({ params: { project: project.id }, props: { project } }));
 }) satisfies GetStaticPaths;
 
-console.log(project.data.info);
+// Function to get stars count from GitHub API
+async function getStarsCount(owner: string, repo: string) {
+  try {
+    const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+    const data = await response.json();
+    console.log('GitHub API Response:', data);
+    return data.stargazers_count;
+  } catch (error) {
+    console.error('Error fetching stars:', error);
+    return null;
+  }
+}
+
+let starsCount = null;
+
+if (project.data.owner && project.data.repo) {
+  console.log('Fetching stars for:', project.data.owner, project.data.repo);
+  starsCount = await getStarsCount(project.data.owner, project.data.repo);
+  console.log('Stars count:', starsCount);
+}
 
 const { Content } = await render(project);
 ---
@@ -50,6 +69,14 @@ const { Content } = await render(project);
             </li>
           )
         })}
+        {starsCount !== null && (
+          <li>
+            <a href={`https://github.com/${project.data.owner}/${project.data.repo}/stargazers`} class='project-info-item'>
+              <Icon type="lucide" name="star" width={24} height={24} class='glow-icon' />
+              <span>{starsCount} Stars</span>
+            </a>
+          </li>
+        )}
       </ul>
     </Card>
   </div>

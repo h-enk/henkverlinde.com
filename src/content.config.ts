@@ -77,6 +77,8 @@ const projects = defineCollection({
     date: z.coerce.date(),
     image: image(),
     link: z.string().url().optional(),
+    owner: z.string().optional(),
+    repo: z.string().optional(),
     info: z.array(
       z.object({
         text: z.string(),
