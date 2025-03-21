@@ -49,7 +49,7 @@ export default defineConfig({
     })
   ],
   adapter: netlify({
-    imageCDN: false,
+    imageCDN: true,
   }),
   prefetch: {
     prefetchAll: true
