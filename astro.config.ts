@@ -5,13 +5,15 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import spectre from './package/src';
 
-import netlify from '@astrojs/netlify';
 import { spectreDark } from './src/ec-theme';
+
+import netlify from '@astrojs/netlify';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://henkverlinde.com',
   output: 'static',
+
   integrations: [
     expressiveCode({
       themes: [spectreDark],
@@ -46,7 +48,9 @@ export default defineConfig({
       }
     })
   ],
-  adapter: netlify(),
+  adapter: netlify({
+    imageCDN: false,
+  }),
   prefetch: {
     prefetchAll: true
   },
