@@ -70,10 +70,14 @@ const { Content: About } = await render(about!);
 		<Card>
 			<div class="header-container">
 				<Icon type='lucide' name="rss" width={24} height={24} class='glow-icon' />
-				<h2>Latest Posts</h2>
+				<h2>Featured Posts</h2>
 			</div>
 			<div class="content-container">
-				{posts.sort((a, b) => b.data.createdAt.getTime() - a.data.createdAt.getTime()).slice(0, 2).map((post) => (
+				{posts
+					.filter(post => post.data.featured)
+					.sort((a, b) => a.data.order - b.data.order)
+					.slice(0, 2)
+					.map((post) => (
 					<a href={`/blog/${post.id}`} class="post-container">
 						<div class="post-header">
 							<h3>{post.data.title}</h3>
@@ -87,10 +91,14 @@ const { Content: About } = await render(about!);
 		<Card>
 			<div class="header-container">
 				<Icon type='lucide' name="folder-git" width={24} height={24} class='glow-icon' />
-				<h2>Latest Projects</h2>
+				<h2>Featured Projects</h2>
 			</div>
 			<div class="content-container">
-				{projects.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 2).map((project) => (
+				{projects
+					.filter(project => project.data.featured)
+					.sort((a, b) => a.data.order - b.data.order)
+					.slice(0, 2)
+					.map((project) => (
 					<a href={`/projects/${project.id}`} class="post-container">
 						<div class="post-header">
 							<h3>{project.data.title}</h3>

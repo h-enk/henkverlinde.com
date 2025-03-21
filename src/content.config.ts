@@ -65,6 +65,8 @@ const posts = defineCollection({
       reference("tags")
     ),
     draft: z.boolean().optional().default(false),
+    featured: z.boolean().optional().default(false),
+    order: z.number().optional().default(0),
     image: image(),
   })
 });
@@ -79,6 +81,8 @@ const projects = defineCollection({
     link: z.string().url().optional(),
     owner: z.string().optional(),
     repo: z.string().optional(),
+    featured: z.boolean().optional().default(false),
+    order: z.number().optional().default(0),
     info: z.array(
       z.object({
         text: z.string(),
