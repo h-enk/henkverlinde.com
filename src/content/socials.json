@@ -16,5 +16,14 @@
     },
     "text": "LinkedIn",
     "link": "https://www.linkedin.com/in/henkverlinde"
+  },
+  {
+    "id": 3,
+    "icon": {
+      "type": "simple-icons",
+      "name": "mastodon"
+    },
+    "text": "Mastodon",
+    "link": "https://fosstodon.org/@henkverlinde"
   }
 ]
