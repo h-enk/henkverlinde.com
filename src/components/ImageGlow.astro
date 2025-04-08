@@ -14,8 +14,8 @@ const height = props.height;
   <Image
     {...props}
     loading="eager"
-    widths={[270, 540, 768, 1536]}
-    sizes="(min-width: 860px) 768px, 92.59vw"
+    widths={[578, 841, 1240, 1536, 1600]}
+    sizes="(min-width: 1400px) 841px, (min-width: 660px) calc(95vw - 81px), calc(100vw - 82px)"
   />
   <Image
     width={width ? ((typeof width === 'number' ? width : Number.parseInt(width)) / 4) : undefined} 
