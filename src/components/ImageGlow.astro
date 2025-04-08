@@ -11,7 +11,12 @@ const height = props.height;
 ---
 
 <div class="glow-image">
-  <Image {...props} loading="eager" />
+  <Image
+    {...props}
+    loading="eager"
+    widths={[270, 540, 768, 1536]}
+    sizes="(min-width: 860px) 768px, 92.59vw"
+  />
   <Image
     width={width ? ((typeof width === 'number' ? width : Number.parseInt(width)) / 4) : undefined} 
     height={height ? ((typeof height === 'number' ? height : Number.parseInt(height)) / 4) : undefined}
