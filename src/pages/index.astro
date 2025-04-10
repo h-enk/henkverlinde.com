@@ -32,7 +32,7 @@ const { Content: About } = await render(about!);
 >
 	<div class="layout-grid-left" slot="left">
 		<Card class="flex-col-card">
-			<ImageGlow quality={100} width={ProfilePicture.width / 5} height={ProfilePicture.height / 5} densities={[1.5, 2]} src={ProfilePicture} alt="Henk Verlinde" />
+			<ImageGlow quality={100} width={ProfilePicture.width / 5} densities={[1.5, 2]} src={ProfilePicture} alt="Henk Verlinde" />
 			<h2>{name}</h2>
 			<ul class="overview-list">
 				{quickInfo.map((info) => (
