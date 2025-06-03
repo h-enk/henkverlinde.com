@@ -1,6 +1,4 @@
-import type { AstroConfig } from 'astro';
-
-type VitePlugin = Required<AstroConfig['vite']>['plugins'][number];
+import type { Plugin } from 'vite';
 
 /**
  * Builds a Vite plugin that creates a virtual module.
@@ -15,7 +13,7 @@ export function viteVirtualModulePluginBuilder(
 	name: string,
 	moduleContent: string
 ) {
-	return function modulePlugin(): VitePlugin {
+	return function modulePlugin(): Plugin {
 		const resolvedVirtualModuleId = `\0${moduleId}`; // Prefix with \0 to avoid conflicts
 
 		return {
