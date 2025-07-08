@@ -3,10 +3,10 @@ title: "Email Obfuscation: a Simple, Effective Implementation"
 description: "A highly effective technique converted into a Hugo shortcode and Astro component."
 image: "../assets/email-obfuscation.jpg"
 createdAt: 04-08-2024
-updatedAt: 01-06-2025
+updatedAt: 07-08-2025
 draft: false
-featured: false
-order: 0
+featured: true
+order: 1
 tags:
   - guide
   - Hugo
@@ -15,25 +15,27 @@ tags:
 import Card from '../../components/Card.astro';
 import Email from '../../components/Email.astro';
 
-The article **Email Obfuscation: What Works in 2024** by Spencer Mortensen[^1] explores various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods such as plain text, HTML entities, CSS display properties, JavaScript techniques, and more, testing their effectiveness in blocking spam.
+_Last updated: July 8, 2025_
+
+The article **Email obfuscation: What works in 2025?** by Spencer Mortensen[^1] explores various techniques to hide email addresses from spam bots while keeping them accessible to users. It evaluates methods such as plain text, HTML entities, CSS display properties, JavaScript techniques, and more, testing their effectiveness in blocking spam.
 
 Some methods, such as CSS `display: none` and certain JavaScript techniques, are highly effective, while others, like HTML comments and symbol substitution, offer minimal protection.
 
 ## CSS `display: none`
 
-> Most harvesters are unable to apply style rules, so this is one of the absolute best techniques. Be sure to add *decoy tags* so the harvester won't be able to guess which parts to omit.
+> Most harvesters are unable to apply style rules, so this is one of the absolute best techniques. Be sure to vary the decoy tags so the harvester won’t know which parts to omit.
 
 Include this HTML:
 
 ```html
-<span class="email">email@example<b>.example</b>.com</span>
+<div class="email">email@example.<span>example.</span>com</div>
 ```
 
 And this CSS:
 
 ```css
-span.email b {
-  display: none;
+div.email > span:nth-child(1) {
+	display: none;
 }
 ```
 
@@ -176,10 +178,93 @@ import Email from '../../components/Email.astro';
 <Email address="email@example.com" />
 ```
 
+## Next.js Component
+
+For Next.js websites, this technique can be implemented as a component. Here's how:
+
+### Step 1: Configure Default Email Address
+Add a default email address to `lib/params.ts`:
+
+```ts title="params.ts"
+export type siteParams = {
+    defaultEmail: string;
+};
+
+const siteParams: siteParams = {
+    defaultEmail: "email@example.com"
+};
+
+export default siteParams;
+
+```
+
+### Step 2: Create the Component
+Create a component file at `components/email.tsx`:
+
+```tsx title="email.tsx" {10, 14, 17-18}
+"use client";
+import siteParams from '@/lib/params';
+
+type EmailProps = {
+  address?: string;
+};
+
+export function Email({ address }: EmailProps) {
+  const defaultEmail = siteParams.defaultEmail;
+  const email = address || defaultEmail;
+
+  // Get parts
+  const addressParts = email.split('@');
+  const userName = addressParts[0];
+  const rootDomain = addressParts[1];
+  const rootDomainParts = rootDomain.split('.');
+  const domainName = rootDomainParts[0];
+  const topLevelDomain = rootDomainParts[1];
+
+  return (
+    <>
+      <span className="email">
+        {userName}@{domainName}
+        <b>.{domainName}</b>.{topLevelDomain}
+      </span>
+      <style jsx>{`
+        span.email b {
+          display: none;
+        }
+      `}</style>
+    </>
+  );
+}
+
+export default Email;
+```
+
+This component:
+
+- Retrieves the email address you provide, defaulting to the fallback email address if none is specified.
+- Splits the email address into its components: `userName`, `domainName`, and `topLevelDomain`.
+- Generates and renders the appropriate HTML structure and CSS for obfuscation.
+
+Now, you can use the component in MDX with the default email address:
+
+```mdx
+import { Email } from '@/components/email';
+
+<Email />
+```
+
+Or specify an email address:
+
+```mdx
+import { Email } from '@/components/email';
+
+<Email address="email@example.com" />
+```
+
 ## Conclusion
 
 Spencer Mortensen's analysis demonstrates that some email obfuscation methods, such as CSS `display: none` and certain JavaScript techniques, are highly effective, while others, like HTML comments and symbol substitution, offer little protection.
 
-This guide explained how to use the CSS `display: none` technique to hide email addresses from spam bots and provided steps to implement it as a Hugo shortcode and an Astro component. I hope you find this information helpful in protecting your email addresses from spam!
+This guide explained how to use the CSS `display: none` technique to hide email addresses from spam bots and provided steps to implement it as a Hugo shortcode, an Astro component, and a Next.js component. I hope you find this information helpful in protecting your email addresses from spam!
 
-[^1]: [Email Obfuscation: What Works in 2025](https://spencermortensen.com/articles/email-obfuscation/)
+[^1]: [Email obfuscation: What works in 2025?](https://spencermortensen.com/articles/email-obfuscation/)
