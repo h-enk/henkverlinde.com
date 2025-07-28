@@ -1,0 +1,5 @@
+{
+  "origins": ["https://henkverlinde.com", "https://giscus.app"],
+  "originsRegex": ["https://deploy-preview-.*--henkverlinde.netlify.app", "http://localhost:[0-9]+"],
+  "defaultCommentOrder": "oldest"
+}
