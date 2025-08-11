@@ -20,7 +20,7 @@ const path = Astro.url.pathname;
       <div id="search-results"></div>
     </li>
   </ul>
-  <button class="mobile-nav-toggle" aria-label="Main Navigation">
+  <button class="mobile-nav-toggle">
     <Icon type="lucide" name="menu" width={24} height={24} class="menu-closed" />
     <Icon type="lucide" name="x" width={24} height={24} class="menu-open" />
   </button>
@@ -70,16 +70,26 @@ const path = Astro.url.pathname;
     }
   });
 
-  searchElement?.addEventListener('focus', () => {
+  let pagefindInitialized = false;
+
+  searchElement?.addEventListener('focus', async () => {
     searchElement.placeholder = '';
     results.classList.add('active');
+    
+    // initialize pagefind on first focus
+    if (!pagefindInitialized) {
+      try {
+        window.pagefind = await import("/pagefind/pagefind.js");
+        await window.pagefind.init();
+        pagefindInitialized = true;
+      } catch (error) {
+        console.error('Failed to initialize Pagefind:', error);
+      }
+    }
   });
-
+  
   searchElement?.addEventListener('blur', () => {
-    searchElement.placeholder = 'Search (Ctrl+K)';
-  });
-
-  searchElement?.addEventListener('blur', () => {
+    handleTabletChange();
     setTimeout(() => {
       if (!document.activeElement?.closest('#search-results')) {
         results.classList.remove('active');
@@ -96,13 +106,13 @@ const path = Astro.url.pathname;
   });
 
   searchElement?.addEventListener('input', async (e) => {
-    if (e.target.dataset.loaded !== 'true') {
-      e.target.dataset.loaded = 'true';
-
-      window.pagefind = await import("/pagefind/pagefind.js");
+    // only search if Pagefind is ready
+    if (!pagefindInitialized) {
+      return;
     }
 
     results.innerHTML = '';
+    let searchResultHtml = '';
 
     const search = await window.pagefind.search(e.target.value);
 
@@ -112,7 +122,7 @@ const path = Astro.url.pathname;
 
       const data = await result.data();
       
-      results.innerHTML += `
+      searchResultHtml += `
         <a href="${data.url}">
           <h3 class="no-mt">${data.meta.title}</h3>
           <p>${data.excerpt}</p>
@@ -123,6 +133,8 @@ const path = Astro.url.pathname;
 
     if (search.results.length === 0 && e.target.value.length > 0) {
       results.innerHTML = '<p style="margin-top: 0;">No results found</p>';
+    } else {
+      results.innerHTML = searchResultHtml;
     }
 
     results.classList.add('active');
