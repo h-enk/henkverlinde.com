@@ -1,96 +1,53 @@
-import { file, glob } from "astro/loaders";
-import { defineCollection, z, reference } from "astro:content";
-import type { icons as lucideIcons } from '@iconify-json/lucide/icons.json';
-import type { icons as simpleIcons } from '@iconify-json/simple-icons/icons.json';
+import { glob } from 'astro/loaders';
+import { defineCollection, z, type ImageFunction } from 'astro:content';
 
-const other = defineCollection({
-  loader: glob({ base: "src/content/other", pattern: "**/*.{md,mdx}" }),
+const imageSchema = (image: ImageFunction) =>
+    z.object({
+        src: image(),
+        alt: z.string().optional()
+    });
+
+const seoSchema = (image: ImageFunction) =>
+    z.object({
+        title: z.string().min(5).max(120).optional(),
+        description: z.string().min(15).max(160).optional(),
+        image: imageSchema(image).optional(),
+        pageType: z.enum(['website', 'article']).default('website')
+    });
+
+const blog = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            excerpt: z.string().optional(),
+            publishDate: z.coerce.date(),
+            updatedDate: z.coerce.date().optional(),
+            isFeatured: z.boolean().default(false),
+            tags: z.array(z.string()).default([]),
+            seo: seoSchema(image).optional()
+        })
 });
 
-const lucideIconSchema = z.object({
-  type: z.literal("lucide"),
-  name: z.custom<keyof typeof lucideIcons>(),
-});
-
-const simpleIconSchema = z.object({
-  type: z.literal("simple-icons"),
-  name: z.custom<keyof typeof simpleIcons>(),
-});
-
-const quickInfo = defineCollection({
-  loader: file("src/content/info.json"),
-  schema: z.object({
-    id: z.number(),
-    icon: z.union([lucideIconSchema, simpleIconSchema]),
-    text: z.string(),
-  })
-});
-
-const socials = defineCollection({
-  loader: file("src/content/socials.json"),
-  schema: z.object({
-    id: z.number(),
-    icon: z.union([lucideIconSchema, simpleIconSchema]),
-    text: z.string(),
-    link: z.string().url(),
-  })
-});
-
-const workExperience = defineCollection({
-  loader: file("src/content/work.json"),
-  schema: z.object({
-    id: z.number(),
-    title: z.string(),
-    company: z.string(),
-    duration: z.string(),
-    description: z.string(),
-  })
-});
-
-const tags = defineCollection({
-  loader: file("src/content/tags.json"),
-  schema: z.object({
-    id: z.string()
-  })
-});
-
-const posts = defineCollection({
-  loader: glob({ base: "src/content/posts", pattern: "**/*.{md,mdx}" }),
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    createdAt: z.coerce.date(),
-    updatedAt: z.coerce.date().optional(),
-    description: z.string(),
-    tags: z.array(
-      reference("tags")
-    ),
-    draft: z.boolean().optional().default(false),
-    featured: z.boolean().optional().default(false),
-    order: z.number().optional().default(0),
-    image: image(),
-  })
+const pages = defineCollection({
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/pages' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            seo: seoSchema(image).optional()
+        })
 });
 
 const projects = defineCollection({
-  loader: glob({ base: "src/content/projects", pattern: "**/*.{md,mdx}" }),
-  schema: ({ image }) => z.object({
-    title: z.string(),
-    description: z.string(),
-    date: z.coerce.date(),
-    image: image(),
-    link: z.string().url().optional(),
-    owner: z.string().optional(),
-    repo: z.string().optional(),
-    featured: z.boolean().optional().default(false),
-    order: z.number().optional().default(0),
-    info: z.array(
-      z.object({
-        text: z.string(),
-        icon: z.union([lucideIconSchema, simpleIconSchema]),
-        link: z.string().url().optional(),
-      })
-    )
-  })
+    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/projects' }),
+    schema: ({ image }) =>
+        z.object({
+            title: z.string(),
+            description: z.string().optional(),
+            publishDate: z.coerce.date(),
+            isFeatured: z.boolean().default(false),
+            seo: seoSchema(image).optional()
+        })
 });
 
-export const collections = { tags, posts, projects, other, quickInfo, socials, workExperience };
+export const collections = { blog, pages, projects };

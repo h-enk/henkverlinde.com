@@ -1,21 +1,11 @@
 [build]
+  command = "bun run build"
   publish = "dist"
+  functions = "functions"
 
 [build.environment]
-  NODE_VERSION = "22.15.0"
-  NPM_VERSION = "10.9.2"
-
-[context.production]
-  command = "bun run build"
-
-[context.deploy-preview]
-  command = "bun run build"
-
-[context.branch-deploy]
-  command = "bun run build"
-
-[context.next]
-  command = "bun run build"
+  NODE_VERSION = "22.20.0"
+  NPM_VERSION = "10.9.3"
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
@@ -37,12 +27,11 @@
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
-    Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' data:; script-src 'self' https://plausible.io/js/script.js https://giscus.app 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://giscus.app 'unsafe-inline'; frame-src 'self' https://giscus.app"
+    # Content-Security-Policy = "default-src 'self'; manifest-src 'self'; connect-src 'self' https://plausible.io/api/event; font-src 'self'; img-src 'self' data:; script-src 'self' https://plausible.io/js/script.js 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; frame-src 'self'"
     X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin"
     Permissions-Policy = "geolocation=(self), microphone=(), camera=()"
     Cache-Control= '''
     public,
-    max-age=31536000,
-    immutable'''
+    max-age=31536000'''
     Access-Control-Allow-Origin = "*"
