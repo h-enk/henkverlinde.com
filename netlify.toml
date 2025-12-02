@@ -9,6 +9,30 @@
 
 # Redirects and rewrites — https://docs.netlify.com/routing/redirects/#syntax-for-the-netlify-configuration-file
 [[redirects]]
+  from = "/blog/email-obfuscation/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/diataxis-doks/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/plausible-thulite/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/blog/starlight-navbar-links/"
+  to = "/blog/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/js/script.js"
   to = "https://plausible.io/js/script.js"
   status = 200
