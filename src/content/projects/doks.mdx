@@ -1,70 +1,74 @@
 ---
-title: Doks
-date: 04-10-2024
-description: Doks is a full-featured documentation theme for the Thulite web framework.
-image: ../assets/doks.jpg
-owner: thuliteio
-repo: doks
-featured: true
-order: 1
-info:
-  - text: GitHub
-    link: https://github.com/thuliteio/doks
-    icon:
-      type: lucide
-      name: github
-  - text: Website
-    link: https://getdoks.org/
-    icon:
-      type: lucide
-      name: globe
-  - text: Preview
-    link: https://doks.netlify.app/
-    icon:
-      type: lucide
-      name: eye
+title: "Doks: Modern Documentation Theme for the Web"
+description: Build fast, clear, and scalable documentation with Doks — a modern documentation theme designed for developers and growing organizations.
+publishDate: '2025-12-01T15:41:35+01:00'
+isFeatured: true
+seo:
+  image:
+    src: '@images/anton-maksimov-5642-su-FRGUZxB0Aqo-unsplash.jpg'
 ---
+import Button from '@components/Button.astro';
+import myImage from "@images/anton-maksimov-5642-su-FRGUZxB0Aqo-unsplash.jpg";
+import { Picture } from 'astro:assets';
 
-Doks is a full-featured documentation theme for the [Thulite web framework](/projects/thulite).
+<Picture
+    src={myImage}
+    formats={['avif', 'webp']}
+    alt={frontmatter.seo.image.alt || 'Hero image'}
+    loading="eager"
+    widths={[270, 768, 984, 1152]}
+    sizes="(min-width: 860px) 768px, 92.59vw"
+    quality={75}
+/>
 
-## Features
+**Role:** Creator & Maintainer  
+**Focus:** Documentation theme, open-source tooling, developer-friendly workflows
 
-- Minimal layout
-- Easy-to-read typography
-- Full text search powered by [FlexSearch](https://github.com/nextapps-de/flexsearch)
-- Supports dark mode and/or light mode
-- Code highlighting
-- Blog pages
-- Internationalization support
-- Versioning support
-- Fully customizable
-- Easy to use and extend
-- Developer friendly
-- Community driven
+## Overview
 
-## Thulite powered
+Doks is a modern documentation theme built on top of Thulite, designed to help developers and organizations create fast, secure, and SEO-ready documentation sites with ease. It combines performance, accessibility, and flexibility to support knowledge bases, project documentation, and documentation-driven websites.
 
-- Fully optimized for speed
-- Built-in security features
-- SEO friendly
-- Solid and flexible architecture
+## Challenge
 
-## Thulite integrations
+Documentation sites often struggle with similar issues:
 
-- [Images](/projects/images)
-- [SEO](/projects/seo)
-- [Inline SVG](/projects/inline-svg)
+- Slow performance or heavy front-end footprints
+- Inconsistent SEO and accessibility
+- Complex setup involving multiple tools and integrations
+- Limited flexibility for customization or scaling
+- High maintenance overhead as documentation grows
 
-## Acclaim
+The goal was to create a theme that delivers **speed, structure, and developer-friendly workflows out of the box**, without sacrificing customization or long-term maintainability.
 
-What others are saying about Doks:
 
-> Doks is a breakthough — thanks for maintaining it!
+## Solution
 
-> Simple, fast, and elegant.
+Doks addresses these challenges through a set of carefully designed features:
 
-> Excellent work!
+- **Performance-first architecture:** Fast static generation, minimal unused CSS/JS, and optimized loading deliver consistently high Lighthouse scores.
+- **SEO, accessibility, and security by default:** Sensible defaults help documentation sites meet modern web standards without additional configuration.
+- **Built on modern tooling:** Powered by Thulite, Hugo, npm, and Bootstrap — enabling familiar workflows, flexible styling, and stable builds.
+- **Purpose-built for documentation:** Full-text search, dark mode, versioning, internationalization, code highlighting, and structured content layouts.
+- **Flexible deployment:** Static-site architecture allows deployment on Netlify, Vercel, GitHub Pages, or any static host with minimal setup.
 
-## Full documentation
+## Results & Impact
 
-Step-by-step instructions to get started with Doks can be found in the [documentation](https://getdoks.org/docs/start-here/getting-started/).
+- **Faster documentation launches:** Teams can create complete documentation sites in minutes using ready-made templates and tooling.
+- **High-performance user experience:** Visitors benefit from fast load times, consistent navigation, and reliable content structure.
+- **Long-term maintainability:** Modern tooling and SCSS-based theming make it easy to maintain and customize documentation over time.
+- **Adoption and community growth:** As an open-source project, Doks provides a shared foundation for developers and organizations to build upon and contribute to.
+
+## Key Features
+
+- Quick start using `npm create thulite@latest -- --template doks`
+- Built-in SEO, accessibility, performance, and security
+- Documentation, blog, and landing page layouts
+- Theming via SCSS variables and Bootstrap customization
+- Full-text search, versioning, i18n, and code highlighting
+- Deploy anywhere static sites are supported
+
+## Conclusion
+
+Doks reflects a commitment to **practical, future-ready documentation**. It provides a solid foundation for creating robust, performant documentation sites that are easy to build, maintain, and scale. With Doks, documentation becomes not just an afterthought, but a core part of a project's workflow.
+
+<Button class="mt-4" href="https://getdoks.org/">Visit website</Button>

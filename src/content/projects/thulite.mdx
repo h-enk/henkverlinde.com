@@ -1,38 +1,69 @@
 ---
-title: Thulite
-date: 03-29-2024
-description: Thulite is a web framework designed for speed, security, and SEO.
-image: ../assets/thulite.jpg
-owner: thuliteio
-repo: thulite
-featured: true
-order: 2
-info:
-  - text: GitHub
-    link: https://github.com/thuliteio/thulite
-    icon:
-      type: lucide
-      name: github
-  - text: Website
-    link: https://thulite.io/
-    icon:
-      type: lucide
-      name: globe
+title: "Thulite: A Modern Web Framework"
+description: Build fast, flexible, and SEO-optimized websites with Thulite — a modern web framework designed for developers and modern organizations.
+publishDate: '2025-12-01T15:42:07+01:00'
+isFeatured: true
+seo:
+  image:
+    src: '@images/anton-maksimov-5642-su-bY71Mim2DNA-unsplash.jpg'
 ---
+import Button from '@components/Button.astro';
+import myImage from "@images/anton-maksimov-5642-su-bY71Mim2DNA-unsplash.jpg";
+import { Picture } from 'astro:assets';
 
-Thulite is a web framework designed for speed, security, and SEO — all powered by [Hugo](https://gohugo.io/) and [npm](https://npmjs.com). With Thulite, it's super easy to build content-driven websites — like blogs, marketing, and e-commerce — that are production-ready out of the box. If you need a website that loads fast, is max secure, and has great SEO, then Thulite is for you.
+<Picture
+    src={myImage}
+    formats={['avif', 'webp']}
+    alt={frontmatter.seo.image.alt || 'Hero image'}
+    loading="eager"
+    widths={[270, 768, 984, 1152]}
+    sizes="(min-width: 860px) 768px, 92.59vw"
+    quality={75}
+/>
 
-## Features
+**Role**: Creator & Lead Developer  
+**Focus**: Web framework, open-source tools, developer productivity
 
-- Fully optimized for speed and SEO: [100/100 Lighthouse score](https://googlechrome.github.io/lighthouse/viewer/?gist=ec8db37422805152dd936fec5de6a247)
-- Built-in security features: [A+ on HTTP Observatory](https://developer.mozilla.org/en-US/observatory/analyze?host=thuliteio.netlify.app)
-- Solid and flexible architecture
-- Easy to use and extend
-- Fully customizable
-- Deploy anywhere
-- Developer friendly
-- Community driven
+## Overview
 
-## Full documentation
+Thulite is a modern web framework designed to combine the speed and reliability of static-site generation with the flexibility of contemporary development stacks. It enables developers and organizations to build fast, secure, and SEO-optimized websites efficiently.
 
-Step-by-step instructions to get started with Thulite can be found in the [documentation](https://docs.thulite.io/getting-started/).
+Launched as an open-source project, Thulite reflects a decade of experience in building digital products and frameworks that prioritize performance, scalability, and usability.
+
+## Challenge
+
+Many teams and individuals face trade-offs when building modern websites:
+
+- Static sites offer speed but often lack flexibility.
+- Dynamic frameworks provide flexibility but can be complex and slow.
+- Security and SEO require significant additional configuration.
+
+The challenge was to create a framework that eliminates these trade-offs, providing a high-performance, secure, SEO-ready foundation without sacrificing developer control or flexibility.
+
+## Solution
+
+Thulite addresses these challenges through:
+
+- **Performance by design**: Built on static-site generation via Hugo for fast load times and excellent Core Web Vitals.
+- **Security & SEO defaults**: Out-of-the-box configuration ensures robust security and SEO optimization.
+- **Developer flexibility**: Full npm integration allows developers to use familiar tools, frameworks, and build processes.
+- **Universal deployment**: Projects can be deployed on Netlify, Vercel, GitHub Pages, or any static hosting platform.
+
+## Results / Impact
+
+- **Faster development**: Developers can scaffold fully functional websites quickly with minimal setup.
+- **Consistent performance**: Sites built with Thulite deliver optimized page speed and reliability out of the box.
+- **Open-source collaboration**: Accessible to the community, enabling contribution, adaptation, and customization.
+
+## Key Features
+
+- Easy project scaffolding: `npm create thulite@latest`
+- Built-in SEO, image handling, and static site optimization
+- Flexible templates for blogs, portfolios, corporate sites, and documentation
+- Minimal infrastructure requirements while maintaining high performance
+
+## Conclusion
+
+Thulite reflects a focus on practical, future-ready innovation, bridging the gap between speed, flexibility, and developer productivity. It empowers organizations and developers to build modern web experiences efficiently, reliably, and sustainably.
+
+<Button class="mt-4" href="https://thulite.io/">Visit website</Button>
