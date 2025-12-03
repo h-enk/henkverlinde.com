@@ -12,8 +12,18 @@ seo:
     src: '@images/anton-maksimov-5642-su-_B91iuCTlQM-unsplash.jpg'
     alt: Abstract black and white light painting with curved and vertical streaks on a dark background
 ---
+import myImage from "@images/anton-maksimov-5642-su-_B91iuCTlQM-unsplash.jpg";
+import { Picture } from 'astro:assets';
 
-![Abstract black and white light painting with curved and vertical streaks on a dark background](@images/anton-maksimov-5642-su-_B91iuCTlQM-unsplash.jpg)
+<Picture
+    src={myImage}
+    formats={['avif', 'webp']}
+    alt={frontmatter.seo.image.alt || 'Hero image'}
+    priority
+    widths={[270, 768, 984, 1152]}
+    sizes="(min-width: 860px) 768px, 92.59vw"
+    quality={75}
+/>
 
 When most people think of digital innovation, the first thing that comes to mind is technology—new software, AI tools, or cloud platforms. But the reality is more nuanced. Technology alone does not drive meaningful innovation. True digital innovation happens at the intersection of strategy, culture, and technology, creating measurable business impact while transforming the way organizations operate.
 
