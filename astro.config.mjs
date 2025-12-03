@@ -17,7 +17,7 @@ export default defineConfig({
             page !== 'https://henkverlinde.com/newsletter/success/',
     })],
     adapter: netlify({
-        imageCDN: true,
+        imageCDN: false,
     }),
     prefetch: {
         prefetchAll: true
