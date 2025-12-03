@@ -15,7 +15,7 @@ import { Picture } from 'astro:assets';
     src={myImage}
     formats={['avif', 'webp']}
     alt={frontmatter.seo.image.alt || 'Hero image'}
-    loading="eager"
+    priority
     widths={[270, 768, 984, 1152]}
     sizes="(min-width: 860px) 768px, 92.59vw"
     quality={75}
