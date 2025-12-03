@@ -23,7 +23,7 @@ if (!subscribe?.enabled || !subscribe?.form?.action) {
         name="newsletter"
         class:list={['flex w-full max-w-xl flex-col gap-3.5 sm:flex-row', { 'mt-6': subscribe.title || subscribe.text }]}
     >
-        <input name="name" type="text" class="sr-only" placeholder="Name" aria-label="Name" />
+        <input name="name" type="text" class="sr-only" placeholder="Name" aria-label="Name" autocomplete="off" />
         <input
             type="email"
             name={subscribe.form.emailFieldName || 'email'}
