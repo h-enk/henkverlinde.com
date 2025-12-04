@@ -25,29 +25,29 @@ const siteConfig: SiteConfig = {
         },
         {
             text: 'Projects',
-            href: '/projects'
+            href: '/projects/'
         },
         {
             text: 'Blog',
-            href: '/blog'
+            href: '/blog/'
         },
         {
             text: 'About',
-            href: '/about'
+            href: '/about/'
         },
         {
             text: 'Contact',
-            href: '/contact'
+            href: '/contact/'
         }
     ],
     footerNavLinks: [
         {
             text: 'Privacy Policy',
-            href: '/privacy'
+            href: '/privacy/'
         },
         {
             text: 'Terms of Service',
-            href: '/terms'
+            href: '/terms/'
         }
     ],
     socialLinks: [
@@ -81,7 +81,7 @@ const siteConfig: SiteConfig = {
         actions: [
             {
                 text: 'Get in Touch',
-                href: '/contact'
+                href: '/contact/'
             }
         ]
     },
@@ -90,7 +90,7 @@ const siteConfig: SiteConfig = {
         title: 'Get the Monthly Update',
         text: 'One email. Clear insights. No noise.',
         form: {
-            action: '/newsletter/success',
+            action: '/newsletter/success/',
         }
     },
     postsPerPage: 8,

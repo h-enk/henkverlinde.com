@@ -9,6 +9,7 @@ import netlify from '@astrojs/netlify';
 // https://astro.build/config
 export default defineConfig({
     site: siteConfig.website,
+    trailingSlash: 'always',
     vite: {
         plugins: [tailwindcss()]
     },
