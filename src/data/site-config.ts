@@ -71,7 +71,7 @@ const siteConfig: SiteConfig = {
         /*
         text: "**Henk Verlinde** is the Founder & CEO and Digital Innovation Lead at Ventizo, building open-source tools and digital solutions that empower developers and organizations. With a background in international banking and an MSc in Economics and Business, he turns ideas into practical, future-ready innovation.",
         */
-        text: "I'm the Founder & CEO at Ventizo, where I build open-source tools and digital solutions that empower developers and organizations. With a background in international banking and an MSc in Economics and Business, I focus on turning ideas into practical, future-ready innovation.",
+        text: "I'm the Founder & CEO at <a href=\"https://ventizo.com/\">Ventizo</a>, where I build open-source tools and digital solutions that empower developers and organizations. With a background in international banking and an MSc in Economics and Business, I focus on turning ideas into practical, future-ready innovation.",
         /*
         image: {
             src: hero,
