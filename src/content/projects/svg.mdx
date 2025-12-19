@@ -1,5 +1,5 @@
 ---
-title: "Thulite Inline SVG: Seamless SVG Integration for Thulite Sites"
+title: "Thulite Inline SVG"
 description: Embed, style, and manage scalable, accessible SVGs effortlessly with Thulite Inline SVG — a developer-friendly integration for modern Thulite websites.
 publishDate: '2025-12-01T15:41:01+01:00'
 isFeatured: false
@@ -21,51 +21,8 @@ import { Picture } from 'astro:assets';
     quality={75}
 />
 
-**Role:** Creator & Maintainer  
-**Focus:** Inline SVG support, optimized vector graphics, developer-friendly asset workflows
+**Thulite Inline SVG** is the official inline SVG integration for the Thulite web framework, enabling seamless embedding and control of SVG graphics within your site. It provides Hugo templates and rendering utilities that make it easy to include SVG files directly in your HTML with customizable attributes, accessible titles/descriptions, and optional fallback icon support.
 
-## Overview
-
-Thulite Inline SVG is the official SVG integration for the Thulite framework. It enables developers to embed, style, and manage SVG assets directly in HTML — delivering scalable vector graphics with full control over accessibility, styling, and performance.
-
-## Challenge
-
-When using SVGs in web projects, developers often run into several issues:
-
-- Embedding SVGs as images (`<img>`) limits styling and scalability, and often prevents fine-grained control over colors, states, or CSS-based interactions.
-- Managing responsive SVGs or sprites for icons and logos can become cumbersome and error-prone.
-- Ensuring accessibility (with titles, descriptions, ARIA attributes) while keeping markup clean and maintainable is often overlooked.
-- Without inline support, SVGs may end up as external assets — harder to version, modify, or integrate with build pipelines and theming systems.
-
-The goal was to create a seamless, developer-friendly way to integrate SVGs in Thulite projects — combining flexibility, maintainability, performance, and accessibility.
-
-## Solution
-
-Thulite Inline SVG addresses these challenges by offering:
-
-- **Native inline SVG support:** Install via `npm install @thulite/inline-svg`, then embed SVGs directly in HTML templates or Markdown using Hugo-based templates — giving full control over SVG markup and styling.
-- **Flexible asset management:** SVGs can be managed as part of the project's asset pipeline — benefiting from version control, theming, and build tooling just like other web assets.
-- **Styling and theming control:** Inline SVG markup means you can style shapes, paths, fills, strokes — adapt icons or illustrations to themes, color schemes, or dark/light mode using CSS or SCSS.
-- **Accessibility and semantics:** Support for `title`, `desc`, `role`, ARIA labels, and proper attribute handling — ensuring SVGs remain accessible and semantically correct for screen readers and assistive technologies.
-- **Performance and optimization-friendly:** SVGs remain vector, lightweight, and scalable without multiple raster variants; inlining avoids extra HTTP requests and simplifies asset delivery. This aligns with Thulite's overarching mission of performance and simplicity.
-
-## Results & Impact
-
-- **Full control over graphics:** Developers and designers can now treat SVGs like code — versioned, themeable, and fully stylable — rather than as static image assets.
-- **Simplified icon and asset workflow:** Icons, logos, and illustrations can be embedded directly — no need for sprite sheets or complex build scripts.
-- **Better accessibility and semantics:** Inline SVGs allow for semantic markup and accessible metadata (titles/descriptions), improving UX for assistive tool users.
-- **Consistent performance and maintainability:** Site graphics remain lightweight and scalable; artwork is easier to maintain over time since SVG code stays in the repo.
-- **Seamless integration with Thulite ecosystem:** Works alongside other Thulite integrations (like Images, SEO, themes) — giving a unified stack for building high-quality, modern websites.
-
-## Key Features
-
-- Installable via npm: `npm install @thulite/inline-svg@latest`
-- Inline embedding in HTML / Hugo templates or Markdown — full control over markup and attributes
-- Support for accessibility metadata (title, description, ARIA attributes)
-- Compatible with Thulite themes and build pipelines — works out-of-the-box with popular integrations and static-site workflows
-
-## Conclusion
-
-Thulite Inline SVG embodies the core philosophy behind Thulite: practical, performant, and developer-focused tools that make everyday web development safer, easier, and more powerful. By enabling inline SVG support with accessibility, theming, and build integration, it turns vector graphics from a “nice-to-have” into a managed, maintainable part of any modern website built with Thulite.
+Designed for flexibility and performance, this integration helps developers enhance visuals in Thulite projects while maintaining full control over styling and accessibility. Whether you're adding icons, illustrations, or custom graphics, Thulite Inline SVG simplifies SVG workflow with a lightweight, developer-friendly approach.
 
 <Button class="mt-4" href="https://svg.thulite.io/">Visit website</Button>

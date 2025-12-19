@@ -1,6 +1,6 @@
 ---
-title: "Thulite Images: Optimized Image Handling for Thulite Sites"
-description: Optimize and deliver fast, responsive, and high-quality images with Thulite Images — a developer-friendly integration for modern Thulite sites.
+title: "Thulite Images"
+description: Optimize and deliver fast, responsive, and high-quality images with Thulite Images — a developer-friendly integration for Thulite sites.
 publishDate: '2025-12-01T15:41:27+01:00'
 isFeatured: true
 seo:
@@ -21,53 +21,8 @@ import { Picture } from 'astro:assets';
     quality={75}
 />
 
-**Role:** Creator & Maintainer  
-**Focus:** Image performance, responsive media, developer-friendly integrations
+**Thulite Images** is an official image performance integration for the Thulite web framework, designed to help developers deliver fast, optimized images with minimal effort. It includes powerful render hooks, shortcodes (`picture`, `img`, `figure`), and automatic features like responsive `sizes` and blurred LQIP placeholders to improve page load performance and visual experience.
 
-## Overview
-
-Thulite Images is the official image-handling integration for Thulite. It brings optimized image loading, responsive sources, and built-in performance defaults — enabling developers and organizations to deliver media-rich content while keeping pages fast, SEO-ready, and accessible.
-
-## Challenge
-
-Websites often face trade-offs when serving images:
-
-- Large images or naive image loading slow down page load times.
-- Responsive requirements (different screen sizes, retina displays) require complex srcset and sizes logic.
-- Lazy-loading, decoding hints, efficient formats — all add configuration and maintenance overhead.
-- Maintaining image quality, SEO, and performance while keeping developer experience smooth is hard.
-
-The goal was to create a seamless image solution for Thulite that handles all these concerns automatically — so developers can focus on content, not performance tuning.
-
-## Solution
-
-Thulite Images solves these challenges with:
-
-- **Smart defaults for performance & loading:** Automatic `srcset`, responsive sizes, lazy-loading, decoding and fetch-priority hints.
-- **Flexible resource management:** Support for images as page resources, global resources, or even remote resources — giving developers freedom in how they organize assets.
-- **Responsive rendering via shortcodes/partials:** Use simple Markdown syntax or dedicated `img`, `picture`, or `figure` shortcodes/partials — no manual markup required.
-- **Progressive image delivery:** Built-in low-quality image placeholder (LQIP) support for blurred-up image previews, improving perceived performance and user experience.
-- **Easy integration and configuration:** Install via npm/yarn/pnpm, mount the integration in your configuration, and optionally customize defaults (widths, sizes, loading, decoding, etc.) to suit your project needs.
-
-## Results & Impact
-
-- **Faster page loads:** Images are optimized and delivered efficiently, improving Core Web Vitals and overall site performance.
-- **Responsive and high-quality media delivery:** Sites look great on all devices — from mobile to desktop — without manual configuration for each image.
-- **Developer-friendly workflow:** No need to write complex markup or manage multiple image versions manually; the integration handles it automatically.
-- **Better maintainability:** With a consistent image handling setup built into Thulite, long-term maintenance of media-heavy sites becomes simpler and more reliable.
-- **Flexibility across projects:** Works with any Thulite site — blogs, documentation sites, marketing pages, portfolios — regardless of build configuration.
-
-## Key Features
-
-- Quick setup: install via `npm install @thulite/images` (or yarn/pnpm) and mount the integration.
-- Use simple Markdown or built-in shortcodes/partials (`img`, `picture`, `figure`) to embed images.
-- Automatic responsive `srcset`, `sizes`, and optimized image delivery
-- Lazy-loading, decoding, and fetch-priority optimization out of the box
-- Low-quality image placeholder (LQIP) support for progressive image loading and better UX
-- Flexible resource handling (local page resources, global assets, remote sources)
-
-## Conclusion
-
-Thulite Images brings together performance, flexibility, and developer convenience — transforming image management from a common bottleneck into a seamless part of the development workflow. It embodies the same philosophy as Thulite: practical, future-ready tools that help developers and organizations deliver fast, reliable, and high-quality web experiences.
+With easy configuration and support for images as page, global, or remote resources, Thulite Images makes it simple to enhance your site's visuals while keeping performance and best practices at the forefront. Whether you're building blogs, portfolios, or documentation sites, this integration helps ensure images load efficiently and look great across devices.
 
 <Button class="mt-4" href="https://images.thulite.io/">Visit website</Button>
