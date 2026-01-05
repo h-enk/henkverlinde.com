@@ -33,8 +33,8 @@
   force = true
 
 [[redirects]]
-  from = "/js/script.js"
-  to = "https://plausible.io/js/script.js"
+  from = "/js/pa-EFeI-2VKrn0wq6Q8htXjM.js"
+  to = "https://plausible.io/js/pa-EFeI-2VKrn0wq6Q8htXjM.js"
   status = 200
   force = true
 
