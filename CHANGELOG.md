@@ -1,5 +1,17 @@
 # henkverlinde.com
 
+## 0.3.1
+
+### Patch Changes
+
+- [#255](https://github.com/h-enk/henkverlinde.com/pull/255) [`1baa2b2`](https://github.com/h-enk/henkverlinde.com/commit/1baa2b264fffde0e7db6690a2eb768b43224f39a) Thanks [@h-enk](https://github.com/h-enk)! - Update project pages
+
+- [#256](https://github.com/h-enk/henkverlinde.com/pull/256) [`4c3216a`](https://github.com/h-enk/henkverlinde.com/commit/4c3216aa9d4ad471ad71e10fc94369a9bab884c9) Thanks [@h-enk](https://github.com/h-enk)! - Add blog post
+
+- [#257](https://github.com/h-enk/henkverlinde.com/pull/257) [`793558b`](https://github.com/h-enk/henkverlinde.com/commit/793558bd14ee89e64b6f93859d077a501208e4ee) Thanks [@h-enk](https://github.com/h-enk)! - Update processing settings
+
+- [#254](https://github.com/h-enk/henkverlinde.com/pull/254) [`26c6107`](https://github.com/h-enk/henkverlinde.com/commit/26c6107cf8c6561c036dfd02b2258e7ac23b39f2) Thanks [@h-enk](https://github.com/h-enk)! - Add links and headings to About page
+
 ## 0.3.0
 
 ### Minor Changes
