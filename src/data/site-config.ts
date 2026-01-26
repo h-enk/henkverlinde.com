@@ -87,8 +87,8 @@ const siteConfig: SiteConfig = {
     },
     subscribe: {
         enabled: true,
-        title: 'Get the Monthly Update',
-        text: 'One email. Clear insights. No noise.',
+        title: 'Get the monthly update',
+        text: 'One email. Insights on digital innovation and open-source tools. No noise.',
         form: {
             action: '/newsletter/success/',
         }
