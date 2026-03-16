@@ -1,3 +1,4 @@
+import hero from '../assets/images/anton-maksimov-5642-su-68CW-bC_5Pk-unsplash.jpg';
 import type { SiteConfig } from '../types';
 
 const siteConfig: SiteConfig = {
@@ -72,12 +73,10 @@ const siteConfig: SiteConfig = {
         text: "**Henk Verlinde** is the Founder & CEO and Digital Innovation Lead at Ventizo, building open-source tools and digital solutions that empower developers and organizations. With a background in international banking and an MSc in Economics and Business, he turns ideas into practical, future-ready innovation.",
         */
         text: "I'm the Founder & CEO at <a href=\"https://ventizo.com/\">Ventizo</a>, where I build open-source tools and digital solutions that empower developers and organizations. With a background in international banking and an MSc in Economics and Business, I focus on turning ideas into practical, future-ready innovation.",
-        /*
         image: {
             src: hero,
-            alt: 'A person sitting at a desk in front of a computer'
+            alt: 'Abstract black and white light painting with curved and vertical streaks on a dark background.'
         },
-        */
         actions: [
             {
                 text: 'Get in Touch',
@@ -91,6 +90,14 @@ const siteConfig: SiteConfig = {
         text: 'One email. Insights on digital innovation and open-source tools. No noise.',
         form: {
             action: '/newsletter/success/',
+        }
+    },
+    announcement: {
+        enabled: true,
+        text: 'Ventizo is closing — Thulite continues',
+        link: {
+            text: 'Read more',
+            href: 'https://ventizo.com/news/closing-ventizo-personal-note/'
         }
     },
     postsPerPage: 8,

@@ -1,0 +1,18 @@
+---
+import siteConfig from '../data/site-config';
+
+const announcement = siteConfig.announcement;
+if (!announcement?.enabled) return;
+
+const { text, link } = announcement;
+---
+
+<aside class="bg-muted border-main border-b border-dashed py-2 text-center text-sm px-4 md:px-8">
+    {link ? (
+        <a href={link.href} class="text-main hover:underline hover:decoration-dashed hover:decoration-1 hover:underline-offset-2">
+            {text} <span aria-hidden="true">&rarr;</span>
+        </a>
+    ) : (
+        <p class="text-main m-0">{text}</p>
+    )}
+</aside>

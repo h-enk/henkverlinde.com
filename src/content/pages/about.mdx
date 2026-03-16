@@ -4,10 +4,22 @@ seo:
   title: About
   description: Discover Henk Verlinde's journey from banking to digital innovation, empowering developers and organizations with practical solutions.
   image:
-    src: '@images/default.jpg'
-    alt: Abstract black background with white light streaks and the text 'Henk Verlinde'
+    src: '@images/anton-maksimov-5642-su-Sa0eV3UxeEk-unsplash.jpg'
+    alt: Abstract black and white image with motion-blurred light streaks
 ---
 import Button from '@components/Button.astro';
+import myImage from "@images/anton-maksimov-5642-su-Sa0eV3UxeEk-unsplash.jpg";
+import { Picture } from 'astro:assets';
+
+<Picture
+    src={myImage}
+    formats={['avif', 'webp']}
+    alt={frontmatter.seo.image.alt || 'Hero image'}
+    loading="eager"
+    widths={[270, 768, 984, 1152]}
+    sizes="(min-width: 860px) 768px, 92.59vw"
+    quality={75}
+/>
 
 I'm the Founder & CEO and Digital Innovation Lead at [Ventizo](https://ventizo.com/), where I create practical, future-ready digital solutions that empower developers and modern organizations. With a Master of Science (MSc) in Economics and Business from [Erasmus University Rotterdam](https://www.eur.nl/en), I combine analytical insight, technical expertise, and product vision to turn ideas into impact.
 

@@ -30,6 +30,12 @@ export type Subscribe = {
     form?: SubscribeForm;
 };
 
+export type Announcement = {
+    enabled?: boolean;
+    text: string;
+    link?: Link;
+};
+
 export type SiteConfig = {
     website: string;
     domain: string;
@@ -43,6 +49,7 @@ export type SiteConfig = {
     socialLinks?: Link[];
     hero?: Hero;
     subscribe?: Subscribe;
+    announcement?: Announcement;
     postsPerPage?: number;
     projectsPerPage?: number;
     defaultEmail?: string;
