@@ -93,7 +93,7 @@ const siteConfig: SiteConfig = {
         }
     },
     announcement: {
-        enabled: true,
+        enabled: false,
         text: 'Ventizo is closing — Thulite continues',
         link: {
             text: 'Read more',
