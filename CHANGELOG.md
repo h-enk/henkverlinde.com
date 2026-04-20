@@ -1,5 +1,13 @@
 # henkverlinde.com
 
+## 0.3.2
+
+### Patch Changes
+
+- [#259](https://github.com/h-enk/henkverlinde.com/pull/259) [`f3342b2`](https://github.com/h-enk/henkverlinde.com/commit/f3342b20852382238db2be7711efc9810309e55a) Thanks [@dependabot](https://github.com/apps/dependabot)! - Bump astro from 5.16.15 to 5.18.1
+
+- [#260](https://github.com/h-enk/henkverlinde.com/pull/260) [`db83ccb`](https://github.com/h-enk/henkverlinde.com/commit/db83ccb817b8e22d24a3b1a18e7e834b9fd70cef) Thanks [@h-enk](https://github.com/h-enk)! - Bump dependencies to their latest versions
+
 ## 0.3.1
 
 ### Patch Changes
